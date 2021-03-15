@@ -13,27 +13,39 @@
  * Initially answer the first solution in your query, and have the applications code in a single class.
  */
 
+/* [Notes] - Final Variables:
+ * Depending on the project Final keywords may be preferable to specify variables not being local and reassigned.
+ */
+
+/* [Notes] - Code Maintainability and Anti-Patterns:
+ * 1. Code is simple to locate code responsible for particular features.
+ * 2. Code is simple to understand what the code does.
+ * 3. Code is simple to add or remove new features.
+ * 4. Code provides good encapsulation. Implementation details should be hidden from a user of your code,
+ *      so it's easier to understand and make changes.
+ */
+
 /* Query:
- * 1) What is the total profit and loss from a list of bank statements? Is it positive or negative?
- * 2) How many bank transactions are there in a particular month?
- * 3) What are their top-10 expenses?
- * 4) Which category does they spend most of their money on?
+ * 1. What is the total profit and loss from a list of bank statements? Is it positive or negative?
+ * 2. How many bank transactions are there in a particular month?
+ * 3. What are their top-10 expenses?
+ * 4. Which category does they spend most of their money on?
  *
  */
 
 /* Process:
- * 1) Loading the CSV file passed as a command-line argument to the application.
- * 2) Path class represents a path in the filesystem.
- * 3) Files.readAllLines() to return a list of lines.
- * 4) Parsing the lines list by:
+ * 1. Loading the CSV file passed as a command-line argument to the application.
+ * 2. Path class represents a path in the filesystem.
+ * 3. Files.readAllLines() to return a list of lines.
+ * 4. Parsing the lines list by:
  *      a. Splitting them by split() with a "," as the delimiter/separator.
  *      b. Extracting the amount.
  *      c. Parsing the amount to a double.
  *
  * Complications:
- * 1) What if the file is empty?
- * 2) What if parsing the amount fails because the data was corrupted?
- * 3) What if a statement line has missing data?
+ * 1. What if the file is empty?
+ * 2. What if parsing the amount fails because the data was corrupted?
+ * 3. What if a statement line has missing data?
  */
 
 import java.io.IOException;
