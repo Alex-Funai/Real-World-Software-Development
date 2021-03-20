@@ -48,6 +48,8 @@
  * 3. What if a statement line has missing data?
  */
 
+package BankStatementAnalyzer.Main.Resources;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -57,7 +59,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
 import java.util.List;
 
-public class BankTransactionAnalyzerSimple {
+public class BankStatementAnalyzerSimple {
 
     // [2.1] Setting a file path to a private variable RESOURCES.
     private static final String RESOURCES = "src/main/resources/";
