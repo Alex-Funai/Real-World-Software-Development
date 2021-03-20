@@ -35,7 +35,7 @@ import static java.util.stream.Collectors.toList;
 public class BankStatementCsvParser implements Interface_BankStatementParser {
 
 
-    //Interface_BankStatementCsvParser {    // Decouple initial CSV parser to new full spectrum file-type parser.
+    //BankStatementAnalyzer.Interface_BankStatementCsvParser {    // Decouple initial CSV parser to new full spectrum file-type parser.
 
     // Translate the CSV date format.
     private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd-MM-yyyy");

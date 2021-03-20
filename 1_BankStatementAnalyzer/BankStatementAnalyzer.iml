@@ -4,10 +4,13 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/BankStatementAnalyzer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/Tests" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="" scope="TEST">
       <library name="JUnit4">
         <CLASSES>
           <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
