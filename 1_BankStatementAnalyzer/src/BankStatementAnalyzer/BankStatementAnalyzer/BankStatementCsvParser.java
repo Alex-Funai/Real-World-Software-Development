@@ -56,21 +56,24 @@ public class BankStatementCsvParser implements Interface_BankStatementParser {
         return lines.stream().map(this :: parseFrom).collect(toList());
     }
 
-/*    public List <BankTransaction> parseLinesFromCSV (final List <String> lines) {
-        final List <BankTransaction> bankTransactions = new ArrayList<>();
-        for (final String line: lines) {
-            bankTransactions.add(parseFromCSV(line));
-        }
-        return bankTransactions;
+    /*
+    public List <BankTransaction> parseLinesFromCSV (final List <String> lines) {
+    final List <BankTransaction> bankTransactions = new ArrayList<>();
+    for (final String line: lines) {
+    bankTransactions.add(parseFromCSV(line));
+    }
+    return bankTransactions;
     }
 
-    @Override
-    public BankTransaction parseFrom(String line) {
-        return null;
-    }
+@Override
+public BankTransaction parseFrom(String line) {
+return null;
+}
 
-    @Override
-    public List<BankTransaction> parseLinesFrom(List<String> lines) {
-        return null;
-    }*/
+@Override
+public List<BankTransaction> parseLinesFrom(List<String> lines) {
+return null;
+}
+*/
+
 }

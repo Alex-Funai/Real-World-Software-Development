@@ -2,16 +2,16 @@
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 2 -- The Bank Statements Analyzer
 
-/* Bank Transaction DAO --- Reusing previously declared classes and considering how to cohesively disect program into utilizable methods
- *                                                               without jeopardizing the legibility, functionality, and structure.
-*/
-/* COHESION --- Creating separate classes is ideal because it allows us to utilize the same methods and manipulate them elsewhere in our program.
- */
+ /*
+   [Bank Transaction DAO] --- Reusing previously declared classes and considering how to cohesively disect program into utilizable methods
+   without jeopardizing the legibility, functionality, and structure.
 
-/* UTILITY --- Be careful not to group unrelated methods inside a class. Be awaree of where cohesion can be utilized  without complicating the program structure.
- *  A scenario with overgrouped methods would be considered an example of poor cohesion, and the programa loses class discoverability, and revisoin/pudate becomes convuluted,.
- *  Especially if the program intends on adding new features, or updating foundational structure for improvement.
- */
+   [COHESION] --- Creating separate classes is ideal because it allows us to utilize the same methods and manipulate them elsewhere in our program.
+
+   [UTILITY]--- Be careful not to group unrelated methods inside a class. Be aware of where cohesion can be utilized  without complicating the program structure.
+    A scenario with overgrouped methods would be considered an example of poor cohesion,  the program loses class discoverability, and revision/updating becomes
+   more complicated... Especially if the program intends on adding new features, or updating foundational structure for improvement.
+  */
 
 package BankStatementAnalyzer;
 

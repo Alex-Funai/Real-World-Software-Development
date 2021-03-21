@@ -2,8 +2,7 @@
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 2 -- The Bank Statements Analyzer
 
-// **********[ MAIN APPLICATION ]****************
-// Bank Statement Analyzer --- This is the main program to run for parsing and calculating basic operations on a CSV.
+// Bank Statement Analyzer
 
 package BankStatementAnalyzer;
 
@@ -37,11 +36,11 @@ public class BankStatementAnalyzer {
         final List<String> lines = Files.readAllLines(path);
 
 
-*//*        final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFromCSV(lines);
-*//**//*        " Decoupling CSV specific parser to replace for file type variance."*//**//*
+    //     final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFromCSV(lines);
+    //        " Decoupling CSV specific parser to replace for file type variance."*//**//*
 
         final Interface_BankStatementProcessor bankStatementProcessor = new Interface_BankStatementProcessor(bankTransactions);
-*//**//*        " Decoupoling interface since  BankStatementtParser encompasses different file type possibiilities.*//*
+    //      " Decoupling interface since  BankStatementtParser encompasses different file type possibiilities.*//*
 
         final  List <BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
         final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);

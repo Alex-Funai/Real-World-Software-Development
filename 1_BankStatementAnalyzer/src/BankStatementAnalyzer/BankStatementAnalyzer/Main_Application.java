@@ -3,11 +3,11 @@
 // Chapter 2 -- The Bank Statements Analyzer
 
 
-/*   DESCRIPTION:  This program Will parse through CSV, XML,  and JSON >> leveraging commas as delimitter/separator
-  \*  date (dd-mm-yyyy) , double value (the transactiono amount), and string (transaction description).
+/* [DESCRIPTION]:  This program Will parse through CSV, XML,  and JSON >> leveraging commas as delimitter/separator
+  * date (dd-mm-yyyy) , double value (the transactiono amount), and string (transaction description).
   */
 
-/*  REPRO STEPS:
+/*  [REPRO STEPS]:
   *  1. Edit the file name in the bankStatementAnalyzer class  under "fileName" object.
   *  2. Run main.
   */
