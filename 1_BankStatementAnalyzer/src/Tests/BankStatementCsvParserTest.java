@@ -58,5 +58,18 @@ public class BankStatementCsvParserTest {
           *  5.  The structure fed into the "assertEquals" argument is defined as variables that leverage the BankTransaction class,
           *        and statementParser.ParseFrom(line) process.
           */
+
+        /*  [ASSERTION Statements]:
+         *  1. Assert.fail(message) --- Let method fail. Useful placeholder before you implement test code.
+         *  2. Assert.assertEquals(expected,actual) --- Test that two values are the same.
+         *  3. Assert.assertEquals(expected, actual, delta) --- Assert that two floats or doubles are within a delta.
+         *  4. Assert.assertNotNull(object) --- Assert that an object is not null.
+         */
+
+        /*  [CODE COVERAGE]:
+         * More code coverage for test's isn't necessarily better, but you should aim for 70-90%.
+         * Popular code coverage tools include: JaCoCo, Emma, and Cobertura.
+         * Code coverage can often be referenced in small-talk as "line-coverage" and "branch-coverage".
+         */
     }
 }
