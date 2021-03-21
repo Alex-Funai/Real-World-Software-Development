@@ -85,4 +85,15 @@ public class BankStatementProcessor {
      *  [Functional Interface] --- A functional interface, is an interface that only contains a single abstract method.
      *  A functional interface is notated by using the "FunctionalInterface" annotation to clarify the interface's intent.
      */
+
+    // Flexible findTransactions() method using "Open/Closed Principle" >> Coupled w/ "Interface_BankTransactionFilter".
+    public List <BankTransaction> findTransactions (final Interface_BankTransactionFilter bankTransactionFilter) {
+        final List <BankTransaction> result = new ArrayList<> ();
+        for (final BankTransaction bankTransaction: bankTransactions) {
+            if (bankTransactionFilter.test (bankTransaction)) {
+                result.add(bankTransaction);;
+            }
+        }
+        return result;
+    }
 }
