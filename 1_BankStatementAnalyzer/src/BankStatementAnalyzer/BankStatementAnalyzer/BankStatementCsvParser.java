@@ -34,29 +34,30 @@ import static java.util.stream.Collectors.toList;
 // [2-3] Extracting the parsing logic in a separate class:
 public class BankStatementCsvParser implements Interface_BankStatementParser {
 
-
     //BankStatementAnalyzer.Interface_BankStatementCsvParser {    // Decouple initial CSV parser to new full spectrum file-type parser.
 
-    // Translate the CSV date format.
-    private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+    // Translate the CSV date format to be read into the DATE_PATTERN variable..
+    private static final DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern ("dd-MM-yyyy");
 
-    public BankTransaction parseFrom(final String line) {
+    // Method to specify the line as a parameter, for where the document parsing should begin [Default = start = 0].
+    public BankTransaction parseFrom (final String line) {
         // Initializes an array named columns, and specifies "," as a delimiter/separator.
         final String[] columns = line.split(",");
 
-        // Setting column index(s).
-        final LocalDate date = LocalDate.parse(columns[0], DATE_PATTERN);
-        final double amount = Double.parseDouble(columns[1]);
+        //  Indexing columns, and translating each section into the appropriate data-type..
+        final LocalDate date = LocalDate.parse (columns[0], DATE_PATTERN);
+        final double amount = Double.parseDouble (columns[1]);
         final String description = columns[2];
 
+        // Return all the values parsed through the BankTransaction variable. Declared new for anticipation of reptition that will occur. Many BankTransactions will need to run.
         return new BankTransaction(date, amount, description);
     }
 
     public List <BankTransaction> parseLinesFrom (final List <String> lines) {
-        return lines.stream().map(this :: parseFrom).collect(toList());
+        return lines.stream().map (this :: parseFrom).collect (toList());
     }
 
-    /*
+    /*******************************
     public List <BankTransaction> parseLinesFromCSV (final List <String> lines) {
     final List <BankTransaction> bankTransactions = new ArrayList<>();
     for (final String line: lines) {
@@ -65,15 +66,14 @@ public class BankStatementCsvParser implements Interface_BankStatementParser {
     return bankTransactions;
     }
 
-@Override
-public BankTransaction parseFrom(String line) {
-return null;
-}
+    @Override
+    public BankTransaction parseFrom(String line) {
+    return null;
+    }
 
-@Override
-public List<BankTransaction> parseLinesFrom(List<String> lines) {
-return null;
-}
-*/
-
+    @Override
+    public List<BankTransaction> parseLinesFrom(List<String> lines) {
+    return null;
+    }
+    ********************************/
 }

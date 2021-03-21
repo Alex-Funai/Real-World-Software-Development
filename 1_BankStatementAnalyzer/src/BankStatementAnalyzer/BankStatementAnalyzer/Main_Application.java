@@ -23,5 +23,6 @@ public class Main_Application {
 
         bankStatementAnalyzer.analyze("ExampleStatements2.csv", bankStatementParser);
 
+
     }
 }

@@ -41,6 +41,8 @@ public class BankTransaction {
         return description;
     }
 
+
+
     @Override
     public String toString() {
         return "BankTransaction (" + "date=" + date + ", amount=" + amount + ", description=" + description
