@@ -75,4 +75,14 @@ public class BankStatementProcessor {
         }
         return result;
     }
+    /* This method is less desireable, because it combines multiple operations of a bank transaction.
+     *  This method is less desireable, because the "selection-logic" is coupled w ith the "iteration-logic".
+     *  If the previous 2 test methods stand, then this is redundant.
+     *
+     *  [SOLUTION]: Implement a BankTransactionFilter interface to couple the BankTransaction class.
+     *  The BankTransactionFilter we'll entail all the properties of the BankTransaction class, and return a boolean.
+     *  This would be a functional interface.
+     *  [Functional Interface] --- A functional interface, is an interface that only contains a single abstract method.
+     *  A functional interface is notated by using the "FunctionalInterface" annotation to clarify the interface's intent.
+     */
 }
