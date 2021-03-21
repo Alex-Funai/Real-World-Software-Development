@@ -2,16 +2,14 @@
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 2 -- The Bank Statements Analyzer
 
-/*      00_JunitTest:
-  *     This is a failing unit test for the CSV Parser.
-  */
+// JUnit tests for the CSV parser.
 
-/*   Using JUnit --- Utilize JUnit framework to establish and write unit tests. Leveraging JUnit and automation will
-  *   aid in long term maintenance of the program. Utilize comonent, functionality, regression, and unit testing methodologies.
-  */
+/* Using JUnit --- Utilize JUnit framework to establish and write unit tests. Leveraging JUnit and automation will
+ * aid in long term maintenance of the program. Utilize comonent, functionality, regression, and unit testing methodologies.
+ */
 
 /* LIBRARIES --- Importing libraries through the project structure manager will copy the .jar files as a local duplicate in the project's local domain.
- *                                    IDE's or SDK often have libarries compiled in their directories that are commonly used, and can be conveniently acceesed in their "$root/lib" directories.
+ * IDE's or SDK often have libarries compiled in their directories that are commonly used, and can be conveniently acceesed in their "$root/lib" directories.
  */
 
 // Import project class dependencies:
