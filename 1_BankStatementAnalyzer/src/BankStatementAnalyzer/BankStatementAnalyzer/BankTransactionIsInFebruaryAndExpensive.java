@@ -7,9 +7,8 @@ package BankStatementAnalyzer;
 
 // Class Dependencies:
 import java.time.Month;
-import java.util.List;
 
-class BankTransactionIsInFebruaryAndExpensive implements Interface_BankTransactionFilter {
+class BankTransactionIsInFebruaryAndExpensive implements BankStatementAnalyzer.BankTransactionProcessor.Interface_BankTransactionFilter {
 
     @Override
     /* This parameter test for February is cumbersome, as we'd have to re-iterate for every other month in the year.
@@ -17,5 +16,6 @@ class BankTransactionIsInFebruaryAndExpensive implements Interface_BankTransacti
     public boolean test (final BankTransaction bankTransaction) {
         return bankTransaction.getDate().getMonth() == Month.FEBRUARY
                 && bankTransaction.getAmount() >= 1_000;
+
     }
 }

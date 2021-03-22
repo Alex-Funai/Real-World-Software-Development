@@ -56,6 +56,7 @@ public class BankStatementAnalyzer {
          */
 
 
+
     private static void collectSummary  (final BankStatementProcessor bankStatementProcessor) {
         System.out.println("The total for all transactions is " + bankStatementProcessor.calculateTotalAmount());
         System.out.println("The total for transactions in January is " + bankStatementProcessor.calculateTotalInMonth(Month.JANUARY));
