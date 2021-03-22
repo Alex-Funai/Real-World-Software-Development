@@ -17,7 +17,9 @@ public interface Interface_BankTransactionProcessor {
     /* Listed are the following  implementations that would be needed in this method.
      * however this act's more like a god class and has unecessary complications in it's API definition. */
 
-/*    double calculateTotalAmount();
+
+/*[Implementaiton 1 ---- Non-ideal with too many coupling methods, and poor structurefor future revision.
+    double calculateTotalAmount();
     double calculateTotalInMonth (Month month);
     double calculateTotalInJanuary();
     double calculateAverageAmount();
@@ -33,7 +35,11 @@ public interface Interface_BankTransactionProcessor {
      *  calculateAverageForCateogry() and calculateTotalInJanuary()l and having to change these objects
      *  would be more complicated when implementing feature changes (or changing the motnh filter).
      */
-// A more ideal approach could be to implement various interfaces instead, as following:
+
+    /* [Implementation 2 --- Use "Open-Closed-Principle"]:
+    A more ideal approach could be to implement various interfaces instead by leveraging the "Open-Closed-Principle"
+    * Using "Open-Closed-Principle" as interfaces adds flexibility to the class structure.
+    */
     interface CalculateTotalAmount {
         double calculateTotalAmount();
     }
