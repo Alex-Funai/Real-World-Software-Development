@@ -4,6 +4,12 @@
 
 // [INTERFACE] --- Bank Transaction Processor
 
+/*  [DEFINING INTERNAL APIS] --- As you construct your progrram, and begin dissecting it into manageable classes;
+ * try to envision what operations would be common and relatable, as in maybe a  universal-tree structure stemming
+ *  down to the main application as the bottom. Extract operations into unique API(s) depending on commonality, legibility, and restsructure potential.
+ *
+ */
+
 package BankStatementAnalyzer;
 
 // Class Dependencies
@@ -14,30 +20,35 @@ import java.util.List;
 
 public interface Interface_BankTransactionProcessor {
 
-    /* Listed are the following  implementations that would be needed in this method.
-     * however this act's more like a god class and has unecessary complications in it's API definition. */
 
 
-/*[Implementaiton 1 ---- Non-ideal with too many coupling methods, and poor structurefor future revision.
+
+
+/* [Implementaiton 1 ---- Non-ideal with too many coupling methods, and poor structurefor future revision.
+  * Listed are the following  implementations that would be needed in this method.
+  * however this act's more like a god class and has unecessary complications in it's API definition.
+  */
     double calculateTotalAmount();
     double calculateTotalInMonth (Month month);
     double calculateTotalInJanuary();
     double calculateAverageAmount();
     double calculateAverageAmountForCategory (Category category);
     List<BankTransaction> findTransactions (Interface_BankTransactionFilter bankTransactionFilter);
-}*/
+}
 
     /* [NOTES]:
      * An interface in Java defines a contract, that every singlew implementation has to adhere by. The more operations
      * added, increases the scope for potential problems down the line.
-     *
+     */
+
+     /*[NOTES]:
      * There are operations that are dependent on domain objects in the BankTransaction class; such as:
      *  calculateAverageForCateogry() and calculateTotalInJanuary()l and having to change these objects
      *  would be more complicated when implementing feature changes (or changing the motnh filter).
      */
 
     /* [Implementation 2 --- Use "Open-Closed-Principle"]:
-    A more ideal approach could be to implement various interfaces instead by leveraging the "Open-Closed-Principle"
+    * more ideal approach could be to implement various interfaces instead by leveraging the "Open-Closed-Principle"
     * Using "Open-Closed-Principle" as interfaces adds flexibility to the class structure.
     */
     interface CalculateTotalAmount {
