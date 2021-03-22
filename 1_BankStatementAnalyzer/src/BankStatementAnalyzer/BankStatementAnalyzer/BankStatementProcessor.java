@@ -96,4 +96,9 @@ public class BankStatementProcessor {
         }
         return result;
     }
+
+    // Lambada BankFilter
+/*    final List <BankTransaction> transactions = BankStatementProcessor.findTransactions (bankTransaction -> bankTransaction.getDate().getMonth() == Month.FEBRUARY
+            && bankTransaction.getAmount() >= 1_000);*/
+
 }

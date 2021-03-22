@@ -11,6 +11,5 @@ package BankStatementAnalyzer;
 @FunctionalInterface        // [Functional Interface] --- An interface containing only a single abstract method.
 public interface Interface_BankTransactionFilter {
 
-
     boolean test (BankTransaction bankTransaction);
 }
