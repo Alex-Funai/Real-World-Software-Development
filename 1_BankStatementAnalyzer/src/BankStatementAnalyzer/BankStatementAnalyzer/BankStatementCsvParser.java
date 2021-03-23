@@ -15,6 +15,7 @@ import static java.util.stream.Collectors.toList;   // Stream allows us to outpu
  *  in between each information type, as the "commas is used as the delimitter/separator, for the array that is initialized
  * to separate that data.
  */
+
 public class BankStatementCsvParser implements Interface_BankStatementParser {
 
     /* DateTimeFormatter --- Declares and specifies that DATE_PATTERN will be the variable to hold the date parsed from our files.
