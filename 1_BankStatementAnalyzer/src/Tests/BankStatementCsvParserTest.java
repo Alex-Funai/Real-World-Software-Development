@@ -1,8 +1,8 @@
-// Alexander Kitaro Funai -- March 20, 2021
+// Alexander Kitaro Funai -- March 0 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
-// Chapter 2 -- The Bank Statements Analyzer
+// Chapter 2  and  Chapter 3 -- The Bank Statements Analyzer
 
-// JUnit tests for the CSV parser.
+// These are JUnit tests to learn and test simple operations  by contrasting and verifying data within the files being run through the  analyzer.
 
 /* Using JUnit --- Utilize JUnit framework to establish and write unit tests. Leveraging JUnit and automation will
  * aid in long term maintenance of the program. Utilize comonent, functionality, regression, and unit testing methodologies.

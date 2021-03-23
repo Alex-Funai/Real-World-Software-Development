@@ -1,3 +1,7 @@
+// Alexander Kitaro Funai -- March 23 2021
+// Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
+// Chapter 2  and  Chapter 3 -- The Bank Statements Analyzer
+
 package BankStatementAnalyzer;
 
 import java.util.List;

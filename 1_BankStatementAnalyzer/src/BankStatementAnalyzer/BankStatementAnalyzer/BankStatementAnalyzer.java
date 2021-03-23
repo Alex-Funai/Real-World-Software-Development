@@ -1,8 +1,7 @@
 // Alexander Kitaro Funai -- March 14, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
-// Chapter 2 -- The Bank Statements Analyzer
+// Chapter 2  and  Chapter 3 -- The Bank Statements Analyzer
 
-// Bank Statement Analyzer
 
 /* [DEFINITIONS]:
 Cohesion --- "how related things are in a class".

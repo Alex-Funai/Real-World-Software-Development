@@ -1,6 +1,6 @@
 // Alexander Kitaro Funai -- March 14, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
-// Chapter 2 -- The Bank Statements Analyzer
+// Chapter 2 / Chapter 3 -- The Bank Statements Analyzer
 
 /* Bank Transaction Analyzer (Simple Version)
  * Parses as CSV file and returns it as a list for calculating double values.

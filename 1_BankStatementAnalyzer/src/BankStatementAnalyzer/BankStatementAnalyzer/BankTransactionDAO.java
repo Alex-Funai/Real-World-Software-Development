@@ -1,6 +1,7 @@
 // Alexander Kitaro Funai -- March 19, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
-// Chapter 2 -- The Bank Statements Analyzer
+// Chapter 2  and  Chapter 3 -- The Bank Statements Analyzer
+
 
  /*
    [Bank Transaction DAO] --- Reusing previously declared classes and considering how to cohesively disect program into utilizable methods
