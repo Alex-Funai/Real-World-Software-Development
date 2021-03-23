@@ -18,6 +18,8 @@ public class Main_Application {
 
     public static void main(final String[] args) throws Exception {
 
+
+
         final BankStatementAnalyzer bankStatementAnalyzer
                 = new BankStatementAnalyzer();
 
