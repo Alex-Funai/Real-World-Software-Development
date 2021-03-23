@@ -4,7 +4,6 @@
 
 package BankStatementAnalyzer;
 
-// Declaring class dependencies:
 import java.time.LocalDate;         // Idk something regarding local date, when using the LocalDate class.
 import java.time.format.DateTimeFormatter;      //DateTimeFormatter allows us to handle different general calendar date formats for our compiler to handle.
 import java.util.List;      // Dependency for  List class.
@@ -13,7 +12,7 @@ import static java.util.stream.Collectors.toList;   // Stream allows us to outpu
 /*  The BankStatementCsvParser class will scan through a general/specified format of data such that:
  *  the format is:  "Date (dd--MM-yyyy)", "Amount as double",   "Description as String".    Notice that commas
  *  in between each information type, as the "commas is used as the delimitter/separator, for the array that is initialized
- * to separate that data.
+ *  to separate that data.
  */
 
 public class BankStatementCsvParser implements Interface_BankStatementParser {
@@ -48,13 +47,13 @@ public class BankStatementCsvParser implements Interface_BankStatementParser {
         /*  Finally we return the preceeed data, and include the last column which is a string description in our file. Because the file is already a string
          *  we dont need to utilize any parsing methods or extra classes, and can simply incooporate it directly into our return constructor. However we
          *  do need to specify that this will be a "new BankTransaction", because theoretically we will have to intialize several more BankTransactions throughout this program,
-         * and t hey will all need unique instances of their own to handle unique data values (unlesse every transaction were the same, which they are not).
+         *  and t hey will all need unique instances of their own to handle unique data values (unlesse every transaction were the same, which they are not).
          */
         return new BankTransaction(date, amount, columns[2]);
     }
 
     /* parseLinesFrom allows us to parse lines of text from a text buffer into a string set/list.
-     *
+     * We then do some map collect stuff to parse it (come back to define this later).
      */
     public List<BankTransaction> parseLinesFrom(final List<String> lines) {
         return lines.stream().map(this::parseFrom).collect(toList());

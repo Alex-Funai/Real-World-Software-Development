@@ -20,14 +20,25 @@ public class Main_Application {
 
 
 
+        // Constructing and declaring a new BankStatementAnalyzer object, uzing our initial anlyziation class.
         final BankStatementAnalyzer bankStatementAnalyzer
                 = new BankStatementAnalyzer();
 
         final Interface_BankStatementParser interfaceBankStatementParser
                 = new BankStatementCsvParser();
 
-        final Interface_Exporter interfaceExporter = new HtmlExporter();
+        /* "Interface_Exporter" method is for constructing and delcaring a new Interface_Exporter as the variable interfaceExporter.
+         *  This constructor manages and holds the methods and classes we which to access, and then use on our data.
+         *  In our scenario, we have designated a unique exporter for different file types, so we can simply managae the exporter class
+         *  to change request. They all inherit a basis construction for the data types they should have, and we can make changes to them
+         *  specifically without having to jeopardize the code base/structure of the program as a whole.
+         */
+        final Interface_Exporter interfaceExporter
+                = new HtmlExporter();
 
+        /* " bankStatementAnalyzer.analyze" method 
+         *
+         */
         bankStatementAnalyzer.analyze("ExampleStatements2.csv", interfaceBankStatementParser);
 
     }
