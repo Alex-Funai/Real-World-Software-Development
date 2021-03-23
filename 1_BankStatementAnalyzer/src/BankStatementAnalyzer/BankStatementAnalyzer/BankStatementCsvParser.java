@@ -10,6 +10,11 @@ import java.time.format.DateTimeFormatter;      //DateTimeFormatter allows us to
 import java.util.List;      // Dependency for  List class.
 import static java.util.stream.Collectors.toList;   // Stream allows us to output complex data structures such as lists, maybe arrays, etc. Stuff like ArraytoList, kind of function.
 
+/*  The BankStatementCsvParser class will scan through a general/specified format of data such that:
+ *  the format is:  "Date (dd--MM-yyyy)", "Amount as double",   "Description as String".    Notice that commas
+ *  in between each information type, as the "commas is used as the delimitter/separator, for the array that is initialized
+ * to separate that data.
+ */
 public class BankStatementCsvParser implements Interface_BankStatementParser {
 
     /* DateTimeFormatter --- Declares and specifies that DATE_PATTERN will be the variable to hold the date parsed from our files.
