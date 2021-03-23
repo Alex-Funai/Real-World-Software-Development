@@ -12,7 +12,10 @@ Coupling --- "how dependent classes are upon one another".
  *  standard System.out statements under the "collectSummary" method to mainly verify that the operating classes handling the data backend
  *  are working properly ("BankStatementProcessor", "BankStatementTransaction", "BankStatementParser", "BankTransactionProcessor".
  *
- *  Note that the BankStatementAnalyzer is proceeded by a final class in this package known as "Main_Application".
+ *  Note that the BankStatementAnalyzer is proceeded by a final class in this package known as "Main_Application", and
+ *  the "BankStatementProcesseor" which is a class for listing various analytical operation methods that are independent to
+ *  the class as a whole. It is much more manageable, has better cohesion methodology, and more accessible for this progrma as
+ *  it evolves, updates, or is worked on by other programmers.
  */
 
 package BankStatementAnalyzer;

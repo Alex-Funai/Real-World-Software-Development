@@ -2,6 +2,11 @@
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 2  and  Chapter 3 -- The Bank Statements Analyzer
 
+/*  The "BankStatementProcesseor" class is a rendition of the "BankStatementAnalzyer" that refines the program by
+ *  improving it's cohesion. The "BankStatementProcessor" separates various different transaction operations into their own
+ *  methods, which allows us to conveniently reference them in other classes of our program since they are not dependent on the class
+ *  as a whole. Think of it as somewhat of an API or interface that is easily accessible and manageable.
+ */
 
 package BankStatementAnalyzer;
 
@@ -11,6 +16,10 @@ import java.util.List;
 
 public class BankStatementProcessor {
 
+    /*  We intialize and declare a List interface to the variable "bankTransactions" by importing our initial list of data.
+     *  Again we utilize private/final to anticipate the repitition of this class when it runs through several transactions,
+     *  each list being represented as a line of data.
+     */
     private final List<BankTransaction> bankTransactions;
 
     public BankStatementProcessor(final List<BankTransaction> bankTransactions) {
@@ -20,6 +29,7 @@ public class BankStatementProcessor {
     // Method for calculating the total cumulative value of all transactions:
     public double calculateTotalAmount() {
         double total = 0;
+        // Loops through the BankTransaction
         for (final BankTransaction bankTransaction : bankTransactions) {
             total += bankTransaction.getAmount();
         }
