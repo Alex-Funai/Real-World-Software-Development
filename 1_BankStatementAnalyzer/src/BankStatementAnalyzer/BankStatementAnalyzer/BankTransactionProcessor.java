@@ -5,32 +5,64 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+public class BankTransactionProcessor {
+    private final List<BankTransaction> bankTransactions;
 
 
-public class BankTransactionProcessor  {
+    public BankTransactionProcessor(final List<BankTransaction> bankTransactions) {
+        this.bankTransactions = bankTransactions;
+    }
 
-    private final List <BankTransaction> bankTransactions;
-    double result = 0;
-
-public BankTransactionProcessor (final List <BankTransaction> bankTransactions) {
-    this.bankTransactions = bankTransactions;
-}
-
-
-    public double summarizeTransactions (final Interface_BankTransactionSummarizer bankTransactionSummarizer) {
-        for (final BankTransaction bankTransaction: bankTransactions) {
+    public double summarizeTransactions(final BankTransactionSummarizer bankTransactionSummarizer) {
+        double result = 0;
+        for (final BankTransaction bankTransaction : bankTransactions) {
             result = bankTransactionSummarizer.summarize(result, bankTransaction);
         }
         return result;
     }
 
-    public double calculateTotalInMonth (final Month month) {
-        return summarizeTransactions ((acc, bankTransaction) ->
-                bankTransaction.getDate().getMonth() == month ? acc  + bankTransaction.getAmount() : acc);
+    public double calculateTotalInMonth(final Month month) {
+        return summarizeTransactions((acc, bankTransaction) ->
+                bankTransaction.getDate().getMonth() == month ? acc + bankTransaction.getAmount() : acc);
     }
     // ....
 
-    public List<BankTransaction> findTransactions (final Interface_BankTransactionFilter bankTransactionFilter) {
+
+    //[3.1]  Inclusive method for finding/filtering/searching bank transactions in a specific month &  values above a speciied mark.
+    public List<BankTransaction> findTransactionsGreaterThanEqual(final int amount) {
+        final List<BankTransaction> result = new ArrayList<>();
+        for (final BankTransaction bankTransaction : bankTransactions) {
+            if (bankTransaction.getAmount() >= amount) {
+                result.add(bankTransaction);
+            }
+        }
+        return result;
+    }
+
+    //[3.2] Find bank transactions in a certain month.
+    public List<BankTransaction> findTransactionsInMonth(final Month month) {
+        final List<BankTransaction> result = new ArrayList<>();
+        for (final BankTransaction bankTransaction : bankTransactions) {
+            if (bankTransaction.getDate().getMonth() == month) {
+                result.add(bankTransaction);
+            }
+        }
+        return result;
+    }
+
+    //[3.3] Find bank transactions in a certain month and over a certain amount.
+    public List<BankTransaction> findTransactionsInMonthAndGreater(final Month month, final int amount) {
+        final List<BankTransaction> result = new ArrayList<>();
+        for (final BankTransaction bankTransaction : bankTransactions) {
+            if (bankTransaction.getDate().getMonth() == month && bankTransaction.getAmount() >= amount) {
+                result.add(bankTransaction);
+            }
+        }
+        return result;
+    }
+
+    // [3.5]  Flexible findTransactions() method using Open/Closed principle.
+    public List<BankTransaction> findTransactions(final BankTransactionFilter bankTransactionFilter) {
         final List<BankTransaction> result = new ArrayList<>();
         for (final BankTransaction bankTransaction : bankTransactions) {
             if (bankTransactionFilter.test(bankTransaction)) {
@@ -39,26 +71,23 @@ public BankTransactionProcessor (final List <BankTransaction> bankTransactions) 
         }
         return bankTransactions;
     }
+}
 
+/*    // Method for finding/filtering /searching bank transactions  >= a specified value:
     public List<BankTransaction> findTransactionsGreaterThanEqual(final int amount) {
-        return findTransactions(bankTransaction -> bankTransaction.getAmount() >= amount);
-    }
+        final List<BankTransaction> result = new ArrayList<>();
+        for (final BankTransaction bankTransaction : bankTransactions) {
+            if (bankTransaction.getAmount() >= amount) {
+                result.add(bankTransaction);
+            }
+        }
+        return result;
+    }*/
+
+
+
+
 
     // ...
 
-    @FunctionalInterface
-    interface Interface_BankTransactionSummarizer {
-        double summarize (double accumulator, BankTransaction bankTransaction);
-    }
-
-    @FunctionalInterface        // [Functional Interface] --- An interface containing only a single abstract method.
-        interface Interface_BankTransactionFilter {
-        boolean test (BankTransaction bankTransaction);
-    }
-
-    @FunctionalInterface
-    interface CalculateTotalInMonth {
-        double calculateTotalInMonth (Month month);
-    }
-}
 

@@ -13,9 +13,9 @@
  */
 
 // Import project class dependencies:
-import BankStatementAnalyzer.BankStatementCsvParser;
+import BankStatementAnalyzer.BankStatementCSVParser;
+import BankStatementAnalyzer.BankStatementParser;
 import BankStatementAnalyzer.BankTransaction;
-import BankStatementAnalyzer.Interface_BankStatementParser;
 
 // Import JUnit framework testing dependencies:
 import org.junit.Assert;        // Diagnostic message prompt.
@@ -28,7 +28,7 @@ import java.time.Month;
 
 // Class declaration for >> Testing the BankStatementCSV Parser.
 public class BankStatementCsvParserTest {
-    private final Interface_BankStatementParser statementParser = new BankStatementCsvParser();
+    private final BankStatementParser statementParser = new BankStatementCSVParser();
 
 
     @Test       // T00 -- Example of a failing Assert test.

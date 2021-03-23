@@ -2,7 +2,6 @@
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 2 -- The Bank Statements Analyzer
 
-// Bank Statement CSV Parser
 
 /* [Notes] Defining a constructor and separate class is useful for the full application,
  */

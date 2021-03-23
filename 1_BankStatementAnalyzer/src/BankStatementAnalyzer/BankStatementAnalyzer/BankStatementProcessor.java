@@ -43,38 +43,7 @@ public class BankStatementProcessor {
         return total;
     }
 
-    // Method for finding/filtering /searching bank transactions  >= a specified value:
-    public List<BankTransaction> findTransactionsGreaterThanEqual(final int amount) {
-        final List<BankTransaction> result = new ArrayList<>();
-        for (final BankTransaction bankTransaction : bankTransactions) {
-            if (bankTransaction.getAmount() >= amount) {
-                result.add(bankTransaction);
-            }
-        }
-        return result;
-    }
 
-    // Method for finding/filtering/searching bank transactions in a specified month:
-    public List<BankTransaction> findTransactionsInMonth(final Month month) {
-        final List<BankTransaction> result = new ArrayList<>();
-        for (final BankTransaction bankTransaction : bankTransactions) {
-            if (bankTransaction.getDate().getMonth() == month) {
-                result.add(bankTransaction);
-            }
-        }
-        return result;
-    }
-
-    // Inclusive method for finding/filtering/searching bank transactions in a specific month &  values above a speciied mark.
-    public List<BankTransaction> findTransactionsInMonthAndGreaterThanEqual(final Month month, final int amount) {
-        final List<BankTransaction> result = new ArrayList<>();
-        for (final BankTransaction bankTransaction : bankTransactions) {
-            if (bankTransaction.getDate().getMonth() == month && bankTransaction.getAmount() >= amount) {
-                result.add(bankTransaction);
-            }
-        }
-        return result;
-    }
     /* This method is less desireable, because it combines multiple operations of a bank transaction.
      *  This method is less desireable, because the "selection-logic" is coupled w ith the "iteration-logic".
      *  If the previous 2 test methods stand, then this is redundant.
@@ -86,15 +55,6 @@ public class BankStatementProcessor {
      *  A functional interface is notated by using the "FunctionalInterface" annotation to clarify the interface's intent.
      */
 
-    // Flexible findTransactions() method using "Open/Closed Principle" >> Coupled w/ "Interface_BankTransactionFilter".
-    public List<BankTransaction> findTransactions(final BankStatementAnalyzer.BankTransactionProcessor.Interface_BankTransactionFilter bankTransactionFilter) {
-        final List<BankTransaction> result = new ArrayList<>();
-        for (final BankTransaction bankTransaction : bankTransactions) {
-            if (bankTransactionFilter.test(bankTransaction)) {
-                result.add(bankTransaction);
-                ;
-            }
-        }
-        return result;
-    }
+
+
 }
