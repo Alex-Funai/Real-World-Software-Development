@@ -61,7 +61,7 @@ public class BankStatementAnalyzer {
         System.out.println("The total for transactions in January is " + bankStatementProcessor.calculateTotalInMonth(Month.JANUARY));
         // I/O leverage the "bankStatementProcessor" class object, and  additionly  use it's calculateTotalInMonth method, with parameter arguments of method ".Month". and the specified parameter of  "FEBRUARY".
         System.out.println("The total for transactions in February is " + bankStatementProcessor.calculateTotalInMonth(Month.FEBRUARY));
-        
+
         System.out.println("The total salary received is " + bankStatementProcessor.calculateTotalForCategory("Salary"));
     }
 
@@ -74,13 +74,13 @@ public class BankStatementAnalyzer {
         final Path path = Paths.get (  RESOURCES + fileName);;
         final List<String> lines = Files.readAllLines(path);
 
-    // final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFromCSV(lines);
+        final List<BankTransaction> bankTransactions = bankStatementParser.parseLinesFromCSV(lines);
     // Decoupling CSV specific parser to replace for file type variance.
 
-    // final Interface_BankStatementProcessor bankStatementProcessor = new Interface_BankStatementProcessor(bankTransactions);
+         final Interface_BankStatementProcessor bankStatementProcessor = new Interface_BankStatementProcessor(bankTransactions);
     // Decoupling interface since  BankStatementtParser encompasses different file type possibiilities.
 
-    // final  List <BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
+         final  List <BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
     // final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
 
         collectSummary (bankStatementProcessor);
