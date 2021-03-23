@@ -14,9 +14,6 @@
 
 package BankStatementAnalyzer;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 public class Main_Application {
 
     public static void main(final String[] args) throws Exception {
@@ -24,12 +21,12 @@ public class Main_Application {
         final BankStatementAnalyzer bankStatementAnalyzer
                 = new BankStatementAnalyzer();
 
-        final BankStatementParser bankStatementParser
-                = new BankStatementCSVParser();
+        final Interface_BankStatementParser interfaceBankStatementParser
+                = new BankStatementCsvParser();
 
-        final Exporter exporter = new HtmlExporter();
+        final Interface_Exporter interfaceExporter = new HtmlExporter();
 
-        bankStatementAnalyzer.analyze("ExampleStatements2.csv", bankStatementParser);
+        bankStatementAnalyzer.analyze("ExampleStatements2.csv", interfaceBankStatementParser);
 
     }
 }

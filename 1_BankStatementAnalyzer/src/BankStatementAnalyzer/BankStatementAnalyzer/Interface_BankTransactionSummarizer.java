@@ -3,6 +3,6 @@ package BankStatementAnalyzer;
 
 
 @FunctionalInterface
-public interface BankTransactionSummarizer {
+public interface Interface_BankTransactionSummarizer {
     double summarize(double accumulator, BankTransaction bankTransaction);
 }

@@ -1,5 +1,5 @@
 package BankStatementAnalyzer;
 
-public interface Exporter {
+public interface Interface_Exporter {
     String export(SummaryStatistics summaryStatistics);
 }

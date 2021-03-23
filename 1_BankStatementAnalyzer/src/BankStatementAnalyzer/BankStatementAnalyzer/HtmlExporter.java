@@ -1,6 +1,6 @@
 package BankStatementAnalyzer;
 
-public class HtmlExporter implements Exporter {
+public class HtmlExporter implements Interface_Exporter {
     @Override
     public String export(final SummaryStatistics summaryStatistics) {
 

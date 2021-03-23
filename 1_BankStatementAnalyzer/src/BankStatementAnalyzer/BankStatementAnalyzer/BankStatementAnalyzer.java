@@ -21,13 +21,13 @@ public class BankStatementAnalyzer {
 
     private static final String RESOURCES = "src/Resources/";
 
-    public void analyze (final String fileName, final BankStatementParser bankStatementParser) throws IOException {
+    public void analyze (final String fileName, final Interface_BankStatementParser interfaceBankStatementParser) throws IOException {
 
         // Declaring/assigning file path name from the previously mentioned "src/Resources" folder.
         final Path path = Paths.get (RESOURCES + fileName);
         final List <String> lines = Files.readAllLines(path);
 
-        final List <BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
+        final List <BankTransaction> bankTransactions = interfaceBankStatementParser.parseLinesFrom(lines);
         final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
 
         collectSummary (bankStatementProcessor);

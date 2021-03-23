@@ -13,7 +13,7 @@ public class BankTransactionProcessor {
         this.bankTransactions = bankTransactions;
     }
 
-    public double summarizeTransactions(final BankTransactionSummarizer bankTransactionSummarizer) {
+    public double summarizeTransactions(final Interface_BankTransactionSummarizer bankTransactionSummarizer) {
         double result = 0;
         for (final BankTransaction bankTransaction : bankTransactions) {
             result = bankTransactionSummarizer.summarize(result, bankTransaction);
@@ -62,10 +62,10 @@ public class BankTransactionProcessor {
     }
 
     // [3.5]  Flexible findTransactions() method using Open/Closed principle.
-    public List<BankTransaction> findTransactions(final BankTransactionFilter bankTransactionFilter) {
+    public List<BankTransaction> findTransactions(final Interface_BankTransactionFilter interfaceBankTransactionFilter) {
         final List<BankTransaction> result = new ArrayList<>();
         for (final BankTransaction bankTransaction : bankTransactions) {
-            if (bankTransactionFilter.test(bankTransaction)) {
+            if (interfaceBankTransactionFilter.test(bankTransaction)) {
                 result.add(bankTransaction);
             }
         }
