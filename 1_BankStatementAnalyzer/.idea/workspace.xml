@@ -1,114 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1_BankStatementAnalyzer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../2_DocumentManagementSystem/src/resources/notes.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BankStatementAnalyzer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BankStatementAnalyzer1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/BankStatementAnalyzer_1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer/BankStatementAnalyzer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer/BankStatementAnalyzerSimple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer/BankStatementCsvParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer/BankStatementProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer/BankTransaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer/BankTransactionDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer/BankTransactionParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer/Interface_BankStatementCsvParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer/Interface_BankStatementParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer/MainApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/.idea/fileColors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/.idea/libraries/org_testng_testng_6_14_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/BankStatementAnalyzer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/BankStatementAnalyzer/Notes_Exceptions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/BankStatementAnalyzer_Simple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/BankStatementCsvParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/BankStatementProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/BankTransaction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/BankTransactionDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/BankTransactionParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/BankTransactionProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/HtmlExporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/Interface_BankStatementCsvParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/Interface_BankStatementParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/Interface_BankTransactionFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/Interface_BankTransactionSummarizer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/Interface_Exporter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/Main_Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/Notes_Exceptions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/BankStatementAnalyzer/SummaryStatistics.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/ExampleStatements.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/ExampleStatements2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/Resources/ExampleStatements.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/Resources/ExampleStatements2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/Resources/bank-data-simple.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/bank-data-simple.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BankStatementAnalyzer/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/BankStatementAnalyzer/BankStatementCsvParserTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/fileColors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/libraries/org_testng_testng_6_14_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/BankStatementAnalyzer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/BankStatementAnalyzer_Simple.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/BankStatementCsvParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/BankStatementProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/BankTransaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/BankTransactionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/BankTransactionParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/BankTransactionProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/HtmlExporter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/Interface_BankStatementCsvParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/Interface_BankStatementParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/Interface_BankTransactionFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/Interface_BankTransactionSummarizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/Interface_Exporter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/Main_Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/Notes_Exceptions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main/BankStatementAnalyzer/SummaryStatistics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/ExampleStatements.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/ExampleStatements2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resources/bank-data-simple.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tests/BankStatementCsvParserTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/modules/2_DocumentManagementSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/modules/2_DocumentManagementSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_DocumentManagementSystem/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2_DocumentManagementSystem/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../2_DocumentManagementSystem/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2_DocumentManagementSystem/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../2_DocumentManagementSystem/settings.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -189,6 +82,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -205,7 +99,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main_Application (1)">
+  <component name="RunManager" selected="JUnit.BankStatementCsvParserTest (1)">
     <configuration name="Main_Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main_Application" />
       <module name="1_BankStatementAnalyzer" />
@@ -286,8 +180,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main_Application (1)" />
         <item itemvalue="JUnit.BankStatementCsvParserTest (1)" />
+        <item itemvalue="Application.Main_Application (1)" />
         <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass" />
         <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL" />
         <item itemvalue="JUnit.BankStatementCsvParserTest" />
@@ -303,7 +197,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616572239095</updated>
       <workItem from="1616572242677" duration="853000" />
-      <workItem from="1616573207583" duration="2496000" />
+      <workItem from="1616573207583" duration="2621000" />
     </task>
     <servers />
   </component>
