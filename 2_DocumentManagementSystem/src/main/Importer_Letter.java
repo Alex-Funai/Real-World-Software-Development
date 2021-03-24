@@ -7,7 +7,7 @@ import java.util.Map;
 
 import static javax.swing.SpringLayout.WIDTH;
 
-public class ImageImporter implements Importer {
+public class Importer_Letter implements Importer {
 
     @Override
     public Document importFile(final File file) throws IOException {

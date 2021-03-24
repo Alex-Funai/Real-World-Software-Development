@@ -64,9 +64,13 @@ public class Document {
     private final Map<String, String> attributes
 ```
 
-## Running the tests
+## The Liskov Substitution Principle (LSP):
+Let g(x) be a property provable about objects x of type T. Then g(y) should be true for objects y of type S where S is a subtype of T.
 
+*   If you hear type, it means a class or interface.
+*   If you hear subtype ,it  means establish a parent-tochild-relationship, or extend a class / implement an interface.
 
+Note:   Preconditions cannot be strengthened in a subtype.
 
 ### Break down into end to end tests
 
