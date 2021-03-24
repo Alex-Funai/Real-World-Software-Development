@@ -1,0 +1,49 @@
+<component name="libraryTable">
+  <library name="gradle-6.8">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/antlr" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/build-init" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/build-profile" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/code-quality" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/composite-builds" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/dependency-management" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/diagnostics" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/ear" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/enterprise" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/ide" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/ide-native" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/ide-play" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/installation-beacon" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/ivy" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/jacoco" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/javascript" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/language-groovy" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/language-java" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/language-jvm" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/language-native" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/language-scala" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/launcher" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/maven" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/platform-base" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/platform-jvm" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/platform-native" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/platform-play" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/plugin-development" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/plugin-use" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/plugins" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/publish" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/scala" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/signing" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/testing-base" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/testing-junit-platform" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/testing-jvm" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/testing-native" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/tooling-api-builders" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/tooling-native" />
+      <root url="file://$PROJECT_DIR$/../../../Engineering/Gradle/gradle-6.8.3/src/version-control" />
+    </SOURCES>
+  </library>
+</component>

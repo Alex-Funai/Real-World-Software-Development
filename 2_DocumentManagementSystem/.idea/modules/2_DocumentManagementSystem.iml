@@ -12,5 +12,12 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="junit-4.12" level="application" />
     <orderEntry type="library" exported="" name="hamcrest-core-1.3" level="application" />
+    <orderEntry type="library" exported="" name="gradle-6.8" level="application" />
+    <orderEntry type="library" exported="" name="junit5-main" level="application" />
+    <orderEntry type="library" name="gradle-6.8" level="project" />
+    <orderEntry type="library" name="JDK15 Library" level="application" />
+    <orderEntry type="library" name="junit-4.13.2" level="project" />
+    <orderEntry type="library" name="junit5-main" level="project" />
+    <orderEntry type="library" name="IntelliJ Library" level="application" />
   </component>
 </module>
