@@ -9,8 +9,6 @@ import java.util.Map;
 import java.util.function.Predicate;
 import static java.util.stream.Collectors.toList;
 
-import static DocumentManagementSystem.Attributes.PATH;
-
 
 class Definition_TextFile {
 
@@ -19,7 +17,7 @@ class Definition_TextFile {
 
     Definition_TextFile(final File file) throws IOException {
         attributes = new HashMap<>();
-        attributes.put(PATH, file.getPath());
+        attributes.put(Attributes.PATH, file.getPath());
         lines = Files.lines(file.toPath()).collect(toList());
     }
 
@@ -36,11 +34,9 @@ class Definition_TextFile {
             if (isEnd.test(line)) {
                 break;
             }
-
             accumulator.append(line);
             accumulator.append("\n");
         }
-
         attributes.put(attributeName, accumulator.toString().trim());
         return lineNumber;
     }

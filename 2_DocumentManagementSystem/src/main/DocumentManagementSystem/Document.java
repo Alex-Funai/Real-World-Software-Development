@@ -3,7 +3,6 @@ package DocumentManagementSystem;
 import java.util.Map;
 
 public class Document {
-
     private final Map<String, String> attributes;
 
     Document (final Map<String, String> attributes) {
