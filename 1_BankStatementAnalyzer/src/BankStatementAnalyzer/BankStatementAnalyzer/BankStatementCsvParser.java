@@ -32,6 +32,8 @@ public class BankStatementCsvParser implements Interface_BankStatementParser {
          */
         final String[] columns = line.split(",");
 
+
+
         /*  Initialize LocalDate class to store data into variable "date" by first declaring the LocalDate class, second parsing by character, and third
          *  respecting our declaration of what the date is, given by >> it will be in column[0] and in the pattern declared above as/is variable DATE_PATTERN.
          */
