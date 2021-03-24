@@ -1,9 +1,14 @@
-plugins {
-    id 'java'
-}
+apply plugin: 'java'
+apply plugin: 'application'
 
-group 'GID_AlexanderFunai'
-version '1.0'
+
+group = 'GID_AlexanderFunai'
+version = '1.0'
+
+sourceCompatibility = 9
+
+
+mainClassName = "com.iteratrlearning.MainApplication"
 
 repositories {
     mavenCentral()
@@ -13,6 +18,7 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:4.13.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    testRuntime('org.junit.jupiter:junit-jupiter-engine:4.13.2')
 }
 
 test {
