@@ -2,16 +2,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
-public class Importer_Invoice {
+ class Importer_Invoice implements Importer {
 
-    void addLineSuffix(final String prefix, final String attributeName) {
-        for (final String line: lines) {
-            if (line. startsWith(prefix)) {
-                attributes.put(attributeName, line.substring(prefix.length() ));
-                break;
-            }
-        }
-    }
+     private static final String NAME_PREFIX = "Dear ";
+     private static final String AMOUNT_PREFIX = "Amount: ";
 
     @Override
     public Document importFile(final File file) throws IOException {

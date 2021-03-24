@@ -5,9 +5,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import static io.grpc.netty.shaded.io.netty.handler.codec.http.cookie.CookieHeaderNames.PATH;
 import static javax.swing.SpringLayout.WIDTH;
+import static javax.xml.crypto.dsig.SignatureProperties.TYPE;
 
-public class Importer_Image implements Importer {
+class Importer_Image implements Importer {
 
     @Override
     public Document importFile(final File file) throws IOException {

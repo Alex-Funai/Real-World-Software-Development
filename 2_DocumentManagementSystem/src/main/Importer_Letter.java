@@ -1,23 +1,27 @@
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 
-import static javax.swing.SpringLayout.WIDTH;
+import static Attributes.ADDRESS;
+import static Attributes.BODY;
+import static Attributes.PATIENT;
+import static Attributes.TYPE;
 
-public class Importer_Letter implements Importer {
+class Importer_Letter implements Importer {
+
+    private static final String NAME_PREFIX = "Dear ";
 
     @Override
     public Document importFile(final File file) throws IOException {
-        final Map<String, String> attributes = new HashMap<>();
-        attributes.put(PATH, file.getPath());
+        final  Definition_TextFile textFile = new Definition_TextFile(file);
 
-        final BufferedImage image = ImageIO.read(file);
-        attributes.put(WIDTH, String.valueOf(image.getWidth()));
-        attributes.put(TYPE, "IMAGE");
+        textFile.addLineSuffix (NAME_PREFIX, PATIENT);
 
+        final int lineNumber = textFile.addLines(2, String::isEmpty, ADDRESS);
+        textFile.addLines(lineNumber + 1, (line) -> line.startsWith("regards,"), BODY);
+
+        final; Map<String, String> attributes = textFile.getAttributes();
+        attributes.put(TYPE, "LETTER");
         return new Document(attributes);
     }
 }
