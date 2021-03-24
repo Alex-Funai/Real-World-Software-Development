@@ -43,6 +43,8 @@ public class Main_Application {
          *
          */
         bankStatementAnalyzer.analyze("ExampleStatements2.csv", interfaceBankStatementParser);
+        System.out.println("Begin HTML export below");
+        bankStatementAnalyzer.analyze("bank-data-simple.html", interfaceBankStatementParser);
 
     }
 }
