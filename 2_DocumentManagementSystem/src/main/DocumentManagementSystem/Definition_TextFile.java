@@ -1,3 +1,5 @@
+package DocumentManagementSystem;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -5,9 +7,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Predicate;
-
-import static Attributes.PATH;
 import static java.util.stream.Collectors.toList;
+
+import static DocumentManagementSystem.Attributes.PATH;
+
 
 class Definition_TextFile {
 
@@ -20,9 +23,7 @@ class Definition_TextFile {
         lines = Files.lines(file.toPath()).collect(toList());
     }
 
-    Map<String, String> getAttributes
-
-    public Map<String, String> getAttributes() {
+    Map<String, String> getAttributes() {
         return attributes;
     }
 

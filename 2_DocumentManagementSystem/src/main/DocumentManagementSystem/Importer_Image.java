@@ -1,3 +1,5 @@
+package DocumentManagementSystem;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -5,9 +7,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static io.grpc.netty.shaded.io.netty.handler.codec.http.cookie.CookieHeaderNames.PATH;
-import static javax.swing.SpringLayout.WIDTH;
-import static javax.xml.crypto.dsig.SignatureProperties.TYPE;
+import static DocumentManagementSystem.Attributes.PATH;
+import static DocumentManagementSystem.Attributes.TYPE;
+import static DocumentManagementSystem.Attributes.WIDTH;
 
 class Importer_Image implements Importer {
 

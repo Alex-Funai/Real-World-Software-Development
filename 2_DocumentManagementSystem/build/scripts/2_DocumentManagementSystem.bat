@@ -71,7 +71,7 @@ set CLASSPATH=%APP_HOME%\lib\2_DocumentManagementSystem-1.0.jar
 
 
 @rem Execute 2_DocumentManagementSystem
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %2_DOCUMENT_MANAGEMENT_SYSTEM_OPTS%  -classpath "%CLASSPATH%" com.iteratrlearning.MainApplication %*
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %2_DOCUMENT_MANAGEMENT_SYSTEM_OPTS%  -classpath "%CLASSPATH%"  %*
 
 :end
 @rem End local scope for the variables with windows NT shell

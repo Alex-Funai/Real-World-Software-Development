@@ -5,10 +5,7 @@ apply plugin: 'application'
 group = 'GID_AlexanderFunai'
 version = '1.0'
 
-sourceCompatibility = 9
 
-
-mainClassName = "com.iteratrlearning.MainApplication"
 
 repositories {
     mavenCentral()

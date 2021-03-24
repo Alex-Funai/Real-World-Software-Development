@@ -1,11 +1,13 @@
+package DocumentManagementSystem;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
-import static Attributes.ADDRESS;
-import static Attributes.BODY;
-import static Attributes.PATIENT;
-import static Attributes.TYPE;
+import static DocumentManagementSystem.Attributes.ADDRESS;
+import static DocumentManagementSystem.Attributes.BODY;
+import static DocumentManagementSystem.Attributes.PATIENT;
+import static DocumentManagementSystem.Attributes.TYPE;
 
 class Importer_Letter implements Importer {
 
@@ -13,7 +15,7 @@ class Importer_Letter implements Importer {
 
     @Override
     public Document importFile(final File file) throws IOException {
-        final  Definition_TextFile textFile = new Definition_TextFile(file);
+        final Definition_TextFile textFile = new Definition_TextFile(file);
 
         textFile.addLineSuffix (NAME_PREFIX, PATIENT);
 

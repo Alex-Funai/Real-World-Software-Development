@@ -1,8 +1,14 @@
+package DocumentManagementSystem;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
- class Importer_Invoice implements Importer {
+import static DocumentManagementSystem.Attributes.PATIENT;
+import static DocumentManagementSystem.Attributes.AMOUNT;
+import static DocumentManagementSystem.Attributes.TYPE;
+
+class Importer_Invoice implements Importer {
 
      private static final String NAME_PREFIX = "Dear ";
      private static final String AMOUNT_PREFIX = "Amount: ";

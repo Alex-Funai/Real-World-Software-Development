@@ -1,6 +1,6 @@
+package DocumentManagementSystem;
 
-
-public final class Attributes {
+public  class Attributes {
     public static final String PATH = "path";
     public static final String PATIENT = "patient";
     public static final String ADDRESS = "address";

@@ -1,3 +1,5 @@
+package DocumentManagementSystem;
+
 import java.util.Map;
 
 public class Document {
