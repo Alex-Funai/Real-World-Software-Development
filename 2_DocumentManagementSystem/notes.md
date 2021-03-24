@@ -14,37 +14,63 @@ who would like to automate their document management.
 *   Query whether the attributes of different type documents contain certain pieces of information.
 *   Design for implementation of more document file types in the future.
 
-What things you need to install the software and how to install them
 
 ```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
 
 ```
-Give the example
-```
 
-And repeat
+### The Design:
+1.  DocumentManagementSystem should be able to import documents on requests and add them into the internal storage of documents.
 
+__void importFile (String path)__
 ```
-until finished
+Takes a path to a file that our user can import into the DocumentManagementSystem (DMS). Utilize intake of String
+rather than type-safe class like "java.nio.Path" or "java.io.file".
 ```
+__List<Document> contents()__
+```
+Returns a list of all documents that the DocumentManagementSystem currently stores.
+```
+__Importers__<br>
+Capability to import different file types being: .letter, .report, and .jpg.
+```
+switch(extension) {
+    case "letter":
+        // code for importing letters.
+        break;
 
-End with an example of getting some data out of the system or using it for a little demo
+    case "report":
+        // code for importing reports:
+            break;
+
+    case "jpg":
+        // code for importing images
+        break;
+
+    default:
+        throw new UnknownFileTypeException("For file: " + path);
+}
+```
+Create an importer interface, and then a unique Importer class for importing each different type of file.
+__Importer__
+```
+interface Importer {
+    Document importFile(File file) throws IOException;
+    }
+```
+__The Document Class__
+```
+public class Document {
+    private final Map<String, String> attributes
+```
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
+
 
 ```
 Give an example
