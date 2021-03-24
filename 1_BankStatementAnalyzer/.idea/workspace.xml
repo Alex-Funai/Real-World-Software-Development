@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="" />
+    <list default="true" id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,7 +199,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616572239095</updated>
       <workItem from="1616572242677" duration="853000" />
-      <workItem from="1616573207583" duration="2621000" />
+      <workItem from="1616573207583" duration="2671000" />
     </task>
     <servers />
   </component>
