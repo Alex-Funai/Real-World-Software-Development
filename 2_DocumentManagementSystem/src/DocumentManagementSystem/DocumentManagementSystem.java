@@ -12,23 +12,18 @@ import static java.util.Collections.unmodifiableList;
 public class DocumentManagementSystem {
 
     private final List<Document> documents = new ArrayList<>();
-    private final List<Document> documentsView = Collections.unmodifiableList(documents);
+    private final List<Document> documentsView = unmodifiableList(documents);
     private final Map<String, Importer> extensionToImporter = new HashMap<>();
 
     public DocumentManagementSystem() {
         extensionToImporter.put("letter", new Importer_Letter());
         extensionToImporter.put("report", new Importer_Report());
         extensionToImporter.put("jpg", new Importer_Image());
+    }
+    {
         extensionToImporter.put("invoice", new Importer_Invoice());
     }
 
-    public List <Document> contents() {
-        return documentsView;
-    }
-
-    public List<Document> search(final String query) {
-        return documents.stream().filter(Query.parse(query)).collect(Collectors.toList());
-    }
 
     public void importFile(final String path) throws IOException {
         final File file = new File(path);
@@ -37,7 +32,7 @@ public class DocumentManagementSystem {
         }
 
         final int separatorIndex = path.lastIndexOf('.');
-        if  (separatorIndex != -1) {
+        if (separatorIndex != -1) {
             if (separatorIndex == path.length()) {
                 throw new Exception_UnknownFileTypeException("No extension for file found: " + path);
             }
@@ -51,5 +46,13 @@ public class DocumentManagementSystem {
         } else {
             throw new Exception_UnknownFileTypeException("No extension  found for file: " + path);
         }
+
+    }
+    public List<Document> contents() {
+        return documentsView;
+    }
+
+    public List<Document> search(final String query) {
+        return documents.stream().filter(Query.parse(query)).collect(Collectors.toList());
     }
 }
