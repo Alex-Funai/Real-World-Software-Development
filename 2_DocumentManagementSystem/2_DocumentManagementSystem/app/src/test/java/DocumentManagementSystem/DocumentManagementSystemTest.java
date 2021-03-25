@@ -1,24 +1,29 @@
+// Alexander Kitaro Funai -- March  25, 2021
+// Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
+// Chapter 4-- Document Management System
+
+
 package java.DocumentManagementSystem;
 
-// Package and class dependencies:
-import java.DocumentManagementSystem.Document;
-import java.DocumentManagementSystem.DocumentManagementSystem;
-import static java.DocumentManagementSystem.Attributes.*;
-
-// JDK package dependencies:
+// JDK Framework:
+import javax.lang.model.type.UnknownTypeException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-// JUnit / HamCrest framework dependencies:
+//  Class Framework:
+import static java.DocumentManagementSystem.Attributes.*;
+
+// JUnit Framework:
 import org.junit.Test;
-import javax.lang.model.type.UnknownTypeException;
-import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.junit.Assert.assertEquals;
 
+//  HamCrest Framework:
+import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 
 
 public class DocumentManagementSystemTest {
+
     // Declaring constants to give objects consistency in this testing class.
     private static final String RESOURCES =  "src" + File.separator + "test" + File.separator + "resources" + File.separator;
     private static final String LETTER = RESOURCES + "patient.letter";
@@ -29,8 +34,8 @@ public class DocumentManagementSystemTest {
 
     private final DocumentManagementSystem system = new DocumentManagementSystem();
 
-    // tag::shouldImportFile[]
-    @Test
+
+    @Test   // tag::shouldImportFilep[  --- Tests that a file is validily imported, and it is converted into a Document to the variable "document".
     public void shouldImportFile() throws Exception {
         system.importFile(LETTER);
         final Document document = onlyDocument();
@@ -44,85 +49,89 @@ public class DocumentManagementSystemTest {
         system.importFile(LETTER);
         final Document document = onlyDocument();
 
-        assertAttributeEquals(document, PATIENT, JOE_BLOGGS);
-        assertAttributeEquals(document, ADDRESS,
+        assertAttributeEquals (document, PATIENT, JOE_BLOGGS);
+        assertAttributeEquals (document, ADDRESS,
                 "123 Fake Street\n" +
                         "Westminster\n" +
                         "London\n" +
                         "United Kingdom");
-        assertAttributeEquals(document, BODY,  "We are writing to you to confirm the re-scheduling of your appointment\n" +  "with Dr. Avaj from 29th December 2016 to 5th January 2017.");
-        assertTypeIs("LETTER", document);
+        assertAttributeEquals (document, BODY,  "We are writing to you to confirm the re-scheduling of your appointment\n" +  "with Dr. Avaj from 29th December 2016 to 5th January 2017.");
+        assertTypeIs ("LETTER", document);
     }
 
-    // tag::shouldImportImageAttributes[]
-    @Test
+
+    @Test   // Test for verifying specific Image dimensions, that the Dentist's XRAY would be in.
     public void shouldImportImageAttributes() throws Exception {
-        system.importFile(XRAY);
+
+        system.importFile (XRAY);
         final Document document = onlyDocument();
 
-        assertAttributeEquals(document, WIDTH, "320");
-        assertAttributeEquals(document, HEIGHT, "179");
-        assertTypeIs("IMAGE", document);
+        assertAttributeEquals (document, WIDTH, "320");
+        assertAttributeEquals (document, HEIGHT, "179");
+        assertTypeIs ("IMAGE", document);
     }
-    // end::shouldImportLetterAttributes[]
 
-    @Test
+    @Test   // Test for verifying that report attributes are valid and not null.
     public void shouldImportReportAttributes() throws Exception {
-        system.importFile(REPORT);
 
-        assertIsReport(onlyDocument());
+        system.importFile (REPORT);
+
+        assertIsReport (onlyDocument());
     }
-    // end::shouldImportImageAttributes[]
 
-    @Test
+    @Test   // Test for verifying .invoice attributes are correct; such as the "document" is present, "patient/name", and "cost of visit".
     public void shouldImportInvoiceAttributes() throws Exception {
-        system.importFile(INVOICE);
+
+        system.importFile (INVOICE);
         final Document document = onlyDocument();
 
-        assertAttributeEquals(document, PATIENT, JOE_BLOGGS);
-        assertAttributeEquals(document, AMOUNT, "$100");
-        assertTypeIs("INVOICE", document);
+        assertAttributeEquals (document, PATIENT, JOE_BLOGGS);
+        assertAttributeEquals (document, AMOUNT, "$100");
+        assertTypeIs ("INVOICE", document);
     }
 
     @Test
     public void shouldBeAbleToSearchFilesByAttributes() throws Exception {
+
         system.importFile(LETTER);
         system.importFile(REPORT);
         system.importFile(XRAY);
 
-        final List<Document> documents = system.search("patient:Joe,body:Diet Coke");
-        assertEquals(documents, hasSize(1));
+        final List<Document> documents = system.search ("patient:Joe,body:Diet Coke");
 
-        assertIsReport(documents.get(0));
+        assertEquals (documents, hasSize(1));
+
+        assertIsReport (documents.get(0));
     }
 
     // tag::errorTests[]
-    @Test(expected = FileNotFoundException.class)
+    @Test (expected = FileNotFoundException.class)
     public void shouldNotImportMissingFile() throws Exception {
-        system.importFile("nonExistant.txt");
+
+        system.importFile ("nonExistant.txt");
     }
 
     @Test(expected = UnknownTypeException.class)
     public void shouldNotImportUnknownFile() throws Exception {
-        system.importFile(RESOURCES + "unknown.txt");
+        system.importFile (RESOURCES + "unknown.txt");
     }
-    // end::errorTests[]
 
+    // tag:: Tests_Asserts
     private void assertIsReport(final Document document) {
-        assertAttributeEquals(document, PATIENT, JOE_BLOGGS);
-        assertAttributeEquals(document, BODY,
+        assertAttributeEquals (document, PATIENT, JOE_BLOGGS);
+        assertAttributeEquals (document, BODY,
                 "On 5th January 2017 I examined Joe's teeth.\n" +
                         "We discussed his switch from drinking Coke to Diet Coke.\n" +
                         "No new problems were noted with his teeth.");
-        assertTypeIs("REPORT", document);
+        assertTypeIs ("REPORT", document);
     }
 
-    //tag::assertAttributeEquals[]  --- Implementing a new assertion:
-    private void assertAttributeEquals( final Document document, final String attributeName, final String expectedValue) {
-        assertEquals("Document has the wrong value for " + attributeName, expectedValue, document.getAttribute(attributeName));
+    // tag:: assertAttributeEquals  -  Implementing a new assertion:
+    private void assertAttributeEquals ( final Document document, final String attributeName, final String expectedValue) {
+        assertEquals ("Document has the wrong value for " + attributeName, expectedValue, document.getAttribute(attributeName));
     }
-    // end::assertAttributeEquals[]
 
+    // tag:: assertTypeIs   -
     private void assertTypeIs(final String type, final Document document) {
         assertAttributeEquals(document, TYPE, type);
     }

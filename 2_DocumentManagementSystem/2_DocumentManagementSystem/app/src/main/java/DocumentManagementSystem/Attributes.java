@@ -1,6 +1,11 @@
+// Alexander Kitaro Funai -- March  25, 2021
+// Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
+// Chapter 4-- Document Management System
+
 package java.DocumentManagementSystem;
 
 public  class Attributes {
+
     public static final String PATH = "path";
     public static final String PATIENT = "patient";
     public static final String ADDRESS = "address";

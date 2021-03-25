@@ -1,7 +1,12 @@
+// Alexander Kitaro Funai -- March  25, 2021
+// Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
+// Chapter 4-- Document Management System
+
+
+// Package:
 package java.DocumentManagementSystem;
 
-
-// Class Dependencies:
+// JDK Framework::
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;

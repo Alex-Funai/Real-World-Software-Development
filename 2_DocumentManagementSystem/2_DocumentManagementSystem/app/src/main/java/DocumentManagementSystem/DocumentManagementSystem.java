@@ -1,20 +1,31 @@
+// Alexander Kitaro Funai -- March  25, 2021
+// Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
+// Chapter 4-- Document Management System
+
+
 package java.DocumentManagementSystem;
 
-// Class Dependencies:
+// JDK Framework::
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.stream.Collectors;
 import static java.util.Collections.unmodifiableList;
 
 public class DocumentManagementSystem {
 
+    // [4] - Declaring/initializing data structures to
     private final List<Document> documents = new ArrayList<>();
     private final List<Document> documentsView = unmodifiableList(documents);
     private final Map<String, Importer> extensionToImporter = new HashMap<>();
 
     public DocumentManagementSystem() {
+
+        // [4-6] - Registering the Importers.
         extensionToImporter.put("letter", new Importer_Letter());
         extensionToImporter.put("report", new Importer_Report());
         extensionToImporter.put("jpg", new Importer_Image());

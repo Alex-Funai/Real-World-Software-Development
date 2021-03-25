@@ -1,18 +1,23 @@
+// Alexander Kitaro Funai -- March  25, 2021
+// Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
+// Chapter 4-- Document Management System
+
+
 package java.DocumentManagementSystem;
 
-// CLass Dependencies:
+// Class Framework:
 import static java.DocumentManagementSystem.Attributes.ADDRESS;
 import static java.DocumentManagementSystem.Attributes.BODY;
 import static java.DocumentManagementSystem.Attributes.PATIENT;
 import static java.DocumentManagementSystem.Attributes.TYPE;
 
+// JDK Framework:
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
-/*  This is a class API for importing ".letter" type files. It leverages the "Definition_TextFile" template.
- *
- */
+/***********************************************/
+
 
 class Importer_Letter implements Importer {
 
