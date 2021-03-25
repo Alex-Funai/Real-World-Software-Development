@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="bin1">
+    <CLASSES />
+    <JAVADOC />
+    <NATIVE>
+      <root url="file://$PROJECT_DIR$/../../../../Engineering/Java/JDK15.0.1/bin" />
+    </NATIVE>
+    <SOURCES />
+  </library>
+</component>
