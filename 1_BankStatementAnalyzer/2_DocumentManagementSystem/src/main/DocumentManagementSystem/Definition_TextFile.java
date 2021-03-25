@@ -1,4 +1,4 @@
-package main;
+package DocumentManagementSystem;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,26 +25,28 @@ class Definition_TextFile {
         return attributes;
     }
 
+
+    // Add Lines definition:
     int addLines(final int start, final Predicate<String> isEnd, final String attributeName) {
 
         final StringBuilder accumulator = new StringBuilder();
         int lineNumber;
-        for (lineNumber = start; lineNumber < lines.size(); lineNumber++) {
-            final String line = lines.get(lineNumber);
-            if (isEnd.test(line)) {
+        for ( lineNumber = start; lineNumber < lines.size(); lineNumber++) {
+            final String line = lines.get (lineNumber);
+            if (isEnd.test (line)) {
                 break;
             }
-            accumulator.append(line);
+            accumulator.append (line);
             accumulator.append("\n");
         }
-        attributes.put(attributeName, accumulator.toString().trim());
+        attributes.put (attributeName, accumulator.toString().trim());
         return lineNumber;
     }
 
-    void addLineSuffix(final String prefix, final String attributeName) {
+    void addLineSuffix (final String prefix, final String attributeName) {
         for (final String line : lines) {
             if (line.startsWith(prefix)) {
-                attributes.put(attributeName, line.substring(prefix.length()));
+                attributes.put (attributeName, line.substring(prefix.length()));
                 break;
             }
         }

@@ -1,13 +1,16 @@
-package main;
-
-import static main.Attributes.ADDRESS;
-import static main.Attributes.BODY;
-import static main.Attributes.PATIENT;
-import static main.Attributes.TYPE;
+package DocumentManagementSystem;
+import static DocumentManagementSystem.Attributes.ADDRESS;
+import static DocumentManagementSystem.Attributes.BODY;
+import static DocumentManagementSystem.Attributes.PATIENT;
+import static DocumentManagementSystem.Attributes.TYPE;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
+
+/*  This is a class API for importing ".letter" type files. It leverages the "Definition_TextFile" template.
+ *
+ */
 
 class Importer_Letter implements Importer {
 

@@ -1,4 +1,4 @@
-package main;
+package DocumentManagementSystem;
 
 import java.util.Map;
 

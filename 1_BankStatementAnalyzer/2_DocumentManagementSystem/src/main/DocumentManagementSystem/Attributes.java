@@ -1,4 +1,4 @@
-package main;
+package DocumentManagementSystem;
 
 public  class Attributes {
     public static final String PATH = "path";

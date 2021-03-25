@@ -1,23 +1,21 @@
-package main;
+package DocumentManagementSystem;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
-class Importer_Invoice implements Importer {
+public class Importer_Report  implements Importer{
 
-     private static final String NAME_PREFIX = "Dear ";
-     private static final String AMOUNT_PREFIX = "Amount: ";
+    private static final String NAME_PREFIX = "Patient ";
 
     @Override
     public Document importFile(final File file) throws IOException {
         final Definition_TextFile textFile = new Definition_TextFile(file);
-
         textFile.addLineSuffix(NAME_PREFIX, Attributes.PATIENT);
-        textFile.addLineSuffix(AMOUNT_PREFIX, Attributes.AMOUNT);
+        textFile.addLines(2, line -> false, Attributes.BODY);
 
         final Map<String, String> attributes = textFile.getAttributes();
-        attributes.put(Attributes.TYPE, "INVOICE");
+        attributes.put(Attributes.TYPE, "REPORT");
         return new Document(attributes);
     }
 }

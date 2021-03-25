@@ -1,19 +1,23 @@
-import main.DocumentManagementSystem;
-import main.Document;
-import static main.Attributes.*;
+// Package and class dependencies:
+import DocumentManagementSystem.Document;
+import DocumentManagementSystem.DocumentManagementSystem;
+import static DocumentManagementSystem.Attributes.*;
 
+// JDK package dependencies:
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
 
+// JUnit / HamCrest framework dependencies:
 import org.junit.Test;
-import static junit.framework.TestCase.assertTrue;
+import javax.lang.model.type.UnknownTypeException;
+import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 
-// tag::eg_constants[]
+
 public class DocumentManagementSystemTest {
+    // Declaring constants to give objects consistency in this testing class.
     private static final String RESOURCES =  "src" + File.separator + "test" + File.separator + "resources" + File.separator;
     private static final String LETTER = RESOURCES + "patient.letter";
     private static final String REPORT = RESOURCES + "patient.report";
@@ -84,20 +88,19 @@ public class DocumentManagementSystemTest {
         system.importFile(REPORT);
         system.importFile(XRAY);
 
-        final List<main.Document> documents = system.search("patient:Joe,body:Diet Coke");
-        assertThat(documents, hasSize(1));
+        final List<Document> documents = system.search("patient:Joe,body:Diet Coke");
+        assertEquals(documents, hasSize(1));
 
         assertIsReport(documents.get(0));
     }
 
     // tag::errorTests[]
     @Test(expected = FileNotFoundException.class)
-    public void shouldNotImportMissingFile() throws Exception
-    {
-        system.importFile("gobbledygook.txt");
+    public void shouldNotImportMissingFile() throws Exception {
+        system.importFile("nonExistant.txt");
     }
 
-    @Test(expected = FileTypeException .class)
+    @Test(expected = UnknownTypeException.class)
     public void shouldNotImportUnknownFile() throws Exception {
         system.importFile(RESOURCES + "unknown.txt");
     }
@@ -112,16 +115,9 @@ public class DocumentManagementSystemTest {
         assertTypeIs("REPORT", document);
     }
 
-    // tag::assertAttributeEquals[]
-    private void assertAttributeEquals(
-            final Document document,
-            final String attributeName,
-            final String expectedValue)
-    {
-        assertEquals(
-                "Document has the wrong value for " + attributeName,
-                expectedValue,
-                document.getAttribute(attributeName));
+    //tag::assertAttributeEquals[]  --- Implementing a new assertion:
+    private void assertAttributeEquals( final Document document, final String attributeName, final String expectedValue) {
+        assertEquals("Document has the wrong value for " + attributeName, expectedValue, document.getAttribute(attributeName));
     }
     // end::assertAttributeEquals[]
 
@@ -129,10 +125,10 @@ public class DocumentManagementSystemTest {
         assertAttributeEquals(document, TYPE, type);
     }
 
-    // tag::onlyDocument[]
+    // tag::onlyDocument[]  --- Test that the system contains only a single document:
     private Document onlyDocument() {
         final List<Document> documents = system.contents();
-        assertTrue(documents.size(0));
+        assertEquals(documents, hasSize(0));
         return documents.get(0);
     }
     // end::onlyDocument[]
