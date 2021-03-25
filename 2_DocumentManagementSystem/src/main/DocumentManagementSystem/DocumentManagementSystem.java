@@ -1,8 +1,14 @@
 package DocumentManagementSystem;
 
+
+import org.apache.xmlbeans.impl.piccolo.io.FileFormatException;
+
+
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class DocumentManagementSystem {
     private final List<Document> documents = new ArrayList<>();
@@ -18,7 +24,31 @@ public class DocumentManagementSystem {
 
     public void importFile(final String path) throws IOException {
         final File file = new File(path);
-        
+        if (!.file.exists()) {
+            throw new FileNotFoundException(path);
+        }
+
+        final int separatorIndex = path.lastIndexOf('.');
+        if  (separatorIndex != -1) {
+            if (separatorIndex == path.length()) {
+                throw new FileFormatException("No extension found for file:" + path);
+            }
+            final String extension = path.substring(separatorIndex + 1);
+            final Importer importer = extensionToImporter.get(extension);
+            if (importer == null) {
+                throw new FileFormatException("For file: " + path);
+            }
+
+            final Document document = importer.importFile(file);
+            documents.add(document);
+        } else {
+            throw new FileFormatException("No extension  found for file: " + path);
+        }
+    }
+    // end::importFile[]
+
+    public List<Document> search(final String query) {
+        return documents.stream().filter(Query.parse(query)).collect(Collectors.toList());
     }
 
 }
