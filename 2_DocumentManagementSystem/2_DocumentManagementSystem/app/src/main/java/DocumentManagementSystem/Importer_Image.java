@@ -40,7 +40,7 @@ class Importer_Image implements Importer {
          * them together. This is ideal for assuring our variable values stay paired to their assigned definitions.
          */
         final Map<String, String> attributes = new HashMap<>();
-        attributes.put(Attributes.PATH, file.getPath());
+        attributes.put(PATH, file.getPath());
 
         /*  The method valueOf returns an integer as a string data-type since. This is ideal so we can resolve our program
          *  in future classes/methods using a common data-type -- instead of having to handle type-discrepancies.
