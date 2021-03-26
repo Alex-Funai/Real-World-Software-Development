@@ -5,11 +5,10 @@
 /*  The "DocumentManagementSystem" class serves as a Framework for importing all different file types, and manages the input of different filetypes, and their
  *  initialization of most efficient data structures.   List is used to intake the files, as it will query them without specifications, and HashMap is utilized to manage the
  *  parsed file type (as an indiscriminate string), and the unique data as key-pairs. This ensures that our "Attributes" data remains correlated to the correct references
- *  through the program's cycle.
- */
+ *  through the program's cycle.    */
+
 
 package java.DocumentManagementSystem;
-
 // JDK Framework::
 import java.io.File;
 import java.io.FileNotFoundException;

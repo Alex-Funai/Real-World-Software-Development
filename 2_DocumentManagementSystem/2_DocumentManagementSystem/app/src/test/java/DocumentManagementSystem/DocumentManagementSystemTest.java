@@ -69,11 +69,26 @@ public class DocumentManagementSystemTest {
     }
 
 
-    // tag:: shouldImportImageAttributes[]
-    @Test   // Test for verifying specific Image dimensions, that the Dentist's XRAY would be in.
-    /* This method is not ideal, beacuse it entails redundancy, as calls for verifying asserting different attributes on the same "Document" object.
+
+
+
+    /**
+     * tag:: shouldImportImageAttributes[]
+     * Test for verifying Xray .image files by Attribute dimensions.
+     *  This method is not ideal, beacuse it entails redundancy, as calls for verifying asserting different attributes on the same "Document" object.
      *  A better approach would be creating a method called "assertAttributeEquals" that instead initializes a variable for the attributeName and Value.
+     *
+     * @testcase
+     *
+     * @precondition none
+     *
+     * @userInteraction
+
+     * @postcondition The 2 MIDlet suites are installed
+     * @passCriteria User is able to install both of the MIDlet suites and
+
      */
+    @Test
     public void shouldImportImageAttributes() throws Exception {
 
         system.importFile (XRAY);

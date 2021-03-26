@@ -6,8 +6,7 @@
  *  Other alternatives to structuring thise type of program could be:
  *  1. Using a utility class.
  *  2. Use inheritance.
- *  3. Use a domain class.
- */
+ *  3. Use a domain class.  */
 
 package java.DocumentManagementSystem;
 

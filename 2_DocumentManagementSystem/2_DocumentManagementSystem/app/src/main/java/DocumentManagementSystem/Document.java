@@ -6,15 +6,13 @@
 *   classes -- to define them.  Intential creation of the "Document" class with the Importer -- instead of having "Document" extend HashMap
 *  is an example of using the [Liskov Substitution Principle (LSP)]. The Liskov Substitution Principle divides a program into "types"
 *  and "sub-types", or more simply classes/interfaces, and extensions/implementations. More complicated t his is what the LIskov Substitution Principle (LSP) is:
-*   LSP --- Let q(x) be a property provable about objects x of type T. Then q(y) should be true for objects y of type S where S is a subtype of T.
- */
+*   LSP --- Let q(x) be a property provable about objects x of type T. Then q(y) should be true for objects y of type S where S is a subtype of T.      */
 
 /*  Rules of the Liskov Substitution Principle (LSP)::
  *  1.  Preconditions cannot be strenghtened in a subtype.
  *  2.  Postconditions cannot be weakened in a subtype.
  *  3.  Invariants of the supertype must be preserved in a subtype.
- *  4.  The History Rule -- the class is immutable and should retain the same behavior through the program.
- */
+ *  4.  The History Rule -- the class is immutable and should retain the same behavior through the program.      */
 
 package java.DocumentManagementSystem;
 
@@ -35,8 +33,7 @@ public class Document {
 
     public String getAttribute(final String attributeName) {
         /* In case the case of data-structure type Map with the method-argument "get" -- we are returning the value associated to the key-pairing
-         *  In this case it the value should retrun the attribute's name as a string, and not the reference variable that is associated as pair [0] in the pairing.
-         */
+         *  In this case it the value should retrun the attribute's name as a string, and not the reference variable that is associated as pair [0] in the pairing.      */
         return attributes.get(attributeName);
     }
 }

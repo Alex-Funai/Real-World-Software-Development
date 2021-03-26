@@ -6,22 +6,18 @@
 /*  The "Importer_Letter" class is a framework for importing ".letter" files, and is leveraged  into the Importer
  *  interface (which serves as the main handler for the various importerse of different file types). This demonstrates utilizing
  *  good principle of decoupling, and anticipation for positive code-usability, because we can modify each specific importer class
- *  individually to adjust accordingly as the program evolves.
- */
+ *  individually to adjust accordingly as the program evolves.  */
 
 package java.DocumentManagementSystem;
-
 // Class Framework:
 import static java.DocumentManagementSystem.Attributes.ADDRESS;
 import static java.DocumentManagementSystem.Attributes.BODY;
 import static java.DocumentManagementSystem.Attributes.PATIENT;
 import static java.DocumentManagementSystem.Attributes.TYPE;
-
 // JDK Framework:
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
-
 
 
 class Importer_Letter implements Importer {
@@ -30,7 +26,6 @@ class Importer_Letter implements Importer {
     private static final String NAME_PREFIX = "Dear ";
 
     @Override
-
     public Document importFile(final File file) throws IOException {
 
         // Declaring variables and data structures to intake keypairs of data.
