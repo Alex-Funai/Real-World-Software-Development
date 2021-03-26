@@ -33,12 +33,15 @@ class Definition_TextFile {
     }
 
 
-    // Add Lines definition:
+    /* The "addLines" method is utilized by the different Importer classes/interface. It begins by starting an index for initializing the scan,
+     *  and an "isEnd" method for initializing when the scan reaches the end of the line. "isEnd" is stored as a boolean variable, and returns true,
+     *  if the scan reaches the end of the line.
+     */
     int addLines(final int start, final Predicate<String> isEnd, final String attributeName) {
 
         final StringBuilder accumulator = new StringBuilder();
         int lineNumber;
-        for ( lineNumber = start; lineNumber < lines.size(); lineNumber++) {
+        for (lineNumber = start; lineNumber < lines.size(); lineNumber++) {
             final String line = lines.get (lineNumber);
             if (isEnd.test (line)) {
                 break;
