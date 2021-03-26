@@ -22,8 +22,10 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 
 
 ### Installing
-1. Initialize new project with Gradle.
-2. File > ProjectStructure > Libraries/Dependencies > Add:  JUnit-4.13.2 / HamCrest-1.2
+1. Initialize new Java project with Gradle.
+2. Import '\src' files into your root project directory.
+2. File > ProjectStructure > Libraries/Dependencies > Add:  JUnit-4.13.2 / HamCrest-1.2.
+3. Build Gradle framework >> terminal > gradle clean > gradle build (or gradle init -- if you use Kotlin/Groovy).
 3. Edit 'gradle.build'  > add plugins / dependencies / test framework:  JUnit-4.13.2 / HamCreset-1.2 / Java.
 
 #### __'build.gradle 'configuration:__
