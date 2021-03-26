@@ -17,8 +17,8 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 ### Prerequisites
 1. JDK-15.0.1
 2. Gradle-6.8.3
-3. JUnit-4.13.2
-4. HamCrest-Core-1.2
+3. JUnit-4.13.2.jar
+4. HamCrest-Core-1.2.jar
 
 
 ### Installing
