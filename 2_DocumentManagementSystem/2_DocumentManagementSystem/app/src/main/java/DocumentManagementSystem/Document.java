@@ -24,13 +24,19 @@ import java.util.Map;
 
 public class Document {
 
+    // Initializing a map for the various document attributes that will need to retain key pair associations through the programs' life-cycle.
     private final Map<String, String> attributes;
 
+    // Initializing a "Document" to be parsed.
     Document (final Map<String, String> attributes) {
+        // Isolating variable storage internally for each Document, as the program is intended for scanning multiple documents at once.
         this.attributes = attributes;
     }
 
     public String getAttribute(final String attributeName) {
+        /* In case the case of data-structure type Map with the method-argument "get" -- we are returning the value associated to the key-pairing
+         *  In this case it the value should retrun the attribute's name as a string, and not the reference variable that is associated as pair [0] in the pairing.
+         */
         return attributes.get(attributeName);
     }
 }

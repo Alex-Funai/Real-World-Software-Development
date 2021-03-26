@@ -20,19 +20,19 @@ import javax.lang.model.type.UnknownTypeException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
-
 //  Class Framework:
 import static java.DocumentManagementSystem.Attributes.*;
-
 // JUnit Framework:
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
-
 //  HamCrest Framework:
 import static org.hamcrest.collection.IsCollectionWithSize.hasSize;
 
 
 public class DocumentManagementSystemTest {
+
+    // DocumentManagementSystem needs to be initialized to begin parsing documents, or in this case the tests listed below.
+    private final DocumentManagementSystem system = new DocumentManagementSystem();
 
     // Declaring constants to give objects consistency in this testing class.
     private static final String RESOURCES =  "src" + File.separator + "test" + File.separator + "resources" + File.separator;
@@ -42,10 +42,9 @@ public class DocumentManagementSystemTest {
     private static final String INVOICE = RESOURCES + "patient.invoice";
     private static final String JOE_BLOGGS = "Joe Bloggs";
 
-    private final DocumentManagementSystem system = new DocumentManagementSystem();
 
-
-    @Test   // tag::shouldImportFilep[  --- Tests that a file is validily imported, and it is converted into a Document to the variable "document".
+    // tag:: shouldImportFile[]
+    @Test   //Test that a file is validily imported, and it is converted into a Document to the variable "document".
     public void shouldImportFile() throws Exception {
         system.importFile(LETTER);
         final Document document = onlyDocument();
@@ -53,7 +52,7 @@ public class DocumentManagementSystemTest {
     }
     // end::shouldImportFile[]
 
-    // tag::shouldImportLetterAttributes[]
+    // tag:: shouldImportLetterAttributes[]
     @Test
     public void shouldImportLetterAttributes() throws Exception {
         system.importFile(LETTER);
@@ -70,7 +69,11 @@ public class DocumentManagementSystemTest {
     }
 
 
+    // tag:: shouldImportImageAttributes[]
     @Test   // Test for verifying specific Image dimensions, that the Dentist's XRAY would be in.
+    /* This method is not ideal, beacuse it entails redundancy, as calls for verifying asserting different attributes on the same "Document" object.
+     *  A better approach would be creating a method called "assertAttributeEquals" that instead initializes a variable for the attributeName and Value.
+     */
     public void shouldImportImageAttributes() throws Exception {
 
         system.importFile (XRAY);
@@ -80,7 +83,9 @@ public class DocumentManagementSystemTest {
         assertAttributeEquals (document, HEIGHT, "179");
         assertTypeIs ("IMAGE", document);
     }
+    // endl::shouldImportImageAttributes[]
 
+    // tag:: shouldImportReportAttributes[]
     @Test   // Test for verifying that report attributes are valid and not null.
     public void shouldImportReportAttributes() throws Exception {
 
@@ -88,6 +93,7 @@ public class DocumentManagementSystemTest {
 
         assertIsReport (onlyDocument());
     }
+    // endl:: shouldImportReportAttributes[]
 
     @Test   // Test for verifying .invoice attributes are correct; such as the "document" is present, "patient/name", and "cost of visit".
     public void shouldImportInvoiceAttributes() throws Exception {
@@ -114,19 +120,25 @@ public class DocumentManagementSystemTest {
         assertIsReport (documents.get(0));
     }
 
-    // tag::errorTests[]
+    // tag:: shouldNotimportMissingFile[]
+    // Test for throwing an error, if the imported file does not exists.
     @Test (expected = FileNotFoundException.class)
     public void shouldNotImportMissingFile() throws Exception {
 
         system.importFile ("nonExistant.txt");
     }
+    // endl:shouldNotImportMissingFile[]
 
-    @Test(expected = UnknownTypeException.class)
+    // tag:: shouldNotImportUnknownFile
+    // Test for specifying a file/extension that should be rejected by our program.
+    @Test (expected = UnknownTypeException.class)
     public void shouldNotImportUnknownFile() throws Exception {
         system.importFile (RESOURCES + "unknown.txt");
     }
+    // endl::shouldNotImportUnknownFile
 
-    // tag:: Tests_Asserts
+    // tag:: assertIsReport[]
+    // Unideal test for verifying a test is a .Report.  The checkpoints are specific to the  "example" reports contents, thus rendering this method non-universal.
     private void assertIsReport(final Document document) {
         assertAttributeEquals (document, PATIENT, JOE_BLOGGS);
         assertAttributeEquals (document, BODY,
@@ -135,18 +147,23 @@ public class DocumentManagementSystemTest {
                         "No new problems were noted with his teeth.");
         assertTypeIs ("REPORT", document);
     }
+    // endl::assertIsReport[]
 
-    // tag:: assertAttributeEquals  -  Implementing a new assertion:
+    // tag:: assertAttributeEquals[]
+    // Ideal version for testing a "Document" has the expected "Attributes" and values, by intializing them as fluid variables prior to execution.
     private void assertAttributeEquals ( final Document document, final String attributeName, final String expectedValue) {
         assertEquals ("Document has the wrong value for " + attributeName, expectedValue, document.getAttribute(attributeName));
     }
+    // endl::assertAttributeEquals[]
 
-    // tag:: assertTypeIs   -
+    // tag:: assertTypeIs[]
+    // Ideal version of testing a "Document" has the the correct specified "Attribute" type, by initializing them as fluid variables prior to execution.
     private void assertTypeIs(final String type, final Document document) {
         assertAttributeEquals(document, TYPE, type);
     }
+    // endl::assertTypeIs[]
 
-    // tag::onlyDocument[]  --- Test that the system contains only a single document:
+    // tag:: onlyDocument[]  --- Test that the system contains only a single document:
     private Document onlyDocument() {
         final List<Document> documents = system.contents();
         assertEquals(documents, hasSize(0));
