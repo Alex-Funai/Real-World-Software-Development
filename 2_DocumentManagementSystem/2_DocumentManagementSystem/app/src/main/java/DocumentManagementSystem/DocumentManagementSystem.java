@@ -40,13 +40,14 @@ public class DocumentManagementSystem {
     }
 
 
-    // Methodo for importing different filetypes, and exceptions if the file does not exist, or the extension is unmanaged. 
+    // Methodo for importing different filetypes, and exceptions if the file does not exist, or the extension is unmanaged.
     public void importFile(final String path) throws IOException {
         final File file = new File(path);
         if (!file.exists()) {
             throw new FileNotFoundException(path);
         }
 
+        // Method for specifying the delimiter variable to be used -- which in this case is a comma.
         final int separatorIndex = path.lastIndexOf('.');
         if (separatorIndex != -1) {
             if (separatorIndex == path.length()) {
@@ -62,13 +63,17 @@ public class DocumentManagementSystem {
         } else {
             throw new Exception_UnknownFileTypeException("No extension  found for file: " + path);
         }
-
     }
+
+    // Method for returning the contents.
     public List<Document> contents() {
+
         return documentsView;
     }
 
+    // Method for searching an "Attribute" type in a Document
     public List<Document> search(final String query) {
+
         return documents.stream().filter(Query.parse(query)).collect(Collectors.toList());
     }
 }
