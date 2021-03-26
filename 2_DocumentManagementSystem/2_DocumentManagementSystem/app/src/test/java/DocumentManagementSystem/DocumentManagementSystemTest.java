@@ -2,6 +2,16 @@
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
+/*  The "DocumentManagementSystemTest" class serves as a test Framework for our main program. It utilizes JUnit 4.13.2, HamCrestCore 2.2, and is packaged with Gradle.
+ */
+
+/*  [TEST NAMING}::
+ *  1.  Use Domain Terminology --- Align the vocabulary used in your test names with that used when describing the problem domain or referred by the application itself.
+ *  2.  Use Natural Language --- Every test name should be something that you can easily read as a sentence. It should always describe some behavior in a readable way.
+ *  3.  Be Descriptive --- Code will be read many times more often than it is written. Don't skimp on spending more time thinking of a good name that's descriptive up front and easier
+ *  to understand later down the line. If you can't think of a good name, why not ask a colleague? In gold, you win by putting in the fewest shots. Programming isn't like that; shortest
+ *  isn't necessarily best.
+ */
 
 package java.DocumentManagementSystem;
 
