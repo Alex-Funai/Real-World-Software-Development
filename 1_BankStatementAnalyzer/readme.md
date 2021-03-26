@@ -5,27 +5,26 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 
 ## Getting Started
 
-1.  Setup environment to use Gradle 6.8.3 and JUnit 4.13.2.
+1.  Project Structure >Libraries/Dependencies > use Gradle 6.8.3, JUnit 4.13.2, HamCrest-1.2
 2. Configure the 'build.gradle' file to utilize Junit and Java (see below).
 3. Add Junit to project structure modules/libraries.
-4. Modify the *"exporter" classes to personalize analytic output.
-5. Modify file to parse location in class 'Main_Application'  __BankStatementAnalyzer__ method. 
+4. Modify the *"exporter" class with methods and classes to specify information that is returned.
+5. Modify "file-to-parse" location in class 'Main_Application'  __BankStatementAnalyzer__ method. 
    (default location for files is pointing to 'src\resources' > put files to parse in there, and only type file name)
 6. Run program/class "Main_Application", to parse and analyze documents.
 
 
 ### Prerequisites
-1. JUnit 4.13.2
-2. Gradle 6.8.3
-3. JDK 15
+1. JDK-15.0.1
+2. Gradle-6.8.3
+3. JUnit-4.13.2
+4. HamCrest-Core-1.2
+
 
 ### Installing
 1. Initialize new project with Gradle.
-2. Open file > Project Structure > Modules > Dependencies.
-3. Add 'JUnit 4.13.2' .
-4. Open file > Project Structure > Libraries.
-5. Add  'Junit 4.13.2'.
-6. Open 'build.gradle'  and configure file  and edit in Junit and Java (see below).
+2. File > ProjectStructure > Libraries/Dependencies > Add:  JUnit-4.13.2 / HamCrest-1.2
+3. Edit 'gradle.build'  > add plugins / dependencies / test framework:  JUnit-4.13.2 / HamCreset-1.2 / Java.
 
 #### __'build.gradle 'configuration:__
 ```
@@ -54,7 +53,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Running the tests
 
-Tests are located in "src/test"
+Tests are located in "src/test". Ensure 'gradle.build' and ProjectStructure include Junit-4.13.2 and HamCrest-core-collections libraries to execute tests.
 
 ### What do the tests do?
 
@@ -82,13 +81,12 @@ tests at the bottom that verifies data from the analyization matches it. One tes
 ```
 
 
-
-
 ## Built With
 
-* [IntelliJ](https://www.jetbrains.com/idea//) - Preferred Java IDE
-* [Gradle](https://gradle.org/) - Build automation
-* [JUnit](https://junit.org/junit4/) - Testing framework
+* [IntelliJ-2020-3.3](https://www.jetbrains.com/idea//) - Preferred Java IDE.
+* [Gradle-6.8.3](https://gradle.org/) - Build automation.
+* [JUnit-4.13.2](https://junit.org/junit4/) - Testing framework
+* [HamCrest-1.3](http://hamcrest.org/JavaHamcrest/) - Additional testing library.
 
 ## Contributing
 

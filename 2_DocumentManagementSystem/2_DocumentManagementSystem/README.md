@@ -19,20 +19,20 @@ This project was created and seen in the book
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on
-your local machine for development and testing purposes. See deployment
-for notes on how to deploy the project on a live system.
+Ensure that your project structure includes  
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-    Give examples
+0. JDK-15.0.1 (or 8+)
+1. Gradle-6.8.3
+2. JUnit-4.13.2
+3. Ham0Crest- 1.3 (or 2.2)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development
-env running
+0.  Create a new Gradle/Java project, and include the folders from '2_DocumentManagementSystem'.
+1.  Edit your project structure to include: JDK,    JUnit-4.13.2
+2. Edit 'build.gradle
 
 Say what the step will be
 
