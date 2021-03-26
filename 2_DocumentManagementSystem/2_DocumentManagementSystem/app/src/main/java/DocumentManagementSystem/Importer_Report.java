@@ -2,6 +2,12 @@
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
+/*  The "Importer_Report" class is a framework for importing ".report" files, and is leveraged  into the Importer
+ *  interface (which serves as the main handler for the various importerse of different file types). This demonstrates utilizing
+ *  good principle of decoupling, and anticipation for positive code-usability, because we can modify each specific importer class
+ *  individually to adjust accordingly as the program evolves.
+ */
+
 package java.DocumentManagementSystem;
 
 
@@ -24,7 +30,6 @@ public class Importer_Report  implements Importer{
         textFile.addLines (2, line -> false, Attributes.BODY);
 
         final Map<String, String> attributes = textFile.getAttributes();
-
         attributes.put(Attributes.TYPE, "REPORT");
 
         return new Document(attributes);

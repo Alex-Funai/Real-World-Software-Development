@@ -2,6 +2,13 @@
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
+/*  The "Importer" interface serves as a framewoork to intake the other specific file type interfaces into . It promotes de-coupling, and cohesive legibility.
+ *  Other alternatives to structuring thise type of program could be:
+ *  1. Using a utility class.
+ *  2. Use inheritance.
+ *  3. Use a domain class.
+ */
+
 package java.DocumentManagementSystem;
 
 // JDK Framework:
