@@ -25,7 +25,7 @@ import org.junit.Test;             // Method representation of a single "test un
 // Local class dependencies:
 import java.time.LocalDate;
 import java.time.Month;
-import java.io.InvalidClassException;
+import java.lang.Exception;
 
 
 // Class declaration for >> Testing the BankStatementCSV Parser.
@@ -34,12 +34,12 @@ public class BankStatementCsvParserTest {
 
 
     @Test       // T00 -- Example of a failing Assert test.
-    public void shouldParseOneCorrectLine_FAIL() throws Exception {
+    public void shouldParseOneCorrectLine_FAIL() throws RuntimeException {
         Assert.fail("Not yet implemented");
     }
 
     @Test       // T01 -- Example ofa passing parsing test.
-    public void shouldParseOneCorrectLine_Pass() throws Exception {
+    public void shouldParseOneCorrectLine_Pass() throws RuntimeException {
         final String line = "30-01-2017, -50,Tesco";    // White space fails comparison test, but test continues on still.
         final BankTransaction result = statementParser.parseFrom(line);
         final BankTransaction expected = new BankTransaction(LocalDate.of(2017, Month.JANUARY, 30), -50, "Tesco");

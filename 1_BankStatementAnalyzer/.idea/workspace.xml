@@ -5,50 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/App.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/App.1_BankStatementAnalyzer.app.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/app/App.1_BankStatementAnalyzer.app.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/test/resources/ExampleStatements.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/test/resources/ExampleStatements2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/test/resources/Notes_Exceptions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/test/resources/bank-data-simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1_BankStatementAnalyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/1_BankStatementAnalyzer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementCsvParserTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/1_BankStatementAnalyzer/BankStatementCsvParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/1_BankStatementAnalyzer/BankStatementCsvParserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankStatementAnalyzer_Simple.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankStatementCsvParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankStatementProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankTransaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankTransactionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankTransactionParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BankTransactionProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/HtmlExporter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Interface_BankStatementCsvParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Interface_BankStatementParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Interface_BankTransactionFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Interface_BankTransactionSummarizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Interface_Exporter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main_Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/SummaryStatistics.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/ExampleStatements.csv" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/resources/ExampleStatements.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/ExampleStatements2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/resources/ExampleStatements2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/Notes_Exceptions" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/resources/Notes_Exceptions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/bank-data-simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/resources/bank-data-simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/BankStatementCsvParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/test/java/BankStatementCsvParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/test/java/BankStatementCsvParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/test/java/BankStatementCsvParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +184,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main_Application (2)">
+  <component name="RunManager" selected="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass (1)">
     <configuration name="BankStatementAnalyzer_Simple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BankStatementAnalyzer_Simple" />
       <module name="1_BankStatementAnalyzer.app.main" />
@@ -288,10 +248,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main_Application (2)" />
-        <item itemvalue="Application.BankStatementAnalyzer_Simple" />
         <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass (1)" />
         <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL (1)" />
+        <item itemvalue="Application.Main_Application (2)" />
+        <item itemvalue="Application.BankStatementAnalyzer_Simple" />
         <item itemvalue="JUnit.BankStatementCsvParserTest (1)" />
       </list>
     </recent_temporary>
@@ -311,7 +271,7 @@
       <workItem from="1616762852027" duration="1042000" />
       <workItem from="1616767381710" duration="333000" />
       <workItem from="1616815854388" duration="1167000" />
-      <workItem from="1616817052662" duration="1987000" />
+      <workItem from="1616817052662" duration="2387000" />
     </task>
     <servers />
   </component>
