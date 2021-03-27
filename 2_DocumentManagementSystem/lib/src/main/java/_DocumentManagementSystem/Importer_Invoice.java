@@ -10,9 +10,12 @@
 // JDK Framework::
 
 package _DocumentManagementSystem;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
+
+import static _DocumentManagementSystem.Attributes.*;
 
 class Importer_Invoice implements Importer {
 
@@ -21,21 +24,20 @@ class Importer_Invoice implements Importer {
 
 
     @Override
-    public Document importFile(final File file) throws IOException {
+    public Document importFile (final File file) throws IOException {
         /* Since the Importer_Invoice class presumably is importing a ".invoice" file -- we can safely assume that it is a text file,
          * and given that -- we can use our "Document" class as a method and structure for importing it.   */
 
         final Definition_TextFile textFile = new Definition_TextFile(file);
-        final Map<String, String> attributes = textFile.getAttributes();
 
-
-        textFile.addLineSuffix(NAME_PREFIX, Attributes.PATIENT);
-        textFile.addLineSuffix(AMOUNT_PREFIX, Attributes.AMOUNT);
+        textFile.addLineSuffix(NAME_PREFIX, PATIENT);
+        textFile.addLineSuffix(AMOUNT_PREFIX, AMOUNT);
         /*  In this example (compared to the "Importer_Image" class) we reference the variables from "Attributes" class
          *  without importing them in the header. Instead the methods are pre-fixed by their class name. This could potentially
          *  increase or decrease eligiblity depending on the coder, and honestly I sort of like it better this way, because it's distinct.  */
 
-        attributes.put(Attributes.TYPE, "INVOICE");
+        final Map<String, String> attributes = textFile.getAttributes();
+        attributes.put(TYPE, "INVOICE");
 
 
         return new Document(attributes);

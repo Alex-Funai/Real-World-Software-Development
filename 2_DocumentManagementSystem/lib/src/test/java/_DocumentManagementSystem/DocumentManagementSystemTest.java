@@ -18,6 +18,7 @@ package _DocumentManagementSystem;
 
 // JDK Framework:
 import java.io.File;
+import java.io.IOException;
 import java.util.List;
 //  Class Framework:
 import static _DocumentManagementSystem.Attributes.*;
@@ -43,7 +44,7 @@ public class DocumentManagementSystemTest {
 
     // tag:: shouldImportFile[]
     @Test   //Test that a file is validily imported, and it is converted into a Document to the variable "document".
-    public void shouldImportFile() throws Exception {
+    public void shouldImportFile() throws IOException {
         system.importFile(LETTER);
         final Document document = onlyDocument();
         assertAttributeEquals(document, PATH, LETTER);

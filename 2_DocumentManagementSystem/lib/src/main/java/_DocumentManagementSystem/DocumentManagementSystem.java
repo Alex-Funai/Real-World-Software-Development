@@ -68,7 +68,6 @@ public class DocumentManagementSystem {
 
     // Method for returning the contents.
     public List<Document> contents() {
-
         return documentsView;
     }
 

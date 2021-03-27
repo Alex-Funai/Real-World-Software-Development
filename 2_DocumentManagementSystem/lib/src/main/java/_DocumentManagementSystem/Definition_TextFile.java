@@ -9,6 +9,7 @@
 // JDK Framework::
 
 package _DocumentManagementSystem;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -18,6 +19,7 @@ import java.util.Map;
 import java.util.function.Predicate;
 import static java.util.stream.Collectors.toList;
 
+import static _DocumentManagementSystem.Attributes.*;
 
 class Definition_TextFile {
 
@@ -29,13 +31,12 @@ class Definition_TextFile {
 
     Definition_TextFile(final File file) throws IOException {
         attributes = new HashMap<>();
-        attributes.put(Attributes.PATH, file.getPath());
+        attributes.put(PATH, file.getPath());
         lines = Files.lines(file.toPath()).collect(toList());
     }
 
     // Method for returning the "Attributes" in parsed string form.
     Map<String, String> getAttributes() {
-
         return attributes;
     }
 
@@ -59,7 +60,7 @@ class Definition_TextFile {
     }
 
     void addLineSuffix (final String prefix, final String attributeName) {
-        for (final String line : lines) {
+        for (final String line: lines) {
             if (line.startsWith(prefix)) {
                 attributes.put (attributeName, line.substring(prefix.length()));
                 break;

@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c283d5b-8982-4eca-a3ed-5620c070f607" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/example.invoice" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/resources/patient.invoice" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/example.letter" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/resources/patient.letter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/example.report" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/resources/patient.report" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/Definition_TextFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/Definition_TextFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/Document.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/Document.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/DocumentManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/DocumentManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/Importer_Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/Importer_Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/Importer_Report.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/Importer_Report.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/Query.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_DocumentManagementSystem/Query.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/test/java/_DocumentManagementSystem/DocumentManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/_DocumentManagementSystem/DocumentManagementSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/resources/example.invoice" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/resources/patient.invoice" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/resources/example.letter" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/resources/patient.letter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/test/resources/example.report" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/resources/patient.report" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616850949854</updated>
       <workItem from="1616850951365" duration="791000" />
-      <workItem from="1616851823608" duration="1230000" />
+      <workItem from="1616851823608" duration="2277000" />
     </task>
     <servers />
   </component>
