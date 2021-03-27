@@ -14,7 +14,7 @@ package _DocumentManagementSystem;
  *  isn't necessarily best.
  */
 
-package _DocumentManagementSystem;
+
 
 // JDK Framework:
 import java.io.File;

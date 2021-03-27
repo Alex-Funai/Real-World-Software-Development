@@ -5,40 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c283d5b-8982-4eca-a3ed-5620c070f607" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Attributes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Definition_TextFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Document.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/DocumentManagementSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Exception_UnknownFileTypeException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Importer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Importer_Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Importer_Invoice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Importer_Letter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Importer_Report.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Query.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/patient.invoice" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/patient.letter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/patient.report" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/patient.xray" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/unknown.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/_DocumentManagementSystem/DocumentManagementSystemTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/patient.invoice" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/patient.letter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/patient.report" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/patient.xray" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/resources/unknown.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_GlobalResources/_Libraries/JUnit-4.13.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_GlobalResources/_Libraries/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_GlobalResources/_Templates/Tempalte_CODEOFCONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_GlobalResources/_Templates/Template_COMMENTS_HEADER.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_GlobalResources/_Templates/Template_COMMENTS_TESTCLASS.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_GlobalResources/_Templates/Template_CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_GlobalResources/_Templates/Template_LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../_GlobalResources/_Templates/Template_README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/example.invoice" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/resources/patient.invoice" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/example.letter" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/resources/patient.letter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/example.report" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/resources/patient.report" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/java/_DocumentManagementSystem/DocumentManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/java/_DocumentManagementSystem/DocumentManagementSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/resources/example.invoice" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/resources/patient.invoice" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/resources/example.letter" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/resources/patient.letter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/test/resources/example.report" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/test/resources/patient.report" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +70,47 @@
       <recent name="_RealWorldSoftwareDevelopment" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DocumentManagementSystemTest.shouldImportFile" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;_DocumentManagementSystem.DocumentManagementSystemTest.shouldImportFile&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":lib:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.DocumentManagementSystemTest.shouldImportFile" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -103,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616850949854</updated>
       <workItem from="1616850951365" duration="791000" />
-      <workItem from="1616851823608" duration="14000" />
+      <workItem from="1616851823608" duration="1230000" />
     </task>
     <servers />
   </component>
