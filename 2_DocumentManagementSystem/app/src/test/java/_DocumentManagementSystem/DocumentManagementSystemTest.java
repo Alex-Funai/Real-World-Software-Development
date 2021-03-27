@@ -136,7 +136,7 @@ public class DocumentManagementSystemTest {
 
     // tag:: shouldNotimportMissingFile[]
     // Test for throwing an error, if the imported file does not exists.
-    @Test (expected = FileNotFoundException.class)
+    @Test (expected = Exception_UnknownFileTypeException.class)
     public void shouldNotImportMissingFile() throws Exception {
 
         system.importFile ("nonExistant.txt");
@@ -145,7 +145,7 @@ public class DocumentManagementSystemTest {
 
     // tag:: shouldNotImportUnknownFile
     // Test for specifying a file/extension that should be rejected by our program.
-    @Test (expected = UnknownTypeException.class)
+    @Test (expected = Exception_UnknownFileTypeException.class)
     public void shouldNotImportUnknownFile() throws Exception {
         system.importFile (RESOURCES + "unknown.txt");
     }

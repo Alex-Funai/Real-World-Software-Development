@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faecb1a3-eab5-4379-882d-2a3e8bd018e6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Importer_Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Importer_Invoice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/_DocumentManagementSystem/DocumentManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/_DocumentManagementSystem/DocumentManagementSystemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +39,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/test/java/_DocumentManagementSystem" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\2_DocumentManagementSystem\app\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="_DocumentManagementSystem" />
     </key>
@@ -121,7 +122,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616829870820</updated>
-      <workItem from="1616829872396" duration="935000" />
+      <workItem from="1616829872396" duration="1223000" />
     </task>
     <servers />
   </component>
