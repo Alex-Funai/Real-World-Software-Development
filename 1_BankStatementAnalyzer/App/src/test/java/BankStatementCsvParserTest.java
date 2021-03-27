@@ -25,7 +25,6 @@ import org.junit.Test;             // Method representation of a single "test un
 // Local class dependencies:
 import java.time.LocalDate;
 import java.time.Month;
-import java.lang.Exception;
 
 
 // Class declaration for >> Testing the BankStatementCSV Parser.

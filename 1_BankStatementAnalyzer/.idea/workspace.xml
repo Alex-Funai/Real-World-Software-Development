@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/App/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/test/java/BankStatementCsvParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/test/java/BankStatementCsvParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +65,58 @@
                 <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
                 <item name="App" type="2d1252cf:ModuleNode" />
                 <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
+                <item name="App" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
+                <item name="App" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="junit:junit:4.12" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
+                <item name="App" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
+                <item name="App" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="junit:junit:4.12" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
+                <item name="App" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
+                <item name="App" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.junit.jupiter:junit-jupiter-api:5.6.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
+                <item name="App" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -180,25 +231,20 @@
       <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="java" />
       <recent name="" />
+      <recent name="java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass (1)">
-    <configuration name="BankStatementAnalyzer_Simple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BankStatementAnalyzer_Simple" />
-      <module name="1_BankStatementAnalyzer.app.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main_Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main_Application" />
-      <module name="1_BankStatementAnalyzer.app.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="gradle App:buildEnvironment" />
+      <command value="gradle App:buildDependents" />
+      <command value="gradle App:dependentComponents" />
+      <command value="gradle App:assemble" />
+      <command value="gradle build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.1_BankStatementAnalyzer [build]">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -210,49 +256,125 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankStatementCsvParserTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="1_BankStatementAnalyzer" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BankStatementCsvParserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="1_BankStatementAnalyzer [App:assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="App:assemble" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="1_BankStatementAnalyzer.app.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BankStatementCsvParserTest" />
-      <option name="METHOD_NAME" value="shouldParseOneCorrectLine_FAIL" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="1_BankStatementAnalyzer [App:buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="App:buildDependents" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
-    <configuration name="BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="1_BankStatementAnalyzer.app.test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BankStatementCsvParserTest" />
-      <option name="METHOD_NAME" value="shouldParseOneCorrectLine_Pass" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="1_BankStatementAnalyzer [App:buildEnvironment]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="App:buildEnvironment" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="1_BankStatementAnalyzer [App:dependentComponents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="App:dependentComponents" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="1_BankStatementAnalyzer [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.BankStatementCsvParserTest (1)" />
-      <item itemvalue="Application.Main_Application (2)" />
-      <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL (1)" />
-      <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass (1)" />
-      <item itemvalue="Application.BankStatementAnalyzer_Simple" />
+      <item itemvalue="Gradle.1_BankStatementAnalyzer [App:buildEnvironment]" />
+      <item itemvalue="Gradle.1_BankStatementAnalyzer [App:buildDependents]" />
+      <item itemvalue="Gradle.1_BankStatementAnalyzer [App:dependentComponents]" />
+      <item itemvalue="Gradle.1_BankStatementAnalyzer [App:assemble]" />
+      <item itemvalue="Gradle.1_BankStatementAnalyzer [build]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass (1)" />
-        <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL (1)" />
-        <item itemvalue="Application.Main_Application (2)" />
-        <item itemvalue="Application.BankStatementAnalyzer_Simple" />
-        <item itemvalue="JUnit.BankStatementCsvParserTest (1)" />
+        <item itemvalue="Gradle.1_BankStatementAnalyzer [build]" />
+        <item itemvalue="Gradle.1_BankStatementAnalyzer [App:assemble]" />
+        <item itemvalue="Gradle.1_BankStatementAnalyzer [App:dependentComponents]" />
+        <item itemvalue="Gradle.1_BankStatementAnalyzer [App:buildDependents]" />
+        <item itemvalue="Gradle.1_BankStatementAnalyzer [App:buildEnvironment]" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +393,7 @@
       <workItem from="1616762852027" duration="1042000" />
       <workItem from="1616767381710" duration="333000" />
       <workItem from="1616815854388" duration="1167000" />
-      <workItem from="1616817052662" duration="2387000" />
+      <workItem from="1616817052662" duration="3154000" />
     </task>
     <servers />
   </component>
