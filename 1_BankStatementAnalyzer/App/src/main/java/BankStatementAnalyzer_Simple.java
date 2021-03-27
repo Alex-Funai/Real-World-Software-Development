@@ -61,7 +61,7 @@ import java.util.List;
 public class BankStatementAnalyzer_Simple {
 
     // [2.1] Setting a file path to a private variable RESOURCES.
-    private static final String RESOURCES = "src/main/resources/";
+    private static final String RESOURCES = "App/src/main/resources/";
 
     // [2.1] Calculating the sum of all statements:
     public static void main(final String... args) throws IOException {

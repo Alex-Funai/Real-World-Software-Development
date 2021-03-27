@@ -8,3 +8,6 @@
  */
 
 rootProject.name = '1_BankStatementAnalyzer'
+include 'app'
+include 'App'
+

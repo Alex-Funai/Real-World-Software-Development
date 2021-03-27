@@ -5,13 +5,114 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/App.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app/App.1_BankStatementAnalyzer.app.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/app/App.1_BankStatementAnalyzer.app.test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/src/test/resources/ExampleStatements.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/src/test/resources/ExampleStatements2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/src/test/resources/Notes_Exceptions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/src/test/resources/bank-data-simple.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_BankStatementAnalyzer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/1_BankStatementAnalyzer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementCsvParserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/1_BankStatementAnalyzer/BankStatementCsvParserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/1_BankStatementAnalyzer/BankStatementCsvParserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankStatementAnalyzer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankStatementAnalyzer_Simple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankStatementCsvParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankStatementProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankTransaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankTransactionDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankTransactionParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/BankTransactionProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/HtmlExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Interface_BankStatementCsvParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Interface_BankStatementParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Interface_BankTransactionFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Interface_BankTransactionSummarizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Interface_Exporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main_Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/SummaryStatistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/ExampleStatements.csv" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/resources/ExampleStatements.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/ExampleStatements2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/resources/ExampleStatements2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/Notes_Exceptions" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/resources/Notes_Exceptions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/bank-data-simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/resources/bank-data-simple.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/BankStatementCsvParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/test/java/BankStatementCsvParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState>
+        <dataType path="$PROJECT_DIR$/App">
+          <ModuleState>
+            <id value="com.intellij.externalSystem.JavaModuleData" />
+            <id value="com.intellij.openapi.externalSystem.model.project.ContentRootData" />
+            <id value="com.intellij.openapi.externalSystem.model.project.LibraryDependencyData" />
+            <id value="com.intellij.openapi.externalSystem.model.project.ModuleData" />
+            <id value="com.intellij.openapi.externalSystem.model.project.ModuleDependencyData" />
+            <id value="com.intellij.openapi.externalSystem.model.project.ModuleSdkData" />
+            <id value="com.intellij.openapi.externalSystem.model.project.TestData" />
+            <id value="com.intellij.openapi.externalSystem.model.project.dependencies.ProjectDependencies" />
+            <id value="com.intellij.openapi.externalSystem.model.task.TaskData" />
+            <id value="org.jetbrains.plugins.gradle.model.GradleExtensions" />
+            <id value="org.jetbrains.plugins.gradle.model.data.BuildScriptClasspathData" />
+            <id value="org.jetbrains.plugins.gradle.model.data.GradleSourceSetData" />
+          </ModuleState>
+        </dataType>
+      </ProjectState>
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/App">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
+                <item name="App" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
+                <item name="App" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -89,47 +190,62 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build/libs/hamcrest-core-1.3.jar" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src\test\java" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src\test\resources" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src\main\resources" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\src\test" />
       <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\src\main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\src\resources" />
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\src" />
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\main" />
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\src\main" />
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\src\mains" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src\main" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src\main\main" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="java" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BankStatementCsvParserTest (1)">
-    <configuration name="Main_Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main_Application" />
-      <module name="1_BankStatementAnalyzer" />
+  <component name="RunManager" selected="Application.Main_Application (2)">
+    <configuration name="BankStatementAnalyzer_Simple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BankStatementAnalyzer_Simple" />
+      <module name="1_BankStatementAnalyzer.app.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main_Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mains.Main_Application" />
-      <module name="1_BankStatementAnalyzer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="Main_Application (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main_Application" />
+      <module name="1_BankStatementAnalyzer.app.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,17 +259,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankStatementCsvParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="1_BankStatementAnalyzer" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.BankStatementCsvParserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="1_BankStatementAnalyzer" />
+    <configuration name="BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="1_BankStatementAnalyzer.app.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BankStatementCsvParserTest" />
       <option name="METHOD_NAME" value="shouldParseOneCorrectLine_FAIL" />
@@ -162,8 +269,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="1_BankStatementAnalyzer" />
+    <configuration name="BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="1_BankStatementAnalyzer.app.test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BankStatementCsvParserTest" />
       <option name="METHOD_NAME" value="shouldParseOneCorrectLine_Pass" />
@@ -173,20 +280,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main_Application" />
-      <item itemvalue="Application.Main_Application (1)" />
-      <item itemvalue="JUnit.BankStatementCsvParserTest" />
       <item itemvalue="JUnit.BankStatementCsvParserTest (1)" />
-      <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass" />
-      <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL" />
+      <item itemvalue="Application.Main_Application (2)" />
+      <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL (1)" />
+      <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass (1)" />
+      <item itemvalue="Application.BankStatementAnalyzer_Simple" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main_Application (2)" />
+        <item itemvalue="Application.BankStatementAnalyzer_Simple" />
+        <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass (1)" />
+        <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL (1)" />
         <item itemvalue="JUnit.BankStatementCsvParserTest (1)" />
-        <item itemvalue="Application.Main_Application (1)" />
-        <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass" />
-        <item itemvalue="JUnit.BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL" />
-        <item itemvalue="JUnit.BankStatementCsvParserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +307,11 @@
       <workItem from="1616572242677" duration="853000" />
       <workItem from="1616573207583" duration="4194000" />
       <workItem from="1616577500501" duration="6000" />
-      <workItem from="1616745028492" duration="417000" />
+      <workItem from="1616745028492" duration="945000" />
+      <workItem from="1616762852027" duration="1042000" />
+      <workItem from="1616767381710" duration="333000" />
+      <workItem from="1616815854388" duration="1167000" />
+      <workItem from="1616817052662" duration="1987000" />
     </task>
     <servers />
   </component>
@@ -219,5 +329,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.nio.file.NoSuchFileException" package="java.nio.file" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

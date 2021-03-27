@@ -28,7 +28,8 @@ import java.util.List;
 
 public class BankStatementAnalyzer {
 
-    private static final String RESOURCES = "src/resources/";
+    // Edit root file path for Resources folder here.
+    private static final String RESOURCES = "App/src/main/resources/";
 
     public void analyze (final String fileName, final Interface_BankStatementParser interfaceBankStatementParser) throws IOException {
 
