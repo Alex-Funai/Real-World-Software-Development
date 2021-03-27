@@ -1,4 +1,4 @@
-package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
+// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -14,6 +14,7 @@ package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
  *  3.  Invariants of the supertype must be preserved in a subtype.
  *  4.  The History Rule -- the class is immutable and should retain the same behavior through the program.      */
 
+package _DocumentManagementSystem;
 // JDK Framework:
 import java.util.Map;
 

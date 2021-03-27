@@ -1,9 +1,11 @@
-package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
+// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
 
 // JDK Framework:
+
+package _DocumentManagementSystem;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.function.Predicate;
@@ -14,11 +16,11 @@ class Query implements Predicate<Document> {
 
     private final Map<String, String> clauses;
 
-    static Query parse(final String query) {
+    static Query parse (final String query) {
 
-        return new Query(Arrays.stream(query.split(","))
-                .map(str -> str.split(":"))
-                .collect(toMap(x -> x[0], x -> x[1])));
+        return new Query (Arrays.stream(query.split(","))
+                .map (str -> str.split (":"))
+                .collect (toMap(x -> x[0], x -> x[1])));
 
     }
 
@@ -30,7 +32,7 @@ class Query implements Predicate<Document> {
 
 
     @Override
-    public boolean test(final Document document) {
+    public boolean test (final Document document) {
         return clauses.entrySet()
                 .stream()
                 .allMatch(entry -> {

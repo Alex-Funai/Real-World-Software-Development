@@ -1,4 +1,4 @@
-package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
+// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -8,6 +8,9 @@ package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
  *  individually to adjust accordingly as the program evolves.  */
 
 // JDK Framework::
+
+package _DocumentManagementSystem;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -16,10 +19,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 // Class Framework:
-import static DocumentManagementSystem.Attributes.HEIGHT;
-import static DocumentManagementSystem.Attributes.PATH;
-import static DocumentManagementSystem.Attributes.TYPE;
-import static DocumentManagementSystem.Attributes.WIDTH;
+import static _DocumentManagementSystem.Attributes.HEIGHT;
+import static _DocumentManagementSystem.Attributes.PATH;
+import static _DocumentManagementSystem.Attributes.TYPE;
+import static _DocumentManagementSystem.Attributes.WIDTH;
+
 
 /*  Instead of independently importing the classes by calling the package > class > method
  *  you could also call the class name as a method prior to the class name within the body of this class.

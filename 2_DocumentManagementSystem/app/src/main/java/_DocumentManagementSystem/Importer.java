@@ -1,4 +1,4 @@
-package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
+// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -9,6 +9,10 @@ package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
  *  3. Use a domain class.  */
 
 // JDK Framework:
+
+
+package _DocumentManagementSystem;
+
 import java.io.File;
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
+// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -9,10 +9,13 @@ package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
  *  individually to adjust accordingly as the program evolves.  */
 
 // Class Framework:
-import static DocumentManagementSystem.Attributes.ADDRESS;
-import static DocumentManagementSystem.Attributes.BODY;
-import static DocumentManagementSystem.Attributes.PATIENT;
-import static DocumentManagementSystem.Attributes.TYPE;
+
+package _DocumentManagementSystem;
+
+import static _DocumentManagementSystem.Attributes.ADDRESS;
+import static _DocumentManagementSystem.Attributes.BODY;
+import static _DocumentManagementSystem.Attributes.PATIENT;
+import static _DocumentManagementSystem.Attributes.TYPE;
 // JDK Framework:
 import java.io.File;
 import java.io.IOException;

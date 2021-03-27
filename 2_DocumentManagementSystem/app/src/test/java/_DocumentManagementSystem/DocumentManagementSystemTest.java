@@ -1,3 +1,5 @@
+package _DocumentManagementSystem;
+
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -13,23 +15,15 @@
  */
 
 
-
-
 // JDK Framework:
 import javax.lang.model.type.UnknownTypeException;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
-
 //  Class Framework:
-import DocumentManagementSystem.DocumentManagementSystem;
-import DocumentManagementSystem.Document;
-import static DocumentManagementSystem.Attributes.*;
+import static _DocumentManagementSystem.Attributes.*;
 // JUnit Framework:
-
 import org.junit.Test;
-
-import static DocumentManagementSystem.Attributes.PATH;
 import static org.junit.Assert.assertEquals;
 //  HamCrest 2.2 Framework:
 import static org.hamcrest.Matchers.hasSize;
@@ -74,6 +68,9 @@ public class DocumentManagementSystemTest {
     }
 
 
+
+
+
     /**
      * tag:: shouldImportImageAttributes[]
      * Test for verifying Xray .image files by Attribute dimensions.
@@ -85,8 +82,10 @@ public class DocumentManagementSystemTest {
      * @precondition none
      *
      * @userInteraction
+
      * @postcondition The 2 MIDlet suites are installed
      * @passCriteria User is able to install both of the MIDlet suites and
+
      */
     @Test
     public void shouldImportImageAttributes() throws Exception {
@@ -130,7 +129,7 @@ public class DocumentManagementSystemTest {
 
         final List<Document> documents = system.search ("patient:Joe,body:Diet Coke");
 
-        assertEquals (documents,hasSize(1));
+        assertEquals (documents, hasSize(1));
 
         assertIsReport (documents.get(0));
     }

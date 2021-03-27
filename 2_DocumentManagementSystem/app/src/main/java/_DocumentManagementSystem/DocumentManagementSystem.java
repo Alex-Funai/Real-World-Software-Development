@@ -1,4 +1,4 @@
-package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
+// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -7,6 +7,7 @@ package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
  *  parsed file type (as an indiscriminate string), and the unique data as key-pairs. This ensures that our "Attributes" data remains correlated to the correct references
  *  through the program's cycle.    */
 
+package _DocumentManagementSystem;
 
 // JDK Framework::
 import java.io.File;

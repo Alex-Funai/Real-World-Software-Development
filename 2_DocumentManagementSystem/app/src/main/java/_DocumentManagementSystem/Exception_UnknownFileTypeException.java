@@ -1,4 +1,4 @@
-package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
+// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -10,6 +10,7 @@ package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
  * RuntimeException and its subclasses are unchecked exceptions. Unchecked exceptions do not need to be declared in a method or constructor's throws clause if they can be thrown by the execution of the method or constructor and propagate outside the method or constructor boundary.
  *  Since: 1.0
  * Author:Frank Yelli   */
+package _DocumentManagementSystem;
 
 public class Exception_UnknownFileTypeException extends RuntimeException {
 

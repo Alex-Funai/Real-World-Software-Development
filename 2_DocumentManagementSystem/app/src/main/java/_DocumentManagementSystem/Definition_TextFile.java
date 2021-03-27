@@ -1,4 +1,4 @@
-package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
+// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -6,6 +6,7 @@ package DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
  *  the underlying concepts of a text file, and provides asesociated methods for extracting data from text files.   */
 
 
+package _DocumentManagementSystem;
 // JDK Framework::
 import java.io.File;
 import java.io.IOException;
