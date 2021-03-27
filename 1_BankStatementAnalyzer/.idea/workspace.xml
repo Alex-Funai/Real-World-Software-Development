@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/App/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/test/java/BankStatementCsvParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/test/java/BankStatementCsvParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,12 +206,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build/libs/hamcrest-core-1.3.jar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2_DocumentManagementSystem" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -244,7 +242,14 @@
       <command value="gradle build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.1_BankStatementAnalyzer [build]">
+  <component name="RunManager" selected="Application.Main_Application">
+    <configuration name="Main_Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main_Application" />
+      <module name="1_BankStatementAnalyzer.app.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -298,27 +303,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="1_BankStatementAnalyzer [App:buildEnvironment]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="App:buildEnvironment" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="1_BankStatementAnalyzer [App:dependentComponents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -362,19 +346,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.1_BankStatementAnalyzer [App:buildEnvironment]" />
       <item itemvalue="Gradle.1_BankStatementAnalyzer [App:buildDependents]" />
       <item itemvalue="Gradle.1_BankStatementAnalyzer [App:dependentComponents]" />
       <item itemvalue="Gradle.1_BankStatementAnalyzer [App:assemble]" />
       <item itemvalue="Gradle.1_BankStatementAnalyzer [build]" />
+      <item itemvalue="Application.Main_Application" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main_Application" />
         <item itemvalue="Gradle.1_BankStatementAnalyzer [build]" />
         <item itemvalue="Gradle.1_BankStatementAnalyzer [App:assemble]" />
         <item itemvalue="Gradle.1_BankStatementAnalyzer [App:dependentComponents]" />
         <item itemvalue="Gradle.1_BankStatementAnalyzer [App:buildDependents]" />
-        <item itemvalue="Gradle.1_BankStatementAnalyzer [App:buildEnvironment]" />
       </list>
     </recent_temporary>
   </component>
@@ -393,7 +377,7 @@
       <workItem from="1616762852027" duration="1042000" />
       <workItem from="1616767381710" duration="333000" />
       <workItem from="1616815854388" duration="1167000" />
-      <workItem from="1616817052662" duration="3154000" />
+      <workItem from="1616817052662" duration="4057000" />
     </task>
     <servers />
   </component>
@@ -421,5 +405,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
