@@ -5,25 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faecb1a3-eab5-4379-882d-2a3e8bd018e6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/_DocumentManagementSystem/DocumentManagementSystemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/DocumentManagementSystem/Attributes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/DocumentManagementSystem/Definition_TextFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/DocumentManagementSystem/Document.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/DocumentManagementSystem/DocumentManagementSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/DocumentManagementSystem/Exception_UnknownFileTypeException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/DocumentManagementSystem/Importer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/DocumentManagementSystem/Importer_Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/DocumentManagementSystem/Importer_Invoice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/DocumentManagementSystem/Importer_Letter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/DocumentManagementSystem/Importer_Report.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/DocumentManagementSystem/Query.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/DocumentManagementSystemTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Importer_Invoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/_DocumentManagementSystem/Importer_Invoice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +52,7 @@
       <recent name="_DocumentManagementSystem" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.DocumentManagementSystemTest.shouldImportFile">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -80,6 +64,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DocumentManagementSystemTest.shouldImportFile" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;_DocumentManagementSystem.DocumentManagementSystemTest.shouldImportFile&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="DocumentManagementSystemTest.shouldImportLetterAttributes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;_DocumentManagementSystem.DocumentManagementSystemTest.shouldImportLetterAttributes&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.DocumentManagementSystemTest.shouldImportFile" />
+        <item itemvalue="Gradle.DocumentManagementSystemTest.shouldImportLetterAttributes" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,7 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616829870820</updated>
-      <workItem from="1616829872396" duration="705000" />
+      <workItem from="1616829872396" duration="935000" />
     </task>
     <servers />
   </component>

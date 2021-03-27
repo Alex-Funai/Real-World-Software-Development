@@ -19,6 +19,7 @@ class Importer_Invoice implements Importer {
      private static final String NAME_PREFIX = "Dear ";
      private static final String AMOUNT_PREFIX = "Amount: ";
 
+     File file = new File("example.invoice");
 
     @Override
     public Document importFile(final File file) throws IOException {
