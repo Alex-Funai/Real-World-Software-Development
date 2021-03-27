@@ -14,8 +14,9 @@
  *  3.  Invariants of the supertype must be preserved in a subtype.
  *  4.  The History Rule -- the class is immutable and should retain the same behavior through the program.      */
 
-package _DocumentManagementSystem;
 // JDK Framework:
+
+package _DocumentManagementSystem;
 import java.util.Map;
 
 

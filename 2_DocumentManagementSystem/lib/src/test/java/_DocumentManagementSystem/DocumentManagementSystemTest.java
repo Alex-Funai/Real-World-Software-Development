@@ -14,11 +14,10 @@ package _DocumentManagementSystem;
  *  isn't necessarily best.
  */
 
+package _DocumentManagementSystem;
 
 // JDK Framework:
-import javax.lang.model.type.UnknownTypeException;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.List;
 //  Class Framework:
 import static _DocumentManagementSystem.Attributes.*;
@@ -34,7 +33,7 @@ public class DocumentManagementSystemTest {
     private final DocumentManagementSystem system = new DocumentManagementSystem();
 
     // Declaring constants to give objects consistency in this testing class.
-    private static final String RESOURCES =  "src" + File.separator + "main" + File.separator + "java" + File.separator + "resources" + File.separator ;
+    private static final String RESOURCES =   "src" + File.separator + "main" + File.separator + "test" + File.separator + "resources" + File.separator ;
     private static final String LETTER = RESOURCES + "patient.letter";
     private static final String REPORT = RESOURCES + "patient.report";
     private static final String XRAY = RESOURCES + "xray.jpg";

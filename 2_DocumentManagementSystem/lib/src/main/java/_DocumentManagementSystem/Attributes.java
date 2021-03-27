@@ -1,4 +1,4 @@
-package _DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
+// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -7,6 +7,8 @@ package _DocumentManagementSystem;// Alexander Kitaro Funai -- March  25, 2021
  *  The "Attributes" class can be modified to uniquely adhere to different document specifications/commonalities, if the program is updated.. If done so
  *  create a new "Importer_<yourFileTypeHere>"  and include the determined Attributes here/there.
  */
+
+package _DocumentManagementSystem;
 
 public  class Attributes {
 

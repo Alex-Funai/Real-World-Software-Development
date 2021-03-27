@@ -6,8 +6,9 @@
  *  the underlying concepts of a text file, and provides asesociated methods for extracting data from text files.   */
 
 
-package _DocumentManagementSystem;
 // JDK Framework::
+
+package _DocumentManagementSystem;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,4 +1,3 @@
-// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -23,7 +22,6 @@ import static _DocumentManagementSystem.Attributes.HEIGHT;
 import static _DocumentManagementSystem.Attributes.PATH;
 import static _DocumentManagementSystem.Attributes.TYPE;
 import static _DocumentManagementSystem.Attributes.WIDTH;
-
 
 /*  Instead of independently importing the classes by calling the package > class > method
  *  you could also call the class name as a method prior to the class name within the body of this class.

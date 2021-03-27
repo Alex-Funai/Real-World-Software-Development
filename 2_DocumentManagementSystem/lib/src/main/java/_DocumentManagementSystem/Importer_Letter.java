@@ -1,4 +1,3 @@
-// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -11,7 +10,6 @@
 // Class Framework:
 
 package _DocumentManagementSystem;
-
 import static _DocumentManagementSystem.Attributes.ADDRESS;
 import static _DocumentManagementSystem.Attributes.BODY;
 import static _DocumentManagementSystem.Attributes.PATIENT;

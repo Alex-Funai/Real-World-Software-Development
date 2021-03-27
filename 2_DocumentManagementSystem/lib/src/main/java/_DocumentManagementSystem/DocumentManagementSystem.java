@@ -1,4 +1,3 @@
-// Alexander Kitaro Funai -- March  25, 2021
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 4-- Document Management System
 
@@ -7,9 +6,11 @@
  *  parsed file type (as an indiscriminate string), and the unique data as key-pairs. This ensures that our "Attributes" data remains correlated to the correct references
  *  through the program's cycle.    */
 
-package _DocumentManagementSystem;
 
 // JDK Framework::
+
+package _DocumentManagementSystem;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -19,6 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
 import static java.util.Collections.unmodifiableList;
+
 
 public class DocumentManagementSystem {
 

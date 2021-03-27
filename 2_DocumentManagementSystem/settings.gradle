@@ -8,4 +8,4 @@
  */
 
 rootProject.name = '2_DocumentManagementSystem'
-include('app')
+include('lib')
