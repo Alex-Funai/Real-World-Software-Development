@@ -4,54 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e8efe40-0c2b-407e-8397-01b567d812cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/fileColors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_hamcrest_hamcrest_2_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1_BankStatementAnalyzer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../1_BankStatementAnalyzer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1_BankStatementAnalyzer/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/../1_BankStatementAnalyzer/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.idea/libraries/Gradle_6_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.idea/libraries/IntelliJ_IDEA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.idea/libraries/junit_4_13_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.idea/libraries/org_hamcrest_hamcrest_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.idea/modules/2_DocumentManagementSystem.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/java/DocumentManagementSystem/Attributes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/java/DocumentManagementSystem/Definition_TextFile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/java/DocumentManagementSystem/Document.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/java/DocumentManagementSystem/DocumentManagementSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/java/DocumentManagementSystem/Exception_UnknownFileTypeException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/java/DocumentManagementSystem/Importer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/java/DocumentManagementSystem/Importer_Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/java/DocumentManagementSystem/Importer_Invoice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/java/DocumentManagementSystem/Importer_Letter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/java/DocumentManagementSystem/Importer_Report.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/java/DocumentManagementSystem/Query.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/resources/example.invoice" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/resources/example.letter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/main/resources/example.report" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/test/java/DocumentManagementSystem/DocumentManagementSystemTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/test/resources/example.invoice" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/test/resources/example.letter" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/app/src/test/resources/example.report" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/2_DocumentManagementSystem/settings.gradle" beforeDir="false" />
-    </list>
+    <list default="true" id="8e8efe40-0c2b-407e-8397-01b567d812cd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616824609057</updated>
-      <workItem from="1616824611284" duration="2295000" />
+      <workItem from="1616824611284" duration="2726000" />
     </task>
     <servers />
   </component>
