@@ -52,17 +52,20 @@ height: 125%;
 background-color: #282A36;
 color: white;
 font-family: 'Source Sans Pro';
-font-size: 12.5px;
+font-size: 12.825px;
 }
   
   /* Headers */
   h1, h2, h3, h4, {
 	color: pink;
+	font-family: 'Source  Pro';
   }
   
   /* Fenced code blocks */
   code {
   color: #50FA7B
+  font-family: 'Source Sans Pro';
+  font-size: 11.5px;
   }
   
   
