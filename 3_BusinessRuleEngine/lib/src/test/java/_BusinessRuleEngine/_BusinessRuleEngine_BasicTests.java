@@ -16,6 +16,9 @@
 package _BusinessRuleEngine;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.mock;
+import static _BusinessRuleEngine.interface_Action;
 
 /**
  * Represents a Business Rule Engine.
@@ -64,6 +67,7 @@ public class _BusinessRuleEngine_BasicTests {
      *
      * </li>
      * @postcondition
+     *
      * @passCriteria
      */
     @Test
@@ -75,5 +79,36 @@ public class _BusinessRuleEngine_BasicTests {
         businessRuleEngine.addAction(() -> {});
 
         assertEquals(2, businessRuleEngine.count());
+    }
+
+    /**
+     * Creates a mock object and verifies an Action is executed.
+     *
+     * @testcase
+     *
+     * @apiNote org.mockito-2.2-all
+     *
+     * @precondition none
+     *
+     * @userInteraction
+     * <li>
+     *
+     * </li>
+     * @postcondition
+     *
+     * @passCriteria
+     */
+    @Test
+    void shouldExecuteOneAction() {
+
+        final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine();     // Initializes the BRE (base).
+
+        final interface_Action mockAction = mock(interface_Action.class);       // Initializes a mock-action
+                                                                                // using the interface_action.
+        businessRuleEngine.addAction(mockAction);       // Adds and runs
+        businessRuleEngine.run();                       // the mock-action.
+
+        verify(mockAction).perform();       // Verify the perform() method
+                                            // is invoked on the Action object.
     }
 }

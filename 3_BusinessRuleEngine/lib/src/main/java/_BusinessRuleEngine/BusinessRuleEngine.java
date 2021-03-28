@@ -26,7 +26,7 @@ import java.util.List;
  *
  * @author       Rauol-Gabriel Urma & Richard Warburton
  * @version      1.0
- * @see also     addAction, count, run
+ * @see also     BusinessRuleEngine, addAction, count, run
  */
     public class BusinessRuleEngine {
 
@@ -71,7 +71,8 @@ import java.util.List;
      * @throws run UnsupportedOperationException
      */
     public void run() {
-        throw new UnsupportedOperationException();
+
+        this.actions.forEach(interface_Action::perform);
     }
 
 }
