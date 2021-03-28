@@ -49,8 +49,8 @@ public class BankStatementAnalyzer_Simple {
 
         double total = 0;       // Initializes double variable total
                                 // to store transaction values.
-        
-        for (final String line : lines) {       // Enhanced for-loop to iterate through the lines array.
+
+        for (final String line : lines) {   // Enhanced for-loop to iterate through the lines array.
 
             final String[] columns = line.split(",");       // Creates array[] 'columns' by separating incoming
                                                                   // lines by using commas as delimitters.
@@ -75,21 +75,26 @@ public class BankStatementAnalyzer_Simple {
         final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd-MM-yyyy");     // Date formatter using a specified pattern;
                                                                                                 // Ex: dd-MM-yyyy >> 2011-12-03 >> 3 Dec 2011
 
-        // Enhanced For-Loop to iterate through the lines Array without need for indexing through the loop.
-        for (final String line : lines) {
-            // Create columns array, by splitting the lines by the specified "," delimiter in the CSV file.// Enhanced For-Loop to iterate through the lines Array without need for indexing through the loop.
-            final String[] columns = line.split(",");
-            // Obtains an instance of LocalDate from a text string such as 2007-12-03.
-            final LocalDate date = LocalDate.parse(columns[0], DATE_FORMATTER);
-            // References value of month as an integer, which corresponds to the CSV format.
-            if (date.getMonth() == Month.JANUARY) {
-                // Returns a new double under the "amount" variable, and searches the preformatted csv in it's date column.
-                final double amount = Double.parseDouble(columns[1]);
-                // Adding and assigning the amount values to the total variable.
-                total += amount;
+        for (final String line : lines) {   // Enhanced for-loop to iterate through the lines array.
+
+            final String[] columns = line.split(",");     // Creates array[] 'columns' by separating incoming
+                                                                // lines by using commas as delimitters.
+
+            final LocalDate date = LocalDate.parse(columns[0], DATE_FORMATTER);     // Creates date variable from parsing
+                                                                                    // and formatting columns[0].
+
+            if (date.getMonth() == Month.JANUARY) {     // Argument that uses previously stored date object
+                                                        // and uses getMonth() class to select January
+
+                final double amount = Double.parseDouble(columns[1]);   // If the month parsed is in January then >>
+                                                                        // that value is stored to the 'amount' variable.
+
+                total += amount;    // Stores the January amount value to the total
+                                    // variable and reiterates loop, if possible.
             }
         }
-        System.out.println("The total for al transactions in January is " + total);
-
+        
+        System.out.println("The total for al transactions in January is " + total); // Loop ends, and the accumulated value
+                                                                                    // of total is output to the user.
     }
 }
