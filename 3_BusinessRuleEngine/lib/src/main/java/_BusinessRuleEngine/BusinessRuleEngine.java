@@ -9,7 +9,10 @@
 // Book Title: Real-World Software Development
 // Book Section: Chapter 5
 //
-//////////////////////////// 80 columns wide //////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+// Online sources: "github.com/Iteratr-Learning/Real-World-Software-Development"
+////////////////////////////////////////////////////////////////////////////////
+
 
 package _BusinessRuleEngine;
 
@@ -27,10 +30,10 @@ package _BusinessRuleEngine;
     /**
      * Add an action to the engine.
      *
-     * @param action (Describe the first parameter here)
+     * @param action The action to execute.
      * @return (description of the return value)
      */
-    public void addAction (final Action action) {
+    public void addAction (final interface_Action action) {
         throw new UnsupportedOperationException();
     }
 
