@@ -1,6 +1,13 @@
-// Alexander Kitaro Funai -- March 23 2021
-// Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
-// Chapter 2  and  Chapter 3 -- The Bank Statements Analyzer
+///////////////////////////////////////////////////////////////////////////////
+// Main Class File: 'Main_Application.java'
+// File: 'interface.Interface_Exporter.java'
+// Date: March 23, 2021
+//
+// Programmer: Alexander Kitaro Funai > alexanderfunai@protonmail.com
+// Book: Real World Software Development
+// Author(s): Rauol-Gabriel Urma & Richard Warburton
+// Section(s): Chapters 2-3
+///////////////////////////////////////////////////////////////////////////////
 
 /*  The HTMLExporter is an extension of API we have created with the base "Interface_Exporter" interface.
  *   This class utilizes the statement in ""Interface_Exporter", which is calling for the SummaryStatistics to be returned as a String object.
@@ -8,8 +15,8 @@
  *    handled will be in String format, thus we don't need to prelude our class to designate handling that data-type.
  *
  */
-
 package src.main.java.bankstatementanalyzer;
+
 public class HtmlExporter implements Interface_Exporter {
     @Override
     public String export(final SummaryStatistics summaryStatistics) {

@@ -6,9 +6,42 @@ https://www.alexanderfunai.com
 
 # Chapter 1 Notes
 
-Alexander Kitaro Funai -- March 23 2021
-Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
-Chapter 2  and  Chapter 3 -- The Bank Statements Analyzer
+## Designing the program
+
+### Query:
+ * What is the total profit and loss from a list of bank statements? Is it positive or negative?
+ * How many bank transactions are there in a particular month?
+ * What are their top-10 expenses?
+ * Which category does they spend most of their money on?
+ 
+ ### Process:
+ - Loading the CSV file passed as a command-line argument to the application.
+ - Path class represents a path in the filesystem.
+ - Files.readAllLines() to return a list of lines.
+ - Parsing the lines list by:
+	a. Splitting them by split() with a "," as the delimiter/separator.
+	b. Extracting the amount.
+	c. Parsing the amount to a double.
+ ### Complications:
+ * What if the file is empty?
+ * What if parsing the amount fails because the data was corrupted?
+ * What if a statement line has missing data?
+
+
+## The Kiss Principle
+When analyzing certain requested dependencies in a program request you can start simple by listing them in a query. 
+"KISS" is an acronym for "Keep-It-Short-Simple". Initially answer the first solution in your query, and have the 
+applications code in a single class.
+
+### Final Variables
+Depending on the project Final keywords may be preferable to specify variables not being local and reassigned.
+
+## Code Maintainability and Anti-Patterns:
+ * Code is simple to locate code responsible for particular features.
+ * Code is simple to understand what the code does.
+ * Code is simple to add or remove new features.
+ * Code provides good encapsulation. 
+ * Implementation details should be hidden to users, so it's easier to understand and make changes.
 
 ## Exceptions
 
