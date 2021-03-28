@@ -42,7 +42,7 @@ public class _BusinessRuleEngine_BasicTests {
      * @passCriteria
      */
     @Test
-    void shouldHaveNoRulesInitially() {
+    public void shouldHaveNoRulesInitially() {
 
         final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine();     // initializes business-
                                                                                     // rule-engine to test.
@@ -67,7 +67,7 @@ public class _BusinessRuleEngine_BasicTests {
      * @passCriteria
      */
     @Test
-    void shouldAddTwoActions() {
+    public void shouldAddTwoActions() {
 
         final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine();     // Initializes business-
                                                                                     // rule-engine to test.
