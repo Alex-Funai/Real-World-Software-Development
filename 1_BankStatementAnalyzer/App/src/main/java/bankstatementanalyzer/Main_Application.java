@@ -16,7 +16,7 @@
   *        you can add methods from the "BankStatementProcessor" class to personalize your analysis without having to refactor the whole program.
   *  3. Run  "Main_Application.main".
   */
-
+package src.main.java.bankstatementanalyzer;
 public class Main_Application {
 
     public static void main(final String[] args) throws Exception {

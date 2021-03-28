@@ -8,7 +8,7 @@
  *  For exapmle, if we need to substitute the exporter to handle JSON from XML, it can isimply be implemented into this interface.
  *
  */
-
+package src.main.java.bankstatementanalyzer;
 public interface Interface_Exporter {
 
     /*  [0] This is an example of utilizing the exporter to push out SummaryStatistics, but return void.

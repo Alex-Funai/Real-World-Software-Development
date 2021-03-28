@@ -18,7 +18,7 @@ Coupling --- "how dependent classes are upon one another".
  *  it evolves, updates, or is worked on by other programmers.
  */
 
-
+package src.main.java.bankstatementanalyzer;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;

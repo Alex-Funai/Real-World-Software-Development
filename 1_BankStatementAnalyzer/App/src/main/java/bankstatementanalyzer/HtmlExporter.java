@@ -8,6 +8,8 @@
  *    handled will be in String format, thus we don't need to prelude our class to designate handling that data-type.
  *
  */
+
+package src.main.java.bankstatementanalyzer;
 public class HtmlExporter implements Interface_Exporter {
     @Override
     public String export(final SummaryStatistics summaryStatistics) {

@@ -5,7 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/1_BankStatementAnalyzer.app.test.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/BankStatementAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankStatementAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/BankStatementAnalyzer_Simple.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankStatementAnalyzer_Simple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/BankStatementCsvParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankStatementCsvParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/BankStatementProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankStatementProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/BankTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/BankTransactionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankTransactionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/BankTransactionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankTransactionParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/BankTransactionProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankTransactionProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/HtmlExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/HtmlExporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/Interface_BankStatementCsvParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Interface_BankStatementCsvParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/Interface_BankStatementParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Interface_BankStatementParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/Interface_BankTransactionFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Interface_BankTransactionFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/Interface_BankTransactionSummarizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Interface_BankTransactionSummarizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/Interface_Exporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Interface_Exporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/Main_Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Main_Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/SummaryStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/SummaryStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/test/java/BankStatementCsvParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/test/java/BankStatementCsvParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3_BusinessRuleEngine/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../3_BusinessRuleEngine/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,69 +72,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
-                <item name="App" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
-                <item name="App" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
-                <item name="App" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
-                <item name="App" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="junit:junit:4.12" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
-                <item name="App" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
-                <item name="App" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="junit:junit:4.12" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
-                <item name="App" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
-                <item name="App" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-                <item name="org.junit.jupiter:junit-jupiter-api:5.6.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
-                <item name="App" type="2d1252cf:ModuleNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
               </path>
             </expand>
             <select />
@@ -206,7 +163,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../2_DocumentManagementSystem" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -229,6 +186,8 @@
       <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\main" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="src.main.java.bankstatementanalyzer" />
+      <recent name="src.main.java" />
       <recent name="" />
       <recent name="java" />
     </key>
@@ -250,13 +209,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -346,11 +307,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.Main_Application" />
       <item itemvalue="Gradle.1_BankStatementAnalyzer [App:buildDependents]" />
       <item itemvalue="Gradle.1_BankStatementAnalyzer [App:dependentComponents]" />
       <item itemvalue="Gradle.1_BankStatementAnalyzer [App:assemble]" />
       <item itemvalue="Gradle.1_BankStatementAnalyzer [build]" />
-      <item itemvalue="Application.Main_Application" />
     </list>
     <recent_temporary>
       <list>
@@ -378,6 +339,7 @@
       <workItem from="1616767381710" duration="333000" />
       <workItem from="1616815854388" duration="1167000" />
       <workItem from="1616817052662" duration="4057000" />
+      <workItem from="1616933792676" duration="471000" />
     </task>
     <servers />
   </component>

@@ -2,7 +2,7 @@
 // Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
 // Chapter 2  and  Chapter 3 -- The Bank Statements Analyzer
 
-
+package src.main.java.bankstatementanalyzer;
 import java.time.LocalDate;         // Idk something regarding local date, when using the LocalDate class.
 import java.time.format.DateTimeFormatter;      //DateTimeFormatter allows us to handle different general calendar date formats for our compiler to handle.
 import java.util.List;      // Dependency for  List class.

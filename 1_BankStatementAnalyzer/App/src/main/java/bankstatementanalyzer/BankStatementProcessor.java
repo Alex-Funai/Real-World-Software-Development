@@ -8,7 +8,7 @@
  *  as a whole. Think of it as somewhat of an API or interface that is easily accessible and manageable.
  */
 
-
+package src.main.java.bankstatementanalyzer;
 import java.time.Month;
 import java.util.List;
 

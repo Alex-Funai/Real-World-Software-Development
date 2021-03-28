@@ -4,6 +4,7 @@
 
 
 // Parser for file type variants.
+package src.main.java.bankstatementanalyzer;
 
 public class BankTransactionParser {
     public BankTransaction parseFromCSV(final String line) {

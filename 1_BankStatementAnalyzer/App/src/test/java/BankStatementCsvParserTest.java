@@ -19,6 +19,9 @@
 
 
 // Import JUnit framework testing dependencies:
+
+package src.main.java.bankstatementanalyzer;
+
 import org.junit.Assert;        // Diagnostic message prompt.
 import org.junit.Test;             // Method representation of a single "test unit".
 

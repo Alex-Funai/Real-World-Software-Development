@@ -13,7 +13,7 @@
     A scenario with overgrouped methods would be considered an example of poor cohesion,  the program loses class discoverability, and revision/updating becomes
    more complicated... Especially if the program intends on adding new features, or updating foundational structure for improvement.
   */
-
+package src.main.java.bankstatementanalyzer;
 import java.time.LocalDate;
 
 public class BankTransactionDAO {

@@ -11,8 +11,7 @@
  *  to run through several more transactions. This is ideal and reduces redundancy in having to create tons of variables, because we can
  *  leverage the this/that parameter to give each class run-through it's own unique value, but theoretically using the same variable name.
  */
-
-
+package src.main.java.bankstatementanalyzer;
 import java.time.LocalDate;
 import java.util.Objects;
 

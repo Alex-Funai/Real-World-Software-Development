@@ -48,7 +48,7 @@
  * 3. What if a statement line has missing data?
  */
 
-
+package src.main.java.bankstatementanalyzer;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;

@@ -11,7 +11,7 @@
  * some are doubles, etc... We would need to refactor the program, if we specifically used one data-type such as find(transaction), thus
  *  the Report or Statistics solution is ideal.
  */
-
+package src.main.java.bankstatementanalyzer;
 public class SummaryStatistics {
 
     private final double sum;
