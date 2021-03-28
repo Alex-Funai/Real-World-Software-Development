@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c283d5b-8982-4eca-a3ed-5620c070f607" name="Default Changelist" comment="" />
+    <list default="true" id="3c283d5b-8982-4eca-a3ed-5620c070f607" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,19 +62,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.DocumentManagementSystemTest">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="DocumentManagementSystemTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -131,7 +120,9 @@
       <option name="presentableId" value="Default" />
       <updated>1616850949854</updated>
       <workItem from="1616850951365" duration="791000" />
-      <workItem from="1616851823608" duration="3383000" />
+      <workItem from="1616851823608" duration="3452000" />
+      <workItem from="1616913284671" duration="54000" />
+      <workItem from="1616913351272" duration="210000" />
     </task>
     <servers />
   </component>
