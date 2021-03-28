@@ -93,7 +93,7 @@ public class BankStatementAnalyzer_Simple {
                                     // variable and reiterates loop, if possible.
             }
         }
-        
+
         System.out.println("The total for al transactions in January is " + total); // Loop ends, and the accumulated value
                                                                                     // of total is output to the user.
     }
