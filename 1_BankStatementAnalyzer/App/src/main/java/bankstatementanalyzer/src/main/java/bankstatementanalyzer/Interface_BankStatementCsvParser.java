@@ -9,11 +9,12 @@
 // Section(s): Chapters 2-3
 ///////////////////////////////////////////////////////////////////////////////
 
-// Interface_BankStatementCsvParser:
 package src.main.java.bankstatementanalyzer;
+
 import java.util.List;
 
 public interface Interface_BankStatementCsvParser {
 
+    // depcreated
     List<BankTransaction> parseLinesFromCSV(List<String> lines);
 }

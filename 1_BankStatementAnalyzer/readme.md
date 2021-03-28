@@ -17,7 +17,7 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 1. Clone the repository or download the '.zip' and extract locally.
 2. Configure the 'build.gradle' file for libraries/dependencies.
 3. Configure project structure for libraries/dependencies.
-4. Modify the *"exporter" class with methods and classes to specify information that is returned.
+4. Modify the "exporter" class with methods and classes to specify information that is returned.
 5. Modify the file location in 'class.Main_Application.BankStatementAnalyzer(). 
 6. Run 'class.Main_Application.main()', to parse and analyze documents.
 
