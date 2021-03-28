@@ -1,4 +1,8 @@
-
+<!--- 
+Alexander Kitaro Funai
+March 28, 2021
+https://www.alexanderfunai.com
+-->
 
 # Chapter 5 Notes:
 
