@@ -1,9 +1,16 @@
+<!---
+Alexander Kitaro Funai
+March 23, 2021
+Real World Software Development
+Rauol-Gabriel Urma & Richard Warburton
+Chapter 2 and Chapter 3
+-->
+
 # Bank Statement Analyzer
 
 This is an excercise program from the book Real World Software Development by Rauol-Gabriel Urma and  Richard Warburton.
 The program is capable of parsing CSV, HTML, and JSON file types, and then returning specific information to the user.
 
-<br>
 
 ## Getting Started:
 
@@ -82,7 +89,6 @@ tests at the bottom that verifies data from the analyization matches it. One tes
         Assert.assertEquals(expected.getDescription(), result.getDescription());
 ```
 
-
 ## Built With
 
 * [IntelliJ-2020-3.3](https://www.jetbrains.com/idea//) - Preferred Java IDE.
@@ -90,9 +96,11 @@ tests at the bottom that verifies data from the analyization matches it. One tes
 * [JUnit-4.13.2](https://junit.org/junit4/) - Testing framework
 * [HamCrest-1.3](http://hamcrest.org/JavaHamcrest/) - Additional testing library.
 
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/Iteratr-Learning/Real-World-Software-Development) for details on our code of conduct, and the process for submitting pull requests to us.
+
 
 
 ## Authors
@@ -101,14 +109,19 @@ Please read [CONTRIBUTING.md](https://github.com/Iteratr-Learning/Real-World-Sof
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
 
 ## Acknowledgments
 
 * Rauol-Gabriel Urma
 * Richard Warburton
+
+
+
 
 
 <style type="text/css">
