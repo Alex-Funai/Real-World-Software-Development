@@ -8,7 +8,6 @@
 // Section(s): Chapters 2-3
 ///////////////////////////////////////////////////////////////////////////////
 
-
 package src.main.java.bankstatementanalyzer;
 
 import java.io.IOException;
@@ -33,8 +32,6 @@ public class BankStatementAnalyzer_Simple {
 
     private static final String RESOURCES = "App/src/main/resources/";      // Sets the resources folder to
                                                                             // the string variable 'RESOURCES'.
-
-    // [2.1] Calculating the sum of all statements:
     /**
      * Parses through a CSV file in the resources folder, and outputs
      * some random information about the data, and it's transactions.
@@ -66,9 +63,7 @@ public class BankStatementAnalyzer_Simple {
         }
         System.out.println("The total for all transactions is " + total);   // Prints out a statement that shows
                                                                             // the calculated total for transactions.
-
         /**
-
          * Embeded method for processing transactions specifically
          * of the month January.
          * @author akfunai
