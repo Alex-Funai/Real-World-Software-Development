@@ -8,18 +8,9 @@
 // Section(s): Chapters 2-3
 ///////////////////////////////////////////////////////////////////////////////
 
-/* Bank Transaction Analyzer (Simple Version)
- * Parses as CSV file and returns it as a list for calculating double values.
- * Format of CSV should be, DD-MM-YYYY, [±TRANSACTION AMOUNT], [TRANSACTION COMPANY]
- * Note: Uses comma as the delimiter for establishing columns -- don't include brackets.
- */
-
-
-
-
-
 
 package src.main.java.bankstatementanalyzer;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -29,33 +20,66 @@ import java.time.format.DateTimeFormatter;
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * This is a simple version that doesn't utilize all the other classes. It parses as CSV file and returns it
+ * as a list for calculating double values. Format of CSV should be, DD-MM-YYYY, [±TRANSACTION AMOUNT],
+ * [TRANSACTION COMPANY]. Comma is used as a delimitter/separator.
+ *
+ * <p>Bugs: could make some bugs by expanding this program.
+ *
+ * @author akfunai
+ */
 public class BankStatementAnalyzer_Simple {
 
-    // [2.1] Setting a file path to a private variable RESOURCES.
-    private static final String RESOURCES = "App/src/main/resources/";
+    private static final String RESOURCES = "App/src/main/resources/";      // Sets the resources folder to
+                                                                            // the string variable 'RESOURCES'.
 
     // [2.1] Calculating the sum of all statements:
+    /**
+     * Parses through a CSV file in the resources folder, and outputs
+     * some random information about the data, and it's transactions.
+     *
+     * <p>Bugs: n/a
+     *
+     * @author akfunai
+     */
     public static void main(final String... args) throws IOException {
 
-        final Path path = Paths.get(RESOURCES + "ExampleStatements.csv");
-        // Returns a list of lines for parsing.
-        final List<String> lines = Files.readAllLines(path);
-        double total = 0;
+        final Path path = Paths.get(RESOURCES + "ExampleStatements.csv");      // Sets file path from the resources
+                                                                                    // folder + parameter >> 'path'.
 
-        // Enhanced For-Loop to iterate through the lines Array without need for indexing through the loop.
-        for (final String line : lines) {
-            // Create columns array, by splitting the lines by the specified "," delimiter in the CSV file.// Enhanced For-Loop to iterate through the lines Array without need for indexing through the loop.
-            final String[] columns = line.split(",");
-            // Returns a new double initialized to the value represented by the amount String.
-            final double amount = Double.parseDouble(columns[1]);
-            total += amount;
+        final List<String> lines = Files.readAllLines(path);    // Creates a list of the files lines.
+
+        double total = 0;       // Initializes double variable total
+                                // to store transaction values.
+
+
+        for (final String line : lines) {       // Enhanced for-loop to iterate through the lines array.
+
+            final String[] columns = line.split(",");       // Creates array[] 'columns' by separating incoming
+                                                                  // lines by using commas as delimitters.
+
+            final double amount = Double.parseDouble(columns[1]);   // Creates double 'amount' variable to store
+                                                                    // the transaction amounts from columns[1].
+            total += amount;    // Increments amount to the same
+                                // 'total' variable as loop iterates.
         }
-        System.out.println("The total for all transactions is " + total);
+        System.out.println("The total for all transactions is " + total);   // Prints out a statement that shows
+                                                                            // the calculated total for transactions.
 
-        // [2.2] Calculating the sum of January statements:
-        total = 0;
-        // Creates a formatter using the specified pattern; Ex: d MMM uuuu will format 2011-12-03 as '3 Dec 2011'
-        final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        /**
+
+         * Embeded method for processing transactions specifically
+         * of the month January.
+         * @author akfunai
+         *
+         * @ccode TransactionsInJanuary[]
+         */
+        total = 0;  // Resetting variable 'total' value
+                    // to zero for processing new results.
+
+        final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd-MM-yyyy");     // Date formatter using a specified pattern;
+                                                                                                // Ex: dd-MM-yyyy >> 2011-12-03 >> 3 Dec 2011
 
         // Enhanced For-Loop to iterate through the lines Array without need for indexing through the loop.
         for (final String line : lines) {

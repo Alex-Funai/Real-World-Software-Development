@@ -5,30 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Interface_BankStatementCsvParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Interface_BankStatementParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Interface_BankTransactionFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Interface_BankTransactionSummarizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Interface_Exporter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Main_Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankStatementAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankStatementAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankStatementAnalyzer_Simple.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankStatementAnalyzer_Simple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankStatementCsvParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankStatementCsvParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankStatementProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankStatementProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankTransactionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankTransactionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankTransactionParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankTransactionParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/BankTransactionProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankTransactionProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/HtmlExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/HtmlExporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Interface_BankStatementCsvParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Interface_BankStatementParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Interface_BankTransactionFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Interface_BankTransactionSummarizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Interface_Exporter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/Main_Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/SummaryStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/SummaryStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NOTES_chapter1.chapter2.md" beforeDir="false" afterPath="$PROJECT_DIR$/NOTES_chapter1.chapter2.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankStatementAnalyzer_Simple.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankStatementAnalyzer_Simple.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,7 +320,7 @@
       <workItem from="1616767381710" duration="333000" />
       <workItem from="1616815854388" duration="1167000" />
       <workItem from="1616817052662" duration="4057000" />
-      <workItem from="1616933792676" duration="4970000" />
+      <workItem from="1616933792676" duration="6081000" />
     </task>
     <servers />
   </component>
