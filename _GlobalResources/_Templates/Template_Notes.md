@@ -50,7 +50,7 @@ CODE[fenced-cmnt-blk]
 
 
 <style type="text/css">
-/*	akfunai_Readme_Styles00	*/
+/*	akfunai_Readme_Styles01	*/
 
 
 /* Body and virtual container */
@@ -58,15 +58,32 @@ body {
 width: 100%;
 height: 125%;
 background-color: #282A36;
-color: white;
+color: #FFFFFF;
 font-family: 'Source Sans Pro';
 font-size: 12.825px;
 }
   
   /* Headers */
-  h1, h2, h3, h4, {
+  h1, {
+  font-size: 27px;
+  color: pink;
+  text-decoration: underline;
+  font-family: 'Source Sans Pro';
+  }  
+  
+  h2, {
 	color: pink;
 	font-family: 'Source Sans Pro';
+	font-size: 21px;
+	text-decoration: overline;
+	
+  }
+  
+  h3 {
+	color: pink;
+	font-family: 'Source Sans Pro';
+	font-size: 16px;
+	font-weight: lighter;
   }
   
   /* Fenced code blocks */
