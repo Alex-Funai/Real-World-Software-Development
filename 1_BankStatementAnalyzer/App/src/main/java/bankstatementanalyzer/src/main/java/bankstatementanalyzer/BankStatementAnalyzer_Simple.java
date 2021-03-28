@@ -49,8 +49,7 @@ public class BankStatementAnalyzer_Simple {
 
         double total = 0;       // Initializes double variable total
                                 // to store transaction values.
-
-
+        
         for (final String line : lines) {       // Enhanced for-loop to iterate through the lines array.
 
             final String[] columns = line.split(",");       // Creates array[] 'columns' by separating incoming
