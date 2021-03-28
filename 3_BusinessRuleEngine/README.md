@@ -1,3 +1,9 @@
+<!--- 
+Alexander Kitaro Funai
+March 28, 2021
+https://www.alexanderfunai.com
+-->
+
 # Project Title
 
 One Paragraph of project description goes here
@@ -105,3 +111,56 @@ details
   - Hat tip to anyone whose code was used
   - Inspiration
   - etc
+
+
+<style type="text/css">
+/*	akfunai_Readme_Styles00	*/
+
+
+/* Body and virtual container */
+body {
+width: 100%;
+height: 125%;
+background-color: #282A36;
+color: #ffffff;
+font-family: 'Source Sans Pro';
+font-size: 13px;
+}
+  
+  /* Headers */
+  h1 {
+  color: #ffebff;
+  text-decoration: underline;
+  font-size: 29.125px;
+  font-family: 'Source Sans Pro';
+  }
+  
+  h2 {
+  color: #e6f8ff;
+  font-size: 21.825px;
+  text-decoration: overline;
+  font-family: 'Source Sans Pro';
+  }
+  
+  h3 {
+  color: #e6f8ff;
+  font-family: 'Source Sans Pro';
+  font-size: 17px;
+  font-weight: lighter;
+  }
+  
+  /* Fenced code blocks */
+  code {
+  color: #36ff9a;
+  font-family: 'Source Sans Pro';
+  font-size: 11.5px;
+  }
+  
+  /* href Links */
+  a:link {
+  color: #33a8d6;
+  }
+  
+  
+/* END[] */  
+</style>
