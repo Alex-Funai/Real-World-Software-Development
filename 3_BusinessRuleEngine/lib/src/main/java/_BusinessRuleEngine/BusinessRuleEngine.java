@@ -23,9 +23,6 @@ package _BusinessRuleEngine;
  * @version      1.0
  * @see also     addAction, count, run
  */
-public class Card
-{
-
     public class BusinessRuleEngine {
 
     /**
