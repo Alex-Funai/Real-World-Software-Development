@@ -191,7 +191,7 @@ font-size: 12.825px;
   
   /* Headers */
   h1, {
-  font-size: 27px;
+  font-size: 30px;
   color: pink;
   text-decoration: underline;
   font-family: 'Source Sans Pro';
