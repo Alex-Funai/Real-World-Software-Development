@@ -35,6 +35,7 @@ signature and the caller doesn't have to handle them explicitly, as it would wit
 The "OverlySpecificBankStatementValidator" class entails specifications and checks for the format of a parsed filed.
 Instead of utilizing multiple exceptions, which would be counter-productive, as it forces to user to use your API (not kind).
 It's not ideal to convert edge cases into checked exceptions, and the approach below of may be better.
+
 ```
 package BankStatementAnalyzer;
 
@@ -170,10 +171,6 @@ public class Notification {
     }
 }
 ```
-
-
-
-
 
 <style type="text/css">
 /*	akfunai_Readme_Styles01	*/
