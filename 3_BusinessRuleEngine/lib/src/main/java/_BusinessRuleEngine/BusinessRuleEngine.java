@@ -38,7 +38,9 @@ import java.util.List;
      * @param action The action to add.
      */
     public BusinessRuleEngine() {
-        this.actions = new ArrayList<>();
+
+        this.actions = new ArrayList<>();       // Initializes a new
+                                                // arraylist for actions.
     }
 
     /**
@@ -48,8 +50,8 @@ import java.util.List;
      */
     public void addAction (final interface_Action action) {
 
-        this.actions.add(action);       //
-                                        //
+        this.actions.add(action);       // Adds the action(s) to
+                                        // the 'this.actions' arraylist.
     }
 
     /**
@@ -66,6 +68,7 @@ import java.util.List;
      * Runs engine-actions.
      *
      * @param run executes the stored actions.
+     * @throws run UnsupportedOperationException
      */
     public void run() {
         throw new UnsupportedOperationException();
