@@ -36,74 +36,45 @@ A program simulating a request from a Dentist to process mainly document files s
 
 1.	Clone the '2_DocumentManagementSystem' repository, or download package as a '.zip' locally.
 2.	Open the repository as a project in IntelliJ.
-3.	Use GraddleWrapper to build the project using the included '2_DocumentManagementSystem.jar'
+3.	Import and incldue project modules/dependencies: '2_DocumentManagementSystem.jar', or manually<br>
+	"Gradle-8.6.3, Groovy-3.0.7, JUnit-4.13.2, Hamcrest-All-2".
+4.	Open "build.gradle' and 'settings.graddle' >> edit to include in dependencies and class/project structure (should be included in files already).
+5.	In terminal of project directory >> execute cmd: 'gradlew build' and 'gradle build'.
+6.	Run 'class.DocumentManagementSystemTests'
 
-Say what the step will be
-
-    Give example
-
-And repeat
-
-    until finished
-
-End with an example of getting some data out of the system or using it
-for a little demo
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+*	Methods within >> "src\test\java\_DocumentManagementSystem\class.DocumentMangementSystemsTests"
+*	Resources within >> "src\test\resources\..."
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-    Give an example
-
-### And coding style tests
-
-Explain what these tests test and why
-
-    Give an example
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
-  - [Contributor Covenant](https://www.contributor-covenant.org/) - Used
-    for the Code of Conduct
-  - [Creative Commons](https://creativecommons.org/) - Used to choose
-    the license
+  - [IntelliJ_IDEA-203.7717.56](https://www.jetbrains.com/idea/) - Preferred Java IDE.
+  -	[JDK-1.8](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) - Java Development SDK.
+  - [Gradle-6.8.3](https://gradle.org/) - Build Automation.
+  - [Groovy-3.0.7](https://groovy-lang.org/) - Platform Runtime API.
+  -	[JUnit-4](https://junit.org) - Test Framework Dependency.
+  - [Hamcrest-All-2](http://hamcrest.org/) - Test Framework Dependency.
+
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
-of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/Iteratr-Learning/Real-World-Software-Development) for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions
-available, see the [tags on this
-repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
 
 ## Authors
 
-  - **Billie Thompson** - *Provided README Template* -
-    [PurpleBooth](https://github.com/PurpleBooth)
+* ***Rauol-Gabriel Urma & Richard Warburton*** - *Initial work* - [rauolDoc](https://github.com/Iteratr-Learning/Real-World-Software-Development)
 
-See also the list of
-[contributors](https://github.com/PurpleBooth/a-good-readme-template/contributors)
-who participated in this project.
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
-Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
-details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-  - Hat tip to anyone whose code was used
-  - Inspiration
-  - etc
+* Rauol-Gabriel Urma
+* Richard Warburton
