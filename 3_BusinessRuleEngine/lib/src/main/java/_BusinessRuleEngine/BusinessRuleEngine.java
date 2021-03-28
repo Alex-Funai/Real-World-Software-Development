@@ -14,25 +14,24 @@
 
 package _BusinessRuleEngine;
 
-
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy. If necessary, additional paragraphs should
- * be preceded by <p>, the html tag for a new paragraph.)
+ * Represents a Business Rule Engine.
  *
- * <p>Bugs: (a list of bugs and other problems)
+ * Bugs: none known
  *
- * @author (akFunai)
+ * @author       Rauol-Gabriel Urma & Richard Warburton
+ * @version      1.0
+ * @see also     addAction, count, run
  */
-public class BusinessRuleEngine {
+public class Card
+{
+
+    public class BusinessRuleEngine {
 
     /**
-     * (Write a succinct description of this method here. If necessary,
-     * additional paragraphs should be preceded by <p>, the html tag for
-     * a new paragraph.)
+     * Add an action to the engine.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
+     * @param action (Describe the first parameter here)
      * @return (description of the return value)
      */
     public void addAction (final Action action) {
@@ -40,12 +39,9 @@ public class BusinessRuleEngine {
     }
 
     /**
-     * (Write a succinct description of this method here. If necessary,
-     * additional paragraphs should be preceded by <p>, the html tag for
-     * a new paragraph.)
+     * Run the action.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
+     * @param count (Describe the first parameter here)
      * @return (description of the return value)
      */
     public int count() {
@@ -53,12 +49,9 @@ public class BusinessRuleEngine {
     }
 
     /**
-     * (Write a succinct description of this method here. If necessary,
-     * additional paragraphs should be preceded by <p>, the html tag for
-     * a new paragraph.)
+     * Basic reporting.
      *
-     * @param (parameter name) (Describe the first parameter here)
-     * @param (parameter name) (Do the same for each additional parameter)
+     * @param (run) (Describe the first parameter here)
      * @return (description of the return value)
      */
     public void run() {
