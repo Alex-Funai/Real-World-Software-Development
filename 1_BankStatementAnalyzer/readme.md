@@ -7,13 +7,12 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 
 ## Getting Started:
 
-1.  Project Structure >Libraries/Dependencies > use Gradle 6.8.3, JUnit 4.13.2, HamCrest-1.2
-2. Configure the 'build.gradle' file to utilize Junit and Java (see below).
-3. Add Junit to project structure modules/libraries.
+1. Clone the repository or download the '.zip' and extract locally.
+2. Configure the 'build.gradle' file for libraries/dependencies.
+3. Configure project structure for libraries/dependencies.
 4. Modify the *"exporter" class with methods and classes to specify information that is returned.
-5. Modify "file-to-parse" location in class 'Main_Application'  __BankStatementAnalyzer__ method. 
-   (default location for files is pointing to 'src\resources' > put files to parse in there, and only type file name)
-6. Run program/class "Main_Application", to parse and analyze documents.
+5. Modify the file location in 'class.Main_Application.BankStatementAnalyzer(). 
+6. Run 'class.Main_Application.main()', to parse and analyze documents.
 
 
 ### Prerequisites:
@@ -33,7 +32,6 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 
 ```
 // build.gradle
-// Confirm your 'build.gradle' file contains the appropriate project dependencies, like below.
 
 apply plugin: 'java'
 
