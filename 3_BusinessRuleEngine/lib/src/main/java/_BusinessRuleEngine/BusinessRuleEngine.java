@@ -16,6 +16,9 @@
 
 package _BusinessRuleEngine;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Represents a Business Rule Engine.
  *
@@ -27,31 +30,42 @@ package _BusinessRuleEngine;
  */
     public class BusinessRuleEngine {
 
+        private final List<interface_Action> actions;       // Initialize list for
+                                                            // engine-action storage.
     /**
      * Add an action to the engine.
      *
-     * @param action The action to execute.
-     * @return (description of the return value)
+     * @param action The action to add.
+     */
+    public BusinessRuleEngine() {
+        this.actions = new ArrayList<>();
+    }
+
+    /**
+     * Add an action to the engine.
+     *
+     * @param action The action to add to the list.
      */
     public void addAction (final interface_Action action) {
-        throw new UnsupportedOperationException();
+
+        this.actions.add(action);       //
+                                        //
     }
 
     /**
-     * Run the action.
+     * Count the number of actions.
      *
-     * @param count (Describe the first parameter here)
-     * @return (description of the return value)
+     * @param count counts the number actions.
+     * @return the number of actions last executed.
      */
     public int count() {
-        throw new UnsupportedOperationException();
+        return this.actions.size();
     }
 
     /**
-     * Basic reporting.
+     * Runs engine-actions.
      *
-     * @param (run) (Describe the first parameter here)
-     * @return (description of the return value)
+     * @param run executes the stored actions.
      */
     public void run() {
         throw new UnsupportedOperationException();

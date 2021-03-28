@@ -29,10 +29,9 @@ package _BusinessRuleEngine;
 public interface interface_Action {
 
     /**
-     * Executes an action in the Business Rules Engine.
+     * Executes a BRE action.
      *
-     * @param execute The execution process.
-     * @return (description of the return value)
+     * @param none none
      */
     void execute();
 }

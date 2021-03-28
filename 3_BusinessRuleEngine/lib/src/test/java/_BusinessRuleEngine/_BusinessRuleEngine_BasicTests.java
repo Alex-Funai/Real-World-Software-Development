@@ -14,9 +14,8 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 package _BusinessRuleEngine;
-
 import org.junit.Test;
-import static junit.framework.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Represents a Business Rule Engine.
@@ -30,10 +29,17 @@ import static junit.framework.Assert.assertEquals;
 public class _BusinessRuleEngine_BasicTests {
 
     /**
-     * Executes an action in the Business Rules Engine.
+     * Description:
      *
-     * @param execute The execution process.
-     * @return (description of the return value)
+     * @testcase shouldHaveNoRulesInitially
+     *
+     * @precondition none
+     *
+     * @userInteraction
+     * <li>
+     * </li>
+     * @postcondition
+     * @passCriteria
      */
     @Test
     void shouldHaveNoRulesInitially() {
@@ -47,14 +53,27 @@ public class _BusinessRuleEngine_BasicTests {
     }
 
     /**
-     * Executes an action in the Business Rules Engine.
+     * Description:
      *
-     * @param execute The execution process.
-     * @return (description of the return value)
+     * @testcase
+     *
+     * @precondition none
+     *
+     * @userInteraction
+     * <li>
+     *
+     * </li>
+     * @postcondition
+     * @passCriteria
      */
     @Test
     void shouldAddTwoActions() {
+
         final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine();     // Initializes business-
                                                                                     // rule-engine to test.
+        businessRuleEngine.addAction(() -> {});
+        businessRuleEngine.addAction(() -> {});
+
+        assertEquals(2, businessRuleEngine.count());
     }
 }
