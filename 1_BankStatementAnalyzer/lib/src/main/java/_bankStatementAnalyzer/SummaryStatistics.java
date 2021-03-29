@@ -37,7 +37,7 @@ public class SummaryStatistics {
      * and return a statements' transaction: total, max,
      * min, and average value.
      *
-     * @implNote '.this' for encapsulating return values.
+     * @see .this Encapsulates return values through loop iterations.
      *
      * @param sum Total amount for transactions.
      * @param max Largest transaction amount.
