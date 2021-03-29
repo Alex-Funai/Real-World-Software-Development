@@ -62,7 +62,7 @@ public class BankStatementCsvParser implements Interface_BankStatementParser {
     /**
      * Parses a CSV and returns it's column data
      *
-     * @param line (Describe the first parameter here)
+     * @param line The document's rows.
      * @return (date, amount, columns[2]) The transaction date, amount, and description.
      */
     public BankTransaction parseFrom(final String line) {
@@ -75,18 +75,16 @@ public class BankStatementCsvParser implements Interface_BankStatementParser {
 
         return new BankTransaction(date, amount, columns[2]);   // Returns transaction date, amount, and description.
     }
-
-    /* parseLinesFrom allows us to parse lines of text from a text buffer into a string set/list.
-     * We then do some map collect stuff to parse it (come back to define this later).
+    /**
+     * (Write a succinct description of this method here. If necessary,
+     * additional paragraphs should be preceded by <p>, the html tag for
+     * a new paragraph.)
+     *
+     * @param lines The lines of a document passed through a parser.
+     * @return The date, amount, description as a list<string>
      */
-    
     public List<BankTransaction> parseLinesFrom(final List<String> lines) {
-        return lines.stream().map(this::parseFrom).collect(toList());
+
+        return lines.stream().map(this::parseFrom).collect(toList());   // Returns converted date, amount, description.
     }
 }
-
-/* DateTimeFormatter --- Declares and specifies that DATE_PATTERN will be the variable to hold the date parsed from our files.
- *  The DateTimeFormatter and .ofPattern method allow us to specify the data format that is anticipated to be
- *  processed, so it is returned to the compiler for furhter manipulatin down the line properly. Such as when
- *  we call for specifying the data into separate columns of our array below.
- */
