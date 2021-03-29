@@ -22,7 +22,7 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 /**
- *  class.BankTransaction is a domain class for holding the construction of how each BankTransaction should  be.
+ *  .BankTransaction is a domain class for holding the construction of how each BankTransaction should  be.
  *  The class.BankTransaction domain class anticipates the data type structure that is necessary for processing a
  *  specific file. In this case (domain)class.BankTransaction specifies structure -- that there will always be:
  *  [date, amount, description].These various data-types are declared as private to separate the variables from
@@ -34,7 +34,7 @@ import java.util.Objects;
  *
  * @author Raoul-Gabriel Urma & Richard Warburton
  */
-public class BankTransaction extends BankTransactionDAO {
+public class BankTransaction /*extends BankTransactionDAO*/ {
 
     private final LocalDate date;           // Initialize an immutable class
                                             // of LocalDate to the variable 'date'.
@@ -46,19 +46,18 @@ public class BankTransaction extends BankTransactionDAO {
                                             // to the variable 'description'.
 
     /**
-     * .BankTransaction() is a Domain method
-     * for encapsulating and storing a
-     * transaction:(date, amount, description).
+     * A domain class for a bank transaction's
+     * structure: (date, amount, description).
      *
-     * @param (date) The date[0] of the transaction.
-     * @param (amount) The transaction amount[1].
-     * @param (description) The description[2] of the transaction.
+     * @param (date) :The date[0] of the transaction.
+     * @param (amount) :The transaction amount[1].
+     * @param (description) :The description[2] of the transaction.
      */
     public BankTransaction(final LocalDate date, double amount, final String description) {
 
         this.date = date;                   // Initializing encapsulated
         this.amount = amount;               // variable values for a
-        this.description = description;     // .bankTransactions: (date, amount, description).
+        this.description = description;     // bank transactions: (date, amount, description).
     }
 
     /**

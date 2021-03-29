@@ -12,7 +12,9 @@ package _bankStatementAnalyzer;
 import java.time.Month;
 import java.util.ArrayList; import java.util.List;
 
-
+/**
+ * @deprecated BankTransactionProcessor
+ */
 public class BankTransactionProcessor {
 
     private final List<BankTransaction> bankTransactions;
@@ -73,11 +75,11 @@ public class BankTransactionProcessor {
     // [3.5]  Flexible findTransactions() method using Open/Closed principle.
     public List<BankTransaction> findTransactions(final Interface_BankTransactionFilter interfaceBankTransactionFilter) {
         final List<BankTransaction> result = new ArrayList<>();
-        for (final BankTransaction bankTransaction : bankTransactions) {
+        for (final BankTransaction bankTransaction: bankTransactions) {
             if (interfaceBankTransactionFilter.test(bankTransaction)) {
                 result.add(bankTransaction);
             }
         }
-        return bankTransactions;
+        return result;
     }
 }

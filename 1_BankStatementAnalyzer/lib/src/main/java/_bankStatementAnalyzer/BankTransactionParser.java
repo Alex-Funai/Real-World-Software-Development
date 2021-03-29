@@ -13,7 +13,7 @@ package _bankStatementAnalyzer;
 /**
  * Class for divising file.type parsing into methods.
  *
- * @deprecated .BankTransactionParser()
+ * @deprecated BankTransactionParser()
  *
  * @see _bankStatementAnalyzer.Interface_BankStatementParser for global .interface parser.
  *

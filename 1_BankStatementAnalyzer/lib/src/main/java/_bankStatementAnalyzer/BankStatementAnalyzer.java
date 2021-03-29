@@ -50,8 +50,7 @@ public class BankStatementAnalyzer {
     private static final String RESOURCES = "lib/src/main/resources/";  // Initialize variable 'RESOURCES'
                                                                         // for storing file path directory.
     /**
-     * Parses through a specified file.
-     * @see Interface_BankStatementParser :Uses for handling different file types.
+     * Analyzes a list of bank transactions.
      *
      * @param fileName :The file being analyzed.
      * @param interfaceBankStatementParser :The indiscriminate bank statement parser.
@@ -75,10 +74,10 @@ public class BankStatementAnalyzer {
                                                     //
     }
     /**
-     * collectSummary() leverages 'bankStatementProcessor' object w/ '.calulation*...' methods
-     * to i/o bank statement amounts, month-amounts, and category-amounts.
+     * Prints a bank statement total amount,
+     * amount in certain months, and amount for a category.
      *
-     * @param bankStatementProcessor The processor class for standard calculation methods.
+     * @param bankStatementProcessor The processor for bank statement calculation methods.
      */
     private static void collectSummary  (final BankStatementProcessor bankStatementProcessor) {
 
@@ -90,6 +89,7 @@ public class BankStatementAnalyzer {
 
         System.out.println("The total for transactions in February is " + bankStatementProcessor.calculateTotalInMonth(Month.FEBRUARY));    // Prints out total transaction value
                                                                                                                                             // for the month February.
+
         System.out.println("The total salary received is " + bankStatementProcessor.calculateTotalForCategory("Salary"));   // Prints out total transaction value
                                                                                                                             // for description/category[2] Salary.
     }

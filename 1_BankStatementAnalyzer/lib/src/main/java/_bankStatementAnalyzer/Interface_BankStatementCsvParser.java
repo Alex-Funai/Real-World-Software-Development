@@ -28,7 +28,6 @@ public interface Interface_BankStatementCsvParser {
      * .parseLinesFromCSV() reads in information from a CSV and
      * starts a new array at each line break.
      *
-     * @deprecated parseLinesFromCSV()
      *
      * @see Interface_BankStatementParser for updated/global utilization instead.
      */

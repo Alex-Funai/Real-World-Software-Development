@@ -48,7 +48,7 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;   // 'util.stream' to output complex data-
                                                     // structures such as lists, maybe arrays, etc.
 /**
- * @deprecated
+ *
  *
  * @see Interface_BankStatementParser :for current/indiscriminate file-type parser.
  *
@@ -68,6 +68,7 @@ public class BankStatementCsvParser implements Interface_BankStatementParser {
      * Parses a CSV and returns it's column data
      *
      * @param line :The CSV rows.
+     *
      * @return (date, amount, columns[2]) :The transaction (date, amount, description)
      */
     public BankTransaction parseFrom(final String line) {
@@ -94,6 +95,9 @@ public class BankStatementCsvParser implements Interface_BankStatementParser {
      */
     public List<BankTransaction> parseLinesFrom(final List<String> lines) {
 
-        return lines.stream().map(this::parseFrom).collect(toList());   // Returns converted date, amount, description.
+        return lines
+                .stream()
+                .map(this::parseFrom)
+                .collect(toList());
     }
 }

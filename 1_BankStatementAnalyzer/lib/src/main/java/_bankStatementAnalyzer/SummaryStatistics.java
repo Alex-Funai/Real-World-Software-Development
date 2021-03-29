@@ -23,7 +23,7 @@ package _bankStatementAnalyzer;
  *
  * <p>Bugs: n/a
  *
- * @author akfunai
+ * @author Rauol-Gabriel Urma & Richard Warburton
  */
 public class SummaryStatistics {
 
@@ -50,36 +50,44 @@ public class SummaryStatistics {
         this.min = min;         // variable values through
         this.average = average; // each parser loop iteration.
     }
+
     /**
      * getSum() Stores accumulative transactions' value.
      *
      * @return (sum) The accumulative transactions' value.
      */
     public double getSum() {
+
         return sum;
     }
+
     /**
      * getMax() Stores maximum transaction value.
      *
      * @return (average) The average transaction value.
      */
     public double getMax() {
+
         return max;
     }
+
     /**
      * getMin() Stores minimum transaction value.
      *
      * @return (min) The smallest transaction value.
      */
     public double getMin() {
+
         return min;
     }
+
     /**
      * getAverage() Stores average transaction value.
      *
      * @return (average) The average transaction value.
      */
     public double getAverage() {
+
         return average;
     }
 }

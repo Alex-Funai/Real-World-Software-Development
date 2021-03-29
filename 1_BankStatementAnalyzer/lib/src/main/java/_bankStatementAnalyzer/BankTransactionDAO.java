@@ -13,6 +13,7 @@ package _bankStatementAnalyzer;
 import java.time.LocalDate;
 
 /**
+ * @deprecated BankTransactionDAO
  * [CRUD operations] to (add, parse, update)
  * bank transaction objects.
  *
