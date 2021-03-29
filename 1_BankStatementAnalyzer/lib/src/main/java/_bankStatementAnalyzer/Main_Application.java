@@ -22,19 +22,19 @@ package _bankStatementAnalyzer;
  * This program is a simulation of a program request from a Bank Manager, or possibly a company manager needing to quickly
  * translate aggregate data into something more palpable; possibly for generating reports ,or preluding a full program with UI.
  *
- * <p>Bugs: probably some.
+ * <p>Bugs: like 3
  *
- * @author akfunai
+ * @author Raoul-Gabriel Urma & Richard Warburton
  */
 public class Main_Application {
-
     public static void main(final String[] args) throws Exception {
 
         final BankStatementAnalyzer bankStatementAnalyzer = new BankStatementAnalyzer();    // Initializing a new
                                                                                             // BankStatementAnalyzer object
 
         final Interface_BankStatementParser interfaceBankStatementParser = new BankStatementCsvParser();    // Initializing a new CSVParser
-                                                                                                            // object with parser interface.
+
+                                                                                                           // object with parser interface.
         final Interface_Exporter interfaceExporter = new HtmlExporter();    // Initializing a new HTML Exporter
                                                                             // with exporter interface.
 

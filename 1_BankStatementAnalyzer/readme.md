@@ -21,8 +21,8 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 2. Configure the 'build.gradle' file for libraries/dependencies.
 3. Configure project structure for libraries/dependencies.
 4. Edit class.Main_Application.BankStatementAnalyzer().File to set path to a bank statement.
-5. Create new object
-5. Modify interface.Interface_BankTransactionSummarizer with desired methods() from class.BankTransactionProcessor to modify return output.
+5. Modify .BankStatementAnalyzer w/ methods from .BankStatementProcessor.
+6. Modify .Interface_BankTransactionSummarizer w/ methods from .BankTransactionProcessor.
 6. Run class.Main_Application.main(), to parse and analyze documents.
 
 

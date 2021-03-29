@@ -50,16 +50,19 @@ public class BankStatementProcessor {
      * @return (total) :The total value of transactions.
      */
     public double calculateTotalAmount() {
-        double total = 0;
-        // Loops through the BankTransaction
-        for (final BankTransaction bankTransaction : bankTransactions) {    // Loop through list<bankTransaction>
+
+        double total = 0;   // Resets total value to zero in-case,
+                            // it's been set by other methods.
+
+        for (final BankTransaction bankTransaction : bankTransactions) {    // Loop through a
+                                                                            // transaction list.
+
             total += bankTransaction.getAmount();   // Accumulate amount values through loop
                                                     // to the same 'total' variable.
         }
-        return total;   // Total accumulative value of a document's transactions.
+        return total;   // Total accumulative value
+                        // of a transaction list.
     }
-
-    // Method for calculating the cumulative value of transactions in a specified date.month [col1].
 
     /**
      * Calculates the total transaction amount
@@ -71,16 +74,16 @@ public class BankStatementProcessor {
      */
     public double calculateTotalInMonth(final Month month) {
 
-        double total = 0;   // Resets total value, in-case
+        double total = 0;   // Resets total value to zero in-case,
                             // it's been set by other methods.
 
         for (final BankTransaction bankTransaction : bankTransactions) {    // Loops through a transaction list.
 
-            if (bankTransaction.getDate().getMonth() == month) {    // Asserts loop to continue, if the
+            if (bankTransaction.getDate().getMonth() == month) {    // Asserts loop to continue -- only if the
                                                                     // transaction month = month passed into method.
 
-                total += bankTransaction.getAmount();   // If yes >> Accumulate transaction amount
-                                                        // to total, and continue loop.
+                total += bankTransaction.getAmount();   // If yes, then accumulate transactions
+                                                        // to the total varaible, and continue loop.
             }
         }
         return total;   // Return accumulated transaction
@@ -88,11 +91,26 @@ public class BankStatementProcessor {
     }
 
     // Method for calculating the cumulative value of transactions, of a specified category [col2].
+    /**
+     * Calculates the total transaction amount for
+     * a specified category/description.
+     *
+     * @param (category) :The category/description to analyze.
+     *
+     * @return (total) :The accumulated transaction amount for the month.
+     */
     public double calculateTotalForCategory(final String category) {
-        double total = 0;
-        for (final BankTransaction bankTransaction : bankTransactions) {
-            if (bankTransaction.getDescription().equals(category)) {
-                total += bankTransaction.getAmount();
+
+        double total = 0;   // Resets total value to zero in-case,
+                            // it's been set by other methods.
+
+        for (final BankTransaction bankTransaction : bankTransactions) {    // Loops through a transaction list.
+
+            if (bankTransaction.getDescription().equals(category)) {    // Asserts loop to continue -- only if the
+                                                                        // transaction month = month passed into method.
+
+                total += bankTransaction.getAmount();   // If yes, then accumulate transactions
+                                                        // to the total varaible, and continue loop.
             }
         }
         return total;
