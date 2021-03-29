@@ -16,9 +16,9 @@ import java.time.LocalDate;
  * class.BankTransactionDAO can add, parse, or update
  * methods from class.BankTransaction.
  *
- * @author akfunai
- *
  * @see _bankStatementAnalyzer.BankTransaction
+ *
+ * @author Raoul-Gabriel Urma & Richard Warburton
  */
 public class BankTransactionDAO {
 

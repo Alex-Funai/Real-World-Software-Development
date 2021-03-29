@@ -8,6 +8,13 @@
 // Section(s): Chapters 2-3
 ///////////////////////////////////////////////////////////////////////////////
 
+/**
+ * @deprecated .BankTransactionParser()
+ *
+ * @see _bankStatementAnalyzer.Interface_BankStatementParser for global parser.
+ *
+ * @author Raoul-Gabriel Urma & Richard Warburton
+ */
 // Parser for file type variants.
 package _bankStatementAnalyzer;
 

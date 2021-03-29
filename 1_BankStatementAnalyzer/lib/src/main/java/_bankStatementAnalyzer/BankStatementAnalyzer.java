@@ -43,7 +43,7 @@ import java.util.List;
  *
  * <p>Bugs: none yet.
  *
- * @author akfunai
+ * @author Raoul-Gabriel Urma & Richard Warburton
  */
 public class BankStatementAnalyzer {
 

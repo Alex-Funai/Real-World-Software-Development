@@ -54,7 +54,7 @@ import static java.util.stream.Collectors.toList;   // 'util.stream' to output c
  *
  * <p>Bugs: (a list of bugs and other problems)
  *
- * @author akfunai
+ * @author Raoul-Gabriel Urma & Richard Warburton
  */
 public class BankStatementCsvParser implements Interface_BankStatementParser {
 

@@ -9,10 +9,16 @@
 // Section(s): Chapters 2-3
 ///////////////////////////////////////////////////////////////////////////////
 
-// [Functional Interface] --- An interface containing only a single abstract method.
 package _bankStatementAnalyzer;
+
+/**
+ * (Write a succinct description of this class here. You should avoid
+ * wordiness and redundancy. If necessary, additional paragraphs should
+ * be preceded by <p>, the html tag for a new paragraph.)
+ *
+ */
 @FunctionalInterface
 public interface Interface_BankTransactionFilter {
 
-    boolean test(BankTransaction bankTransaction);
+    boolean test (BankTransaction bankTransaction);
 }

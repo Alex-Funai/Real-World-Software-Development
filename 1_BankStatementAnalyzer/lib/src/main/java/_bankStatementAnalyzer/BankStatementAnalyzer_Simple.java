@@ -29,7 +29,7 @@ import java.util.List;
  *
  * <p> Bugs: could make some bugs by expanding this program.
  *
- * @author akfunai
+ * @author Raoul-Gabriel Urma & Richard Warburton
  */
 public class BankStatementAnalyzer_Simple {
 

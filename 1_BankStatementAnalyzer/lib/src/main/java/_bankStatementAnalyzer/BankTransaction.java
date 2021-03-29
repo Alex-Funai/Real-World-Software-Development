@@ -32,7 +32,7 @@ import java.util.Objects;
  *
  * <p>Bugs: none.
  *
- * @author akfunai
+ * @author Raoul-Gabriel Urma & Richard Warburton
  */
 public class BankTransaction extends BankTransactionDAO {
 

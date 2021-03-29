@@ -29,7 +29,7 @@ import java.time.Month; import java.util.List;
  *
  * <p>Bugs: none.
  *
- * @author akfunai
+ * @author Raoul-Gabriel Urma & Richard Warburton
  */
 public class BankStatementProcessor {
 

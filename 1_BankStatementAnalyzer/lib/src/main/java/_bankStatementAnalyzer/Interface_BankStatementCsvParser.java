@@ -13,15 +13,23 @@ package _bankStatementAnalyzer;
 import java.util.List;
 
 /**
- * @deprecated 'interface.Interface_BankStatementCsvParser'.
+ * @deprecated Interface_BankStatementCsvParser
+ *
+ * Interface_BankStatementCsvParser was used for parsing
+ * a CSV file by line.
+ *
  * @see Interface_BankStatementParser for updated/global utilization instead.
  *
- * @author akfunai
+ * @author Raoul-Gabriel Urma & Richard Warburton
  */
 public interface Interface_BankStatementCsvParser {
 
     /**
+     * .parseLinesFromCSV() reads in information from a CSV and
+     * starts a new array at each line break.
+     *
      * @deprecated parseLinesFromCSV()
+     *
      * @see Interface_BankStatementParser for updated/global utilization instead.
      */
     List<BankTransaction> parseLinesFromCSV(List<String> lines);

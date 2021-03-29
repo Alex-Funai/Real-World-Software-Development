@@ -10,9 +10,14 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 package _bankStatementAnalyzer;
-
 import java.util.List;
 
+/**
+ * Parses all types of documents by splitting
+ * lines into arrays, then data into lists/maps.
+ *
+ * @author Raoul-Gabriel Urma & Richard Warburton
+ */
 public interface Interface_BankStatementParser {
 
     BankTransaction parseFrom (String line);

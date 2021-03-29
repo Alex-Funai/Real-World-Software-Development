@@ -39,6 +39,8 @@ Cohesion - how related things are in a class.
 
 Coupling - how dependent classes are upon one another.
 
+Functional Interface - an interface containing only one single abstract method.
+
 ### Cohesion:
 Creating separate classes is ideal because it allows us to utilize the same methods and manipulate them elsewhere in our program.
 

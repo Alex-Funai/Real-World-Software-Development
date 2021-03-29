@@ -23,27 +23,24 @@ package _bankStatementAnalyzer;
  * to change request. They all inherit a basis construction for the data types they should have, and we can make changes to them
  * specifically without having to jeopardize the code base/structure of the program as a whole.
  *
- * <p>
- * Bugs: can't find any here.
+ * <p>Bugs: none.
  *
- * @author akfunai
  */
 public interface Interface_Exporter {
 
     /**
-     * export() will ouitput the SummaryStatistics).This API alternative returns as string. It's clear that
-     * the "Exporter" will export a string by it's definition. Exporter will return text, and then another
-     * part of the program will decide if to print, save, or send it. Texts strings are useful for testing,
+     * .export() will output the summaryStatistics (date, min, max, average).This API alternative returns strings.
+     * It's clear that the "Exporter" will export a string by it's definition. Exporter will return text, and then
+     * another part of the program will decide if to print, save, or send it. Texts strings are useful for testing,
      * as you can directly compare them with assertions.
      * <p>
      * Now the API is defined to export information, and you can implement various kinds of exporters that respect
      * the contract of the Exporter interface. Another example for implenting a basic HTML exporter is created,
-     * and shown in a new class "HTMLExporter". We can simply call to this interface_Exporter by utilizing
-     * the "implements" declaration.
+     * and shown in a new class "HTMLExporter". Implement new exporter classes to this one.
      *
      * @param summaryStatistics The sum/min/max/average of a bankstatement.
      */
-    String export(SummaryStatistics summaryStatistics);
+    String export (SummaryStatistics summaryStatistics);
 }
 
     /**
@@ -54,7 +51,11 @@ public interface Interface_Exporter {
      * information back to the screen. Returning void makes it hard to test the results with assertions.
      * We can't compare the actual results with the expected resultse when we utilzie void here unfortunately.
      *
-     * @param summaryStatistics The sum/min/max/average of a bankstatement.
+     * @param summaryStatistics Statement: (sum, min, max, average)
+     *
+     * @see _bankStatementAnalyzer.SummaryStatistics
+     *
+     * @use _bankStatementAnalyzer.SummaryStatistics
      */
     // void export (SummaryStatistics summaryStatistics);
 
