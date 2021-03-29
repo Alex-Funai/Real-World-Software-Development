@@ -48,9 +48,13 @@ import java.util.List;
 import static java.util.stream.Collectors.toList;   // 'util.stream' to output complex data-
                                                     // structures such as lists, maybe arrays, etc.
 /**
- * 'class.BankStatementCsvParser' will scan through a general/specified format of data such that ---
- * the format is: "Date (dd--MM-yyyy)", "Amount as double",   "Description as String". Commas are delimiters
- * to separate data objects into array.
+ * @deprecated
+ *
+ * @see Interface_BankStatementParser :for current/indiscriminate file-type parser.
+ *
+ * Scans through a .CSV document.
+ * date format = (dd--MM-yyyy).
+ * delimitters = ','.
  *
  * <p>Bugs: (a list of bugs and other problems)
  *
@@ -63,18 +67,22 @@ public class BankStatementCsvParser implements Interface_BankStatementParser {
     /**
      * Parses a CSV and returns it's column data
      *
-     * @param line The document's rows.
-     * @return (date, amount, columns[2]) The transaction date, amount, and description.
+     * @param line :The CSV rows.
+     * @return (date, amount, columns[2]) :The transaction (date, amount, description)
      */
     public BankTransaction parseFrom(final String line) {
 
-        final String[] columns = line.split(",");   // Delimits columns array[] at commas.
+        final String[] columns = line.split(",");   // Delimits columns
+                                                          // array[] at commas.
 
-        final LocalDate date = LocalDate.parse(columns[0], DATE_PATTERN);   // Initializes converted date >> 'date' object.
+        final LocalDate date = LocalDate.parse(columns[0], DATE_PATTERN);   // Initializes converted
+                                                                            // date as an object.
 
-        final double amount = Double.parseDouble(columns[1]);   // Initaize transaction amount >> 'amount' object.
+        final double amount = Double.parseDouble(columns[1]);   // Initaize transaction amount
+                                                                // as an object.
 
-        return new BankTransaction(date, amount, columns[2]);   // Returns transaction date, amount, and description.
+        return new BankTransaction(date, amount, columns[2]);   // Returns a transaction: -
+                                                                // (date, amount, description).
     }
     /**
      * (Write a succinct description of this method here. If necessary,

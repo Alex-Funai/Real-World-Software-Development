@@ -22,30 +22,28 @@ package _bankStatementAnalyzer;
 import java.time.Month; import java.util.List;
 
 /**
- * 'class.BankStatementProcesseor' is an extension to 'class.BankStatementAnalzyer' that refines the program by
- * improving it's cohesion. 'class.BankStatementProcessor' separates various different transaction operations into
- * independent methods,and allows us to conveniently reference them in other classes of our program. Think of it as
- * an API or interface, that is easily accessible.
- *
- * <p>Bugs: none.
+ * BankStatementProcesseor uses BankStatementAnalzyer
+ * and runs calculation operations on bank statements.
+ * @see BankStatementAnalyzer
  *
  * @author Raoul-Gabriel Urma & Richard Warburton
  */
 public class BankStatementProcessor {
 
-    private final List<BankTransaction> bankTransactions;   // Initialize a bankTransactions list object
+    private final List<BankTransaction> bankTransactions;   // Initializes a list of
+                                                            // bank transactions as an object.
     /**
-     * Encapsulates each iterations' bank transaction values.
+     * Processes a list of bank transactions.
      *
-     * @param bankTransactions :A transaction list.
+     * @param bankTransactions :A list of bank transactions.
      */
     public BankStatementProcessor(final List<BankTransaction> bankTransactions) {
 
         this.bankTransactions = bankTransactions;   // Encapsulate the transaction (date, amount, description).
     }
     /**
-     * calculateTotalAmount() calculates total cumulative value
-     * of the document's transactions.
+     * Calculates the total accumulative
+     * value of a list of bank transactions.
      *
      * @return (total) :The total value of transactions.
      */

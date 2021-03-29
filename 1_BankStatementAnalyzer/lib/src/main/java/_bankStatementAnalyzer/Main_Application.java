@@ -35,14 +35,15 @@ public class Main_Application {
         final Interface_BankStatementParser interfaceBankStatementParser = new BankStatementCsvParser();    // Initializing a new CSVParser
 
                                                                                                            // object with parser interface.
+
         final Interface_Exporter interfaceExporter = new HtmlExporter();    // Initializing a new HTML Exporter
                                                                             // with exporter interface.
 
-        bankStatementAnalyzer.analyze("ExampleStatements2.csv", interfaceBankStatementParser);  // Send csv as object into the analyzer and
-                                                                                                         // analyze() w/ parser interface to see results.
+        bankStatementAnalyzer.analyze("ExampleStatements2.csv", interfaceBankStatementParser);   // Use analyzer object to .analyze the
+                                                                                                          // file(.csv) object, using the statement parser interface.
 
-        bankStatementAnalyzer.analyze("bank-data-simple.html", interfaceBankStatementParser);   // Send html as object into the analyzer and
-                                                                                                         // analyze() w/ parser interface to see results.
+        bankStatementAnalyzer.analyze("bank-data-simple.html", interfaceBankStatementParser);    // Use analyzer object to .analyze the
+                                                                                                          // file(.html) object, using the statement parser interface.
 
     }
 }

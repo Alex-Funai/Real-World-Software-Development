@@ -23,7 +23,7 @@ import java.time.LocalDate;
 public class BankTransactionDAO {
 
     /**
-     * .create() Initializes a new transaction.
+     * .create() Creates a new transaction.
      *
      * @param (date) The date[0] of the transaction.
      * @param (amount) The transaction amount[1].
@@ -39,7 +39,7 @@ public class BankTransactionDAO {
     }
 
     /**
-     * .read() Parses a transaction.
+     * .read() Reads a transaction.
      *
      * @param (id) The transaction pair/index.
      *

@@ -13,10 +13,9 @@ package _bankStatementAnalyzer;
 import java.util.List;
 
 /**
- * Parses all types of documents by splitting
- * lines into arrays, then data into lists/maps.
+ * Parses bank statements for various file types.
  *
- * @author Raoul-Gabriel Urma & Richard Warburton
+ * @author :Raoul-Gabriel Urma & Richard Warburton
  */
 public interface Interface_BankStatementParser {
 

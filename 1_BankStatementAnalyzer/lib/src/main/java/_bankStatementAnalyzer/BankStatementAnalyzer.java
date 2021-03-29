@@ -41,21 +41,22 @@ import java.util.List;
  * few standard System.out statements under the "collectSummary" method to mainly verify that the operating
  * "class.*(BankStatementProcessor, BankStatementTransaction, BankStatementParser, BankTransactionProcessor" work.
  *
- * <p>Bugs: none yet.
+ * <p>Bugs: n/a
  *
- * @author Raoul-Gabriel Urma & Richard Warburton
+ * @author :Raoul-Gabriel Urma & Richard Warburton
  */
 public class BankStatementAnalyzer {
 
     private static final String RESOURCES = "lib/src/main/resources/";  // Initialize variable 'RESOURCES'
                                                                         // for storing file path directory.
     /**
-     * (Write a succinct description of this method here. If necessary,
-     * additional paragraphs should be preceded by <p>, the html tag for
-     * a new paragraph.)
+     * Parses through a specified file.
+     * @see Interface_BankStatementParser :Uses for handling different file types.
      *
-     * @param fileName (Describe the first parameter here)
-     * @param interfaceBankStatementParser (Do the same for each additional parameter)
+     * @param fileName :The file being analyzed.
+     * @param interfaceBankStatementParser :The indiscriminate bank statement parser.
+     *
+     * @throws IOException :
      */
     public void analyze (final String fileName, final Interface_BankStatementParser interfaceBankStatementParser) throws IOException {
 
