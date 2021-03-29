@@ -76,20 +76,23 @@ public class BankStatementAnalyzer {
                                                     //
     }
     /**
-     * collectSummary() leverages 'bankStatementProcessor' object for calulation methods,
-     * and prints out statement information to the user.
+     * collectSummary() leverages 'bankStatementProcessor' object w/ '.calulation*...' methods
+     * to i/o bank statement amounts, month-amounts, and category-amounts.
      *
      * @param bankStatementProcessor The processor class for standard calculation methods.
      */
     private static void collectSummary  (final BankStatementProcessor bankStatementProcessor) {
-        // I/O leverage the "bankStatementProcessor" class object, and additionally use  the "calculateTotalAmount" method which holds a returned double value.
-        System.out.println("The total for all transactions is " + bankStatementProcessor.calculateTotalAmount());
-        // I/O leverage the "bankStatementProcessor" class object, and  additionly  use it's calculateTotalInMonth method, with parameter arguments of method ".Month". and the specified parameter of  "JANUARY"
-        System.out.println("The total for transactions in January is " + bankStatementProcessor.calculateTotalInMonth(Month.JANUARY));
-        // I/O leverage the "bankStatementProcessor" class object, and  additionly  use it's calculateTotalInMonth method, with parameter arguments of method ".Month". and the specified parameter of  "FEBRUARY".
-        System.out.println("The total for transactions in February is " + bankStatementProcessor.calculateTotalInMonth(Month.FEBRUARY));
 
-        System.out.println("The total salary received is " + bankStatementProcessor.calculateTotalForCategory("Salary"));
+        System.out.println("The total for all transactions is " + bankStatementProcessor.calculateTotalAmount());   // Prints out total transaction values
+                                                                                                                    // of the entire document.
+
+        System.out.println("The total for transactions in January is " + bankStatementProcessor.calculateTotalInMonth(Month.JANUARY));  // Prints out total transaction value
+                                                                                                                                        // for the month January.
+
+        System.out.println("The total for transactions in February is " + bankStatementProcessor.calculateTotalInMonth(Month.FEBRUARY));    // Prints out total transaction value
+                                                                                                                                            // for the month February.
+        System.out.println("The total salary received is " + bankStatementProcessor.calculateTotalForCategory("Salary"));   // Prints out total transaction value
+                                                                                                                            // for description/category[2] Salary.
     }
 }
 /******************************************************************************
