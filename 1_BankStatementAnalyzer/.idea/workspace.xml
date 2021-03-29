@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="44ddf3e5-7438-46e6-9fd6-6981cc8e7f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_BankStatementCsvParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_BankStatementCsvParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementAnalyzer_Simple.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementAnalyzer_Simple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/HtmlExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/HtmlExporter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,20 @@
       <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass">
+  <component name="RunManager" selected="Application.BankStatementAnalyzer_Simple">
+    <configuration name="BankStatementAnalyzer_Simple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_bankStatementAnalyzer.BankStatementAnalyzer_Simple" />
+      <module name="1_bankStatementAnalyzer.lib.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_bankStatementAnalyzer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -116,6 +130,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BankStatementAnalyzer_Simple" />
         <item itemvalue="Gradle.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass" />
         <item itemvalue="Gradle.BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL" />
       </list>
@@ -129,7 +144,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617005561828</updated>
-      <workItem from="1617005565096" duration="8405000" />
+      <workItem from="1617005565096" duration="8554000" />
     </task>
     <servers />
   </component>

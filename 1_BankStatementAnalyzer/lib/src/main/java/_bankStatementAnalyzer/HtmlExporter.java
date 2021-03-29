@@ -23,12 +23,13 @@ package _bankStatementAnalyzer;
  * returned as a String object. Since our parent/base interface is implemented by this new HTMLExporter,
  * the program assumes/utilizes that the information being handled will be in String format,
  * thus we won't need to utilize to multiple exporters when calling in 'class.Main_Application'.
- *
+ * @see _bankStatementAnalyzer.Interface_Exporter
  * <p>Bugs: not enough.
  *
  * @author akfunai
  */
 public class HtmlExporter implements Interface_Exporter {
+
 
     @Override
     public String export(final SummaryStatistics summaryStatistics) {

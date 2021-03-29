@@ -25,7 +25,7 @@ import java.util.List;
  */
 public class BankStatementAnalyzer_Simple {
 
-    private static final String RESOURCES = "App/src/main/resources/";      // Sets the resources folder to
+    private static final String RESOURCES = "lib/src/main/resources/";      // Sets the resources folder to
                                                                             // the string variable 'RESOURCES'.
     /**
      * Parses through a CSV file in the resources folder, and outputs

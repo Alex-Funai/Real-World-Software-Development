@@ -49,7 +49,7 @@ import java.util.List;
  */
 public class BankStatementAnalyzer {
 
-    private static final String RESOURCES = "App/src/main/resources/";  // Initialize variable 'RESOURCES'
+    private static final String RESOURCES = "lib/src/main/resources/";  // Initialize variable 'RESOURCES'
                                                                         // for storing file path directory.
     /**
      * (Write a succinct description of this method here. If necessary,
