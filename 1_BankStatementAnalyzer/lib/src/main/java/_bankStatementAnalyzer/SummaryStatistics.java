@@ -33,9 +33,8 @@ public class SummaryStatistics {
     private final double average;   // '.SummaryStatistics'
 
     /**
-     * SummaryStatistics creates an extended domain class that stores,
-     * and return a statements' transaction: total, max,
-     * min, and average value.
+     * SummaryStatistics creates a domain object that stores
+     * list<transaction> data: (total, max, min, average).
      *
      * @see .this Encapsulates return values through loop iterations.
      *

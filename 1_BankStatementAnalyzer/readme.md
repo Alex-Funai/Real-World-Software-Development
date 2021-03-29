@@ -17,13 +17,13 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 
 ## Getting Started:
 
-1. Clone the repository or download the '.zip' and extract locally.
+1. Clone the repository or download the .zip and extract locally.
 2. Configure the 'build.gradle' file for libraries/dependencies.
 3. Configure project structure for libraries/dependencies.
-4. Edit 'class.Main_Application.BankStatementAnalyzer().File' to set path to a bank statement.
+4. Edit class.Main_Application.BankStatementAnalyzer().File to set path to a bank statement.
 5. Create new object
-5. Modify 'interface.Interface_Exporter' with desired methods() from 'class.BankTransactionProcessor' to modify return output.
-6. Run 'class.Main_Application.main()', to parse and analyze documents.
+5. Modify interface.Interface_BankTransactionSummarizer with desired methods() from class.BankTransactionProcessor to modify return output.
+6. Run class.Main_Application.main(), to parse and analyze documents.
 
 
 ### Prerequisites:
