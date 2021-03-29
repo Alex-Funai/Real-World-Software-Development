@@ -38,7 +38,9 @@ public class Main_Application {
         final Interface_Exporter exporter
                 = new HtmlExporter();
 
+
         bankStatementAnalyzer.analyze("bank-data-simple.html", bankStatementParser, exporter);
+        bankStatementAnalyzer.analyze("ExampleStatements.csv", bankStatementParser, exporter);
 
     }
 }
