@@ -24,7 +24,7 @@ import java.util.List;
  * as a list for calculating double values. Format of CSV should be, DD-MM-YYYY, [±TRANSACTION AMOUNT],
  * [TRANSACTION COMPANY]. Comma is used as a delimitter/separator.
  *
- * <p>Bugs: could make some bugs by expanding this program.
+ * <p> Bugs: could make some bugs by expanding this program.
  *
  * @author akfunai
  */
@@ -36,9 +36,9 @@ public class BankStatementAnalyzer_Simple {
      * Parses through a CSV file in the resources folder, and outputs
      * some random information about the data, and it's transactions.
      *
-     * <p>Bugs: n/a
-     *
-     * @author akfunai
+     * <p>Bugs: none unfortunately.
+     * <p>
+     * @param args null
      */
     public static void main(final String... args) throws IOException {
 
@@ -63,18 +63,16 @@ public class BankStatementAnalyzer_Simple {
         System.out.println("The total for all transactions is " + total);   // Prints out a statement that shows
                                                                             // the calculated total for transactions.
         /**
+         * @ccode Inline methodforJanuaryTransactions()
          * Embeded method for processing transactions specifically
          * of the month January.
-         * @author akfunai
          *
-         * @ccode TransactionsInJanuary[]
+         * @author akfunai
          */
         total = 0;  // Resetting variable 'total' value
                     // to zero for processing new results.
-
         final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern("dd-MM-yyyy");     // Date formatter using a specified pattern;
                                                                                                 // Ex: dd-MM-yyyy >> 2011-12-03 >> 3 Dec 2011
-
         for (final String line : lines) {   // Enhanced for-loop to iterate through the lines array.
 
             final String[] columns = line.split(",");     // Creates array[] 'columns' by separating incoming
