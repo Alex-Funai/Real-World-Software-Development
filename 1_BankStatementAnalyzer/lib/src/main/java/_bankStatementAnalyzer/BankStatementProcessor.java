@@ -8,37 +8,55 @@
 // Author(s): Rauol-Gabriel Urma & Richard Warburton
 // Section(s): Chapters 2-3
 ///////////////////////////////////////////////////////////////////////////////
-
-/*  The "BankStatementProcesseor" class is a rendition of the "BankStatementAnalzyer" that refines the program by
- *  improving it's cohesion. The "BankStatementProcessor" separates various different transaction operations into their own
- *  methods, which allows us to conveniently reference them in other classes of our program since they are not dependent on the class
- *  as a whole. Think of it as somewhat of an API or interface that is easily accessible and manageable.
+/**
+ * @apiNote bankTransactions
+ * We intialize and declare a List interface to the variable "bankTransactions" by importing our initial list of data.
+ * Again we utilize private/final to anticipate the repitition of this class when it runs through several transactions,
+ * each list being represented as a line of data.
+ * <p>
+ * @apiNote
  */
 
 package _bankStatementAnalyzer;
-import java.time.Month;
-import java.util.List;
+import java.time.Month; import java.util.List;
 
+/**
+ * 'class.BankStatementProcesseor' is an extension to 'class.BankStatementAnalzyer' that refines the program by
+ * improving it's cohesion. 'class.BankStatementProcessor' separates various different transaction operations into
+ * independent methods,and allows us to conveniently reference them in other classes of our program. Think of it as
+ * an API or interface, that is easily accessible.
+ *
+ * <p>Bugs: none.
+ *
+ * @author akfunai
+ */
 public class BankStatementProcessor {
 
-    /*  We intialize and declare a List interface to the variable "bankTransactions" by importing our initial list of data.
-     *  Again we utilize private/final to anticipate the repitition of this class when it runs through several transactions,
-     *  each list being represented as a line of data.
+    private final List<BankTransaction> bankTransactions;   // Initialize 'bankTransactions' object from
+                                                            // 'class.BankTransaction' return.
+    /**
+     * Encapsulates each iterations' bank transaction values.
+     *
+     * @param bankTransactions The statement: (date, amount, description)
      */
-    private final List<BankTransaction> bankTransactions;
-
     public BankStatementProcessor(final List<BankTransaction> bankTransactions) {
-        this.bankTransactions = bankTransactions;
-    }
 
-    // Method for calculating the total cumulative value of all transactions:
+        this.bankTransactions = bankTransactions;   // Encapsulate the transaction (date, amount, description).
+    }
+    /**
+     * calculateTotalAmount() calculates total cumulative value
+     * of the document's transactions.
+     *
+     * @return (total) The total value of transactions.
+     */
     public double calculateTotalAmount() {
         double total = 0;
         // Loops through the BankTransaction
-        for (final BankTransaction bankTransaction : bankTransactions) {
-            total += bankTransaction.getAmount();
+        for (final BankTransaction bankTransaction : bankTransactions) {    // Loop through list<bankTransaction>
+            total += bankTransaction.getAmount();   // Accumulate amount values through loop
+                                                    // to the same 'total' variable.
         }
-        return total;
+        return total;   // Total accumulative value of a document's transactions.
     }
 
     // Method for calculating the cumulative value of transactions in a specified date.month [col1].

@@ -31,13 +31,13 @@
  * it without struggling to determine where processes are, and how to revise them to their own needs.
  *
  ******************************************************************************/
+
 package _bankStatementAnalyzer;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.Files; import java.nio.file.Path; import java.nio.file.Paths;
 import java.time.Month;
 import java.util.List;
+
 /**
  * The BankStatementAnalyzer class will parse a CSV file from the "src/Resources" folder of the projecct, and return a
  * few standard System.out statements under the "collectSummary" method to mainly verify that the operating
