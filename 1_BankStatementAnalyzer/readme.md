@@ -6,6 +6,7 @@ Rauol-Gabriel Urma & Richard Warburton
 Chapter 2 and Chapter 3
 -->
 
+
 # Bank Statement Analyzer
 
 This is an excercise program from the book Real World Software Development by Rauol-Gabriel Urma and  Richard Warburton.
@@ -17,8 +18,11 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 1. Clone the repository or download the '.zip' and extract locally.
 2. Configure the 'build.gradle' file for libraries/dependencies.
 3. Configure project structure for libraries/dependencies.
-4. Modify the "exporter" class with methods and classes to specify information that is returned.
-5. Modify the file location in 'class.Main_Application.BankStatementAnalyzer(). 
+4. Edit 'class.Main_Application.BankStatementAnalyzer().File' to set path to a bank statement.
+5. Create new object
+5. Modify 'interface.Interface_Exporter' with desired methods() from 'class.BankTransactionProcessor' to modify return output.
+6.
+
 6. Run 'class.Main_Application.main()', to parse and analyze documents.
 
 
@@ -119,6 +123,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Rauol-Gabriel Urma
 * Richard Warburton
+</style>
+</body>
 
 
 

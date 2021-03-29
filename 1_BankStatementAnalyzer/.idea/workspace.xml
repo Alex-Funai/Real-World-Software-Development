@@ -4,10 +4,107 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="44ddf3e5-7438-46e6-9fd6-6981cc8e7f27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementAnalyzer_Simple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementCsvParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankTransactionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankTransactionParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankTransactionProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/HtmlExporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_BankStatementCsvParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_BankStatementParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_BankTransactionFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_BankTransactionSummarizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_Exporter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Main_Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/SummaryStatistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/resources/ExampleStatements.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/resources/ExampleStatements2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/main/resources/bank-data-simple.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/test/java/_bankStatementAnalyzer/BankStatementCsvParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/test/resources/ExampleStatements.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/test/resources/ExampleStatements2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/test/resources/bank-data-simple.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/App.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/App.1_BankStatementAnalyzer.app.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/App.1_BankStatementAnalyzer.app.test.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/SummaryStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/SummaryStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1_BankStatementAnalyzer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankStatementAnalyzer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankStatementAnalyzer_Simple.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankStatementCsvParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankStatementProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankTransaction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankTransactionDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankTransactionParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankTransactionProcessor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/HtmlExporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Interface_BankStatementCsvParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Interface_BankStatementParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Interface_BankTransactionFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Interface_BankTransactionSummarizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Interface_Exporter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/Main_Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/SummaryStatistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/resources/ExampleStatements.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/resources/ExampleStatements2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/resources/Notes_Exceptions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/main/resources/bank-data-simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/test/java/BankStatementCsvParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/test/resources/ExampleStatements.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/test/resources/ExampleStatements2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/test/resources/bank-data-simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NOTES_ch2-ch3.md" beforeDir="false" afterPath="$PROJECT_DIR$/NOTES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementAnalyzer_Simple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementCsvParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankStatementProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankTransaction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankTransactionDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankTransactionParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/BankTransactionProcessor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/ExampleStatements.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/ExampleStatements2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/HtmlExporter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/Interface_BankStatementCsvParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/Interface_BankStatementParser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/Interface_BankTransactionFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/Interface_BankTransactionSummarizer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/Interface_Exporter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/Main_Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/Notes_Exceptions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/Resources/ExampleStatements.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/Resources/ExampleStatements2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/Resources/Notes_Exceptions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/Resources/bank-data-simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/SummaryStatistics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/1_BankStatementAnalyzer/bank-data-simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/1_BankStatementAnalyzer/BankStatementCsvParserTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,312 +113,111 @@
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
-      <ProjectState>
-        <dataType path="$PROJECT_DIR$/App">
-          <ModuleState>
-            <id value="com.intellij.externalSystem.JavaModuleData" />
-            <id value="com.intellij.openapi.externalSystem.model.project.ContentRootData" />
-            <id value="com.intellij.openapi.externalSystem.model.project.LibraryDependencyData" />
-            <id value="com.intellij.openapi.externalSystem.model.project.ModuleData" />
-            <id value="com.intellij.openapi.externalSystem.model.project.ModuleDependencyData" />
-            <id value="com.intellij.openapi.externalSystem.model.project.ModuleSdkData" />
-            <id value="com.intellij.openapi.externalSystem.model.project.TestData" />
-            <id value="com.intellij.openapi.externalSystem.model.project.dependencies.ProjectDependencies" />
-            <id value="com.intellij.openapi.externalSystem.model.task.TaskData" />
-            <id value="org.jetbrains.plugins.gradle.model.GradleExtensions" />
-            <id value="org.jetbrains.plugins.gradle.model.data.BuildScriptClasspathData" />
-            <id value="org.jetbrains.plugins.gradle.model.data.GradleSourceSetData" />
-          </ModuleState>
-        </dataType>
-      </ProjectState>
+      <ProjectState />
     </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <task path="$PROJECT_DIR$/app">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
-        <task path="$PROJECT_DIR$/App">
-          <activation />
-        </task>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="1_BankStatementAnalyzer" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="ProjectId" id="1qC8VqwM4FtHg94MPNWilHL1C0C" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="untitled104" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="company" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectId" id="1qQInfpZuJvF0mJQTYiWMeaCGnz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/src/test/java/_bankStatementAnalyzer" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src\test\java" />
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src\test\resources" />
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src\main\resources" />
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\src\test" />
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\src\main" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src" />
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src\main" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\lib\src\test\java\_bankStatementAnalyzer" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\lib\src\main\java\_bankStatementAnalyzer" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\lib\src\test\resources" />
+      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\lib\src\main\resources" />
       <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer" />
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\src\main\main" />
-      <recent name="D:\Educational\RealWorldSoftwareDevelopment\1_BankStatementAnalyzer\App\main" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="src.main.java.bankstatementanalyzer" />
-      <recent name="src.main.java" />
-      <recent name="" />
-      <recent name="java" />
     </key>
   </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="gradle App:buildEnvironment" />
-      <command value="gradle App:buildDependents" />
-      <command value="gradle App:dependentComponents" />
-      <command value="gradle App:assemble" />
-      <command value="gradle build" />
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Main_Application">
-    <configuration name="Main_Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main_Application" />
-      <module name="1_BankStatementAnalyzer.app.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Gradle.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="1_BankStatementAnalyzer [App:assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--tests &quot;_bankStatementAnalyzer.BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="App:assemble" />
+            <option value=":lib:test" />
           </list>
         </option>
-        <option name="vmOptions" value="" />
+        <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="1_BankStatementAnalyzer [App:buildDependents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--tests &quot;_bankStatementAnalyzer.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="App:buildDependents" />
+            <option value=":lib:test" />
           </list>
         </option>
-        <option name="vmOptions" value="" />
+        <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="1_BankStatementAnalyzer [App:dependentComponents]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="App:dependentComponents" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="1_BankStatementAnalyzer [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <list>
-      <item itemvalue="Application.Main_Application" />
-      <item itemvalue="Gradle.1_BankStatementAnalyzer [App:buildDependents]" />
-      <item itemvalue="Gradle.1_BankStatementAnalyzer [App:dependentComponents]" />
-      <item itemvalue="Gradle.1_BankStatementAnalyzer [App:assemble]" />
-      <item itemvalue="Gradle.1_BankStatementAnalyzer [build]" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main_Application" />
-        <item itemvalue="Gradle.1_BankStatementAnalyzer [build]" />
-        <item itemvalue="Gradle.1_BankStatementAnalyzer [App:assemble]" />
-        <item itemvalue="Gradle.1_BankStatementAnalyzer [App:dependentComponents]" />
-        <item itemvalue="Gradle.1_BankStatementAnalyzer [App:buildDependents]" />
+        <item itemvalue="Gradle.BankStatementCsvParserTest.shouldParseOneCorrectLine_Pass" />
+        <item itemvalue="Gradle.BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="675eff68-26c8-418b-84a4-8f167a0c389d" name="Default Changelist" comment="" />
-      <created>1616572239095</created>
+      <changelist id="44ddf3e5-7438-46e6-9fd6-6981cc8e7f27" name="Default Changelist" comment="" />
+      <created>1617005561828</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1616572239095</updated>
-      <workItem from="1616572242677" duration="853000" />
-      <workItem from="1616573207583" duration="4194000" />
-      <workItem from="1616577500501" duration="6000" />
-      <workItem from="1616745028492" duration="945000" />
-      <workItem from="1616762852027" duration="1042000" />
-      <workItem from="1616767381710" duration="333000" />
-      <workItem from="1616815854388" duration="1167000" />
-      <workItem from="1616817052662" duration="4057000" />
-      <workItem from="1616933792676" duration="8939000" />
+      <updated>1617005561828</updated>
+      <workItem from="1617005565096" duration="254000" />
     </task>
     <servers />
   </component>
@@ -338,24 +234,8 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.nio.file.NoSuchFileException" package="java.nio.file" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/App/src/main/java/bankstatementanalyzer/src/main/java/bankstatementanalyzer/BankStatementAnalyzer_Simple.java</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
