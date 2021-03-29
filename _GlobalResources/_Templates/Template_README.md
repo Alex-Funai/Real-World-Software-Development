@@ -1,8 +1,14 @@
-<!--- 
-Alexander Kitaro Funai
-March 28, 2021
-https://www.alexanderfunai.com
--->
+<!----------
+Name: 	
+Extra:	
+Date:	 
+Sources:	
+Contributions:
+Sections:	
+---------->
+
+
+			<!---------- <Introduction> ---------->
 
 # Project Title
 
@@ -12,7 +18,6 @@ This initially appeared on
 [gist](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2), but as
 I can no longer open that page as there are too many comments, I have
 moved it here.
-
 
 
 ## Summary
@@ -27,19 +32,20 @@ moved it here.
   - [License](#license)
   - [Acknowledgments](#acknowledgments)
 
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on
 your local machine for development and testing purposes. See deployment
 for notes on how to deploy the project on a live system.
 
-### Prerequisites
+## Prerequisites
 
 What things you need to install the software and how to install them
 
     Give examples
 
-### Installing
+## Installing
 
 A step by step series of examples that tell you how to get a development
 env running
@@ -55,26 +61,27 @@ And repeat
 End with an example of getting some data out of the system or using it
 for a little demo
 
-## Running the tests
+			<!---------- </Introduction> ---------->
+			
+
+			
+			<!---------- <Body> ---------->			
+			
+### Running the tests
 
 Explain how to run the automated tests for this system
+
 
 ### Break down into end to end tests
 
 Explain what these tests test and why
 
     Give an example
+	
+			<!---------- </Body> ---------->	
 
-### And coding style tests
 
-Explain what these tests test and why
-
-    Give an example
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
+			<!---------- <Bibliography> ---------->
 ## Built With
 
   - [Contributor Covenant](https://www.contributor-covenant.org/) - Used
@@ -82,16 +89,19 @@ Add additional notes about how to deploy this on a live system
   - [Creative Commons](https://creativecommons.org/) - Used to choose
     the license
 
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code
 of conduct, and the process for submitting pull requests to us.
+
 
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning. For the versions
 available, see the [tags on this
 repository](https://github.com/PurpleBooth/a-good-readme-template/tags).
+
 
 ## Authors
 
@@ -102,11 +112,13 @@ See also the list of
 [contributors](https://github.com/PurpleBooth/a-good-readme-template/contributors)
 who participated in this project.
 
+
 ## License
 
 This project is licensed under the [CC0 1.0 Universal](LICENSE.md)
 Creative Commons License - see the [LICENSE.md](LICENSE.md) file for
 details
+
 
 ## Acknowledgments
 
@@ -115,11 +127,19 @@ details
   - etc
 
 
+			<!---------- </Bibliography> ---------->
+
+
+
+<!-------------------------------------------------------------------------------->
+<!--- tag:in[] --- crystal_Void.css --- README-Version 0.0 --- alexanderfunai.com - [akf7™] --->
+
+
+
 <style type="text/css">
-/*	akfunai_Readme_Styles00	*/
 
 
-/* Body and virtual container */
+		/* <Body> */
 body {
 width: 100%;
 height: 125%;
@@ -128,8 +148,10 @@ color: #ffffff;
 font-family: 'Source Sans Pro';
 font-size: 13px;
 }
+		/* </Body> */
+
   
-  /* Headers */
+		/* <Headers> */
   h1 {
   color: #ffebff;
   text-decoration: underline;
@@ -155,20 +177,29 @@ font-size: 13px;
   color: #e6f8ff;
   font-family: 'Source Sans Pro';
   font-weight: lighter;
-  }  
+  }
+		/* </Headers> */
   
-  /* Fenced code blocks */
+  
+		/* </Code> */
   code {
   color: #36ff9a;
   font-family: 'Source Sans Pro';
   font-size: 11.5px;
   }
+		/* </Code> */
   
-  /* href Links */
+  
+		/* <Href> */
   a:link {
   color: #52b5e3;
   }
+		/* </Href> */
   
-  
-/* END[] */  
+ 
 </style>
+
+
+
+<!--- tag:out[] --- crystal_Void.css --- README-Version 0.0 --- https://www.alexanderfunai.com [akf7™] --->
+<!-------------------------------------------------------------------------------->

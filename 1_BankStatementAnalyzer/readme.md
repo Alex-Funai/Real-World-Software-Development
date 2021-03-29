@@ -1,5 +1,6 @@
 <!---
-Alexander Kitaro Funai
+Alexander Kitaro Funai [akf7™]
+https://www.alexanderfunai.com 
 March 23, 2021
 Real World Software Development
 Rauol-Gabriel Urma & Richard Warburton
@@ -130,7 +131,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 
 <!-------------------------------------------------------------------------------->
-<!--- tag:in[] --- crystal_Void.css --- README-Version 0.0 --- alexanderfunai.com --->
+<!--- tag:in[] --- crystal_Void.css --- README-Version 0.0 --- alexanderfunai.com - [akf7™] --->
 
 
 
@@ -199,5 +200,5 @@ font-size: 13px;
 
 
 
-<!--- tag:out[] --- crystal_Void.css --- README-Version 0.0 --- alexanderfunai.com --->
+<!--- tag:out[] --- crystal_Void.css --- README-Version 0.0 --- https://www.alexanderfunai.com [akf7™] --->
 <!-------------------------------------------------------------------------------->
