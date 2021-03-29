@@ -40,7 +40,7 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 3. Edit 'gradle.build'  > add plugins / dependencies / test framework:  JUnit-4.13.2 / HamCreset-1.2 / Java.
 
 ```
-// 'build.gradle'
+// build.gradle
 
 plugins {
     // Apply the java-library plugin for API and implementation separation.
