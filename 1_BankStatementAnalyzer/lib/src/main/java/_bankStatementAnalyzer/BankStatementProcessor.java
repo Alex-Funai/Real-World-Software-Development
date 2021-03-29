@@ -92,7 +92,7 @@ public class BankStatementProcessor {
     }
 
     /**
-     * Find transactions >= x
+     * Find transactions >= specified value.
      *
      * @return (amount) :The transactions greater-or-equal to specified amount.
      */
@@ -101,12 +101,14 @@ public class BankStatementProcessor {
     }
 
     /**
-     * Summarizes bank statement's transactions.
+     * Summarizes a bank statement's transactions.
      *
      * @return (getSum, getMax, getMin, getAverage) :The sum, maximum, minimum, and average transaction value.
      */
     public List<BankTransaction> findTransactions(final Interface_BankTransactionFilter bankTransactionFilter) {
+
         final List<BankTransaction> result = new ArrayList<>();
+
         for (final BankTransaction bankTransaction: bankTransactions) {
             if (bankTransactionFilter.test(bankTransaction)) {
                 result.add(bankTransaction);
