@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="44ddf3e5-7438-46e6-9fd6-6981cc8e7f27" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/SummaryStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/SummaryStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_BankStatementCsvParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_BankStatementCsvParser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617005561828</updated>
-      <workItem from="1617005565096" duration="7102000" />
+      <workItem from="1617005565096" duration="8405000" />
     </task>
     <servers />
   </component>

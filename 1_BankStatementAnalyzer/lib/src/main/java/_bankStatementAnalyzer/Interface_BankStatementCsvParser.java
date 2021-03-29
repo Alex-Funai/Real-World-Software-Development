@@ -10,11 +10,19 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 package _bankStatementAnalyzer;
-
 import java.util.List;
 
+/**
+ * @deprecated 'interface.Interface_BankStatementCsvParser'.
+ * @see Interface_BankStatementParser for updated/global utilization instead.
+ *
+ * @author akfunai
+ */
 public interface Interface_BankStatementCsvParser {
 
-    // depcreated
+    /**
+     * @deprecated parseLinesFromCSV()
+     * @see Interface_BankStatementParser for updated/global utilization instead.
+     */
     List<BankTransaction> parseLinesFromCSV(List<String> lines);
 }
