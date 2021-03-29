@@ -22,8 +22,7 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 3. Configure project structure for libraries/dependencies.
 4. Edit class.Main_Application.BankStatementAnalyzer().File to set path to a bank statement.
 5. Modify .BankStatementAnalyzer w/ methods from .BankStatementProcessor.
-6. Modify .Interface_BankTransactionSummarizer w/ methods from .BankTransactionProcessor.
-6. Run class.Main_Application.main(), to parse and analyze documents.
+6. Modify .Main_Application w/ methods from .BankStatementAnalyzer.
 
 
 ### Prerequisites:

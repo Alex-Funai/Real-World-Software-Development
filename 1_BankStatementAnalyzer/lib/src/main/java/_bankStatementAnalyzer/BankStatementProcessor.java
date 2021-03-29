@@ -55,11 +55,11 @@ public class BankStatementProcessor {
         for (final BankTransaction bankTransaction : bankTransactions) {    // Loop through a
                                                                             // transaction list.
 
-            total += bankTransaction.getAmount();   // Accumulate amount values through loop
-                                                    // to the same 'total' variable.
+            total += bankTransaction.getAmount();   // Accumulate transaction values
+                                                    // to total while looping.
         }
-        return total;   // Total accumulative value
-                        // of a transaction list.
+        return total;   // Return the total amount
+                        // for the transaction list.
     }
 
     /**
