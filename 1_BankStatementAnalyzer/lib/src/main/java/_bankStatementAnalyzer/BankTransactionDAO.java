@@ -13,8 +13,8 @@ package _bankStatementAnalyzer;
 import java.time.LocalDate;
 
 /**
- * class.BankTransactionDAO can add, parse, or update
- * methods from class.BankTransaction.
+ * [CRUD operations] to (add, parse, update)
+ * bank transaction objects.
  *
  * @see _bankStatementAnalyzer.BankTransaction
  *
