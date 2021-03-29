@@ -8,7 +8,8 @@
 // Author(s): Rauol-Gabriel Urma & Richard Warburton
 // Section(s): Chapters 2-3
 ///////////////////////////////////////////////////////////////////////////////
-/**
+
+/******************************************************************************
  * @apiNote DateTimeFormatter DATE_PATTERN[]
  * DateTimeFormatter() declares and specifies that DATE_PATTERN will be the variable to hold the date parsed from our
  * files. The DateTimeFormatter and .ofPattern method allow us to specify the data format that is anticipated to be
@@ -37,8 +38,8 @@
  * it directly into our return constructor. However we do need to specify that this will be a "new BankTransaction",
  * because theoretically we will have to intialize several more BankTransactions throughout this program, and they will
  * all need unique instances of their own to handle unique data values.
- *
- */
+ ******************************************************************************/
+
 package _bankStatementAnalyzer;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;  // 'format.DateTimeFormatter' allows converting
