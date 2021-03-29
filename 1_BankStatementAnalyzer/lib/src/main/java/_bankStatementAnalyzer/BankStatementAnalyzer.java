@@ -111,7 +111,7 @@ public class BankStatementAnalyzer {
  final Interface_BankStatementProcessor bankStatementProcessor = new Interface_BankStatementProcessor(bankTransactions);
  // Decoupling interface since  BankStatementtParser encompasses different file type possibiilities.
 
- final  List <BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
+ final List <BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
  // final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
 
  collectSummary (bankStatementProcessor);
