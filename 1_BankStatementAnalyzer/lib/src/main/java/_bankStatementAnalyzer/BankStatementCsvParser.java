@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
-// Main Class File: 'Main_Application.java'
-// File: 'interface.Interface_Exporter.java'
+// Main Class File: Main_Application.java
+// File: BankStatementCsvParser.java
 // Date: March 23, 2021
 //
 // Programmer: Alexander Kitaro Funai > alexanderfunai@protonmail.com

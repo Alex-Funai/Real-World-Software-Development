@@ -1,42 +1,82 @@
-// Alexander Kitaro Funai -- March 19, 2021
-// Real-World Software Development -- Rauol-Gabriel Urma & Richard Warburton
-// Chapter 2  and  Chapter 3 -- The Bank Statements Analyzer
+///////////////////////////////////////////////////////////////////////////////
+// Main Class File: Main_Application.java
+// File: BankTransactionDAO.java
+// Date: March 23, 2021
+//
+// Programmer: Alexander Kitaro Funai > alexanderfunai@protonmail.com
+// Book: Real World Software Development
+// Author(s): Rauol-Gabriel Urma & Richard Warburton
+// Section(s): Chapters 2-3
+///////////////////////////////////////////////////////////////////////////////
 
-
- /*
-   [Bank Transaction DAO] --- Reusing previously declared classes and considering how to cohesively disect program into utilizable methods
-   without jeopardizing the legibility, functionality, and structure.
-
-   [COHESION] --- Creating separate classes is ideal because it allows us to utilize the same methods and manipulate them elsewhere in our program.
-
-   [UTILITY]--- Be careful not to group unrelated methods inside a class. Be aware of where cohesion can be utilized  without complicating the program structure.
-    A scenario with overgrouped methods would be considered an example of poor cohesion,  the program loses class discoverability, and revision/updating becomes
-   more complicated... Especially if the program intends on adding new features, or updating foundational structure for improvement.
-  */
 package _bankStatementAnalyzer;
 import java.time.LocalDate;
 
+/**
+ * class.BankTransactionDAO can add, parse, or update
+ * methods from class.BankTransaction.
+ *
+ * @author akfunai
+ *
+ * @see _bankStatementAnalyzer.BankTransaction
+ */
 public class BankTransactionDAO {
 
-    // Example here -- is we can reference our previously grouped methods, and add new functionality to them without having to be redundant.
+    /**
+     * .create() Initializes a new transaction.
+     *
+     * @param (date) The date[0] of the transaction.
+     * @param (amount) The transaction amount[1].
+     * @param (description) The description[2] of the transaction.
+     *
+     * @throws UnsupportedOperationException since in-design.
+     *
+     * @see _bankStatementAnalyzer.BankTransaction
+     */
     public BankTransaction create (final LocalDate date, final double amount, final String description) {
-        throw new UnsupportedOperationException();
+
+        throw new UnsupportedOperationException();  // in-design
     }
 
-    // The following are examples of cohesion by grouping multiple concerns together, but this can create dependency flaws.
-
+    /**
+     * .read() Parses a transaction.
+     *
+     * @param (id) The transaction pair/index.
+     *
+     * @throws UnsupportedOperationException since in-design.
+     *
+     * @see _bankStatementAnalyzer.BankTransaction
+     */
     public BankTransaction read (final long id) {
         // ...
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException();  // in-design
     }
 
-    public BankTransaction update (final long id)  {
+    /**
+     * .update() Updates a transaction.
+     *
+     * @param (id) The transaction id pair/index.
+     *
+     * @throws UnsupportedOperationException since in-design.
+     *
+     * @see _bankStatementAnalyzer.BankTransaction
+     */
+    public BankTransaction update (final long id) {
         // ...
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException();  // in-design
     }
 
-    public void delete (final BankTransaction BankTransaction) {
+    /**
+     * .delete() Deletes a transaction.
+     *
+     * @param (bankTransaction) A single bank transaction.
+     *
+     * @throws UnsupportedOperationException since in-design.
+     *
+     * @see _bankStatementAnalyzer.BankTransaction
+     */
+    public void delete (final BankTransaction bankTransaction) {
         // ...
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException();  // in-design
     }
 }

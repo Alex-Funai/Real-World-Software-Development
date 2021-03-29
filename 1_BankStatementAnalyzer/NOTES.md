@@ -4,9 +4,9 @@ Alexander Kitaro Funai
 https://www.alexanderfunai.com
 -->
 
-# Chapter 1 Notes
+# Chapter 2 - Chapter 3 -- Notes:
 
-## Designing the program
+## Designing the program:
 
 ### Query:
  * What is the total profit and loss from a list of bank statements? Is it positive or negative?
@@ -29,14 +29,23 @@ https://www.alexanderfunai.com
  * What if a statement line has missing data?
 
 
-## The Kiss Principle
+## The Kiss Principle:
 When analyzing certain requested dependencies in a program request you can start simple by listing them in a query. 
 "KISS" is an acronym for "Keep-It-Short-Simple". Initially answer the first solution in your query, and have the 
 applications code in a single class.
 
 ### Definitions:
-Cohesion - how related tings are in a class.
+Cohesion - how related things are in a class.
+
 Coupling - how dependent classes are upon one another.
+
+### Cohesion:
+Creating separate classes is ideal because it allows us to utilize the same methods and manipulate them elsewhere in our program.
+
+### Utility:
+Be careful not to group unrelated methods inside a class. Be aware of where cohesion can be utilized  without complicating the program structure.
+A scenario with overgrouped methods would be considered an example of poor cohesion, the program loses class discoverability, 
+and revision/updating becomes more complicated... Especially if the program intends on adding new features, or updating foundational structure for improvement.
 
 ### Final Variables
 Depending on the project Final keywords may be preferable to specify variables not being local and reassigned.

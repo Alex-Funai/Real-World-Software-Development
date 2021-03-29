@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
-// Main Class File: 'Main_Application.java'
-// File: 'interface.Interface_Exporter.java'
+// Main Class File: Main_Application.java
+// File: BankTransaction.java
 // Date: March 23, 2021
 //
 // Programmer: Alexander Kitaro Funai > alexanderfunai@protonmail.com
@@ -15,7 +15,6 @@
  * will entail. Private and final ensures that the data is not manipulated further through the program when leveraging
  * them into other methods in the program, and allows us to reduce redundancy by using the this/that parameters to
  * theoretically reuse the same named variables, but assigning them their own each unique values.
- * <p>
  ******************************************************************************/
 
 package _bankStatementAnalyzer;
@@ -23,13 +22,13 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 /**
- * 'class.BankTransaction' is a domain class for holding the construction of how each BankTransaction should  be.
- *  The 'class.BankTransaction' domain class anticipates the data type structure that is necessary for processing a
- *  specific file. In this case the "BankTransaction" domain class specifies that there will always be:
+ *  class.BankTransaction is a domain class for holding the construction of how each BankTransaction should  be.
+ *  The class.BankTransaction domain class anticipates the data type structure that is necessary for processing a
+ *  specific file. In this case (domain)class.BankTransaction specifies structure -- that there will always be:
  *  [date, amount, description].These various data-types are declared as private to separate the variables from
  *  being over-written , as the program continues to run through several more transactions. This is ideal, and reduces
- *  redundancy in having to create tons of variables, because we can leverage the '.this/.that' parameter to give
- *  each class run-through, it's own unique value, but theoretically using the same variable name.
+ *  redundancy in having to create tons of variables, because we can leverage the .this/.that constructor-keywords to
+ *  give each class, it's own unique value -- but theoretically using the same variable name.
  *
  * <p>Bugs: none.
  *
@@ -47,8 +46,9 @@ public class BankTransaction extends BankTransactionDAO {
                                             // to the variable 'description'.
 
     /**
-     * Domain method for encapsulating and storing
-     * a .BankTransaction: (date, amount, description).
+     * .BankTransaction() is a Domain method
+     * for encapsulating and storing a
+     * transaction:(date, amount, description).
      *
      * @param (date) The date[0] of the transaction.
      * @param (amount) The transaction amount[1].
@@ -68,7 +68,7 @@ public class BankTransaction extends BankTransactionDAO {
      */
     public LocalDate getDate() {
 
-        return date;
+        return date;    // Returns transaction date to getDate().
     }
 
     /**
@@ -78,7 +78,7 @@ public class BankTransaction extends BankTransactionDAO {
      */
     public double getAmount() {
 
-        return amount;
+        return amount;  // Returns transaction amount to getAmount().
     }
 
     /**
@@ -88,7 +88,7 @@ public class BankTransaction extends BankTransactionDAO {
      */
     public String getDescription() {
 
-        return description;
+        return description; // Returns transaction description to getDescription().
     }
 
     /******************************************************************************

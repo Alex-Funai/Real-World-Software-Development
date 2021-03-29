@@ -1,5 +1,5 @@
-// Main Class File: 'Main_Application.java'
-// File: 'interface.Interface_Exporter.java'
+// Main Class File: Main_Application.java
+// File: BankStatementAnalyzer.java
 // Date: March 23, 2021
 //
 // Programmer: Alexander Kitaro Funai > alexanderfunai@protonmail.com
@@ -10,13 +10,12 @@
 
 /******************************************************************************
  * @apiNote .BankStatementAnalyzer()
- * 'class.BankStatementAnalyzer' is preceeded by a final class in this package known as "Main_Application", and
- * the "BankStatementProcesseor" which is a class for listing various analytical operation methods that are independent
- * to the class as a whole. It is much more manageable, has better cohesion methodology, and more accessible for this
- * program as it evolves, updates, or is worked on by other programmers.
- *
- * @apiNote .analyze()
+ * class.BankStatementAnalyzer is preceeded by a final class in this package known as class.Main_Application, and
+ * class.BankStatementProcesseor is for listing various analytical operation methods that are independent
+ * to the class as a whole. It's more manageable, has better cohesion methodology, and is easier to access as the
+ * program receives feature updates/revision.
  * <p>
+ * @apiNote .analyze()
  * We specify our parsed file that was buffered into a List of strings, as the variable lines. Second here we utilize
  * the method "File.ReadAllLines" which opens a text file, reads all of the lines into a string array, and then closes
  * the file. Since list/sets are an abstract data structure (sort of) we need to utilize this method for manipulating
@@ -29,7 +28,6 @@
  * or change our methods in the "bankStatementProcessor" class to create more user-cases without having to revise this
  * class as well. Additionaly it creates a form of legibility for others whom may have to manage this code, or utilize
  * it without struggling to determine where processes are, and how to revise them to their own needs.
- *
  ******************************************************************************/
 
 package _bankStatementAnalyzer;
