@@ -22,6 +22,7 @@ https://www.alexanderfunai.com
 	a. Splitting them by split() with a "," as the delimiter/separator.
 	b. Extracting the amount.
 	c. Parsing the amount to a double.
+	
  ### Complications:
  * What if the file is empty?
  * What if parsing the amount fails because the data was corrupted?
@@ -32,6 +33,10 @@ https://www.alexanderfunai.com
 When analyzing certain requested dependencies in a program request you can start simple by listing them in a query. 
 "KISS" is an acronym for "Keep-It-Short-Simple". Initially answer the first solution in your query, and have the 
 applications code in a single class.
+
+### Definitions:
+Cohesion - how related tings are in a class.
+Coupling - how dependent classes are upon one another.
 
 ### Final Variables
 Depending on the project Final keywords may be preferable to specify variables not being local and reassigned.
