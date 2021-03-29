@@ -8,14 +8,15 @@
 // Author(s): Rauol-Gabriel Urma & Richard Warburton
 // Section(s): Chapters 2-3
 ///////////////////////////////////////////////////////////////////////////////
-/**
+
+/******************************************************************************
  * @apiNote bankTransactions
  * We intialize and declare a List interface to the variable "bankTransactions" by importing our initial list of data.
  * Again we utilize private/final to anticipate the repitition of this class when it runs through several transactions,
  * each list being represented as a line of data.
  * <p>
  * @apiNote
- */
+ ******************************************************************************/
 
 package _bankStatementAnalyzer;
 import java.time.Month; import java.util.List;

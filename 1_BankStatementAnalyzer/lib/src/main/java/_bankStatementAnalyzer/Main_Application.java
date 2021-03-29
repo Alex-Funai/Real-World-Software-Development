@@ -13,7 +13,6 @@
 //Online sources: "github.com/Iteratr-Learning/Real-World-Software-Development"
 ///////////////////////////////////////////////////////////////////////////////
 
-
 package _bankStatementAnalyzer;
 
 /**
@@ -28,7 +27,6 @@ package _bankStatementAnalyzer;
  * @author akfunai
  */
 public class Main_Application {
-
 
     public static void main(final String[] args) throws Exception {
 

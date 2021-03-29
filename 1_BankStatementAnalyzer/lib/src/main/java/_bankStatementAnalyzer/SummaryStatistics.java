@@ -28,9 +28,9 @@ package _bankStatementAnalyzer;
 public class SummaryStatistics {
 
     private final double sum;       // Initialization/storage for
-    private final double max;       // values of the sum, max,
-    private final double min;       // min, averagecalculations
-    private final double average;   // that occur below in SummaryStatistics().
+    private final double max;       // (sum, max, min, average)
+    private final double min;       // values, for the object
+    private final double average;   // '.SummaryStatistics'
 
     /**
      * SummaryStatistics creates an extended domain class that stores,
@@ -43,29 +43,45 @@ public class SummaryStatistics {
      * @param max Largest transaction amount.
      * @param min Lowest transaction amount.
      * @param average Average transaction amount.
-     *
-     * @return sum
-     * @return max
-     * @return min
-     * @return average
      */
     SummaryStatistics(final double sum, final double max, final double min, final double average) {
 
-        this.sum = sum;         // Encapsulating the
-        this.max = max;         // variable data, to
-        this.min = min;         // isolate values of
-        this.average = average; //'class.SummaryStatistics'.
+        this.sum = sum;         // Encapsulating:
+        this.max = max;         // (sum, max, min, average)
+        this.min = min;         // variable values through
+        this.average = average; // each loop iteration.
     }
-
-    public double getSum() { return sum; }          // Creating methods for returning
+    /**
+     * getSum() Stores accumulative transactions' value.
+     *
+     * @return (sum) The accumulative transactions' value.
+     */
+    public double getSum() {
+        return sum;
+    }
+    /**
+     * getMax() Stores maximum transaction value.
+     *
+     * @return (average) The average transaction value.
+     */
     public double getMax() {
         return max;
-    }          // the encapsulated values for:
+    }
+    /**
+     * getMin() Stores minimum transaction value.
+     *
+     * @return (min) The smallest transaction value.
+     */
     public double getMin() {
         return min;
-    }          // the statement's sum, max/min
+    }
+    /**
+     * getAverage() Stores average transaction value.
+     *
+     * @return (average) The average transaction value.
+     */
     public double getAverage() {
         return average;
-    }  // and average values.
+    }
 }
 
