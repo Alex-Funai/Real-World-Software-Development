@@ -65,15 +65,16 @@ dependencies {
 
 ```
 
+
 ## Running the tests
 
 Tests are located in "src/test". Ensure 'gradle.build' and ProjectStructure include Junit-4.13.2 and HamCrest-core-collections libraries to execute tests.
+
 
 ### What do the tests do?
 
 The tests are basic and not useful. They only are used to experiment with throwing assertions. There is one semi-useful
 tests at the bottom that verifies data from the analyization matches it. One test fails, the other doesn't.
-
 
 ```
     @Test       // T00 -- Example of a failing Assert test.
@@ -94,6 +95,7 @@ tests at the bottom that verifies data from the analyization matches it. One tes
         Assert.assertEquals(expected.getDescription(), result.getDescription());
 ```
 
+
 ## Built With
 
 * [IntelliJ-2020-3.3](https://www.jetbrains.com/idea//) - Preferred Java IDE.
@@ -105,7 +107,6 @@ tests at the bottom that verifies data from the analyization matches it. One tes
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/Iteratr-Learning/Real-World-Software-Development) for details on our code of conduct, and the process for submitting pull requests to us.
-
 
 
 ## Authors
@@ -124,18 +125,17 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Rauol-Gabriel Urma
 * Richard Warburton
-</style>
-</body>
 
 
 
+<!-------------------------------------------------------------------------------->
+<!--- tag:in[] --- crystal_Void.css --- README-Version 0.0 --- alexanderfunai.com --->
 
 
 <style type="text/css">
-/*	akfunai_Readme_Styles00	*/
 
 
-/* Body and virtual container */
+		/* <Body> */
 body {
 width: 100%;
 height: 125%;
@@ -144,14 +144,15 @@ color: #ffffff;
 font-family: 'Source Sans Pro';
 font-size: 13px;
 }
+		/* </Body> */
+
   
-  /* Headers */
+		/* <Headers> */
   h1 {
   color: #ffebff;
   text-decoration: underline;
   font-size: 29.125px;
   font-family: 'Source Sans Pro';
-  
   }
   
   h2 {
@@ -173,19 +174,27 @@ font-size: 13px;
   font-family: 'Source Sans Pro';
   font-weight: lighter;
   }
+		/* </Headers> */
   
-  /* Fenced code blocks */
+  
+		/* </Code> */
   code {
   color: #36ff9a;
   font-family: 'Source Sans Pro';
   font-size: 11.5px;
   }
+		/* </Code> */
   
-  /* href Links */
+  
+		/* <Href> */
   a:link {
   color: #52b5e3;
   }
+		/* </Href> */
   
-  
-/* END[] */  
+ 
 </style>
+
+
+<!--- tag:out[] --- crystal_Void.css --- README-Version 0.0 --- alexanderfunai.com --->
+<!-------------------------------------------------------------------------------->
