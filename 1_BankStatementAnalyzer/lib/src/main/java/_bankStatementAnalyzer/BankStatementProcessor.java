@@ -61,14 +61,31 @@ public class BankStatementProcessor {
     }
 
     // Method for calculating the cumulative value of transactions in a specified date.month [col1].
+
+    /**
+     * Calculates the total transaction amount
+     * in a specified month.
+     *
+     * @param (month) The month you want to analyze.
+     *
+     * @return (total) The accumulated transaction amount for the month.
+     */
     public double calculateTotalInMonth(final Month month) {
-        double total = 0;
-        for (final BankTransaction bankTransaction : bankTransactions) {
-            if (bankTransaction.getDate().getMonth() == month) {
-                total += bankTransaction.getAmount();
+
+        double total = 0;   // Resets total value, in-case 
+                            // it's been set by other methods.
+
+        for (final BankTransaction bankTransaction : bankTransactions) {    // Loops through a transaction list.
+
+            if (bankTransaction.getDate().getMonth() == month) {    // Asserts loop to continue, if the
+                                                                    // transaction month = month passed into method.
+
+                total += bankTransaction.getAmount();   // If yes >> Accumulate transaction amount
+                                                        // to total, and continue loop.
             }
         }
-        return total;
+        return total;   // Return accumulated transaction
+                        // amount for the specified month.
     }
 
     // Method for calculating the cumulative value of transactions, of a specified category [col2].

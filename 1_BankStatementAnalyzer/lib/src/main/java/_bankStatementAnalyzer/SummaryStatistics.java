@@ -48,7 +48,7 @@ public class SummaryStatistics {
         this.sum = sum;         // Encapsulating:
         this.max = max;         // (sum, max, min, average)
         this.min = min;         // variable values through
-        this.average = average; // each loop iteration.
+        this.average = average; // each parser loop iteration.
     }
     /**
      * getSum() Stores accumulative transactions' value.
