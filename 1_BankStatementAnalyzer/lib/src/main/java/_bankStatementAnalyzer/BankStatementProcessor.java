@@ -33,12 +33,11 @@ import java.time.Month; import java.util.List;
  */
 public class BankStatementProcessor {
 
-    private final List<BankTransaction> bankTransactions;   // Initialize 'bankTransactions' object from
-                                                            // 'class.BankTransaction' return.
+    private final List<BankTransaction> bankTransactions;   // Initialize a bankTransactions list object
     /**
      * Encapsulates each iterations' bank transaction values.
      *
-     * @param bankTransactions The statement: (date, amount, description)
+     * @param bankTransactions :A transaction list.
      */
     public BankStatementProcessor(final List<BankTransaction> bankTransactions) {
 
@@ -48,7 +47,7 @@ public class BankStatementProcessor {
      * calculateTotalAmount() calculates total cumulative value
      * of the document's transactions.
      *
-     * @return (total) The total value of transactions.
+     * @return (total) :The total value of transactions.
      */
     public double calculateTotalAmount() {
         double total = 0;
@@ -66,13 +65,13 @@ public class BankStatementProcessor {
      * Calculates the total transaction amount
      * in a specified month.
      *
-     * @param (month) The month you want to analyze.
+     * @param (month) :The month you want to analyze.
      *
-     * @return (total) The accumulated transaction amount for the month.
+     * @return (total) :The accumulated transaction amount for the month.
      */
     public double calculateTotalInMonth(final Month month) {
 
-        double total = 0;   // Resets total value, in-case 
+        double total = 0;   // Resets total value, in-case
                             // it's been set by other methods.
 
         for (final BankTransaction bankTransaction : bankTransactions) {    // Loops through a transaction list.
