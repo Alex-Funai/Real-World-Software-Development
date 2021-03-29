@@ -1,10 +1,15 @@
 <!--- 
 Alexander Kitaro Funai
-<Date here>
+March 29, 2021
+Real World Software Development
+Rauol-Gabriel Urma & Richard Warburton
 https://www.alexanderfunai.com
 -->
 
+
+
 # Chapter 2 - Chapter 3 -- Notes:
+
 
 ## Designing the program:
 
@@ -12,16 +17,16 @@ https://www.alexanderfunai.com
  * What is the total profit and loss from a list of bank statements? Is it positive or negative?
  * How many bank transactions are there in a particular month?
  * What are their top-10 expenses?
- * Which category does they spend most of their money on?
+ * Which category do they spend most of their money on?
  
  ### Process:
- - Loading the CSV file passed as a command-line argument to the application.
- - Path class represents a path in the filesystem.
- - Files.readAllLines() to return a list of lines.
- - Parsing the lines list by:
-	a. Splitting them by split() with a "," as the delimiter/separator.
-	b. Extracting the amount.
-	c. Parsing the amount to a double.
+ 1. Loading the CSV file passed as a command-line argument to the application.
+ 2. Path class represents a path in the filesystem.
+ 3. Files.readAllLines() to return a list of lines.
+ 4. Parsing the lines list by:
+	+ splitting them by split() with a "," as the delimiter/separator.
+	+ extracting the amount.
+	+ parsing the amount to a double.
 	
  ### Complications:
  * What if the file is empty?
@@ -52,14 +57,16 @@ and revision/updating becomes more complicated... Especially if the program inte
 ### Final Variables
 Depending on the project Final keywords may be preferable to specify variables not being local and reassigned.
 
-## Code Maintainability and Anti-Patterns:
- * Code is simple to locate code responsible for particular features.
- * Code is simple to understand what the code does.
- * Code is simple to add or remove new features.
- * Code provides good encapsulation. 
- * Implementation details should be hidden to users, so it's easier to understand and make changes.
 
-## Exceptions
+## Code Maintainability and Anti-Patterns:
+ + Code is simple to locate code responsible for particular features.
+ + Code is simple to understand what the code does.
+ + Code is simple to add or remove new features.
+ + Code provides good encapsulation. 
+ + Implementation details should be hidden to users, so it's easier to understand and make changes.
+
+
+## Exceptions:
 
 Java incoorporates exceptions as a first-class language feature to control flow in code, and improve maintenance and test in isolation.
 
@@ -80,7 +87,8 @@ throw. If noit, you have to provide a suitable try/catch block for that particul
 These are errors that can be thrown at any time during the program execution. Methods don't have to explicitly declare these exceptions in their
 signature and the caller doesn't have to handle them explicitly, as it would with a checked exception.
 
-## Overly Specific BankStatement Validator Class
+
+## Overly Specific BankStatement Validator Class:
 The "OverlySpecificBankStatementValidator" class entails specifications and checks for the format of a parsed filed.
 Instead of utilizing multiple exceptions, which would be counter-productive, as it forces to user to use your API (not kind).
 It's not ideal to convert edge cases into checked exceptions, and the approach below of may be better.
@@ -154,12 +162,13 @@ public class OverlySpecificBankStatementValidator {
     }
 }
 ```
-## The Notification Class
+
+
+## The Notification Class:
 The "Notification" class is an ideal solution to creating a validation class for our program. We introduce a domain class
 to collect errors, and then can throw  back unchecked exsceptions. This validator is able to collect multiple errorse in one pass,
 something that wasn't poossible in the "OverlySpecific" validator classes.
- 
- 
+
 ```
 package BankStatementAnalyzer;
 
@@ -221,53 +230,77 @@ public class Notification {
 }
 ```
 
+
+
+<!-------------------------------------------------------------------------------->
+<!--- tag:in[] --- crystal_Void.css --- README-Version 0.0 --- alexanderfunai.com --->
+
+
+
 <style type="text/css">
-/*	akfunai_Readme_Styles01	*/
 
 
-/* Body and virtual container */
+		/* <Body> */
 body {
 width: 100%;
 height: 125%;
 background-color: #282A36;
-color: #FFFFFF;
+color: #ffffff;
 font-family: 'Source Sans Pro';
-font-size: 12.825px;
+font-size: 13px;
 }
+		/* </Body> */
+
   
-  /* Headers */
-  h1, {
-  font-size: 30px;
-  color: pink;
+		/* <Headers> */
+  h1 {
+  color: #ffebff;
   text-decoration: underline;
+  font-size: 29.125px;
   font-family: 'Source Sans Pro';
-  }  
+  }
   
-  h2, {
-	color: pink;
-	font-family: 'Source Sans Pro';
-	font-size: 21px;
-	text-decoration: overline;
-	
+  h2 {
+  color: #e6f8ff;
+  font-size: 21.825px;
+  text-decoration: overline;
+  font-family: 'Source Sans Pro';
   }
   
   h3 {
-	color: pink;
-	font-family: 'Source Sans Pro';
-	font-size: 16px;
-	font-weight: lighter;
+  color: #e6f8ff;
+  font-family: 'Source Sans Pro';
+  font-size: 15.125px;
+  font-weight: lighter;
   }
   
-  /* Fenced code blocks */
+  h4 {
+  color: #e6f8ff;
+  font-family: 'Source Sans Pro';
+  font-weight: lighter;
+  }
+		/* </Headers> */
+  
+  
+		/* </Code> */
   code {
-  color: #31c46a;
+  color: #36ff9a;
   font-family: 'Source Sans Pro';
   font-size: 11.5px;
   }
+		/* </Code> */
   
-  .container {
-  height: 100%;
-  width: 100%;
   
-/* END[] */  
+		/* <Href> */
+  a:link {
+  color: #52b5e3;
+  }
+		/* </Href> */
+  
+ 
 </style>
+
+
+
+<!--- tag:out[] --- crystal_Void.css --- README-Version 0.0 --- alexanderfunai.com --->
+<!-------------------------------------------------------------------------------->

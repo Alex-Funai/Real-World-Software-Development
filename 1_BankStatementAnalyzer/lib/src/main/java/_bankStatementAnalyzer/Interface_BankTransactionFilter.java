@@ -12,10 +12,9 @@
 package _bankStatementAnalyzer;
 
 /**
- * (Write a succinct description of this class here. You should avoid
- * wordiness and redundancy. If necessary, additional paragraphs should
- * be preceded by <p>, the html tag for a new paragraph.)
  *
+ *
+ * @author Raoul-Gabriel Urma & Richard Warburton
  */
 @FunctionalInterface
 public interface Interface_BankTransactionFilter {

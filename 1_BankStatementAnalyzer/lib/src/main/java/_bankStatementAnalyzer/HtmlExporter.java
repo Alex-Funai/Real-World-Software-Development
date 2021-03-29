@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
-// Main Class File: 'Main_Application.java'
-// File: 'interface.Interface_Exporter.java'
+// Main Class File: Main_Application.java
+// File: interface.Interface_Exporter.java
 // Date: March 23, 2021
 //
 // Programmer: Alexander Kitaro Funai > alexanderfunai@protonmail.com
@@ -9,12 +9,6 @@
 // Section(s): Chapters 2-3
 ///////////////////////////////////////////////////////////////////////////////
 
-/*  The HTMLExporter is an extension of API we have created with the base "Interface_Exporter" interface.
- *   This class utilizes the statement in ""Interface_Exporter", which is calling for the SummaryStatistics to be returned as a String object.
- *   Since our parent/base interface is implemented by this new HTMLExporter, the program assumes/utilizes that the information being
- *    handled will be in String format, thus we don't need to prelude our class to designate handling that data-type.
- *
- */
 package _bankStatementAnalyzer;
 
 /**
@@ -26,7 +20,7 @@ package _bankStatementAnalyzer;
  *
  * @see _bankStatementAnalyzer.Interface_Exporter for
  *
- * <p>Bugs: not enough.
+ * <p> Bugs: not enough.
  *
  * @author Raoul-Gabriel Urma & Richard Warburton
  */

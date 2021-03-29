@@ -8,17 +8,21 @@
 // Section(s): Chapters 2-3
 ///////////////////////////////////////////////////////////////////////////////
 
+
+
+package _bankStatementAnalyzer;
+
 /**
+ * Class for divising file.type parsing into methods.
+ *
  * @deprecated .BankTransactionParser()
  *
- * @see _bankStatementAnalyzer.Interface_BankStatementParser for global parser.
+ * @see _bankStatementAnalyzer.Interface_BankStatementParser for global .interface parser.
  *
  * @author Raoul-Gabriel Urma & Richard Warburton
  */
-// Parser for file type variants.
-package _bankStatementAnalyzer;
-
 public class BankTransactionParser {
+
     public BankTransaction parseFromCSV(final String line) {
         // ...
         throw new UnsupportedOperationException();
