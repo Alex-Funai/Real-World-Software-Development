@@ -42,26 +42,29 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 3. Edit 'gradle.build'  > add plugins / dependencies / test framework:  JUnit-4.13.2 / HamCreset-1.2 / Java.
 
 ```
-// build.gradle
-
-apply plugin: 'java'
+// 'build.gradle'
 
 plugins {
-    id 'java'
+    // Apply the java-library plugin for API and implementation separation.
+    id 'java-library'
 }
 
 repositories {
-    mavenCentral()
+    // Use JCenter for resolving dependencies.
+    jcenter()
 }
 
 dependencies {
-    testImplementation('org.junit.jupiter:junit-jupiter-api:4.13.2')
-    testRuntime('org.junit.jupiter:junit-jupiter-engine:4.13.2')
+    // Use JUnit test framework.
+    testImplementation 'junit:junit:4.13'
+
+    // This dependency is exported to consumers, that is to say found on their compile classpath.
+    api 'org.apache.commons:commons-math3:3.6.1'
+
+    // This dependency is used internally, and not exposed to consumers on their own compile classpath.
+    implementation 'com.google.guava:guava:29.0-jre'
 }
 
-test {
-    useJUnitPllatform()
-}
 ```
 
 ## Running the tests
