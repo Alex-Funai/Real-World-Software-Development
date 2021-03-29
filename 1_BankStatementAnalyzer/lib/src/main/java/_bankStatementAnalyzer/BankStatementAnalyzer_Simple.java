@@ -8,6 +8,14 @@
 // Section(s): Chapters 2-3
 ///////////////////////////////////////////////////////////////////////////////
 
+/******************************************************************************
+ * @deprecated BankStatementAnalyzer_Simple()
+ *
+ * @see _bankStatementAnalyzer.BankStatementAnalyzer for updated class.
+ *
+ * @use Main_Application() for updated program.
+ ******************************************************************************/
+
 package _bankStatementAnalyzer;
 import java.io.IOException;
 import java.nio.file.Files; import java.nio.file.Paths; import java.nio.file.Path;
@@ -58,9 +66,8 @@ public class BankStatementAnalyzer_Simple {
         System.out.println("The total for all transactions is " + total);   // Prints out a statement that shows
                                                                             // the calculated total for transactions.
         /**
-         * @ccode Inline methodforJanuaryTransactions()
-         * Embeded method for processing transactions specifically
-         * of the month January.
+         * @ccode is an inline method for processing January
+         * specific transactions.
          *
          * @author akfunai
          */
