@@ -7,6 +7,7 @@ Chapter 2 and Chapter 3
 -->
 
 
+
 # Bank Statement Analyzer
 
 This is an excercise program from the book Real World Software Development by Rauol-Gabriel Urma and  Richard Warburton.
