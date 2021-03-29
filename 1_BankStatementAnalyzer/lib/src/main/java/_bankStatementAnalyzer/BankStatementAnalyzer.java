@@ -57,7 +57,10 @@ public class BankStatementAnalyzer {
      *
      * @throws IOException :
      */
-    public void analyze (final String fileName, final Interface_BankStatementParser interfaceBankStatementParser) throws IOException {
+    public void analyze (
+            final String fileName,
+            final Interface_BankStatementParser interfaceBankStatementParser,
+            final Interface_Exporter exporter) throws IOException {
 
         final Path path = Paths.get (RESOURCES + fileName);   // Initializing variable 'path' to reference
                                                                    // RESOURCES and the object fileName() file location.
@@ -70,16 +73,24 @@ public class BankStatementAnalyzer {
 
         final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);     // Initialize a new processor object that
                                                                                                                 // uses the bankTransactions list object.
-        collectSummary (bankStatementProcessor);    //
-                                                    //
+
+        final SummaryStatistics summaryStatistics = bankStatementProcessor.summarizeTransactions();
+
+        System.out.println(exporter.export(summaryStatistics));
+
+        /**
+         * @deprecated
+         * collectSummary (bankStatementProcessor);
+         */
     }
     /**
+     * @deprecated collectSummary()
      * Prints a bank statement total amount,
      * amount in certain months, and amount for a category.
      *
      * @param bankStatementProcessor The processor for bank statement calculation methods.
      */
-    private static void collectSummary  (final BankStatementProcessor bankStatementProcessor) {
+    private static void collectSummary(final BankStatementProcessor bankStatementProcessor) {
 
         System.out.println("The total for all transactions is " + bankStatementProcessor.calculateTotalAmount());   // Prints out total transaction values
                                                                                                                     // of the entire document.

@@ -42,21 +42,14 @@
 
 package _bankStatementAnalyzer;
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;  // 'format.DateTimeFormatter' allows converting
-                                            // calendar date formats for compilation.
-import java.util.List;
-import static java.util.stream.Collectors.toList;   // 'util.stream' to output complex data-
-                                                    // structures such as lists, maybe arrays, etc.
+import java.time.format.DateTimeFormatter;
+import java.util.List; import static java.util.stream.Collectors.toList;   // util.stream outputs collections/sets.
 /**
- *
- *
- * @see Interface_BankStatementParser :for current/indiscriminate file-type parser.
- *
  * Scans through a .CSV document.
  * date format = (dd--MM-yyyy).
  * delimitters = ','.
  *
- * <p>Bugs: (a list of bugs and other problems)
+ * @see Interface_BankStatementParser
  *
  * @author Raoul-Gabriel Urma & Richard Warburton
  */

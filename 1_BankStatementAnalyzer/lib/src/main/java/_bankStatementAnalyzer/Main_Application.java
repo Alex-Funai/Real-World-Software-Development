@@ -15,11 +15,6 @@
 
 package _bankStatementAnalyzer;
 
-import java.time.LocalDate;
-import java.time.Month;
-import java.util.List;
-import  _bankStatementAnalyzer.BankTransaction;
-
 /**
  * This program Will parse through CSV, XML,  and JSON files types , and process/return various operations and data.
  * You can personalize the information returned for each different file type by accessing/editing their unique classes,
@@ -34,8 +29,16 @@ import  _bankStatementAnalyzer.BankTransaction;
 public class Main_Application {
     public static void main(final String[] args) throws Exception {
 
-        final BankStatementAnalyzer bankStatementAnalyzer = new BankStatementAnalyzer();
-        final Interface_BankStatementParser bankStatementParser = new BankStatementCsvParser();
+        final BankStatementAnalyzer bankStatementAnalyzer
+                = new BankStatementAnalyzer();
 
+        final Interface_BankStatementParser bankStatementParser
+                = new BankStatementCsvParser();
 
+        final Interface_Exporter exporter
+                = new HtmlExporter();
+
+        bankStatementAnalyzer.analyze("bank-data-simple.html", bankStatementParser, exporter);
+
+    }
 }
