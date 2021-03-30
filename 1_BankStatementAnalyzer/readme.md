@@ -28,12 +28,8 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 1. Clone the repository or download the .zip and extract locally.
 2. Configure the 'build.gradle' file for libraries/dependencies.
 3. Configure project structure for libraries/dependencies.
-4. In Main_Application >> create new analyzer, parser, and exporter objects.
-5. In Main_Application >> exporter declaration >> specify the file type exporter class.
-	+ Ex: final Interface_Exporter htmlExporter = new HtmlExporter();
-5. In Main_Application >> initialize your bankStatementAnalyzer object with parameters of (fileName, Interface_BankStatementParser object, ExporterObject)
-	+ Ex: bankStatementAnalyzer.analyze("bank-data-simple.html", bankStatementParser, exporter);
-6. In BankStatementAnalyzer >> edit methods from BankStatementProcessor to customize your analysis.
+4. Modify BankStatementAnalyzer.statementAPI() with methods from BankStatementProcessor.
+	+ Ex: System.out.println("The total spent on Cheese is: " + bankStatementProcessor.calculateTotalForCategory("CHEESE"));
 6. Run Main_Application.main().
 
 
