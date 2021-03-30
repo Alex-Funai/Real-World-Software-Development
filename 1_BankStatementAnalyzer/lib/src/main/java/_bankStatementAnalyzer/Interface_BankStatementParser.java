@@ -13,16 +13,17 @@ package _bankStatementAnalyzer;
 import java.util.List;
 
 /**
- * Parses bank statements for various file types.
+ * Domain interface for parsing all statements.
  *
  * @author :Raoul-Gabriel Urma & Richard Warburton
  */
 interface Interface_BankStatementParser {
 
     BankTransaction parseFrom (String line);
+
     List<BankTransaction> parseLinesFrom (List<String> lines);
 
 
-
 }
+
 

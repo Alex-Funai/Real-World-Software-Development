@@ -14,6 +14,14 @@ Chapter 2 and Chapter 3
 This is an excercise program from the book Real World Software Development by Rauol-Gabriel Urma and  Richard Warburton.
 The program is capable of parsing CSV, HTML, and JSON file types, and then returning specific information to the user.
 
+```
+/**
+* @ApiNote :BankStatementProcessor serves as API that holds the methods for operating on bank transactions.
+* 
+* @ApiNote :BankStatementAnalyzer.useMethodsOnTransactions() is where you can add those operation methods.
+*
+```
+
 
 ## Getting Started:
 
@@ -23,9 +31,9 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 4. In Main_Application >> create new analyzer, parser, and exporter objects.
 5. In Main_Application >> exporter declaration >> specify the file type exporter class.
 	+ Ex: final Interface_Exporter htmlExporter = new HtmlExporter();
-	+ Ex: final Interface_Exporter csvExporter = new CSVExporter(); <-- (in design).
-5. in Main_Application >> initialize your bankStatementAnalyzer object with parameters of (fileName, Interface_BankStatementParser object, ExporterObject)
+5. In Main_Application >> initialize your bankStatementAnalyzer object with parameters of (fileName, Interface_BankStatementParser object, ExporterObject)
 	+ Ex: bankStatementAnalyzer.analyze("bank-data-simple.html", bankStatementParser, exporter);
+6. In BankStatementAnalyzer >> edit methods from BankStatementProcessor to customize your analysis.
 6. Run Main_Application.main().
 
 

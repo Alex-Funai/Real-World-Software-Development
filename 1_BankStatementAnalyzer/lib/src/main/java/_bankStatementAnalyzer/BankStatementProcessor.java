@@ -24,7 +24,12 @@ import java.util.DoubleSummaryStatistics;
 import java.util.List;
 
 /**
- * Processes a list of bank transactions.
+ * Serves as an API handling statement operationo methods.
+ * <p>
+ * @apiNote Use these methods in BankStatementAnalyzer.useMethodsOnTransactions()
+ * and invoke them in Main_Application
+ * <p>/
+ *
  * @see BankStatementAnalyzer
  *
  * @author :Raoul-Gabriel Urma & Richard Warburton
@@ -34,7 +39,7 @@ public class BankStatementProcessor {
     private final List<BankTransaction> bankTransactions;   // Initializes a list of
                                                             // bank transactions as an object.
     /**
-     * Processes a bank statement and it's transactions list.
+     * Processor object to call in other classes.
      *
      * @param bankTransactions :A list of bank transactions.
      */
@@ -44,7 +49,7 @@ public class BankStatementProcessor {
     }
 
     /**
-     * Summarizes bank statement's transactions.
+     * Iintializes transaction summary object.
      *
      * @return (getSum, getMax, getMin, getAverage) :The sum, maximum, minimum, and average transaction value.
      */
@@ -162,20 +167,4 @@ public class BankStatementProcessor {
         }
         return total;
     }
-
-
-
-    /* This method is less desireable, because it combines multiple operations of a bank transaction.
-     *  This method is less desireable, because the "selection-logic" is coupled w ith the "iteration-logic".
-     *  If the previous 2 test methods stand, then this is redundant.
-     *
-     *  [SOLUTION]: Implement a BankTransactionFilter interface to couple the BankTransaction class.
-     *  The BankTransactionFilter we'll entail all the properties of the BankTransaction class, and return a boolean.
-     *  This would be a functional interface.
-     *  [Functional Interface] --- A functional interface, is an interface that only contains a single abstract method.
-     *  A functional interface is notated by using the "FunctionalInterface" annotation to clarify the interface's intent.
-     */
-
-
-
 }

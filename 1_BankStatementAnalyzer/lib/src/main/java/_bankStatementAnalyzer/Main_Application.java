@@ -49,6 +49,8 @@ public class Main_Application {
 
         bankStatementAnalyzer.analyze("bank-data-simple.html", bankStatementParser, exporter);
 
+        bankStatementAnalyzer.analyze("ExampleStatements2.csv", bankStatementParser, exporter);
+
         bankStatementAnalyzer.analyze("ExampleStatements.csv", bankStatementParser, exporter);
 
     }

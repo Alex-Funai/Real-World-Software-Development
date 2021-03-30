@@ -22,8 +22,8 @@
  * that data into a string type.Possibly "StringBuilder" or "StringUtils.join" could be utilzied, but I 'm unsure,
  * and that could possibly include more complications througout the program.
  * <p>
- * @apiNote .collectSummary()
- * The "collectSummary" method intakes  methods from the "bankStatementProcessor" (bankStatement), and prints out some
+ * @apiNote .statementSummaryBasic()
+ * The "statementSummaryBasic" method intakes  methods from the "bankStatementProcessor" (bankStatement), and prints out some
  * simple calculations and information regarding that data. This form of decoupling is ideal, because we can simply add
  * or change our methods in the "bankStatementProcessor" class to create more user-cases without having to revise this
  * class as well. Additionaly it creates a form of legibility for others whom may have to manage this code, or utilize
@@ -38,7 +38,7 @@ import java.util.List;
 
 /**
  * The BankStatementAnalyzer class will parse a CSV file from the "src/Resources" folder of the projecct, and return a
- * few standard System.out statements under the "collectSummary" method to mainly verify that the operating
+ * few standard System.out statements under the "statementSummaryBasic" method to mainly verify that the operating
  * "class.*(BankStatementProcessor, BankStatementTransaction, BankStatementParser, BankTransactionProcessor" work.
  *
  * <p>Bugs: n/a
@@ -77,24 +77,27 @@ public class BankStatementAnalyzer {
         final SummaryStatistics summaryStatistics = bankStatementProcessor.summarizeTransactions();
 
 
-        collectSummary(bankStatementProcessor);
-        System.out.println(exporter.export(summaryStatistics));
+        statementAPI(bankStatementProcessor);
 
+        statementSummaryBasic(bankStatementProcessor);
 
+        if (fileName.contains(".html")) {
+            System.out.println(exporter.export(summaryStatistics));
+        }
 
         /**
          * @deprecated
-         * collectSummary (bankStatementProcessor);
+         * statementSummaryBasic (bankStatementProcessor);
          */
     }
     /**
-     * collectSummary()
+     * statementSummaryBasic()
      * Prints a bank statement total amount,
      * amount in certain months, and amount for a category.
      *
      * @param bankStatementProcessor The processor for bank statement calculation methods.
      */
-    public static void collectSummary(final BankStatementProcessor bankStatementProcessor) {
+    public static void statementSummaryBasic(final BankStatementProcessor bankStatementProcessor) {
 
         System.out.println("The total for all transactions is " + bankStatementProcessor.calculateTotalAmount());   // Prints out total transaction values
                                                                                                                     // of the entire document.
@@ -106,7 +109,26 @@ public class BankStatementAnalyzer {
                                                                                                                                             // for the month February.
 
         System.out.println("The total salary received is " + bankStatementProcessor.calculateTotalForCategory("Salary"));   // Prints out total transaction value
-                                                                                                                            // for description/category[2] Salary.
+
+
+    }
+
+    public static void statementAPI(final BankStatementProcessor bankStatementProcessor) {
+
+        System.out.println("These transactions were greater than 30" + bankStatementProcessor.findTransactionGreaterThanEqual(30));
+
+
+        bankStatementProcessor.summarizeTransactions();
+
+        bankStatementProcessor.calculateTotalAmount();
+        bankStatementProcessor.calculateTotalInMonth(Month.JANUARY);
+        bankStatementProcessor.calculateTotalForCategory("cheese");
+
+
+        bankStatementProcessor.findTransactionGreaterThanEqual(5);
+
+
+
     }
 }
 /******************************************************************************
@@ -128,7 +150,7 @@ public class BankStatementAnalyzer {
  final List <BankTransaction> bankTransactions = bankStatementParser.parseLinesFrom(lines);
  // final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);
 
- collectSummary (bankStatementProcessor);
+ statementSummaryBasic (bankStatementProcessor);
  }
  ******************************************************************************/
 

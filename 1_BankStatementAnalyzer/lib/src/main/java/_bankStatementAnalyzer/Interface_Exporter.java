@@ -47,7 +47,6 @@ public interface Interface_Exporter {
      */
     String export (SummaryStatistics summaryStatistics);
 }
-
     /**
      * @deprecated
      * This is an example of utilizing the exporter to push out SummaryStatistics, but return void.
