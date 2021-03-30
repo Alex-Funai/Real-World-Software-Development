@@ -1,5 +1,5 @@
-// Main Class File: Main_Application.java
-// File: BankTransactionParser.java
+// Main Class File: 'Main_Application.java'
+// File: BankTransactionParser
 // Date: March 23, 2021
 //
 // Programmer: Alexander Kitaro Funai > alexanderfunai@protonmail.com
@@ -13,7 +13,7 @@ package _bankStatementAnalyzer;
 /**
  * Class for divising file.type parsing into methods.
  *
- * @deprecated BankTransactionParser()
+ * @deprecated .BankTransactionParser()
  *
  * @see _bankStatementAnalyzer.Interface_BankStatementParser for global .interface parser.
  *

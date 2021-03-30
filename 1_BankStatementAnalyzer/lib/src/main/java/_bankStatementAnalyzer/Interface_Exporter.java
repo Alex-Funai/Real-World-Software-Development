@@ -11,6 +11,8 @@
 
 package _bankStatementAnalyzer;
 
+import java.util.List;
+
 /**
  * @apiNote InterfaceExporter()
  * This class will be utilized as an API. The reason we introduce this as an interface, is so we can decouple
@@ -28,6 +30,7 @@ package _bankStatementAnalyzer;
  *
  * @author Raoul-Gabriel Urma & Richard Warburton
  */
+@FunctionalInterface
 public interface Interface_Exporter {
 
     /**

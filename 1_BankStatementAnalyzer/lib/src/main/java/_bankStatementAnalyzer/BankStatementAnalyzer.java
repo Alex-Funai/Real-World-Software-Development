@@ -76,7 +76,11 @@ public class BankStatementAnalyzer {
 
         final SummaryStatistics summaryStatistics = bankStatementProcessor.summarizeTransactions();
 
+
+        collectSummary(bankStatementProcessor);
         System.out.println(exporter.export(summaryStatistics));
+
+
 
         /**
          * @deprecated
@@ -84,13 +88,13 @@ public class BankStatementAnalyzer {
          */
     }
     /**
-     * @deprecated collectSummary()
+     * collectSummary()
      * Prints a bank statement total amount,
      * amount in certain months, and amount for a category.
      *
      * @param bankStatementProcessor The processor for bank statement calculation methods.
      */
-    private static void collectSummary(final BankStatementProcessor bankStatementProcessor) {
+    public static void collectSummary(final BankStatementProcessor bankStatementProcessor) {
 
         System.out.println("The total for all transactions is " + bankStatementProcessor.calculateTotalAmount());   // Prints out total transaction values
                                                                                                                     // of the entire document.

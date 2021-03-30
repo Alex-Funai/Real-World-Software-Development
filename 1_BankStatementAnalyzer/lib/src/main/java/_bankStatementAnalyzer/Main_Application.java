@@ -15,6 +15,14 @@
 
 package _bankStatementAnalyzer;
 
+
+
+import java.lang.invoke.SerializedLambda;
+import java.nio.file.Path;
+import java.util.List;
+
+
+
 /**
  * This program Will parse through CSV, XML,  and JSON files types , and process/return various operations and data.
  * You can personalize the information returned for each different file type by accessing/editing their unique classes,
@@ -40,6 +48,7 @@ public class Main_Application {
 
 
         bankStatementAnalyzer.analyze("bank-data-simple.html", bankStatementParser, exporter);
+
         bankStatementAnalyzer.analyze("ExampleStatements.csv", bankStatementParser, exporter);
 
     }

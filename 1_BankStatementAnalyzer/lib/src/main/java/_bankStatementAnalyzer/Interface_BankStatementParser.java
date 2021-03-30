@@ -17,9 +17,12 @@ import java.util.List;
  *
  * @author :Raoul-Gabriel Urma & Richard Warburton
  */
-public interface Interface_BankStatementParser {
+interface Interface_BankStatementParser {
 
     BankTransaction parseFrom (String line);
-
     List<BankTransaction> parseLinesFrom (List<String> lines);
+
+
+
 }
+

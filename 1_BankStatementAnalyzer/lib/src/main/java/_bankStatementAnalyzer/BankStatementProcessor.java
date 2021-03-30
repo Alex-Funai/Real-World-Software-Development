@@ -38,7 +38,7 @@ public class BankStatementProcessor {
      *
      * @param bankTransactions :A list of bank transactions.
      */
-    public BankStatementProcessor(final List<BankTransaction> bankTransactions) {
+     public BankStatementProcessor(final List<BankTransaction> bankTransactions) {
 
         this.bankTransactions = bankTransactions;   // Encapsulate the transaction (date, amount, description).
     }
@@ -59,7 +59,8 @@ public class BankStatementProcessor {
                 doubleSummaryStatistics.getSum(),
                 doubleSummaryStatistics.getMax(),
                 doubleSummaryStatistics.getMin(),
-                doubleSummaryStatistics.getAverage());
+                doubleSummaryStatistics.getAverage()
+        );
     }
 
     /**
@@ -136,10 +137,6 @@ public class BankStatementProcessor {
         return total;   // Return the total amount
                         // for the transaction list.
     }
-
-
-
-
 
     /**
      * Calculates total transaction amount,
