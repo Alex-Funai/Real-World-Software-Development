@@ -80,28 +80,27 @@ public class BankStatementAnalyzer {
         final SummaryStatistics summaryStatistics = bankStatementProcessor.summarizeTransactions();
 
 
+        if (fileName.contains(".html")) {
+            System.out.println("******************************************************************");
+            System.out.println("HTML DATA: ");
+            System.out.println(exporter.export(summaryStatistics));
+        }
+
         for (int i = 0; i < count; i++) {
-
-            if (fileName.contains(".html")) {
-                System.out.println("******************************************************************");
-                System.out.println("  HTML DATA: ");
-                System.out.println(exporter.export(summaryStatistics));
-            }
-
             System.out.println("\n" + "n");
             System.out.println(
                     "*****************************************************************\n" +
-                            "  Statement Summary " + i + "\n" +
-                            "  File Path: " + path + "\n" +
-                            "  File Name: " + fileName + "\n");
+                            "Statement Summary: " + i + "\n" +
+                            "File Path: " + path + "\n" +
+                            "File Name: " + fileName + "\n");
 
             statementSummaryBasic(bankStatementProcessor);
             System.out.println("*****************************************************************");
             System.out.println(
                     "*****************************************************************\n" +
-                            "  Transaction Data " + i + "\n" +
-                            "  File Path: " + path + "\n" +
-                            "  File Name: " + fileName + "\n");
+                            "Transaction Data: " + i + "\n" +
+                            "File Path: " + path + "\n" +
+                            "File Name: " + fileName + "\n");
 
             statementAPI(bankStatementProcessor);
             System.out.println("*****************************************************************");
