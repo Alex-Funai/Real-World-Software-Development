@@ -84,6 +84,10 @@ public class BankStatementAnalyzer {
         final SummaryStatistics summaryStatistics = bankStatementProcessor.summarizeTransactions();
 
 
+        /********************************************************************************************
+         * Manage the statement processor methods here. Use statementSummaryBasic(), or customize
+         * statementAPI instead. Edit BankTransactionProcessor to add more operations.
+         */
             System.out.println("\n");
             System.out.println("*****************************************************************\n" +
                     "Statement Summary: " + "\n" +
@@ -108,13 +112,6 @@ public class BankStatementAnalyzer {
 
             }
         }
-
-
-
-        /**
-         * @deprecated
-         * statementSummaryBasic (bankStatementProcessor);
-         */
 
     /**
      * statementSummaryBasic()
