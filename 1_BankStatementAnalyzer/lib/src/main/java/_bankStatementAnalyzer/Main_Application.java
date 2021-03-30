@@ -40,11 +40,11 @@ public class Main_Application {
                 = new Exporter_HTML();
 
 
-        bankStatementAnalyzer.analyze("bank-data-simple.html", bankStatementParser, exporter);
+        bankStatementAnalyzer.analyze("ExampleStatements.csv", bankStatementParser, exporter);
 
         bankStatementAnalyzer.analyze("ExampleStatements2.csv", bankStatementParser, exporter);
 
-        bankStatementAnalyzer.analyze("ExampleStatements.csv", bankStatementParser, exporter);
+        bankStatementAnalyzer.analyze("bank-data-simple.html", bankStatementParser, exporter);
 
     }
 }

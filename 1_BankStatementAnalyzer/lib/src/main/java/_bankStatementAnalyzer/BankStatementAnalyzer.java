@@ -31,6 +31,9 @@
  ******************************************************************************/
 
 package _bankStatementAnalyzer;
+import java.awt.*;
+import java.awt.event.ContainerEvent;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files; import java.nio.file.Path; import java.nio.file.Paths;
 import java.time.Month;
@@ -47,76 +50,72 @@ import java.util.List;
  */
 public class BankStatementAnalyzer {
 
-    int count=0;
+
 
     private static final String RESOURCES = "lib/src/main/resources/";  // Initialize variable 'RESOURCES'
-                                                                        // for storing file path directory.
+    // for storing file path directory.
+
     /**
      * Analyzes a list of bank transactions.
      *
-     * @param fileName :The file being analyzed.
+     * @param fileName                     :The file being analyzed.
      * @param interfaceBankStatementParser :The indiscriminate bank statement parser.
-     *
      * @throws IOException :
      */
-    public void analyze (
+    public void analyze(
             final String fileName,
             final Interface_BankStatementParser interfaceBankStatementParser,
             final Interface_Exporter exporter) throws IOException {
 
-        final Path path = Paths.get (RESOURCES + fileName);   // Initializing variable 'path' to reference
-                                                                   // RESOURCES and the object fileName() file location.
-        ++count;
+        final Path path = Paths.get(RESOURCES + fileName);   // Initializing variable 'path' to reference
+        // RESOURCES and the object fileName() file location.
 
-        final List <String> lines = Files.readAllLines(path);   // Initialize list 'lines' to intake object path's
-                                                                // file, and read all lines in.
 
-        final List <BankTransaction> bankTransactions = interfaceBankStatementParser.parseLinesFrom(lines);     // Initialize 'bankTransactions' as a list using
-                                                                                                                //  parser object, parseLinesFrom method, and lines object
+        final List<String> lines = Files.readAllLines(path);   // Initialize list 'lines' to intake object path's
+        // file, and read all lines in.
+
+        final List<BankTransaction> bankTransactions = interfaceBankStatementParser.parseLinesFrom(lines);     // Initialize 'bankTransactions' as a list using
+        //  parser object, parseLinesFrom method, and lines object
 
         final BankStatementProcessor bankStatementProcessor = new BankStatementProcessor(bankTransactions);     // Initialize a new processor object that
-                                                                                                                // uses the bankTransactions list object.
+        // uses the bankTransactions list object.
+
 
         final SummaryStatistics summaryStatistics = bankStatementProcessor.summarizeTransactions();
 
 
-        if (fileName.contains(".html")) {
-            System.out.println("******************************************************************");
-            System.out.println("HTML DATA: ");
-            System.out.println(exporter.export(summaryStatistics));
-        }
-
-        for (int i = 0; i < count; i++) {
-            System.out.println("\n" + "n");
-            System.out.println(
-                    "*****************************************************************\n" +
-                            "Statement Summary: " + i + "\n" +
-                            "File Path: " + path + "\n" +
-                            "File Name: " + fileName + "\n");
+            System.out.println("\n");
+            System.out.println("*****************************************************************\n" +
+                    "Statement Summary: " + "\n" +
+                    "File Path: " + path + "\n" +
+                    "File Name: " + fileName + "\n");
 
             statementSummaryBasic(bankStatementProcessor);
-            System.out.println("*****************************************************************");
-            System.out.println(
-                    "*****************************************************************\n" +
-                            "Transaction Data: " + i + "\n" +
-                            "File Path: " + path + "\n" +
-                            "File Name: " + fileName + "\n");
+
+            System.out.println("*****************************************************************\n" +
+                    "Transaction Data: " + "\n" +
+                    "File Path: " + path + "\n" +
+                    "File Name: " + fileName + "\n");
 
             statementAPI(bankStatementProcessor);
-            System.out.println("*****************************************************************");
-            System.out.println("\n" + "\n");
 
 
             if (fileName.contains(".html")) {
+
+                System.out.println("******************************************************************");
+                System.out.println("HTML DATA: ");
                 System.out.println(exporter.export(summaryStatistics));
+
             }
         }
+
+
 
         /**
          * @deprecated
          * statementSummaryBasic (bankStatementProcessor);
          */
-    }
+
     /**
      * statementSummaryBasic()
      * Prints a bank statement total amount,

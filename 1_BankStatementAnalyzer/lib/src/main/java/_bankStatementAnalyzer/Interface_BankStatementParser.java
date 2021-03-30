@@ -24,6 +24,7 @@ interface Interface_BankStatementParser {
     List<BankTransaction> parseLinesFrom (List<String> lines);
 
 
+
 }
 
 
