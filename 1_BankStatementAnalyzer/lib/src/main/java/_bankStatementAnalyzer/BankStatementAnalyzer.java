@@ -47,6 +47,7 @@ import java.util.List;
  */
 public class BankStatementAnalyzer {
 
+
     private static final String RESOURCES = "lib/src/main/resources/";  // Initialize variable 'RESOURCES'
                                                                         // for storing file path directory.
     /**
@@ -77,9 +78,23 @@ public class BankStatementAnalyzer {
         final SummaryStatistics summaryStatistics = bankStatementProcessor.summarizeTransactions();
 
 
-        statementAPI(bankStatementProcessor);
 
+        System.out.println (
+                        "*****************************************************************\n"
+                                             +"Statement Summary\n"+
+                        "  File Path: " + path + "\n" +
+                        "  File Name: " + fileName + "\n" +
+                        "*****************************************************************");
         statementSummaryBasic(bankStatementProcessor);
+        System.out.println();
+        System.out.println (
+                                            "Transaction Data\n"+
+                        "  File Path: " + path + "\n" +
+                        "  File Name: " + fileName + "\n" +
+                        "*****************************************************************");
+        statementAPI(bankStatementProcessor);
+        System.out.println("\n" + "\n");
+
 
         if (fileName.contains(".html")) {
             System.out.println(exporter.export(summaryStatistics));

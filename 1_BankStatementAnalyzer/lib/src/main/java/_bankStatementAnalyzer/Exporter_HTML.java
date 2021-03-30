@@ -24,7 +24,7 @@ package _bankStatementAnalyzer;
  *
  * @author Raoul-Gabriel Urma & Richard Warburton
  */
-public class HtmlExporter implements Interface_Exporter {
+public class Exporter_HTML implements Interface_Exporter {
 
     @Override
     public String export(final SummaryStatistics summaryStatistics) {

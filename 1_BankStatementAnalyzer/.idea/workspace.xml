@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44ddf3e5-7438-46e6-9fd6-6981cc8e7f27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/src/main/resources/ExampleStatements.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_BankStatementParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_BankStatementParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_Exporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Interface_Exporter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/HtmlExporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Exporter_HTML.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Main_Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/Main_Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/resources/ExampleStatements2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/resources/ExampleStatements2.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/src/main/resources/bank-data-simple.html" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/resources/bank-data-simple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,10 +57,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/src/main/resources" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -175,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617005561828</updated>
-      <workItem from="1617005565096" duration="42017000" />
+      <workItem from="1617005565096" duration="44010000" />
     </task>
     <servers />
   </component>
