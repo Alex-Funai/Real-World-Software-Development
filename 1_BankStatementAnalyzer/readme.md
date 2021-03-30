@@ -34,7 +34,6 @@ The program is capable of parsing CSV, HTML, and JSON file types, and then retur
 
 
 
-
 ### Prerequisites:
 * JDK-8.0/1.8
 * Gradle-6.8.3
