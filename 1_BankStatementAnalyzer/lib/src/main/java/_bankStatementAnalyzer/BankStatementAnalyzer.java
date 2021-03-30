@@ -47,6 +47,7 @@ import java.util.List;
  */
 public class BankStatementAnalyzer {
 
+    int count=0;
 
     private static final String RESOURCES = "lib/src/main/resources/";  // Initialize variable 'RESOURCES'
                                                                         // for storing file path directory.
@@ -65,6 +66,7 @@ public class BankStatementAnalyzer {
 
         final Path path = Paths.get (RESOURCES + fileName);   // Initializing variable 'path' to reference
                                                                    // RESOURCES and the object fileName() file location.
+        ++count;
 
         final List <String> lines = Files.readAllLines(path);   // Initialize list 'lines' to intake object path's
                                                                 // file, and read all lines in.
@@ -78,26 +80,37 @@ public class BankStatementAnalyzer {
         final SummaryStatistics summaryStatistics = bankStatementProcessor.summarizeTransactions();
 
 
+        for (int i = 0; i < count; i++) {
 
-        System.out.println (
-                        "*****************************************************************\n"
-                                             +"Statement Summary\n"+
-                        "  File Path: " + path + "\n" +
-                        "  File Name: " + fileName + "\n" +
-                        "*****************************************************************");
-        statementSummaryBasic(bankStatementProcessor);
-        System.out.println();
-        System.out.println (
-                                            "Transaction Data\n"+
-                        "  File Path: " + path + "\n" +
-                        "  File Name: " + fileName + "\n" +
-                        "*****************************************************************");
-        statementAPI(bankStatementProcessor);
-        System.out.println("\n" + "\n");
+            if (fileName.contains(".html")) {
+                System.out.println("******************************************************************");
+                System.out.println("  HTML DATA: ");
+                System.out.println(exporter.export(summaryStatistics));
+            }
+
+            System.out.println("\n" + "n");
+            System.out.println(
+                    "*****************************************************************\n" +
+                            "  Statement Summary " + i + "\n" +
+                            "  File Path: " + path + "\n" +
+                            "  File Name: " + fileName + "\n");
+
+            statementSummaryBasic(bankStatementProcessor);
+            System.out.println("*****************************************************************");
+            System.out.println(
+                    "*****************************************************************\n" +
+                            "  Transaction Data " + i + "\n" +
+                            "  File Path: " + path + "\n" +
+                            "  File Name: " + fileName + "\n");
+
+            statementAPI(bankStatementProcessor);
+            System.out.println("*****************************************************************");
+            System.out.println("\n" + "\n");
 
 
-        if (fileName.contains(".html")) {
-            System.out.println(exporter.export(summaryStatistics));
+            if (fileName.contains(".html")) {
+                System.out.println(exporter.export(summaryStatistics));
+            }
         }
 
         /**
@@ -124,25 +137,39 @@ public class BankStatementAnalyzer {
                                                                                                                                             // for the month February.
 
         System.out.println("The total salary received is " + bankStatementProcessor.calculateTotalForCategory("Salary"));   // Prints out total transaction value
-
-
     }
 
+
+    /**
+     * @apiNote API for using statement/transaction methods
+     * for processing specific data.
+     *
+     * @param bankStatementProcessor The processor class.
+     */
     public static void statementAPI(final BankStatementProcessor bankStatementProcessor) {
 
-        System.out.println("These transactions were greater than 30" + bankStatementProcessor.findTransactionGreaterThanEqual(30));
+    /******************************************************************
+     *                  -Bank Statement/Transaction API-
+     *
+     * @see Invoke methods you'd like to use in this statementAPI().
+     *
+     * @apiNote :Calculation Methods:
+     *  bankStatementProcessor.calculateTotalAmount();
+     *  bankStatementProcessor.calculateTotalInMonth(Month.JANUARY);
+     *  bankStatementProcessor.calculateTotalForCategory("cheese");
+     *
+     *
+     * @apiNote :Find Methods:
+     *  bankStatementProcessor.findTransactionGreaterThanEqual(5);
+     *
+     * @apiNote :Summary Methods:
+     *  bankStatementProcessor.summarizeTransactions();
+     *
+     *******************************************************************/
 
-
-        bankStatementProcessor.summarizeTransactions();
-
-        bankStatementProcessor.calculateTotalAmount();
-        bankStatementProcessor.calculateTotalInMonth(Month.JANUARY);
-        bankStatementProcessor.calculateTotalForCategory("cheese");
-
-
-        bankStatementProcessor.findTransactionGreaterThanEqual(5);
-
-
+    System.out.println("The total amount for all transactions is: " + bankStatementProcessor.calculateTotalAmount());
+    System.out.println("The total spent on Cheese is: " + bankStatementProcessor.calculateTotalForCategory("CHEESE"));
+    System.out.println("The total spent in March was: " + bankStatementProcessor.calculateTotalInMonth(Month.MARCH));
 
     }
 }
