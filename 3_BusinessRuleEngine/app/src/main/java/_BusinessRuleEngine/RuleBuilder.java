@@ -13,10 +13,7 @@
 // Online sources: "github.com/Iteratr-Learning/Real-World-Software-Development"
 ////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
+package _BusinessRuleEngine;
 
 /**
  * Builder for creating rule objects with the appropriate condition and action. You can use this class

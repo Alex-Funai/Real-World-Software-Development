@@ -13,6 +13,7 @@
 // Online sources: "github.com/Iteratr-Learning/Real-World-Software-Development"
 ////////////////////////////////////////////////////////////////////////////////
 
+package _BusinessRuleEngine;
 
 import org.junit.Test;
 
@@ -35,7 +36,7 @@ public class BusinessRuleEngine_Test {
 
     private final List<Facts> facts = new ArrayList<>();
 
-    /**
+
 
     @Test
     public void shouldHaveNoRulesInitially() {
@@ -47,7 +48,6 @@ public class BusinessRuleEngine_Test {
 
     /**
      * Description: Verifies that two actions can be added to the rule engine.
-
      */
     @Test
     public void shouldAddTwoActions() {

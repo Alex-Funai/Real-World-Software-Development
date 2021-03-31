@@ -15,7 +15,7 @@
 
 
 
-
+package _BusinessRuleEngine;
 @FunctionalInterface
 public interface Condition {
 
