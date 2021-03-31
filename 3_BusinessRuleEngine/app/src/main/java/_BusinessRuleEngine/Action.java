@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Main Class File:
-// File: Condition.java
-// Date: March 31, 2021
+// File: Action.java
+// Date: March 28, 2021
 //
 // Author: Alexander Kitaro Funai
 // Email: alexanderfunai@protonmail.com
@@ -14,11 +14,12 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-package _BusinessRuleEngine;
+/**
+ * Functional interface for decoupling the Business Rules Engine.
 
-
+ * @author       Rauol-Gabriel Urma & Richard Warburton
+ */
 @FunctionalInterface
-public interface Condition {
-
-    boolean evaluate (Facts facts);
+public interface Action {
+    void perform(Facts facts);
 }

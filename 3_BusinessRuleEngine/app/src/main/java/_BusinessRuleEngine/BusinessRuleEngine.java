@@ -14,10 +14,11 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-package _BusinessRuleEngine;
+
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 /**
  * Represents a Business Rule Engine.
@@ -26,7 +27,7 @@ import java.util.List;
  *
  * @author       Rauol-Gabriel Urma & Richard Warburton
  * @version      1.0
- * @see also     BusinessRuleEngine, addAction, count, run
+ * @see     BusinessRuleEngine, addAction, count, run
  */
     public class BusinessRuleEngine {
 
@@ -43,7 +44,7 @@ import java.util.List;
      *
      * @param facts :List of business facts.
      */
-    public BusinessRuleEngine (final Facts facts) {
+    public BusinessRuleEngine ( Facts facts) {
 
         this.facts = facts;
 
@@ -87,7 +88,7 @@ import java.util.List;
      */
     public void run() {
 
-        this.action.forEach (action -> action.perform (facts));
+        this.actions.forEach (action -> action.perform (facts));
     }
 
     public void run2() {

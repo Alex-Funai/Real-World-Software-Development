@@ -1,4 +1,4 @@
-package _BusinessRuleEngine;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,7 +30,6 @@ public class Inspector {
     public List<Report> inspect (final Facts facts) {
 
         final List<Report> reportList = new ArrayList<>();
-
 
         for (ConditionalAction conditionalAction : conditionalActionList) {
 

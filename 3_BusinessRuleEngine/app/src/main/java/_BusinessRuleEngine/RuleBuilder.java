@@ -15,7 +15,7 @@
 
 
 
-package _BusinessRuleEngine;
+
 
 
 /**
@@ -26,7 +26,7 @@ package _BusinessRuleEngine;
  */
 public class RuleBuilder {
 
-    private Condition condition;
+    private final Condition condition;
 
 
 
@@ -40,7 +40,7 @@ public class RuleBuilder {
 
     /**
      * Supplies the action to a create rule.
-     * @param action :the action supplied.
+     * @param condition :the action supplied.
      */
     public static RuleBuilder when (Condition condition) {
 

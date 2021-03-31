@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Main Class File:
-// File: Facts
+// File: Condition.java
 // Date: March 31, 2021
 //
 // Author: Alexander Kitaro Funai
@@ -14,28 +14,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-package _BusinessRuleEngine;
 
-import java.util.HashMap;
-import java.util.Map;
 
-public class Facts {
-    
+@FunctionalInterface
+public interface Condition {
 
-    private final Map<String, String> facts = new HashMap<>();
-
-    public String getFact (final String name) {
-
-        return this.facts.get (name);
-    }
-
-    public void addFact (final String name, final String value) {
-
-        this.facts.put (name, value);
-    }
-
-    public void setFact (final String name, final String value) {
-
-        this.facts.put (name, value);
-    }
+    boolean evaluate (Facts facts);
 }

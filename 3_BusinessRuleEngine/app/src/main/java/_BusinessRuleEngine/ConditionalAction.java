@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Main Class File:
-// File: Report.java
+// File: ConditionalAction.java
 // Date: March 31, 2021
 //
 // Author: Alexander Kitaro Funai
@@ -13,5 +13,15 @@
 // Online sources: "github.com/Iteratr-Learning/Real-World-Software-Development"
 ////////////////////////////////////////////////////////////////////////////////
 
-import _BusinessRuleEngine.BusinessRuleEngine;
 
+
+
+public interface ConditionalAction {
+    void perform (Facts facts);
+
+    boolean evaluate (Facts facts);
+
+
+
+
+}

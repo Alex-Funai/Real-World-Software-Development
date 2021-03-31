@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Main Class File:
-// File: ConditionalAction.java
+// File: Facts
 // Date: March 31, 2021
 //
 // Author: Alexander Kitaro Funai
@@ -14,12 +14,28 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-package _BusinessRuleEngine;
-
-@FunctionalInterface
-interface ConditionalAction {
-
-    boolean evaluate (Facts facts);
 
 
+import java.util.HashMap;
+import java.util.Map;
+
+public class Facts {
+    
+
+    private final Map<String, String> facts = new HashMap<>();
+
+    public String getFact (String name) {
+
+        return this.facts.get (name);
+    }
+
+    public void addFact (String name, String value) {
+
+        this.facts.put (name, value);
+    }
+
+    public void setFact (final String name, final String value) {
+
+        this.facts.put (name, value);
+    }
 }

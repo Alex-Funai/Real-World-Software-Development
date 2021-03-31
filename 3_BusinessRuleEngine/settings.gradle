@@ -8,4 +8,4 @@
  */
 
 rootProject.name = '3_BusinessRuleEngine'
-include('lib')
+include('app')

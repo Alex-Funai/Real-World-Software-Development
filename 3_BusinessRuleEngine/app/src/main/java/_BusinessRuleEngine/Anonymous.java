@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Main Class File:
-// File: Action.java
-// Date: March 28, 2021
+// File: Report.java
+// Date: March 31, 2021
 //
 // Author: Alexander Kitaro Funai
 // Email: alexanderfunai@protonmail.com
@@ -14,19 +14,4 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
-package _BusinessRuleEngine;
 
-/**
- * Functional interface for decoupling the Business Rules Engine.
-
- * @author       Rauol-Gabriel Urma & Richard Warburton
- */
-@FunctionalInterface
-interface Action {
-    /**
-     * Executes a rule action.
-     *
-     * @param facts :list of business facts.
-     */
-    void execute (Facts facts);
-}

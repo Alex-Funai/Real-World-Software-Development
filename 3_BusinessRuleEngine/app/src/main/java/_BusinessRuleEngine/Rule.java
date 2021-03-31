@@ -1,4 +1,4 @@
-package _BusinessRuleEngine;
+
 
 
 
@@ -24,7 +24,7 @@ public class Rule {
 
         if (condition.evaluate (facts)) {
 
-            action.execute (facts);
+            action.perform(facts);
         }
     }
 }
