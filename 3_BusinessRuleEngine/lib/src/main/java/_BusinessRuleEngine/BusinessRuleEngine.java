@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
-// Title: The Business Rule Engine
-// Files:
+// Main Class File:
+// File: _BusinessRuleEngine.*
 // Date: March 28, 2021
 //
 // Author: Alexander Kitaro Funai
@@ -30,14 +30,18 @@ import java.util.List;
  */
     public class BusinessRuleEngine {
 
-        private final List<interface_Action> actions;       // Initialize list for
-                                                            // engine-action storage.
+        private final Facts facts;
+        private final List<Action> actions;       // Initialize list for
+                                                  // engine-action storage.
+
     /**
      * Add an action to the engine.
      *
      * @param action The action to add.
      */
-    public BusinessRuleEngine() {
+    public BusinessRuleEngine(final Facts facts) {
+
+        this.facts = facts;
 
         this.actions = new ArrayList<>();       // Initializes a new
                                                 // arraylist for actions.
@@ -48,7 +52,7 @@ import java.util.List;
      *
      * @param action The action to add to the list.
      */
-    public void addAction (final interface_Action action) {
+    public void addAction (final Action action) {
 
         this.actions.add(action);       // Adds the action(s) to
                                         // the 'this.actions' arraylist.
@@ -56,23 +60,20 @@ import java.util.List;
 
     /**
      * Count the number of actions.
-     *
-     * @param count counts the number actions.
-     * @return the number of actions last executed.
+
      */
     public int count() {
+
         return this.actions.size();
     }
 
     /**
      * Runs engine-actions.
-     *
-     * @param run executes the stored actions.
-     * @throws run UnsupportedOperationException
+
      */
     public void run() {
 
-        this.actions.forEach(interface_Action::perform);
+        this.actions.forEach(action -> action.perform(facts));
     }
 
 }

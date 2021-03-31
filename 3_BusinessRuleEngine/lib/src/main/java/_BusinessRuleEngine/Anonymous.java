@@ -1,0 +1,35 @@
+///////////////////////////////////////////////////////////////////////////////
+// Main Class File:
+// File: Report.java
+// Date: March 31, 2021
+//
+// Author: Alexander Kitaro Funai
+// Email: alexanderfunai@protonmail.com
+// Book Author: Rauol-Gabriel Urma & Richard Warburton
+// Book Title: Real-World Software Development
+// Book Section: Chapter 5
+//
+////////////////////////////////////////////////////////////////////////////////
+// Online sources: "github.com/Iteratr-Learning/Real-World-Software-Development"
+////////////////////////////////////////////////////////////////////////////////
+
+
+package _BusinessRuleEngine;
+
+import static org.mockito.Mockito.*;
+public class Anonymous {
+
+    final Customer customer = new Customer("Mark", "CEO");
+
+    BusinessRuleEngine.addAction(new Action() {
+
+        @Override
+                public void perform() {
+            if ("CEO".equals(customer.getJobTitle()))    {
+                Mailer.sendEmail("sales@company.com"), "Relevant customer: " + customer);
+
+            }
+        }
+
+    }
+}

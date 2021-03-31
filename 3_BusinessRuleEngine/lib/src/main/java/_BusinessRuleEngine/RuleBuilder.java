@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////////////////////
-// Main Class File: (name of main application class)
-// File: 'interface_Action.java'
-// Date: March 28, 2021
+// Title: The Business Rule Engine
+// File: RuleBuilder.java
+// Date: March 31, 2021
 //
 // Author: Alexander Kitaro Funai
 // Email: alexanderfunai@protonmail.com
@@ -14,24 +14,10 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 
+
 package _BusinessRuleEngine;
 
-/**
- * Functional interface for decoupling the Business Rules Engine.
- *
- * Bugs: none known
- *
- * @author       Rauol-Gabriel Urma & Richard Warburton
- * @version      1.0
- * @see also     execute
- */
-@FunctionalInterface
-public interface interface_Action {
 
-    /**
-     * Executes a BRE action.
-     *
-     * @param none none
-     */
-    void execute();
+
+public class RuleBuilder {
 }

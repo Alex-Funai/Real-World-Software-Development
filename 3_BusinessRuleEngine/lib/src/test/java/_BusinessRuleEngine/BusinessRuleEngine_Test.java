@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Main Class File: 'BusinessRuleEngine.java'
-// File: '_BusinessRuleEngine_BasicTests.java'
+// File: 'BusinessRuleEngine_Test.java'
 // Date: March 28, 2021
 //
 // Author: Alexander Kitaro Funai
@@ -18,7 +18,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.mock;
-import static _BusinessRuleEngine.interface_Action;
+
 
 /**
  * Represents a Business Rule Engine.
@@ -29,10 +29,10 @@ import static _BusinessRuleEngine.interface_Action;
  * @version      1.0
  * @see also     shouldHaveNoRulesInitially, shouldAddTwoActions
  */
-public class _BusinessRuleEngine_BasicTests {
+public class BusinessRuleEngine_Test {
 
     /**
-     * Description:
+     * Verifies that there aren't any rules initially.
      *
      * @testcase shouldHaveNoRulesInitially
      *
@@ -56,7 +56,7 @@ public class _BusinessRuleEngine_BasicTests {
     }
 
     /**
-     * Description:
+     * Description: Verifies that two actions can be added to the rule engine.
      *
      * @testcase
      *
@@ -103,12 +103,41 @@ public class _BusinessRuleEngine_BasicTests {
 
         final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine();     // Initializes the BRE (base).
 
-        final interface_Action mockAction = mock(interface_Action.class);       // Initializes a mock-action
+        final Action mockAction = mock(Action.class);       // Initializes a mock-action
                                                                                 // using the interface_action.
         businessRuleEngine.addAction(mockAction);       // Adds and runs
         businessRuleEngine.run();                       // the mock-action.
 
         verify(mockAction).perform();       // Verify the perform() method
                                             // is invoked on the Action object.
+    }
+
+    /**
+     * Creates a mock object and verifies an Action is executed.
+     *
+     * @testcase
+     *
+     * @apiNote org.mockito-2.2-all
+     *
+     * @precondition none
+     *
+     * @userInteraction
+     * <li>
+     *
+     * </li>
+     * @postcondition
+     *
+     * @passCriteria
+     */
+    @Test
+    public void shouldPerformAnActionWithFacts() {
+        final Action mockAction = mock(Action.class);
+        final Facts mockFacts = mock(Facts.class);
+        final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine(mockedFacts);
+
+        businessRuleEngine.addActions(mockActions);
+        businessRuleEngine.run();
+
+        verify(mockAction).perform(mockFacts);
     }
 }

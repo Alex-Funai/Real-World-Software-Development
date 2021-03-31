@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="44ddf3e5-7438-46e6-9fd6-6981cc8e7f27" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../3_BusinessRuleEngine/NOTES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/main/java/_bankStatementAnalyzer/BankStatementAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3_BusinessRuleEngine/5_chapterNotes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3_BusinessRuleEngine/lib/src/main/java/_BusinessRuleEngine/BusinessRuleEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/../3_BusinessRuleEngine/lib/src/main/java/_BusinessRuleEngine/BusinessRuleEngine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../3_BusinessRuleEngine/lib/src/main/java/_BusinessRuleEngine/interface_Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/../3_BusinessRuleEngine/lib/src/main/java/_BusinessRuleEngine/interface_Action.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,17 +101,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BankStatementCsvParserTest.shouldParseOneCorrectLine_FAIL" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -167,7 +160,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1617005561828</updated>
-      <workItem from="1617005565096" duration="49740000" />
+      <workItem from="1617005565096" duration="50337000" />
+      <workItem from="1617177331734" duration="424000" />
     </task>
     <servers />
   </component>
@@ -184,6 +178,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
