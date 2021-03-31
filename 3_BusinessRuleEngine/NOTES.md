@@ -43,9 +43,9 @@ import static org.mockito.Mockito.*;
 2.	verify() -- sets up assertions to determine methods are invoked.
 
 
-# Test Cases:
+## Test Cases:
 
-## [5-17] Enumerating different deal stages:
+### [5-17] Enumerating different deal stages:
 
 ```
 public enum Stage {
@@ -53,7 +53,7 @@ public enum Stage {
 }
 ``` 
 
-## [5-18] Rule to calculate a forecast amount for a specific deal:
+### [5-18] Rule to calculate a forecast amount for a specific deal:
 ```
 businessRuleEngine.addAction(facts -> {
     var forecastedAmount = 0.0;
@@ -72,7 +72,7 @@ businessRuleEngine.addAction(facts -> {
 });
 ```
 
-## [5-27] A switch case lambada Rule to calculate a forecast amount for a specific deal:
+### [5-27] A switch case lambada Rule to calculate a forecast amount for a specific deal:
 
 ```
 businessRuleEngine.addAction(facts -> {
@@ -100,6 +100,18 @@ final Action action = (Facts facts) -> {
 final Rule rule = new DefaultRule(condition, action);
 ```
 
+### [5-30] Using the RuleBuilder:
+
+1. Initialize RuleBuilder()
+2. RuleBuilder.when() >> then() 
+```
+final Rule ruleSendEmailToSalesWhenCEO = RuleBuilder
+        .when(facts -> "CEO".equals(facts.getFact("jobTitle")))
+        .then(facts -> {
+            var name = facts.getFact("name");
+            Mailer.sendEmail("sales@company.com", "Relevant customer!!!: " + name);
+        });
+```
 
 
 

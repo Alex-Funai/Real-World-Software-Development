@@ -6,6 +6,7 @@ import java.util.List;
 
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class InspectorTest {
 
@@ -24,21 +25,20 @@ public class InspectorTest {
 
         assertEquals(1, reportList.size());
 
-        assertEquals(true, reportList.get(0).isPositive());
+        /*assertEquals(true, reportList.get(0).isPositive());*/
+        assertTrue(reportList.get(0).isPositive());
     }
 
     private static class JobTitleCondition implements ConditionalAction {
-
         @Override
         public void perform (Facts facts) {
 
-            throw new UnsupportedOperationException();
         }
 
         @Override
         public boolean evaluate (Facts facts) {
 
-            return "CEO".equals(facts.getFact("jobTitle"));+
+            return "CEO".equals(facts.getFact("jobTitle"));
         }
     }
 }

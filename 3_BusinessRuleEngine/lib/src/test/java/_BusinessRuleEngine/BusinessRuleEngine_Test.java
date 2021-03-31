@@ -15,9 +15,16 @@
 
 package _BusinessRuleEngine;
 import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.mock;
+
+import _BusinessRuleEngine.RuleBuilder;
+
 
 
 /**
@@ -30,6 +37,9 @@ import static org.mockito.Mockito.mock;
  * @see also     shouldHaveNoRulesInitially, shouldAddTwoActions
  */
 public class BusinessRuleEngine_Test {
+
+
+    private final List<Facts> facts = new ArrayList<>();
 
     /**
      * Verifies that there aren't any rules initially.
@@ -49,8 +59,8 @@ public class BusinessRuleEngine_Test {
 
         final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine();     // initializes business-
                                                                                     // rule-engine to test.
-        businessRuleEngine.addAction(() -> {});
-        businessRuleEngine.addAction(() -> {});
+        businessRuleEngine.addAction((action) -> {});
+        businessRuleEngine.addAction((action) -> {});
 
         assertEquals(2, businessRuleEngine.count());
     }
@@ -75,8 +85,8 @@ public class BusinessRuleEngine_Test {
 
         final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine();     // Initializes business-
                                                                                     // rule-engine to test.
-        businessRuleEngine.addAction(() -> {});
-        businessRuleEngine.addAction(() -> {});
+        businessRuleEngine.addAction((rule) -> {});
+        businessRuleEngine.addAction((rule) -> {});
 
         assertEquals(2, businessRuleEngine.count());
     }
@@ -133,9 +143,9 @@ public class BusinessRuleEngine_Test {
     public void shouldPerformAnActionWithFacts() {
         final Action mockAction = mock(Action.class);
         final Facts mockFacts = mock(Facts.class);
-        final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine(mockedFacts);
+        final BusinessRuleEngine businessRuleEngine = new BusinessRuleEngine(mockFacts);
 
-        businessRuleEngine.addActions(mockActions);
+        businessRuleEngine.addAction(mockAction);
         businessRuleEngine.run();
 
         verify(mockAction).perform(mockFacts);

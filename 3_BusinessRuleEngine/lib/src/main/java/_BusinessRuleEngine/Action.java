@@ -22,13 +22,11 @@ package _BusinessRuleEngine;
  * @author       Rauol-Gabriel Urma & Richard Warburton
  */
 @FunctionalInterface
-public interface Action {
-    void perform(Facts facts);
-
+interface Action {
     /**
-     * Executes a BRE action.
+     * Executes a rule action.
      *
-     * @param none none
+     * @param facts :list of business facts.
      */
-    void execute();
+    void execute (Facts facts);
 }

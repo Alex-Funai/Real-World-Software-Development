@@ -13,23 +13,5 @@
 // Online sources: "github.com/Iteratr-Learning/Real-World-Software-Development"
 ////////////////////////////////////////////////////////////////////////////////
 
+import _BusinessRuleEngine.BusinessRuleEngine;
 
-package _BusinessRuleEngine;
-
-import static org.mockito.Mockito.*;
-public class Anonymous {
-
-    final Customer customer = new Customer("Mark", "CEO");
-
-    BusinessRuleEngine.addAction(new Action() {
-
-        @Override
-                public void perform() {
-            if ("CEO".equals(customer.getJobTitle()))    {
-                Mailer.sendEmail("sales@company.com"), "Relevant customer: " + customer);
-
-            }
-        }
-
-    }
-}

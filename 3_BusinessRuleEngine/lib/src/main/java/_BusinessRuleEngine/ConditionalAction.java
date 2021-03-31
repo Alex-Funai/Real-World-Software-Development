@@ -16,9 +16,10 @@
 
 package _BusinessRuleEngine;
 
-public interface ConditionalAction {
+@FunctionalInterface
+interface ConditionalAction {
 
     boolean evaluate (Facts facts);
 
-    void perform (Facts facts);
+
 }

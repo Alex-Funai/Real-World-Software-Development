@@ -7,31 +7,25 @@ package _BusinessRuleEngine;
  *
  * @author (Rauol-Gabriel Urma & Richard Warburton)
  */
-@FunctionalInterface
-public interface Rule {
-
-    void perform (Facts facts);
-}
-
-public class DefaultRule implements Rule {
+public class Rule {
 
     private final Condition condition;
 
     private final Action action;
 
-
-    public Rule (final Condition condition, final Action action {
+    public Rule (Condition condition, Action action) {
 
         this.condition = condition;
 
         this.action = action;
     }
 
-    public void perform (final Facts facts) {
+    public void perform (Facts facts) {
 
-        if (condition.evalute(facts)) {
+        if (condition.evaluate (facts)) {
 
-            action.execute(facts);
+            action.execute (facts);
         }
     }
 }
+

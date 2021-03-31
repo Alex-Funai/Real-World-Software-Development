@@ -30,32 +30,46 @@ import java.util.List;
  */
     public class BusinessRuleEngine {
 
+        private final List<Action> actions;
+
+        private final List<Rule> rules;
+
         private final Facts facts;
-        private final List<Action> actions;       // Initialize list for
-                                                  // engine-action storage.
+
+
 
     /**
-     * Add an action to the engine.
+     * List of business facts.
      *
-     * @param action The action to add.
+     * @param facts :List of business facts.
      */
-    public BusinessRuleEngine(final Facts facts) {
+    public BusinessRuleEngine (final Facts facts) {
 
         this.facts = facts;
 
-        this.actions = new ArrayList<>();       // Initializes a new
-                                                // arraylist for actions.
+        this.rules = new ArrayList<>();
+
+        this.actions = new ArrayList<>();
     }
 
     /**
      * Add an action to the engine.
      *
-     * @param action The action to add to the list.
+     * @param action :List of business actions.
      */
     public void addAction (final Action action) {
 
-        this.actions.add(action);       // Adds the action(s) to
+        this.actions.add (action);       // Adds the action(s) to
                                         // the 'this.actions' arraylist.
+    }
+
+    /**
+     * Add rules
+     * @param rule :List of business rules.
+     */
+    public void addRule (final Rule rule) {
+
+        this.rules.add (rule);
     }
 
     /**
@@ -73,7 +87,12 @@ import java.util.List;
      */
     public void run() {
 
-        this.actions.forEach(action -> action.perform(facts));
+        this.action.forEach (action -> action.perform (facts));
+    }
+
+    public void run2() {
+
+        this.rules.forEach (rule -> rule.perform (facts));
     }
 
 }
