@@ -22,5 +22,6 @@ package _BusinessRuleEngine;
  */
 @FunctionalInterface
 public interface Action {
+
     void perform(Facts facts);
 }

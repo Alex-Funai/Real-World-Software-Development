@@ -27,5 +27,7 @@ public class Rule {
             action.perform(facts);
         }
     }
+
+
 }
 

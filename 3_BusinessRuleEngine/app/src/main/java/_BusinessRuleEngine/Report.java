@@ -23,6 +23,12 @@ public class Report {
 
     private final boolean isPositive;
 
+    /**
+     * Default report structure.
+     * @param facts
+     * @param conditionalAction
+     * @param isPositive
+     */
     public Report (
             final Facts facts,
             final ConditionalAction conditionalAction,
@@ -35,21 +41,37 @@ public class Report {
         this.isPositive = isPositive;
     }
 
+    /**
+     * Get the conditional action.
+     * @return
+     */
     public ConditionalAction getConditionalAction() {
 
         return conditionalAction;
     }
 
+    /**
+     * Get the set facts.
+     * @return List<Facts>
+     */
     public Facts getFacts() {
 
         return facts;
     }
 
+    /**
+     * Validate positive.
+     * @return true/false.
+     */
     public boolean isPositive() {
 
         return isPositive;
     }
 
+    /**
+     * View report analysis as strings.
+     * @return Report
+     */
     @Override
     public String toString() {
 

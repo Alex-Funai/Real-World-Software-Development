@@ -30,32 +30,29 @@ import java.util.List;
  */
     public class BusinessRuleEngine {
 
-        private final List<Action> actions;
+        private final List<Action> actions; // List of actions.
 
-        private final List<Rule> rules;
+        private final List<Rule> rules;     // List of rules.
 
-        private final Facts facts;
-
+        private final Facts facts;          // List of facts.
 
 
     /**
      * List of business facts.
      *
-     * @param facts :List of business facts.
+     * @param facts
      */
     public BusinessRuleEngine ( Facts facts) {
 
         this.facts = facts;
-
         this.rules = new ArrayList<>();
-
         this.actions = new ArrayList<>();
     }
 
     /**
      * Add an action to the engine.
      *
-     * @param action :List of business actions.
+     * @param action
      */
     public void addAction (final Action action) {
 
@@ -65,7 +62,7 @@ import java.util.List;
 
     /**
      * Add rules
-     * @param rule :List of business rules.
+     * @param rule
      */
     public void addRule (final Rule rule) {
 
@@ -74,7 +71,7 @@ import java.util.List;
 
     /**
      * Count the number of actions.
-
+     * @return List<action> size.
      */
     public int count() {
 
@@ -82,14 +79,16 @@ import java.util.List;
     }
 
     /**
-     * Runs engine-actions.
-
+     * Runs engine actions.
      */
     public void run() {
 
         this.actions.forEach (action -> action.perform (facts));
     }
 
+    /**
+     * Runs engine rules.
+     */
     public void run2() {
 
         this.rules.forEach (rule -> rule.perform (facts));

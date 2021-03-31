@@ -13,11 +13,18 @@
 // Online sources: "github.com/Iteratr-Learning/Real-World-Software-Development"
 ////////////////////////////////////////////////////////////////////////////////
 
-
-
 package _BusinessRuleEngine;
+
+/**
+ * Fact check state.
+ */
 @FunctionalInterface
 public interface Condition {
 
+    /**
+     * Evaluates if a fact is true/false to a business.
+     * @param facts
+     * @return true/false.
+     */
     boolean evaluate (Facts facts);
 }

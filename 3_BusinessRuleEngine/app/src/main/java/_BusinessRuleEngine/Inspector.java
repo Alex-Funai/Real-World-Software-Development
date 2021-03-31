@@ -14,16 +14,13 @@ import java.util.List;
 public class Inspector {
 
     private final List<ConditionalAction> conditionalActionList;
-
     public Inspector (final ConditionalAction...conditionalActions) {
-
         this.conditionalActionList = Arrays.asList(conditionalActions);
     }
 
-
     /**
+     * Parses a report.
      * @param facts
-     *
      * @return The list of reports that captures the facts, the conditional act, and the result.
      */
     public List<Report> inspect (final Facts facts) {
@@ -31,9 +28,7 @@ public class Inspector {
         final List<Report> reportList = new ArrayList<>();
 
         for (ConditionalAction conditionalAction : conditionalActionList) {
-
             final boolean conditionResult = conditionalAction.evaluate(facts);
-
             reportList.add(new Report(facts, conditionalAction, conditionResult));
         }
         return reportList;
