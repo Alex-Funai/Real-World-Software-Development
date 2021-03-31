@@ -25,8 +25,6 @@ public class RuleBuilder {
 
     private final Condition condition;
 
-
-
     /**
      * Supplies condition to a created rule.
      * @param condition :the condition supplied.
