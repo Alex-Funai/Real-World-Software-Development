@@ -1,15 +1,13 @@
 package Twootr;
 
-import org.junit.*;
-import org.mockito.Mock;
+import org.junit.Before;
+import org.junit.Test;
 
 import java.util.Optional;
-
 import static junit.framework.TestCase.assertFalse;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
-
 
 public class TwootrTest {
 
@@ -22,18 +20,18 @@ public class TwootrTest {
     private Twootr twootr;
     private SenderEndPoint endPoint;
 
+
     @Before
     public void setUp() {
         twootr = new Twootr(userRepository, twootRepository);
 
-        assertEquals(RegistrationStatus, RegistrationStatus.SUCCESS, twootr.onRegisterUser(TestData.USER_ID, TestData.PASSWORD) );
+        assertEquals(RegistrationStatus.SUCCESS, twootr.onRegisterUser(TestData.USER_ID, TestData.PASSWORD));
+        assertEquals(RegistrationStatus.SUCCESS, twootr.onRegisterUser(TestData.OTHER_USER_ID, TestData.PASSWORD));
     }
 
     @Test
     public void verifyUserAuthentication() {
-        // login message for user
-        // login method returns new endpoint
-        // assert endpoint is valid.
+        logon();
     }
 
     @Test

@@ -1,4 +1,4 @@
-package com.iteratrlearning.shu_book.chapter_06;
+package Twootr;
 
 import java.nio.charset.StandardCharsets;
 
@@ -6,7 +6,7 @@ import static java.nio.charset.StandardCharsets.UTF_16;
 
 public class TestData
 {
-    static final String USER_ID = "Joe";
+    public static final String USER_ID = "Joe";
     static final String OTHER_USER_ID = "John";
     static final String NOT_A_USER = "Jack";
 
