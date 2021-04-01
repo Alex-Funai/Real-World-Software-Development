@@ -29,4 +29,13 @@ public class Position {
         return value == position.value;
     }
 
+    @Override
+    public int hashCode() {
+        return value;
+    }
+
+    public Position next() {
+        return new Position (value + 1);
+    }
+
 }
