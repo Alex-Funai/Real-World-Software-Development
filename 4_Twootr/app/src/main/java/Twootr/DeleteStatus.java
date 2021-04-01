@@ -14,7 +14,7 @@
 package Twootr;
 
 /**
- * Enumerated state-objects regarding a twoots' deletion ttatus.
+ * Enumerated state-objects regarding a twoots' deletion status.\\
  * @var ::{SUCCESS, UNKNOWN_TWOOT, NOT_YOUR_TWOOT}
  * @author ::Rauol-Gabriel Urma & Richard Warburton.
  */

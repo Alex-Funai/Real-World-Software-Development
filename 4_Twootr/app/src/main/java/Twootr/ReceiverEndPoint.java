@@ -14,7 +14,7 @@
 package Twootr;
 
 /**
- * Socket endpoint management for twoot handshakes.
+ * Socket endpoint management for twoot handshakes. \\
  * @author Rauol-Gabriel Urma & Richard Warburton
  */
 public interface ReceiverEndPoint {

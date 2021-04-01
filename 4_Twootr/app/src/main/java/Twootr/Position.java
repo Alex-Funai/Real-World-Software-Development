@@ -14,7 +14,10 @@
 package Twootr;
 
 /**
- *
+ * Hierarchy for twoot stream, that promotes visibility of new twoots on user login, \\
+ * and stores twoot data specific to user while they are logged off. \\
+ * @apiNote ::Boolean equals() delegates visibility.
+ * @author ::Rauol-Gabriel Urma & Richard Warburton
  */
 public class Position {
     public static final Position INITIAL_POSITION = new Position(-1);

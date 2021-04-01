@@ -14,7 +14,7 @@
 package Twootr;
 
 /**
- * Enumerated state-objects regarding a twooters follow status w/ another user.
+ * Enumerated state-objects regarding a twooters follow status with another user.\\
  * @var ::{ALREADY_FOLLOWING, BLOCKED, INVALID_USER, SUCCES}.
  * @author ::Rauol-Gabriel Urma & Richard Warburton.
  */

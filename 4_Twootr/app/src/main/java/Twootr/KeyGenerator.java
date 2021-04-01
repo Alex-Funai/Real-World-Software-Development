@@ -18,7 +18,7 @@ import java.security.SecureRandom;
 
 
 /**
- * Hash key generation/structure for users' passwords.
+ * Hash key generation/structure for users' passwords.\\
  * @see org.bouncycastle.crypto.generators.SCrypt;
  * @apiNote ::"bcprov-ext-jdk15on-168.jar".
  * @author ::Rauol-Gabriel Urma & Richard Warburton
@@ -45,7 +45,7 @@ class KeyGenerator {
     }
 
     /**
-     * Generates a random encryption string to tag passwords.
+     * Generates a random encryption string to tag passwords.\\
      * @return ::unique salt encryption[tag] for user password.
      */
     static byte[] newSalt() {

@@ -11,21 +11,19 @@
 // Sources: github.com/Iteratr-Learning/Real-World-Software-Development.git
 ///////////////////////////////////////////////////////////////////////////////
 
+/******************************************************************************
+ * @apiNote <-- Using the query -->
+ * twootRepository.query(new TwootQuery().inUsers(user.getFollowing()).
+ * lastSeenPosition(user.getLastSeenPosition()), user::receiveTwoot);
+ ******************************************************************************/
+
 package Twootr;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-
 import static java.util.Arrays.asList;
 
-/* Example Using Query::
-    twootRepository.query(
-    new TwootQuery()
-        .inUsers(user.getFollowing())
-        .lastSeenPosition(user.getLastSeenPosition()),
-    user::receiveTwoot);
- */
 
 /**
  *
