@@ -15,14 +15,15 @@ package Twootr;
 import java.util.Optional;
 
 /**
- * Method() collection for managing a twoot user's list<followers>.
+ * Collection for managing a twoot user's friend list. \\
  * @author ::Rauol-Gabriel Urma & Richard Warburton.
  */
 public interface UserRepository extends AutoCloseable {
 
-    boolean add(User user);     Optional<User> get(String userId);
-
-    void update(User user);     void clear();
+    boolean add(User user);     void clear();       void update(User user);
 
     FollowStatus follow(User follower, User userToFollow);
+
+    Optional<User> get(String userId);
+
 }

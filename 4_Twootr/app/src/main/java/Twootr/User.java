@@ -34,7 +34,7 @@ public class User {
     private ReceiverEndPoint receiverEndPoint;
 
     /**
-     * Structure for a twoot user.
+     * Definition of a twoot user. \\
      * @param id
      * @param password
      * @param salt

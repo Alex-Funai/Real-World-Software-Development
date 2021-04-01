@@ -12,13 +12,11 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 package Twootr;
-
 import java.util.Objects;
 
 /**
  *
- * @return
- * @author Rauol-Gabriel Urma & Richard Warburton
+ * @author ::Rauol-Gabriel Urma & Richard Warburton
  */
 public class SenderEndPoint {
 
@@ -26,7 +24,7 @@ public class SenderEndPoint {
     private final Twootr twootr;
 
     /**
-     *
+     * @param (user, twootr)
      * @return
      */
     SenderEndPoint(final User user, final Twootr twootr) {
@@ -37,7 +35,7 @@ public class SenderEndPoint {
     }
 
     /**
-     *
+     * @param followTargetID
      * @return
      */
     public FollowStatus onFollow(final String followTargetID) {
@@ -46,7 +44,7 @@ public class SenderEndPoint {
     }
 
     /**
-     *
+     * @param (id, content)
      * @return
      */
     public Position onSendTwoot(final String id, final String content) {

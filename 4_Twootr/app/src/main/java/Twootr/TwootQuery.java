@@ -26,61 +26,52 @@ import static java.util.Arrays.asList;
 
 
 /**
- *
- * @author Rauol-Gabriel Urma & Richard Warburton
+ * @author ::Rauol-Gabriel Urma & Richard Warburton
  */
 public class TwootQuery {
 
     private Set<String> inUsers;
     private Position lastSeenPosition;
 
+
+    /************************************************
+     *              Query --> Users::               *
+     ************************************************/
+
     /**
-     *
-     * @return
      */
-    public Set<String> getInUsers() {
-        return inUsers;
+    public Set<String> getInUsers() { return inUsers; }
+
+    /**
+     */
+    public boolean hasUsers() {
+        return inUsers != null && !inUsers.isEmpty();
     }
 
     /**
-     *
-     * @return
-     */
-    public Position getLastSeenPosition() {
-        return lastSeenPosition;
-    }
-
-    /**
-     *
-     * @return
      */
     public TwootQuery inUsers(final Set<String> inUsers) {
         this.inUsers = inUsers;
         return this;
     }
-
-    /**
-     *
-     * @return
-     */
     public TwootQuery inUsers(String... inUsers) {
         return inUsers(new HashSet<>(Arrays.asList(inUsers)));
     }
 
+
+    /************************************************
+     *              Query --> Position::            *
+     ************************************************/
+
     /**
-     *
-     * @return
+     */
+    public Position getLastSeenPosition() { return lastSeenPosition; }
+
+    /**
      */
     public TwootQuery lastSeenPosition(final Position lastSeenPosition) {
         this.lastSeenPosition = lastSeenPosition;
         return this;
     }
-
-    /**
-     *
-     * @return
-     */
-    public boolean hasUsers() {
-        return inUsers != null && !inUsers.isEmpty();
-    }
 }
+
