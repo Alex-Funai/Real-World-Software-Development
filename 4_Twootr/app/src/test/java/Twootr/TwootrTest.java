@@ -3,15 +3,31 @@ package Twootr;
 import org.junit.*;
 import org.mockito.Mock;
 
+import java.util.Optional;
+
 import static junit.framework.TestCase.assertFalse;
 import static org.junit.Assert.assertEquals;
-import static Twootr.FollowStatus.*;
-import static Twootr.ReceiverEndPoint.*;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.spy;
 
 
 public class TwootrTest {
 
+    private static final Position POSITION_1 = new Position(0);
+    private final ReceiverEndPoint receiverEndPoint = mock(ReceiverEndPoint.class);
 
+    private final TwootRepository twootRepository = spy(new InMemoryTwootRepository());
+    private final UserRepository userRepository = new InMemoryUserRepository();
+
+    private Twootr twootr;
+    private SenderEndPoint endPoint;
+
+    @Before
+    public void setUp() {
+        twootr = new Twootr(userRepository, twootRepository);
+
+        assertEquals(RegistrationStatus, RegistrationStatus.SUCCESS, twootr.onRegisterUser(TestData.USER_ID, TestData.PASSWORD) );
+    }
 
     @Test
     public void verifyUserAuthentication() {
