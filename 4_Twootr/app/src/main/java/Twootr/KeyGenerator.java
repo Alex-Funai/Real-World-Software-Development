@@ -1,21 +1,42 @@
+///////////////////////////////////////////////////////////////////////////////
+// Main Class File: Twootr.java
+// File: class.KeyGenerator.java
+// Date: April 1, 2021
+// Programmer: Alexander Kitaro Funai
+// Email: alexanderfunai@protonmail.com
+// Website: https://www.alexanderfunai.com
+///////////////////////////////////////////////////////////////////////////////
+// Sources: Real World Software Development
+// Authors: Rauol-Gabriel Urma & Richard Warburton
+// Sources: github.com/Iteratr-Learning/Real-World-Software-Development.git
+///////////////////////////////////////////////////////////////////////////////
+
 package Twootr;
-
-
-
-import java.security.SecureRandom;
 import org.bouncycastle.crypto.generators.SCrypt;
 import static java.nio.charset.StandardCharsets.UTF_16;
+import java.security.SecureRandom;
 
+
+/**
+ * Hash key generation/structure for users' passwords.
+ * @see org.bouncycastle.crypto.generators.SCrypt;
+ * @apiNote ::"bcprov-ext-jdk15on-168.jar".
+ * @author ::Rauol-Gabriel Urma & Richard Warburton
+ */
 class KeyGenerator {
+    private static final SecureRandom secureRandom = new SecureRandom();
     private static final int SCRYPT_COST = 16384;
     private static final int SCRYPT_BLOCK_SIZE = 8;
     private static final int SCRYPT_PARALLELISM = 1;
     private static final int KEY_LENGTH = 20;
-
     private static final int SALT_LENGTH = 16;
 
-    private static final SecureRandom secureRandom = new SecureRandom();
-
+    /**
+     *
+     * @param password
+     * @param salt
+     * @return
+     */
      static byte[] hash(final String password, final byte[] salt) {
         final byte[] passwordBytes = password.getBytes(UTF_16);
         return SCrypt.generate(
@@ -27,6 +48,10 @@ class KeyGenerator {
                 KEY_LENGTH);
     }
 
+    /**
+     *
+     * @return
+     */
     static byte[] newSalt() {
         final byte[] salt = new byte[SALT_LENGTH];
         secureRandom.nextBytes(salt);

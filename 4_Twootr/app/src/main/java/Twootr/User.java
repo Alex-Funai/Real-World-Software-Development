@@ -1,14 +1,27 @@
-package Twootr;
+///////////////////////////////////////////////////////////////////////////////
+// Main Class File: Twootr.java
+// File: class.User.java
+// Date: April 1, 2021
+// Programmer: Alexander Kitaro Funai
+// Email: alexanderfunai@protonmail.com
+// Website: https://www.alexanderfunai.com
+///////////////////////////////////////////////////////////////////////////////
+// Sources: Real World Software Development
+// Authors: Rauol-Gabriel Urma & Richard Warburton
+// Sources: github.com/Iteratr-Learning/Real-World-Software-Development.git
+///////////////////////////////////////////////////////////////////////////////
 
+package Twootr;
 
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Stream;
 
-
-
-
+/**
+ *
+ * @author Rauol-Gabriel Urma & Richard Warburton.
+ */
 public class User {
 
     private final String id;

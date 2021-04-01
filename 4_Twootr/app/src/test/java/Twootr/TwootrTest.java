@@ -1,13 +1,24 @@
+///////////////////////////////////////////////////////////////////////////////
+// Main Class File: Twootr.java
+// File: TwootrTest.java
+// Date: April 1, 2021
+// Programmer: Alexander Kitaro Funai
+// Email: alexanderfunai@protonmail.com
+// Website: https://www.alexanderfunai.com
+///////////////////////////////////////////////////////////////////////////////
+// Sources: Real World Software Development
+// Authors: Rauol-Gabriel Urma & Richard Warburton
+// Sources: github.com/Iteratr-Learning/Real-World-Software-Development.git
+///////////////////////////////////////////////////////////////////////////////
+
 package Twootr;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import java.net.PasswordAuthentication;
 import java.util.Optional;
 import static junit.framework.TestCase.assertFalse;
 import static org.junit.Assert.*;
-import static org.mockito.Matchers.isNotNull;
 import static org.mockito.Mockito.*;
 
 public class TwootrTest {
@@ -35,7 +46,7 @@ public class TwootrTest {
     }
 
     /**
-     * @tase ::Verifies endpoint connections are established between two users.
+     * @testcase ::Verifies endpoint connections are established between two users.
      *         User should be able to see twoots from other users.
      */
     @Test
@@ -45,7 +56,7 @@ public class TwootrTest {
     }
 
     /**
-     * @TestCase ::Deny's user login via authentication, if password is incorrect.
+     * @testcase ::Deny's user login via authentication, if password is incorrect.
      */
     @Test
     public void denyUserAuthenticationIfPassword() {
@@ -57,7 +68,7 @@ public class TwootrTest {
     }
 
     /**
-     * @TestCase ::Verifies user can't establish multiple instances of a follow on another user.
+     * @testcase ::Verifies user can't establish multiple instances of a follow on another user.
      */
     @Test
     public void denyFollowDuplicate() {
