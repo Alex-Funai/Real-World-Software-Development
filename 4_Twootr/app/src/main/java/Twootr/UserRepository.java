@@ -14,8 +14,9 @@
 package Twootr;
 import java.util.Optional;
 
-/**(
- * @author Rauol-Gabriel Urma & Richard Warburton.
+/**
+ * Method() collection for managing a twoot user's list<followers>.
+ * @author ::Rauol-Gabriel Urma & Richard Warburton.
  */
 public interface UserRepository extends AutoCloseable {
 

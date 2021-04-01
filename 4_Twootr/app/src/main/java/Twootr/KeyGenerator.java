@@ -35,22 +35,18 @@ class KeyGenerator {
      *
      * @param password
      * @param salt
-     * @return
+     * @return ::unique hash w/ salt.
      */
      static byte[] hash(final String password, final byte[] salt) {
         final byte[] passwordBytes = password.getBytes(UTF_16);
         return SCrypt.generate(
-                passwordBytes,
-                salt,
-                SCRYPT_COST,
-                SCRYPT_BLOCK_SIZE,
-                SCRYPT_PARALLELISM,
-                KEY_LENGTH);
+                passwordBytes, salt, SCRYPT_COST, SCRYPT_BLOCK_SIZE,
+                SCRYPT_PARALLELISM, KEY_LENGTH);
     }
 
     /**
-     *
-     * @return
+     * Generates a random encryption string to tag passwords.
+     * @return ::unique salt encryption[tag] for user password.
      */
     static byte[] newSalt() {
         final byte[] salt = new byte[SALT_LENGTH];

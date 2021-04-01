@@ -19,8 +19,8 @@ import java.util.Set;
 import java.util.stream.Stream;
 
 /**
- *
- * @author Rauol-Gabriel Urma & Richard Warburton.
+ * Structure and methods() for a twootr account.
+ * @author ::Rauol-Gabriel Urma & Richard Warburton.
  */
 public class User {
 
