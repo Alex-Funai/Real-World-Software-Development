@@ -1,22 +1,24 @@
 <!----------
-Name: 	
-Extra:	
-Date:	 
-Sources:	
-Contributions:
-Sections:	
+Name: Alexander Kitaro FUnai
+Extra: https://www.alexanderfunai.com
+Date: April 1, 2021
+Sources: Real World Software Development
+Contributions: Rauol-Gabriel Urma & Richard Warburton
+Sections: Chapter 6
 ---------->
 
 
 
-# h1[top]
+# Twootr
 
 
-## h2[top-sub]
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
-a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Design Specs
++ Users log in to Twootr with a uniqu9e user ID and password
++ Each user has a set of other users t hey follow
++ Users can send twoot and followers can see immediately, the new twoots.
++ Users should we all twoots from their followers since last logged in.
++ Users should be able to delete twoots. Deleted twoots are updated for other users too.
++ Users can log in from various devices.
 
 ### h3[sub]
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -36,28 +38,43 @@ CODE[fenced-cmnt-blk]
 ```
 
 
-## h2[top-sub]
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
-a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Client-Server Model:
+Twootr Server <--> Users
 
-### H3[sub]:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### Pull-Based
+Pull-based comunnication styl9e makes request to the server and queries for the information. Also known as point-to-point or request-resposne.
+Common communication style used by http sites/apps. Client request for data <-> Server responds with data.
 
-#### h4[li]
+### Push-Based
+Server ---> data pushed ---> client
 
-1.	Lorem ipsum
-2.	Lorem Ipsum
-3.	PenisHeadElites
 
-### H3[sub]:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Communication:
+### WebSockets:
+TCP/IP protocol for event over TCP stream. Often used in event-driven communication between web browsers and servers.
+```
+// Comms
+Server --> Android Push Notifications -- >> Mobile
+Server <--> WebSockets <--> Website
+```
+### Hosted Cloud Message Queue:
+Amazon Simple Queue Service, Aeron, ZeroMQ, AMPQ.
 
 ```
 CODE[fenced-cmnt-blk]
 ```
+## Hexagonal Architecture:
+Ports and Adapters || Hexagonal arcitecture introduced by Alister Cockburn.
+```
+Website -> WebSocket Adapter --> **Core Business Logic** <-- SQL Adapter <-- SQL Database 
+Test Harness >-- **Core Business Logic** --< In Memory Adapater
+```
+### Authentication Services:
+OAUTH google API.
 
+### Hashing
+Utilize scrypt hashing algorithm. Iplement salt to prevent reverse hashing from brute-force and rainbow tables. Salts add extra randomly generated
+input to each password. Attackers would need to know the hashing function and salt to reverse hash the strings.
 
 
 <!-------------------------------------------------------------------------------->
