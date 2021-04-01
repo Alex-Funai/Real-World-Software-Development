@@ -2,5 +2,5 @@ package Twootr;
 
 public interface ReceiverEndPoint {
 
-    void uponTwoot (Twoot twoot);
+    void onTwoot(Twoot twoot);
 }

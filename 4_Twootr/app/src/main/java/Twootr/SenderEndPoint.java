@@ -10,15 +10,13 @@ public class SenderEndPoint {
     SenderEndPoint(final User user, final Twootr twootr) {
         Objects.requireNonNull(user, "user");
         Objects.requireNonNull(twootr, "twootr");
-
         this.user = user;
         this.twootr = twootr;
     }
 
-    public RelationStatus onFollow(final String followTargetID) {
+    public FollowStatus onFollow(final String followTargetID) {
         Objects.requireNonNull(followTargetID, "followTargetID");
-
-        return twootr.uponFollow(user, followTargetID);
+        return twootr.onFollow(user, followTargetID);
     }
 
 

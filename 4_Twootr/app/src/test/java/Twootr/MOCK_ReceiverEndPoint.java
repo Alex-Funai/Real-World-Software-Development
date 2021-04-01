@@ -11,7 +11,7 @@ public class MOCK_ReceiverEndPoint implements ReceiverEndPoint {
     private final List<Twoot> twootsReceived = new ArrayList<>();
 
     @Override
-    public void uponTwoot (final Twoot twoot) {
+    public void onTwoot(final Twoot twoot) {
         twootsReceived.add(twoot)
     }
 
