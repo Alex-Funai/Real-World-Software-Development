@@ -3,9 +3,11 @@ package Twootr;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.net.PasswordAuthentication;
 import java.util.Optional;
 import static junit.framework.TestCase.assertFalse;
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
+import static org.mockito.Matchers.isNotNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
 
@@ -31,7 +33,6 @@ public class TwootrTest {
 
     @Test
     public void verifyUserAuthentication() {
-        logon();
     }
 
     @Test
@@ -40,33 +41,27 @@ public class TwootrTest {
         // 2 verify onSend() SenderEndPoint
 
     }
-
     @Test
     public void denyUserAuthenticationIfPassword() {
 
         final Optional<SenderEndPoint> endpoint =
                 twootr.onLogon(TestData.USER_ID, "incorrect password", receiverEndPoint);
 
-        assertFalse(endPoint.isPresent());
+        assertFalse(endpoint.isPresent());
     }
 
     @Test
     public void denyFollowDuplicate() {
         logon();
-
-        endPoint.onFollow(TestData.TARGET_ID);
-
-        final RelationStatus relationshipStatus = endPoint.onFollow(TestData.TARGET_ID);
-        assertEquals(ALREADY_FOLLOWING, relationshipStatus);
+        endPoint.onFollow(TestData.OTHER_USER_ID);
+        final FollowStatus followStatus = endPoint.onFollow(TestData.OTHER_USER_ID);
+        assertEquals(FollowStatus.ALREADY_FOLLOWING, followStatus);
     }
 
     @Test
     public void denyFollowInvalidUser() {
-
         logon();
-
         final FollowStatus followStatus = endPoint.onFollow(TestData.INVALID_USER);
-
         assertEquals (FollowStatus.INVALID_USER, followStatus);
     }
 
