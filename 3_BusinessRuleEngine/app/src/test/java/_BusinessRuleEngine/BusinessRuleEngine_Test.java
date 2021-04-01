@@ -34,6 +34,7 @@ import static org.mockito.Mockito.mock;
 public class BusinessRuleEngine_Test {
 
 
+
     private final List<Facts> facts = new ArrayList<>();
 
 

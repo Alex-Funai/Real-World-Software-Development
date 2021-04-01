@@ -41,5 +41,5 @@ public class InspectorTest {
             return "CEO".equals(facts.getFact("jobTitle"));
         }
     }
-    
+
 }
