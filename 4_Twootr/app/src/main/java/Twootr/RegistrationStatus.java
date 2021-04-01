@@ -14,7 +14,7 @@
 package Twootr;
 
 /**
- * Domain enumeration variables regarding a user's Registration Status.
+ * Enumerated state-objects regarding a user's registration status.
  * @var ::{SUCCESS, DUPLICATE} // Note: Could be expanded.
  * @author ::Rauol-Gabriel Urma & Richard Warburton.
  */

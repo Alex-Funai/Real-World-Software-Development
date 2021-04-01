@@ -14,7 +14,7 @@
 package Twootr;
 
 /**
- * Domain enumeration for variables regarding a twoots Delete Status.
+ * Enumerated state-objects regarding a twoots' deletion ttatus.
  * @var ::{SUCCESS, UNKNOWN_TWOOT, NOT_YOUR_TWOOT}
  * @author ::Rauol-Gabriel Urma & Richard Warburton.
  */

@@ -18,6 +18,7 @@ import java.util.function.Consumer;
 
 
 /**
+ * Method() collection for managing twoots.
  * @author Rauol Gabriel Urma & Richard Warburton.
  */
 public interface TwootRepository {

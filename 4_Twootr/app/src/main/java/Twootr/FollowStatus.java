@@ -14,14 +14,12 @@
 package Twootr;
 
 /**
- * Domain enumeration variables regarding a twooters follow status w/ another user.
+ * Enumerated state-objects regarding a twooters follow status w/ another user.
  * @var ::{ALREADY_FOLLOWING, BLOCKED, INVALID_USER, SUCCES}.
  * @author ::Rauol-Gabriel Urma & Richard Warburton.
  */
 public enum FollowStatus {
-    ALREADY_FOLLOWING,
-    BLOCKED,
-    INVALID_USER,
-    SUCCESS,
+    ALREADY_FOLLOWING, BLOCKED,
+    INVALID_USER, SUCCESS,
 }
 

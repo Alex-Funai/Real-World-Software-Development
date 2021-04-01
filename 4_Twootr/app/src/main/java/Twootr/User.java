@@ -33,6 +33,13 @@ public class User {
     private Position lastSeenPosition;
     private ReceiverEndPoint receiverEndPoint;
 
+    /**
+     * Structure for a twoot user.
+     * @param id
+     * @param password
+     * @param salt
+     * @param lastSeenPosition
+     */
     public User(final String id, final byte[] password, final byte[] salt, final Position lastSeenPosition) {
 
         Objects.requireNonNull(id, "id");
