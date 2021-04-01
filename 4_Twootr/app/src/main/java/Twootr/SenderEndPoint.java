@@ -19,5 +19,11 @@ public class SenderEndPoint {
         return twootr.onFollow(user, followTargetID);
     }
 
+    public Position onSendTwoot(final String id, final String content) {
+        Objects.requireNonNull(content, "content");
+
+        return twootr.onSendTwoot(id, user, content);
+}
+
 
 }

@@ -8,8 +8,7 @@ import java.util.Optional;
 import static junit.framework.TestCase.assertFalse;
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.isNotNull;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.spy;
+import static org.mockito.Mockito.*;
 
 public class TwootrTest {
 
@@ -35,12 +34,19 @@ public class TwootrTest {
     public void verifyUserAuthentication() {
     }
 
+    /**
+     * @tase ::Verifies endpoint connections are established between two users.
+     *         User should be able to see twoots from other users.
+     */
     @Test
     public void verifyFollowerTwootEndpoints() {
         // 1 model sending of a twoot
         // 2 verify onSend() SenderEndPoint
-
     }
+
+    /**
+     * @TestCase ::Deny's user login via authentication, if password is incorrect.
+     */
     @Test
     public void denyUserAuthenticationIfPassword() {
 
@@ -50,6 +56,9 @@ public class TwootrTest {
         assertFalse(endpoint.isPresent());
     }
 
+    /**
+     * @TestCase ::Verifies user can't establish multiple instances of a follow on another user.
+     */
     @Test
     public void denyFollowDuplicate() {
         logon();
@@ -58,6 +67,9 @@ public class TwootrTest {
         assertEquals(FollowStatus.ALREADY_FOLLOWING, followStatus);
     }
 
+    /**
+     * @tase ::Verifies user can't follow an unknown user, or one whom blocked/restricted them.
+     */
     @Test
     public void denyFollowInvalidUser() {
         logon();
@@ -65,22 +77,25 @@ public class TwootrTest {
         assertEquals (FollowStatus.INVALID_USER, followStatus);
     }
 
+    /**
+     * @tase ::Verifies user can access/see twoots published/sent from their followers.
+     */
     @Test
     public void verifyReceiveTwootFromFollowers() {
-
-        final String id = "1";
-
         logon();
+        final String id = "1";
+        endPoint.onFollow (TestData.OTHER_USER_ID);
 
-        endPoint.onFollow (TestData.TARGET_USER_ID);
+        final SenderEndPoint otherEndPoint = otherLogon();
+        otherEndPiont.onSendTwoot(id, Twoot);
 
-        final SenderEndPoint targetEndPoint = targetLogon();
-        targetEndPoint.onSendTwoot (id, TWOOT);
-
-        verify (twootRepository).add (id, TestData.TARGET_USER_ID, TWOOT);
-        verify (receiverEndPoint).onTwoot (new Twoot (id, TestData.TARGET_USER_ID, TWOOT, new Position(0)));
+        verify (twootRepository).add (id, TestData.OTHER_USER_ID, TestData.TWOOT);
+        verify (receiverEndPoint).onTwoot (new Twoot (id, TestData.OTHER_USER_ID, TestData.TWOOT, new Position(0)));
     }
 
+    /**
+     * @tase ::Verifies user can
+     */
     @Test
     public void verifyReceiveReplayTwootAfterLogoff() {
 

@@ -2,7 +2,7 @@ package Twootr;
 
 import java.util.Optional;
 
-public interface UserRepository {
+public interface UserRepository extends AutoCloseable {
 
     boolean add(User user);
 
