@@ -24,7 +24,7 @@ public class Twootr_Tests {
     }
 
     @Test
-    public void DenyUserDuplicateFollows() {
+    public void denyDuplicateFollows() {
         logon();
 
         endPoint.onFollow(TestData.TARGET_ID);
