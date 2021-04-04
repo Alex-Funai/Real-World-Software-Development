@@ -29,7 +29,8 @@
 
 .EXAMPLE:
   < Fucked up setting up dual boot, and had to convert drives to MBR, and then locked partitions like
-    a noob. Had to reinstall. Made this incase it happens again.
+    a noob. Had to reinstall. Made this incase it happens again. Would like to add querying function to
+    the introduction that inputs common packages, then user's wouldn't have to edit script at all.
 #>
 
 <# SCRIPT #>
@@ -41,7 +42,7 @@
     Write-Host "*  This program automates adding  *"
     Write-Host "*  SDK directories to my system   *"
     Write-Host "*  path environment variables     *"
-               "***********************************"
+    Write-Host "***********************************"
     Write-Host "*  Press any key and let the the  *"
     Write-Host "*  secret tunnels will guide you  *"
     Write-Host "***********************************"
@@ -95,8 +96,7 @@
 
 
                 <#  [D.0 CONCLUSION]: Quick summary and farewell.
-                #>  Write-Host "Success! Environment variables have been updated in the system-path registry/directory." 
-                    $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+                #>  $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 
                         Write-Host "****************************" 
                         Write-Host "*     Update complete:     *"
@@ -118,7 +118,7 @@
                         Write-Host "* Manager\Environment\Path *"
                         Write-Host "****************************"
 
-                        <# Wait for user input to continue #>
+                        <# [D.1 CONCLUSION] Verify results:
                         $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
             
                             <#  [D.2 CONCLUSION]: Verify/print current registry entries: 
@@ -127,9 +127,9 @@
 
                                 <#  [E.0]: Farewell
                                 #>  Write-Host "****************************"
-
-                                    Write-Host "*                          *" 
-                                    Write-Host "*         Bye Bye          *"
-                                    Write-Host "****************************"
+                                    Write-Host "* Bye Bye            e    *"
+                                    Write-Host "*   e        y    Bye Bye *" 
+                                    Write-Host "*    b    Bye Bye    b    *"
+                                    Write-Host "***************************"
 
                                     <# /SCRIPT #>
