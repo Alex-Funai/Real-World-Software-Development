@@ -43,13 +43,13 @@
   + Recursive search > selenium driver > place in correct dir.
 
 .EXAMPLE:
-Set the SDK home or bin directory in [A.1]. Include a semi-colon at the end of the entry.
+  1. Set the SDK home or bin directory in [A.1]. Include a semi-colon at the end of the entry.
+  2. 
 #>
-
 
 <# SCRIPT #>
 
-<# [A.0 INTRODUCTION]:
+<# [A-0 INTRODUCTION]:
 #>  Write-Host "***********************************" 
     Write-Host "*       Welcome to DIR2SEV:       *"
     Write-Host "*                                 *"
@@ -60,10 +60,9 @@ Set the SDK home or bin directory in [A.1]. Include a semi-colon at the end of t
     Write-Host "*  Press any key and let the the  *"
     Write-Host "*  secret tunnels will guide you  *"
     Write-Host "***********************************"
-    $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+    $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 
-
-<# [B.0 DECLARATION SDKPENDENCE]: //initialize storage variables for the SDK directories:
+<# [B-0 DECLARATION SDKPENDENCE]: initialize directories 2 include.
 #>  $newSevEntries = 
 
     <# 1::jdk:: #> @(
@@ -96,55 +95,57 @@ Set the SDK home or bin directory in [A.1]. Include a semi-colon at the end of t
 
                                         <# 9::androidStudio #>
                                         "D:\Engineering\AndroidStudio\AndroidStudio\bin;")
-                                        <# End list with .split(";") to separate entries. #>
 
+                                          <#  [B-2 DECLARATION SKDEPENDENCE]: pause to display -set entries.
+                                          #>  Write-Host "Adding Entries to SEV..."
+                                              Start-Sleep -Seconds 1
 
-    <#  [C.0 PROCESS]: //initialize variable 4 current path-SEVs.
+    <#  [C-0 PROCESS]: initialize live sev-path entries.
         HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment -Name Path
     #>  $currentSevEntries = [System.Environment]::GetEnvironmentVariable('Path','Machine')
 
-        <#  [C.1 PROCESS]: //initialize updated SEV by adding old and new entries.
+        <#  [C-1 PROCESS]: initialize updated sev-path entries.
         #>  $updatedSevEntries = @($currentSevEntries + $newSevEntries)
         
-            <#  [C.2 PROCESS]: //set the updated system-path entries:
+            <#  [C-2 PROCESS]: pass upated sev entries to -name path "value"
             #>  [Environment]::SetEnvironmentVariable("Path", "$updatedSevEntries", "Machine")
 
+                <#  [D-0 CONCLUSION]:
+                #>  Write-Host "****************************" 
+                    Write-Host "*     Update complete:     *"
+                    Write-Host "*                          *"
+                    Write-Host "*     Item: 'System'       *"
+                    Write-Host "*     Name: 'Path'         *"
+                    Write-Host "*     Value: $updatedS-    *"
+                    Write-Host "*            0evEntries    *"
+                    Write-Host "****************************"
+                    Write-Host ""
+                    Write-Host "****************************"
+                    Write-HOst "*   Verify and test the    *"
+                    Write-Host "*   set registry value     *"
+                    Write-Host "*   by pressing any key..  *"
+                    Write-Host "*                          *"
+                    Write-Host "*   Or feel free 2 /cd 2   *"
+                    Write-Host "* HKLM\SYSTEM\CurrentCont- *"
+                    Write-Host "* rolSet\Control\Session-  *"
+                    Write-Host "* Manager\Environment\Path *"
+                    Write-Host "****************************"
+                    $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+                    Write-Host ""
 
-                <#  [D.0 CONCLUSION]: //summary and stats.
-                #>  $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+                        <#  [D-1 TESTING]: print live sev-path entries.
+                        #>  $test = Get-ItemPropertyValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" -Name Path
+                            $test.Split(";")
 
-                        Write-Host "****************************" 
-                        Write-Host "*     Update complete:     *"
-                        Write-Host "*                          *"
-                        Write-Host "*     Item: 'System'       *"
-                        Write-Host "*     Name: 'Path'         *"
-                        Write-Host "*     Value: $updatedS-    *"
-                        Write-Host "*            0evEntries    *"
-                        Write-Host "****************************"
-                        Write-Host ""
-                        Write-Host "****************************"
-                        Write-HOst "*   Verify and test the    *"
-                        Write-Host "*   set registry value     *"
-                        Write-Host "*   by pressing any key..  *"
-                        Write-Host "*                          *"
-                        Write-Host "*   Or feel free 2 /cd 2   *"
-                        Write-Host "* HKLM\SYSTEM\CurrentCont- *"
-                        Write-Host "* rolSet\Control\Session-  *"
-                        Write-Host "* Manager\Environment\Path *"
-                        Write-Host "****************************"
+                            <#  [E-0 END]:
+                            #>  Write-Host "&***************************"
+                                Write-Host "*  ByeBye    b       b     *"
+                                Write-Host "*            y    Bye Bye  *" 
+                                Write-Host "*     e    Bye Bye   b     *"
+                                Write-Host "****************************"
 
-                        <# [D.1 CONCLUSION]: //Verify results:
-                        $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
-            
-                            <#  [D.2 CONCLUSION]: //Verify|print current registry entries: 
-                            #>  $test = Get-ItemPropertyValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" -Name Path
-                                $test.Split(";")
+                                Start-Sleep -Seconds 1
+                                Write-Host "Press any key to end end this script."
+                                $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 
-                                <#  [E.0]: //Farewell:
-                                #>  Write-Host "****************************"
-                                    Write-Host "* Bye Bye            e    *"
-                                    Write-Host "*   e        y    Bye Bye *" 
-                                    Write-Host "*    b    Bye Bye    b    *"
-                                    Write-Host "***************************"
-
-                                    <# /SCRIPT #>
+                                <# /SCRIPT #>
