@@ -1,37 +1,51 @@
-﻿
+﻿#Requires -Version 2.0||7.1
 <#
-  .TITLE:
   DIR2SEV.PS1
+
+  .SYNOPSIS:
+  Fucked up setting up dual boot, and had to convert drives to MBR, and then locked partitions like
+  a noob. Had to reinstall. Made this incase it happens again. Would like to add querying function to
+  the introduction that inputs common packages, then user's wouldn't have to edit script at all.
   
   .DESCRIPTION:
   Sets (SEV)"system-environment-variables\path" for my java dks.
-
- .PREREQ:
+  
+  .REQUIRES:
   requires - powerShell-version-2.0||7.1.
   requires - admin console.
   requires - DACL && SACL access (for regedit).
 
-.VARIABLE(S): ($newSevEntries, $currentSevEntries, $updatedSevEntries).
+.INPUTS: ($newSevEntries, $currentSevEntries, $updatedSevEntries).
   @param $newSevEntries ::list of SDK directories to add to your SEV.
   @param $currentSevEntries ::the current live SEV in -name path.
   @param $updatedSevEntries ::the updated SEV
-
-.INPUTS:
-  SDK dirs from (bin/home)s.
+  @param "SDK directories from (bin/home)s.""
 
 .OUTPUTS:
   Updated SEV values in registry/system.
 
-.CONTRIBUTE:
+.NOTES:
   Version:        1.0
   Author:         <Alexander Funai>
   Creation Date:  <4/3/2021>
 
+  Version:        2.0 (Sudo)
+  1. Declare stack.
+  2. Recursive search or filtered index through drives, and common default installation paths.
+      + Get-ChildItem -Path <""> -filter @(*/bin, */jdk, */python, etc) -Exclude <"...">
+  2. get the index items into queue with push. 
+  3. Ask for input, if contains '3'= let all entries through, if not next step.
+  3. while stack.isnotEmpty > stack.pop > ask for input > if contains "y" add to a new queue object, if "n" discard.
+  4. save queue to $newSevEntries
+  5. parse $newSevEntries through V1 app.
+
+  Bonus:
+  + Recursive search > selenium driver > place in correct dir.
+
 .EXAMPLE:
-  < Fucked up setting up dual boot, and had to convert drives to MBR, and then locked partitions like
-    a noob. Had to reinstall. Made this incase it happens again. Would like to add querying function to
-    the introduction that inputs common packages, then user's wouldn't have to edit script at all.
+Set the SDK home or bin directory in [A.1]. Include a semi-colon at the end of the entry.
 #>
+
 
 <# SCRIPT #>
 
@@ -49,8 +63,9 @@
     $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 
 
-<# [B. DECLARATION SKPENDENCE]: // Initialize storage variables for the SDK directories:
+<# [B.0 DECLARATION SDKPENDENCE]: //initialize storage variables for the SDK directories:
 #>  $newSevEntries = 
+
     <# 1::jdk:: #> @(
     "D:\Engineering\Java\JDK8\bin;"+
     "D:\Engineering\Java\JDK15\bin;"+
@@ -61,16 +76,16 @@
             <# 2 ::python #>
             "D:\Engineering\Python;"+
         
-                <# 3:: gitBash #>
+                <# 3::gitBash #>
                 "D:\Engineering\GIT\Git\bin;"+
 
-                    <# 4:: curL #>
+                    <# 4::curL #>
                     "D:\Engineering\Curl\usr\bin;"+
 
                         <# 5::gradle #>
                         "D:\Engineering\Gradle\gradle-6.8.3-bin\gradle-6.8.3\bin;"+
 
-                            <# 6::node #>
+                            <# 6::jnode #>
                             "D:\Engineering\NodeJS\node_modules\npm\bin;"+
 
                                 <# 7::groovy #>
@@ -84,18 +99,18 @@
                                         <# End list with .split(";") to separate entries. #>
 
 
-    <#  [C.0 PROCESS]: // Initialize variable 4 current path-SEVs.
+    <#  [C.0 PROCESS]: //initialize variable 4 current path-SEVs.
         HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment -Name Path
     #>  $currentSevEntries = [System.Environment]::GetEnvironmentVariable('Path','Machine')
 
-        <#  [C.1 PROCESS]: // Initialize updated SEV by adding old and new entries.
+        <#  [C.1 PROCESS]: //initialize updated SEV by adding old and new entries.
         #>  $updatedSevEntries = @($currentSevEntries + $newSevEntries)
         
-            <#  [C.2 PROCESS]: // Set the updated system-path entries:
+            <#  [C.2 PROCESS]: //set the updated system-path entries:
             #>  [Environment]::SetEnvironmentVariable("Path", "$updatedSevEntries", "Machine")
 
 
-                <#  [D.0 CONCLUSION]: Quick summary and farewell.
+                <#  [D.0 CONCLUSION]: //summary and stats.
                 #>  $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 
                         Write-Host "****************************" 
@@ -103,8 +118,8 @@
                         Write-Host "*                          *"
                         Write-Host "*     Item: 'System'       *"
                         Write-Host "*     Name: 'Path'         *"
-                        Write-Host "*     Value: $updatedSev-  *"
-                        Write-Host "*             Entries      *"
+                        Write-Host "*     Value: $updatedS-    *"
+                        Write-Host "*            0evEntries    *"
                         Write-Host "****************************"
                         Write-Host ""
                         Write-Host "****************************"
@@ -112,20 +127,20 @@
                         Write-Host "*   set registry value     *"
                         Write-Host "*   by pressing any key..  *"
                         Write-Host "*                          *"
-                        Write-Host "*   Or feel free to /cd 2  *"
+                        Write-Host "*   Or feel free 2 /cd 2   *"
                         Write-Host "* HKLM\SYSTEM\CurrentCont- *"
                         Write-Host "* rolSet\Control\Session-  *"
                         Write-Host "* Manager\Environment\Path *"
                         Write-Host "****************************"
 
-                        <# [D.1 CONCLUSION] Verify results:
+                        <# [D.1 CONCLUSION]: //Verify results:
                         $x = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
             
-                            <#  [D.2 CONCLUSION]: Verify/print current registry entries: 
+                            <#  [D.2 CONCLUSION]: //Verify|print current registry entries: 
                             #>  $test = Get-ItemPropertyValue -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" -Name Path
-                                $test
+                                $test.Split(";")
 
-                                <#  [E.0]: Farewell
+                                <#  [E.0]: //Farewell:
                                 #>  Write-Host "****************************"
                                     Write-Host "* Bye Bye            e    *"
                                     Write-Host "*   e        y    Bye Bye *" 
