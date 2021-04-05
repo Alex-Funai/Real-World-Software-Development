@@ -1,62 +1,18 @@
-<!----------
-Name: 	
-Extra:	
-Date:	 
-Sources:	
-Contributions:
-Sections:	
----------->
+# PowerShell
 
++ PSVersionTable.PSVersion ::- displays powershell versoin in a table.
++ Get-Verb :: cmdlet that organizes activity type and functions.
++ Get-Command :: displays cmdlet list.
++ Get-Help :: self explanatory.
++ Get-Memeber -::
++ Get-Command -Noun a-noun* :: searches cmdlets whose noun starts with a-noun*.
++ Get-Command -Verb Get -Noun a-noun* :: searches cmdlet verbs for a-noun*
++ Get-Process -Name name-of-process | Get-Member :: object get process pases input by using pipe of get-member. returns table of 
+	name, membertype, and definition.
++ Get-Command ParameterType Process - after searching this argument returns the typenames ending in .process.
++ Select-Object :: Select-Object Name, Membertype ::
++ -MemberType Method :: filter the results to methods
 
-
-# h1[top]
-
-
-## h2[top-sub]
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
-a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### h3[sub]
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-#### h4[li]
-
-1.	Lorem ipsum
-2.	Lorem Ipsum
-3.	PenisHeadElites
-
-### h3[sub]
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-```
-CODE[fenced-cmnt-blk]
-```
-
-
-## h2[top-sub]
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex e
-a commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-### H3[sub]:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-#### h4[li]
-
-1.	Lorem ipsum
-2.	Lorem Ipsum
-3.	PenisHeadElites
-
-### H3[sub]:
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-```
-CODE[fenced-cmnt-blk]
-```
 
 
 
