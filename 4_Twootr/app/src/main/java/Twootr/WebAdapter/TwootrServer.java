@@ -1,4 +1,4 @@
-package Twootr;
+package Twootr.WebAdapter;
 
 import com.iteratrlearning.shu_book.chapter_06.database.DatabaseTwootRepository;
 import com.iteratrlearning.shu_book.chapter_06.database.DatabaseUserRepository;

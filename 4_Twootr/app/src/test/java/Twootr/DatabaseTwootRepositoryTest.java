@@ -2,6 +2,8 @@ package Twootr;
 
 import org.junit.Before;
 
+import database.DatabaseTwootRepository;
+
 import java.io.IOException;
 
 public class DatabaseTwootRepositoryTest extends AbstractTwootRepositoryTest

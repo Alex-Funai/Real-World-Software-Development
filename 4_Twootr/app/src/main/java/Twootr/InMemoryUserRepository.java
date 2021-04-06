@@ -9,11 +9,13 @@ public class InMemoryUserRepository implements UserRepository {
 
     @Override
     public Optional<User> get(final String userId) {
+    	
         return Optional.ofNullable(userIdToUser.get(userId));
     }
 
     @Override
     public boolean add(final User user) {
+    	
         return userIdToUser.putIfAbsent(user.getId(), user) == null;
     }
 

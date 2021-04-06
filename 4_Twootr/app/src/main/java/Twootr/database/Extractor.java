@@ -1,4 +1,4 @@
-package Twootr;
+package Twootr.database;
 
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

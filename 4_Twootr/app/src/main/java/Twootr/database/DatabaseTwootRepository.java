@@ -1,5 +1,6 @@
-package Twootr;
+package Twootr.database;
 
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -10,14 +11,14 @@ import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
 public class DatabaseTwootRepository implements TwootRepository {
-	
     private final StatementRunner statementRunner;
     private Position position = Position.INITIAL_POSITION;
 
     public DatabaseTwootRepository() {
         try {
             var conn = DatabaseConnection.get();
-            conn.createStatement().executeUpdate(
+            conn.createStatement()
+                .executeUpdate(
                     "CREATE TABLE IF NOT EXISTS " +
                         "twoots (" +
                         "position INT IDENTITY," +
@@ -25,7 +26,6 @@ public class DatabaseTwootRepository implements TwootRepository {
                         "senderId VARCHAR(15) NOT NULL," +
                         "content VARCHAR(140) NOT NULL" +
                         ")");
-            
             statementRunner = new StatementRunner(conn);
         } catch (SQLException e) {
             throw new RuntimeException(e);
@@ -83,8 +83,7 @@ public class DatabaseTwootRepository implements TwootRepository {
     }
 
     // tag::usersTupleLoop[]
-    @SuppressWarnings("unused")
-	private String usersTupleLoop(final Set<String> following) {
+    private String usersTupleLoop(final Set<String> following) {
         List<String> quotedIds = new ArrayList<>();
         for (String id : following) {
             quotedIds.add("'" + id + "'");
