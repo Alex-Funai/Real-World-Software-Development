@@ -18,7 +18,8 @@ public class MockReceiverEndPoint implements ReceiverEndPoint {
         receivedTwoots.add(twoot);
     }
 
-    public void verifyOnTwoot(final Twoot twoot) {
+    @SuppressWarnings("deprecation")
+	public void verifyOnTwoot(final Twoot twoot) {
         assertThat(receivedTwoots, contains(twoot));
     }
 }

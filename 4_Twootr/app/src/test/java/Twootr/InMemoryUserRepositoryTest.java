@@ -1,6 +1,13 @@
 package Twootr;
 
-public class InMemoryUserRepositoryTest {
+import org.junit.Before;
 
-    private InMemoryUserRepository
+public class InMemoryUserRepositoryTest extends AbstractUserRepositoryTest {
+    
+	private InMemoryUserRepository inMemoryUserRepository = new InMemoryUserRepository();
+
+    @Override
+    protected UserRepository newRepository() {
+        return inMemoryUserRepository;
+    }
 }

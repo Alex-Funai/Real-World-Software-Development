@@ -16,17 +16,19 @@ package Twootr;
 import org.junit.Before;
 import org.junit.Test;
 
+
 import java.util.Optional;
 import static junit.framework.TestCase.assertFalse;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
+
 
 public class TwootrTest {
 
     private static final Position POSITION_1 = new Position(0);
     private final ReceiverEndPoint receiverEndPoint = mock(ReceiverEndPoint.class);
 
-    private final TwootRepository twootRepository = spy(new InMemoryTwootRepository());
+    private final TwootRepository twootRepository = spy (new InMemoryTwootRepository());
     private final UserRepository userRepository = new InMemoryUserRepository();
 
     private Twootr twootr;
@@ -98,7 +100,7 @@ public class TwootrTest {
         endPoint.onFollow (TestData.OTHER_USER_ID);
 
         final SenderEndPoint otherEndPoint = otherLogon();
-        otherEndPiont.onSendTwoot(id, Twoot);
+        otherEndPoint.onSendTwoot(id, Twoot);
 
         verify (twootRepository).add (id, TestData.OTHER_USER_ID, TestData.TWOOT);
         verify (receiverEndPoint).onTwoot (new Twoot (id, TestData.OTHER_USER_ID, TestData.TWOOT, new Position(0)));
