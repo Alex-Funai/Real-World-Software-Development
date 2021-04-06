@@ -1,15 +1,17 @@
 
 package Twootr;
 
-import org.junit.Before;
-import org.junit.Test;
+import Twootr.*;
+import Twootr.InMemory.InMemoryTwootRepository;
+import Twootr.InMemory.InMemoryUserRepository;
+import Twootr.TestData.*;
+
 
 import java.util.Optional;
 
-import Twootr.InMemory.InMemoryTwootRepository;
-import Twootr.InMemory.InMemoryUserRepository;
-
 import static org.junit.Assert.*;
+import org.junit.Before;
+import org.junit.Test;
 import static org.mockito.Mockito.*;
 
 public class  TwootrTest
@@ -90,7 +92,7 @@ public class  TwootrTest
         endPoint.onFollow(TestData.OTHER_USER_ID);
 
         final FollowStatus followStatus = endPoint.onFollow(TestData.OTHER_USER_ID);
-        assertEquals(ALREADY_FOLLOWING, followStatus);
+        assertEquals(FollowStatus.ALREADY_FOLLOWING, followStatus);
     }
     // end::shouldNotDuplicateFollowValidUser[]
 
@@ -99,7 +101,7 @@ public class  TwootrTest
     {
         logon();
 
-        final FollowStatus followStatus = endPoint.onFollow(TestData.NOT_A_USER);
+        final FollowStatus followStatus = endPoint.onFollow(TestData.INVALID_USER);
 
         assertEquals(FollowStatus.INVALID_USER, followStatus);
     }
@@ -115,10 +117,10 @@ public class  TwootrTest
         endPoint.onFollow(TestData.OTHER_USER_ID);
 
         final SenderEndPoint otherEndPoint = otherLogon();
-        otherEndPoint.onSendTwoot(id, TWOOT);
+        otherEndPoint.onSendTwoot(id, TestData.TWOOT);
 
-        verify(twootRepository).add(id, TestData.OTHER_USER_ID, TWOOT);
-        verify(receiverEndPoint).onTwoot(new Twoot(id, TestData.OTHER_USER_ID, TWOOT, new Position(0)));
+        verify(twootRepository).add(id, TestData.OTHER_USER_ID, TestData.TWOOT);
+        verify(receiverEndPoint).onTwoot(new Twoot(id, TestData.OTHER_USER_ID, TestData.TWOOT, new Position(0)));
     }
     // end::shouldReceiveTwootsFromFollowedUser[]
 
@@ -130,9 +132,9 @@ public class  TwootrTest
         userFollowsOtherUser();
 
         final SenderEndPoint otherEndPoint = otherLogon();
-        otherEndPoint.onSendTwoot(id, TWOOT);
+        otherEndPoint.onSendTwoot(id, TestData.TWOOT);
 
-        verify(receiverEndPoint, never()).onTwoot(new Twoot(id, TestData.OTHER_USER_ID, TWOOT, POSITION_1));
+        verify(receiverEndPoint, never()).onTwoot(new Twoot(id, TestData.OTHER_USER_ID, TestData.TWOOT, POSITION_1));
     }
 
     // tag::shouldReceiveReplayOfTwootsAfterLogoff[]
@@ -144,11 +146,11 @@ public class  TwootrTest
         userFollowsOtherUser();
 
         final SenderEndPoint otherEndPoint = otherLogon();
-        otherEndPoint.onSendTwoot(id, TWOOT);
+        otherEndPoint.onSendTwoot(id, TestData.TWOOT);
 
         logon();
 
-        verify(receiverEndPoint).onTwoot(twootAt(id, POSITION_1));
+        verify(receiverEndPoint).onTwoot(TestData.twootAt(id, POSITION_1));
     }
     // end::shouldReceiveReplayOfTwootsAfterLogoff[]
 
@@ -160,13 +162,13 @@ public class  TwootrTest
         userFollowsOtherUser();
 
         final SenderEndPoint otherEndPoint = otherLogon();
-        otherEndPoint.onSendTwoot(id, TWOOT);
+        otherEndPoint.onSendTwoot(id, TestData.TWOOT);
         final DeleteStatus status = otherEndPoint.onDeleteTwoot(id);
 
         logon();
 
         assertEquals(DeleteStatus.SUCCESS, status);
-        verify(receiverEndPoint, never()).onTwoot(twootAt(id, POSITION_1));
+        verify(receiverEndPoint, never()).onTwoot(TestData.twootAt(id, POSITION_1));
     }
 
     @Test
@@ -187,7 +189,7 @@ public class  TwootrTest
         logon();
 
         final SenderEndPoint otherEndPoint = otherLogon();
-        otherEndPoint.onSendTwoot(id, TWOOT);
+        otherEndPoint.onSendTwoot(id, TestData.TWOOT);
 
         final DeleteStatus status = endPoint.onDeleteTwoot(id);
 

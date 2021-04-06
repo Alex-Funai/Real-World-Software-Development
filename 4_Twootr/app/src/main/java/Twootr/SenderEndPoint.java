@@ -52,4 +52,20 @@ public class SenderEndPoint {
 
         return twootr.onSendTwoot(id, user, content);
     }
+    
+    /**
+     * @param (id, content)
+     * @return
+     */
+    public void onLogoff() {
+        user.onLogoff();
+    }
+    
+    /**
+     * @param (id, content)
+     * @return
+     */
+    public DeleteStatus onDeleteTwoot(final String id) {
+        return twootr.onDeleteTwoot(user.getId(), id);
+    }
 }

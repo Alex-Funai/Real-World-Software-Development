@@ -10,6 +10,11 @@ import java.util.Set;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
+import Twootr.Position;
+import Twootr.Twoot;
+import Twootr.TwootQuery;
+import Twootr.TwootRepository;
+
 public class DatabaseTwootRepository implements TwootRepository {
     private final StatementRunner statementRunner;
     private Position position = Position.INITIAL_POSITION;

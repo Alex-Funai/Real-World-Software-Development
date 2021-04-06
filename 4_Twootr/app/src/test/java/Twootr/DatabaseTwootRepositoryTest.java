@@ -2,7 +2,8 @@ package Twootr;
 
 import org.junit.Before;
 
-import database.DatabaseTwootRepository;
+
+import Twootr.database.DatabaseTwootRepository;
 
 import java.io.IOException;
 
