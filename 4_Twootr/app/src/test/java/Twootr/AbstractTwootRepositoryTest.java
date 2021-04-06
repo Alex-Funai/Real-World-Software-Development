@@ -77,7 +77,7 @@ public abstract class AbstractTwootRepositoryTest
     {
         add("1", TWOOT);
 
-        repository.query(twootQuery.lastSeenPosition(INITIAL_POSITION), callback);
+        repository.query(twootQuery.lastSeenPosition(Position.INITIAL_POSITION), callback);
     }
 
     private Position add(final String id, final String content)

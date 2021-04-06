@@ -1,10 +1,15 @@
 
-package Twootr;
+package Twootr.InMemory;
 
 
 
 import java.util.*;
 import java.util.function.Consumer;
+
+import Twootr.Position;
+import Twootr.Twoot;
+import Twootr.TwootQuery;
+import Twootr.TwootRepository;
 
 public class InMemoryTwootRepository implements TwootRepository {
     private final List<Twoot> twoots = new ArrayList<>();

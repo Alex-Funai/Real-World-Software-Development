@@ -12,16 +12,21 @@
 
 
 package Twootr;
-import org.hamcrest.Matcher;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasProperty;
 import static org.hamcrest.MatcherAssert.assertThat;
+import org.hamcrest.Matcher;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.mockito.Mockito.mock;
+
 
 @Ignore("abstract base test")
 public abstract class AbstractUserRepositoryTest
@@ -44,7 +49,7 @@ public abstract class AbstractUserRepositoryTest
     {
         repository.add(userWith(TestData.USER_ID));
 
-        assertThat(repository.get(TestData.USER_ID).get(), matchesUser());
+        assertThat(repository.get(TestData.USER_ID).get(),matchesUser());
     }
 
     @Test
@@ -81,7 +86,7 @@ public abstract class AbstractUserRepositoryTest
         repository.add(user);
         assertEquals(Position.INITIAL_POSITION, user.getLastSeenPosition());
 
-        user.receiveTwoot(twootAt(id, newPosition));
+        user.receiveTwoot(TestData.twootAt(id, newPosition));
         repository.update(user);
 
         final UserRepository reloadedRepository = newRepository();
@@ -106,7 +111,7 @@ public abstract class AbstractUserRepositoryTest
     private Matcher<User> matchesUser()
     {
         return allOf(
-            hasProperty("id", equalTo(USER_ID)),
-            hasProperty("password", equalTo(PASSWORD_BYTES)));
+            hasProperty("id", equalTo(TestData.USER_ID)),
+            hasProperty("password", equalTo(TestData.PASSWORD_BYTES)));
     }
 }

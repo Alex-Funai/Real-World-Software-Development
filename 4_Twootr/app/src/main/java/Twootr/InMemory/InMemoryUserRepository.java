@@ -1,8 +1,12 @@
-package Twootr;
+package Twootr.InMemory;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
+
+import Twootr.FollowStatus;
+import Twootr.User;
+import Twootr.UserRepository;
 
 public class InMemoryUserRepository implements UserRepository {
     private final Map<String, User> userIdToUser = new HashMap<>();

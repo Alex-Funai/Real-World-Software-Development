@@ -1,5 +1,6 @@
 package Twootr;
 
+import Twootr.InMemory.InMemoryUserRepository;
 
 public class InMemoryUserRepositoryTest extends AbstractUserRepositoryTest {
     

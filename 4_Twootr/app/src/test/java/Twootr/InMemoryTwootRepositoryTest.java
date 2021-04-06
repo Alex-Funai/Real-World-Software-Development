@@ -2,6 +2,8 @@ package Twootr;
 
 import org.junit.Before;
 
+import Twootr.InMemory.InMemoryTwootRepository;
+
 public class InMemoryTwootRepositoryTest extends AbstractTwootRepositoryTest
 {
     @Before

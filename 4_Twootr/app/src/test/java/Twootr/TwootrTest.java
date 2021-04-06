@@ -1,42 +1,35 @@
-///////////////////////////////////////////////////////////////////////////////
-// Main Class File: Twootr.java
-// File: TwootrTest.java
-// Date: April 1, 2021
-// Programmer: Alexander Kitaro Funai
-// Email: alexanderfunai@protonmail.com
-// Website: https://www.alexanderfunai.com
-///////////////////////////////////////////////////////////////////////////////
-// Sources: Real World Software Development
-// Authors: Rauol-Gabriel Urma & Richard Warburton
-// Sources: github.com/Iteratr-Learning/Real-World-Software-Development.git
-///////////////////////////////////////////////////////////////////////////////
 
 package Twootr;
 
 import org.junit.Before;
 import org.junit.Test;
 
-
 import java.util.Optional;
-import static junit.framework.TestCase.assertFalse;
+
+import Twootr.InMemory.InMemoryTwootRepository;
+import Twootr.InMemory.InMemoryUserRepository;
+
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
-
-public class TwootrTest {
+public class  TwootrTest
+{
 
     private static final Position POSITION_1 = new Position(0);
-    private final ReceiverEndPoint receiverEndPoint = mock(ReceiverEndPoint.class);
 
-    private final TwootRepository twootRepository = spy (new InMemoryTwootRepository());
+    // tag::mockReceiverEndPoint[]
+    private final ReceiverEndPoint receiverEndPoint = mock(ReceiverEndPoint.class);
+    // end::mockReceiverEndPoint[]
+
+    private final TwootRepository twootRepository = spy(new InMemoryTwootRepository());
     private final UserRepository userRepository = new InMemoryUserRepository();
 
     private Twootr twootr;
     private SenderEndPoint endPoint;
 
-
     @Before
-    public void setUp() {
+    public void setUp()
+    {
         twootr = new Twootr(userRepository, twootRepository);
 
         assertEquals(RegistrationStatus.SUCCESS, twootr.onRegisterUser(TestData.USER_ID, TestData.PASSWORD));
@@ -44,84 +37,188 @@ public class TwootrTest {
     }
 
     @Test
-    public void verifyUserAuthentication() {
+    public void shouldNotRegisterDuplicateUsers()
+    {
+        assertEquals(RegistrationStatus.DUPLICATE, twootr.onRegisterUser(TestData.USER_ID, TestData.PASSWORD));
     }
 
-    /**
-     * @testcase ::Verifies endpoint connections are established between two users.
-     *         User should be able to see twoots from other users.
-     */
     @Test
-    public void verifyFollowerTwootEndpoints() {
-        // 1 model sending of a twoot
-        // 2 verify onSend() SenderEndPoint
-    }
-
-    /**
-     * @testcase ::Deny's user login via authentication, if password is incorrect.
-     */
-    @Test
-    public void denyUserAuthenticationIfPassword() {
-
-        final Optional<SenderEndPoint> endpoint =
-                twootr.onLogon(TestData.USER_ID, "incorrect password", receiverEndPoint);
-
-        assertFalse(endpoint.isPresent());
-    }
-
-    /**
-     * @testcase ::Verifies user can't establish multiple instances of a follow on another user.
-     */
-    @Test
-    public void denyFollowDuplicate() {
+    public void shouldBeAbleToAuthenticateUser()
+    {
         logon();
-        endPoint.onFollow(TestData.OTHER_USER_ID);
+    }
+
+    // tag::shouldNotAuthenticateUserWithWrongPassword[]
+    @Test
+    public void shouldNotAuthenticateUserWithWrongPassword()
+    {
+        final Optional<SenderEndPoint> endPoint = twootr.onLogon(
+            TestData.USER_ID, "bad password", receiverEndPoint);
+
+        assertFalse(endPoint.isPresent());
+    }
+    // end::shouldNotAuthenticateUserWithWrongPassword[]
+
+
+    @Test
+    public void shouldNotAuthenticateUnknownUser()
+    {
+        final Optional<SenderEndPoint> endPoint = twootr.onLogon(
+            TestData.INVALID_USER, TestData.PASSWORD, receiverEndPoint);
+
+        assertFalse(endPoint.isPresent());
+    }
+
+    // tag::shouldFollowValidUser[]
+    @Test
+    public void shouldFollowValidUser()
+    {
+        logon();
+
         final FollowStatus followStatus = endPoint.onFollow(TestData.OTHER_USER_ID);
-        assertEquals(FollowStatus.ALREADY_FOLLOWING, followStatus);
+
+        assertEquals(FollowStatus.SUCCESS, followStatus);
+    }
+    // end::shouldFollowValidUser[]
+
+    // tag::shouldNotDuplicateFollowValidUser[]
+    @Test
+    public void shouldNotDuplicateFollowValidUser()
+    {
+        logon();
+
+        endPoint.onFollow(TestData.OTHER_USER_ID);
+
+        final FollowStatus followStatus = endPoint.onFollow(TestData.OTHER_USER_ID);
+        assertEquals(ALREADY_FOLLOWING, followStatus);
+    }
+    // end::shouldNotDuplicateFollowValidUser[]
+
+    @Test
+    public void shouldNotFollowInValidUser()
+    {
+        logon();
+
+        final FollowStatus followStatus = endPoint.onFollow(TestData.NOT_A_USER);
+
+        assertEquals(FollowStatus.INVALID_USER, followStatus);
     }
 
-    /**
-     * @tase ::Verifies user can't follow an unknown user, or one whom blocked/restricted them.
-     */
+    // tag::shouldReceiveTwootsFromFollowedUser[]
     @Test
-    public void denyFollowInvalidUser() {
-        logon();
-        final FollowStatus followStatus = endPoint.onFollow(TestData.INVALID_USER);
-        assertEquals (FollowStatus.INVALID_USER, followStatus);
-    }
-
-    /**
-     * @tase ::Verifies user can access/see twoots published/sent from their followers.
-     */
-    @Test
-    public void verifyReceiveTwootFromFollowers() {
-        logon();
+    public void shouldReceiveTwootsFromFollowedUser()
+    {
         final String id = "1";
-        endPoint.onFollow (TestData.OTHER_USER_ID);
+
+        logon();
+
+        endPoint.onFollow(TestData.OTHER_USER_ID);
 
         final SenderEndPoint otherEndPoint = otherLogon();
-        otherEndPoint.onSendTwoot(id, Twoot);
+        otherEndPoint.onSendTwoot(id, TWOOT);
 
-        verify (twootRepository).add (id, TestData.OTHER_USER_ID, TestData.TWOOT);
-        verify (receiverEndPoint).onTwoot (new Twoot (id, TestData.OTHER_USER_ID, TestData.TWOOT, new Position(0)));
+        verify(twootRepository).add(id, TestData.OTHER_USER_ID, TWOOT);
+        verify(receiverEndPoint).onTwoot(new Twoot(id, TestData.OTHER_USER_ID, TWOOT, new Position(0)));
     }
+    // end::shouldReceiveTwootsFromFollowedUser[]
 
-    /**
-     * @tase ::Verifies user can
-     */
     @Test
-    public void verifyReceiveReplayTwootAfterLogoff() {
-
+    public void shouldNotReceiveTwootsAfterLogoff()
+    {
         final String id = "1";
 
-        user.FollowsTargetUser();
+        userFollowsOtherUser();
 
-        final SenderEndPoint targetEndPoint = targetLogon();
-        targetEndPoint.onSendTwoot (id, TWOOT);
+        final SenderEndPoint otherEndPoint = otherLogon();
+        otherEndPoint.onSendTwoot(id, TWOOT);
+
+        verify(receiverEndPoint, never()).onTwoot(new Twoot(id, TestData.OTHER_USER_ID, TWOOT, POSITION_1));
+    }
+
+    // tag::shouldReceiveReplayOfTwootsAfterLogoff[]
+    @Test
+    public void shouldReceiveReplayOfTwootsAfterLogoff()
+    {
+        final String id = "1";
+
+        userFollowsOtherUser();
+
+        final SenderEndPoint otherEndPoint = otherLogon();
+        otherEndPoint.onSendTwoot(id, TWOOT);
 
         logon();
 
-        verify (receiverEndPoint).onTwoot (twootAt (id, POSITION_1));
+        verify(receiverEndPoint).onTwoot(twootAt(id, POSITION_1));
+    }
+    // end::shouldReceiveReplayOfTwootsAfterLogoff[]
+
+    @Test
+    public void shouldDeleteTwoots()
+    {
+        final String id = "1";
+
+        userFollowsOtherUser();
+
+        final SenderEndPoint otherEndPoint = otherLogon();
+        otherEndPoint.onSendTwoot(id, TWOOT);
+        final DeleteStatus status = otherEndPoint.onDeleteTwoot(id);
+
+        logon();
+
+        assertEquals(DeleteStatus.SUCCESS, status);
+        verify(receiverEndPoint, never()).onTwoot(twootAt(id, POSITION_1));
+    }
+
+    @Test
+    public void shouldNotDeleteFuturePositionTwoots()
+    {
+        logon();
+
+        final DeleteStatus status = endPoint.onDeleteTwoot("DAS");
+
+        assertEquals(DeleteStatus.UNKNOWN_TWOOT, status);
+    }
+
+    @Test
+    public void shouldNotOtherUsersTwoots()
+    {
+        final String id = "1";
+
+        logon();
+
+        final SenderEndPoint otherEndPoint = otherLogon();
+        otherEndPoint.onSendTwoot(id, TWOOT);
+
+        final DeleteStatus status = endPoint.onDeleteTwoot(id);
+
+        assertNotNull(twootRepository.get(id));
+        assertEquals(DeleteStatus.NOT_YOUR_TWOOT, status);
+    }
+
+    private SenderEndPoint otherLogon()
+    {
+        return logon(TestData.OTHER_USER_ID, mock(ReceiverEndPoint.class));
+    }
+
+    private void userFollowsOtherUser()
+    {
+        logon();
+
+        endPoint.onFollow(TestData.OTHER_USER_ID);
+
+        endPoint.onLogoff();
+    }
+
+    private void logon()
+    {
+        this.endPoint = logon(TestData.USER_ID, receiverEndPoint);
+    }
+
+    private SenderEndPoint logon(final String userId, final ReceiverEndPoint receiverEndPoint)
+    {
+        final Optional<SenderEndPoint> endPoint = twootr.onLogon(userId, TestData.PASSWORD, receiverEndPoint);
+        assertTrue("Failed to logon", endPoint.isPresent());
+        return endPoint.get();
     }
 
 }

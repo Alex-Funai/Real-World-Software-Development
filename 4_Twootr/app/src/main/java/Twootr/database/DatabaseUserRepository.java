@@ -60,7 +60,9 @@ public class DatabaseUserRepository implements UserRepository {
     }
 
     private Map<String, User> loadFromDatabase() {
+    	
         var users = new HashMap<String, User>();
+        
         statementRunner.query("SELECT id, password, salt, position FROM users", resultSet -> {
             var id = resultSet.getString(ID);
             var password = resultSet.getBytes(PASSWORD);
@@ -100,7 +102,7 @@ public class DatabaseUserRepository implements UserRepository {
                     stmt.executeUpdate();
                 });
         }
-
+        
         return success;
     }
 
